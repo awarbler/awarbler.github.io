@@ -15,7 +15,7 @@ h1{
 img {
     float: right;
     max-height: 100%;
-
+    padding: 10px;
 }
 h2{
     margin: 1.00rem;

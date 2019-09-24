@@ -17,9 +17,6 @@ img {
     max-height: 100%;
 
 }
-body{
-
-}
 h2{
     margin: 1.00rem;
     border-bottom-style: solid;
@@ -30,7 +27,6 @@ h2{
 nav ul li a {
     display: block;
     padding: .5rem 1rem;
-    background-color:#20B2AA;
 }
 main h1 {
     clear: both;

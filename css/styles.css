@@ -1,18 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-header
+header, footer
 {
     font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;;
     color: white;
     text-align: center;
     background: #aadcdd;
+    max-width: 650;
+    margin: 1.00rem;
 }
-nav ul{ padding: 0;}
+img {
+    float: right;
 
-nav ul li {
-    float: left;
-    list-style-type: none;
 }
+
 nav ul li a {
     display: block;
     padding: .5rem 1rem;

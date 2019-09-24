@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 header h1 {
-    color: darkred;
+    font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;;
+    color: #aadcdd;
 }
 nav ul{ padding: 0;}
 

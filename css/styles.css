@@ -6,12 +6,19 @@ header, footer
     color: white;
     text-align: center;
     background: #aadcdd;
-    max-width: 650;
+    max-width: 75%;
     margin: 1.00rem;
+}
+h1{
+    font-size: 18px;
 }
 img {
     float: right;
+    max-height: 100%;
 
+}
+body{
+    
 }
 
 nav ul li a {

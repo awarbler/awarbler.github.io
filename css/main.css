@@ -19,7 +19,7 @@ img {
 }
 h2{
     margin: 1.00rem;
-    border-bottom-style: solid;
+    border-bottom: 1px solid;
     border-bottom-color: #808080;
 }
 

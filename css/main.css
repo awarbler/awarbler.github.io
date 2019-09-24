@@ -14,18 +14,23 @@ h1{
 }
 img {
     float: right;
+    max-height: 100%;
+
+}
+body{
+
 }
 h2{
     margin: 1.00rem;
-    border-bottom: 1px solid;
-    border-bottom-color: #808080;
-    border-bottom-width: 75%;
 }
-
 
 nav ul li a {
     display: block;
     padding: .5rem 1rem;
+    background-color:#20B2AA;
+}
+main h1 {
+    clear: both;
 }
 
 footer {

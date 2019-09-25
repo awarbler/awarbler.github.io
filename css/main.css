@@ -12,7 +12,7 @@ header, footer
 h1{
     font-size: 40px;
 }
-main img {
+img {
     float: right;
     position: relative;
 

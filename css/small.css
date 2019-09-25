@@ -1,13 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
-body{
-    font-size: 16px;
-    line-height: 1.5;
-    font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
-    height:100%;
-    color: #555d66;
-
-}
 header, footer
 {
     font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -17,8 +8,17 @@ header, footer
     max-width: 75%;
     margin: 1.25rem;
 }
+body{
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+    height:100%;
+    color: #555d66;
+
+}
+
 h1{
-    font-size: 2.5rem; 
+    font-size: 1.5rem; 
     margin: 0.15rem;
 
 }
@@ -28,7 +28,7 @@ img {
 
 }
 h2{
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin: 1.00rem;
     border-bottom:1px #979797 solid;
     margin-bottom:.05rem;

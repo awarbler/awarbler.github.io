@@ -45,9 +45,15 @@
   <footer>
     <p>
       &copy; 2020 | Anita Woodford | Texas | <a href="https://www.byui.edu/online"></href> BYUI Online Learning</a><br>
-      Last Updated:
-      <script>document.getElementById("date").innerHTML = Date()</script>
+      Last Updated: <script>
+        datUpdated = new Date(document.lastModified) ;
+        datMonth = datUpdated.getMonth() + 1 ;
+        datDate = datUpdated.getDate() ;
+        datYear = datUpdated.getYear() ;
+        document.write("<i>Last Updated: " + datMonth + "/" + datDate + "/" + datYear + "</i>") ;
+        </script>
     </p>
+
   </footer>
 </body>
 

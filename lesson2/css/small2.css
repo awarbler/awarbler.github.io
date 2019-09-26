@@ -9,6 +9,8 @@ header h1{
     margin .15rem;
     font-size: 1.5rem;
     margin-bottom:.05rem;
+    padding: 5px 0 15px 0 ;
+    
 }
 /* header h2 is a child of header*/
 header h2 {

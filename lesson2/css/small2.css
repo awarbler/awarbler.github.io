@@ -1,20 +1,30 @@
-* {
-    -moz-box-sizeing: border-box;
+* {-moz-box-sizeing: border-box;
     -webkit-box-sizing: border-box;
-    box-sizing:
-        border-box;
+    box-sizing: border-box;
 }
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 /* header rules here - work way down*/
 header {
     margin-top: 10px;
+    padding 1rem 2%;    /* inside of box*/
 }
+/* header h1 is a child of header*/
+header h1{
+    margin 0;
+}
+/* header h2 is a child of header*/
+header h2 {
+    margin: 0;
+}
+/* navigation rules here*/
+
 header, header h1, header h2
 footer {
     text-align: center;
     background: #aadcdd;
     color: white;
 }
+
 header,
 nav,
 main,
@@ -26,14 +36,6 @@ footer {
 
 }
 
-
-
-
-
-header img {
-    width: 200px;
-    height: auto;
-}
 /* body rules here */ /* designed to read on mobile devices*/ /* default size*/
 body {
     font-size: 16px;
@@ -43,12 +45,10 @@ body {
     color: #555d66;
 
 }
-
 h1 {
     font-size: 1.5rem;
     margin: 0.15rem;
 }
-
 h2 {
     font-size: 1rem;
     margin: 1.00rem;

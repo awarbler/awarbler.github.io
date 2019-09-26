@@ -1,48 +1,67 @@
+* {
+    -moz-box-sizeing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing:
+        border-box;
+}
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-header, nav, main, footer{
+/* header rules here - work way down*/
+header {
+    margin-top: 10px;
+}
+header, header h1, header h2
+footer {
+    text-align: center;
+    background: #aadcdd;
+    color: white;
+}
+header,
+nav,
+main,
+footer {
     margin: 0 auto;
     padding: .75rem;
     max-width: 45rem;
     font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
 
 }
-header {
-    margin-top:10px;
-}
-header, footer
-{
-    text-align: center;
-    background: #aadcdd;
-    color: white;
-}
+
+
+
+
+
 header img {
     width: 200px;
     height: auto;
 }
-body{
+/* body rules here */ /* designed to read on mobile devices*/ /* default size*/
+body {
     font-size: 16px;
     line-height: 1.5;
     font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
-    height:100%;
+    height: 100%;
     color: #555d66;
 
 }
-h1{
-    font-size: 1.5rem; 
+
+h1 {
+    font-size: 1.5rem;
     margin: 0.15rem;
 }
-h2{
+
+h2 {
     font-size: 1rem;
     margin: 1.00rem;
-    border-bottom:1px #979797 solid;
-    margin-bottom:.05rem;
+    border-bottom: 1px #979797 solid;
+    margin-bottom: .05rem;
     max-width: 75%;
 
 }
+
 main h1 {
     clear: both;
 }
 
 footer {
-font-size: .8rem;
+    font-size: .8rem;
 }

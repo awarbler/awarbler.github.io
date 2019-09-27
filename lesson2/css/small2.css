@@ -1,21 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 /* header rules here - work way down*/
 header {
     padding: .5rem 1%;
 }
+
 /* header h1 is a child of header*/
-header h1{
+header h1 {
     font-size: 1.5rem;
     margin: 0;
 }
+
 /* header h2 is a child of header*/
 header h2 {
     font-size: 1rem;
     margin: 0;
 }
-/* navigation rules here*/
 
-header, nav,footer {
+/* navigation rules here*/
+header,
+footer {
     text-align: center;
     background: #aadcdd;
     color: white;
@@ -23,15 +27,46 @@ header, nav,footer {
     font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-
-/* body rules here */ /* designed to read on mobile devices*/ /* default size*/
+/* body rules here */
+/* designed to read on mobile devices*/
+/* default size*/
 body {
     font-size: 16px;
-    line-height: 1.5;
     font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
-    height: 100%;
-    color: #555d66;
+}
+
+main {
+    max-width: 767px;
+    margin: 0 auto;
+}
+
+main h2, h3 {
+    color: #536878;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 0.8rem;
+}
+
+main section {
+    margin: 0.5rem;
+    border: 1px solid #bbb;
+    padding: 0 1rem;
+    background-color: #eee;
+}
+
+section:nth-child(2) {
+    display: none;
+    margin: 0.5rem;
+}
+
+.colimage {
+    box-shadow: 0 0 30px #333;
+}
 
 footer {
     font-size: .8rem;
+    padding-bottom: 0.5rem 1%;
 }

@@ -1,5 +1,5 @@
 /* 35em is also 560px (if basefont is 16px) */
-@media only screen and (min-width: 35rem) {
+@media only screen and (min-width: 37.5rem) {
 
     /*----------- BODY --------------*/
 
@@ -12,11 +12,38 @@
         font-size: 1.5rem;
     }
 
-    header,footer {
+    header,
+    footer {
         border-radius: 10px;
     }
-/*----------- NAVIGATION --------------*/
-/*----------- MAIN --------------*/
-/*----------- FOOTER --------------*/
-    
-} /* end of media query */
+
+    /*----------- NAVIGATION --------------*/
+    /*----------- MAIN --------------*/
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section:nth-child(2) {
+        display: block;
+    }
+
+    section:nth-child(3) {
+        grid-column: span 2;
+    }
+
+    main picture {
+        display: block;
+    }
+
+    main section picture img {
+        width: 100%;
+        height: auto;
+        border: 1px solid #bbb;
+    }
+
+
+    /*----------- FOOTER --------------*/
+
+}
+
+/* end of media query */

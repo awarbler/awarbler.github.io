@@ -7,6 +7,8 @@
     /*----------- HEADER --------------*/
 
     /*----------- NAVIGATION --------------*/
+      /* navigation li rules here width auto padding .5rem 1rem */
+       /* navigation ul rules here padding left 2% to get everything to line up */
 
     /*----------- MAIN --------------*/
 
@@ -17,6 +19,7 @@
     section:nth-child(3) {
         grid-column: span 1;
     }
+    /* main figure change width to 31% */
     /*----------- FOOTER --------------*/
 
 }

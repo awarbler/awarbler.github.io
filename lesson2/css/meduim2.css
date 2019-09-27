@@ -18,19 +18,22 @@
     }
 
     /*----------- NAVIGATION --------------*/
+    /* navigation li rules here float left width:25% */
+     
     /*----------- MAIN --------------*/
     main {
         grid-template-columns: 1fr 1fr;
     }
 
-    section:nth-child(2) {
+    section:nth-child(3) {
         display: block;
     }
 
     section:nth-child(3) {
         grid-column: span 2;
     }
-
+/* main <figure { float right width 48% margin left 2% 
+    padding  */
     main picture {
         display: block;
     }

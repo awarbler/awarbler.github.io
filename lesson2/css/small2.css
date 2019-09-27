@@ -1,10 +1,3 @@
-/*----------- apply a natural box layout model to all elements --------------*/
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
-/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
 /* body rules here */
 /* designed to read on mobile devices*/
 /* default size*/
@@ -22,13 +15,11 @@ header h1 {
     margin: 0;
     font-size: 1.5rem;
 }
-
 /* header h2 is a child of header*/
 header h2 {
     font-size: 1rem;
     margin: 0;
 }
-
 header,
 footer {
     text-align: center;
@@ -48,42 +39,36 @@ footer {
 main {
     max-width: 767px;
     margin: 0 auto;
-    padding: .5rem 1%;
-    display: block;
-    display: grid;
-    grid-template-columns: 1fr;
-    font-size: 0.8rem;
 }
-
 main h2{
     color: #536878;
 }
-
 /* main figure img space image to be 100 percent wide or width 100%*/
 /* main figure img howt o fit on the page */ 
 /* main figure main figure margin:0; */
 /* main figcaption { text-align:center; font size .8rem */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 0.8rem;
+}
 main section {
     margin: 0.5rem;
     border: 1px solid #bbb;
     padding: 0 1rem;
     background-color: #eee;
 }
-
-section:nth-child(3) {
+section:nth-child(2) {
     display: none;
-    margin: 0.5rem;
+    margin: 0.5;
 }
-
 .colimage {
     box-shadow: 0 0 30px #333;
 }
-
 footer {
     font-size: .8rem;
-    padding-bottom: 0.5rem 1%;
+    padding-bottom: 1rem;
 }
-
 /* clearfix to help with nav */
 .clearfix after {
     content:"";

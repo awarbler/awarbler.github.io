@@ -9,7 +9,6 @@ body {
 header {
     padding: .5rem 1%;
 }
-
 /* header h1 is a child of header*/
 header h1 {
     margin: 0;
@@ -50,6 +49,7 @@ main h2{
 main {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     font-size: 0.8rem;
 }
 main section {

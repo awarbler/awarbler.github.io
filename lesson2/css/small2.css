@@ -1,22 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 /* header rules here - work way down*/
 header {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding: .5rem 1%;
 }
 /* header h1 is a child of header*/
 header h1{
-    margin .15rem;
     font-size: 1.5rem;
-    margin-bottom:.05rem;
-    padding: 5px 0 15px 0 ;
-    
+    margin: 0;
 }
 /* header h2 is a child of header*/
 header h2 {
     font-size: 1rem;
-    margin: .05rem;
-    margin-bottom: 1em;
+    margin: 0;
 }
 /* navigation rules here*/
 
@@ -25,7 +20,6 @@ header, nav,footer {
     background: #aadcdd;
     color: white;
     margin: 0 auto;
-    max-width: 45rem;
     font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
@@ -37,7 +31,6 @@ body {
     font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
     height: 100%;
     color: #555d66;
-    max-width: 45rem;
 
 footer {
     font-size: .8rem;

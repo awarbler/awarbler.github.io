@@ -21,6 +21,7 @@
     /*----------- MAIN --------------*/
     main {
         grid-template-columns: 1fr 1fr;
+        
     }
 
     section:nth-child(2) {
@@ -36,6 +37,7 @@
    
     main section{
         text-align: left;
+        
     }
 
     main section picture img {

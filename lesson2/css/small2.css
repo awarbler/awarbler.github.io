@@ -1,22 +1,12 @@
-/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-}
 
-/*----------- apply a natural box layout model to all elements --------------*/
-* {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
 
 /* body rules here */
 /* designed to read on mobile devices*/
 /* default size*/
 body {
-    font-size: 16px;
+    font-size: 100%;
     font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
 }
 
 /* header rules here - work way down*/
@@ -32,12 +22,14 @@ header h1 {
 
 /* header h2 is a child of header*/
 header h2 {
-    
     margin: 0;
     font-size: 1rem;
     font-weight: normal;
 }
-
+header, main, footer{
+    margin: 0 auto;
+    max-width: 767px;
+}
 header,
 footer {
     text-align: center;
@@ -45,12 +37,10 @@ footer {
     color: white;
     margin: 0 auto;
     font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
-    max-width: 45rem;
+    
 }
 
 /* navigation rules here*/
-
-
 /* navigation ul rules here usualling margin and padding*/
 /* adjust background li list-style-type none */
 /* navigation a rules here display to block padding color text align text decoraton*/
@@ -58,10 +48,8 @@ footer {
 /* navigation tell user so go to html add class of active  li class of active or nav li.active here*/
 /* navigation rules here*/
 main {
-    max-width: 767px;
     margin: 0 auto;
     padding: 1rem;
-
 }
 
 /* main figure img space image to be 100 percent wide or width 100%*/
@@ -71,13 +59,19 @@ main {
 main {
     display: grid;
     grid-template-columns: 1fr;
-    font-size: 0.8rem;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    float: left;
 }
 
-main h3 {
+h3 {
     padding-top: .50rem;
     margin: 0 0 0 0;
-    font: 1em;
+}
+main picture {
+    display: block;
 }
 
 main section {
@@ -92,10 +86,6 @@ main section {
 section:nth-child(2) {
     /* display: none;*/
     margin: 0.5;
-}
-
-.colimage {
-    box-shadow: 0 0 30px #333;
 }
 
 footer {

@@ -33,9 +33,7 @@
 
     /* main <figure { float right width 48% margin left 2% 
     padding */
-    main picture {
-        display: block;
-    }
+   
     main section{
         text-align: left;
     }

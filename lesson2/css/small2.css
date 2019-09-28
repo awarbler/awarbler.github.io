@@ -38,6 +38,7 @@ footer {
 main {
     max-width: 767px;
     margin: 0 auto;
+    
 }
 main h2{
     color: #536878;
@@ -49,7 +50,6 @@ main h2{
 main {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
     font-size: 0.8rem;
 }
 main section {
@@ -67,7 +67,8 @@ section:nth-child(2) {
 }
 footer {
     font-size: .8rem;
-    padding-bottom: 1rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
 }
 /* clearfix to help with nav */
 .clearfix after {

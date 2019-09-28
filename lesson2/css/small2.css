@@ -1,3 +1,16 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 /* body rules here */
 /* designed to read on mobile devices*/
 /* default size*/
@@ -5,20 +18,26 @@ body {
     font-size: 16px;
     font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
 }
+
 /* header rules here - work way down*/
 header {
-    padding: .5rem 1%;
+    padding: .5rem 2%;
 }
+
 /* header h1 is a child of header*/
 header h1 {
     margin: 0;
     font-size: 1.5rem;
 }
+
 /* header h2 is a child of header*/
 header h2 {
-    font-size: 1rem;
+    
     margin: 0;
+    font-size: 1rem;
+    font-weight: normal;
 }
+
 header,
 footer {
     text-align: center;
@@ -26,9 +45,12 @@ footer {
     color: white;
     margin: 0 auto;
     font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+    max-width: 45rem;
 }
 
 /* navigation rules here*/
+
+
 /* navigation ul rules here usualling margin and padding*/
 /* adjust background li list-style-type none */
 /* navigation a rules here display to block padding color text align text decoraton*/
@@ -38,13 +60,12 @@ footer {
 main {
     max-width: 767px;
     margin: 0 auto;
-    
+    padding: 1rem;
+
 }
-main h2{
-    color: #536878;
-}
+
 /* main figure img space image to be 100 percent wide or width 100%*/
-/* main figure img howt o fit on the page */ 
+/* main figure img howt o fit on the page */
 /* main figure main figure margin:0; */
 /* main figcaption { text-align:center; font size .8rem */
 main {
@@ -52,27 +73,40 @@ main {
     grid-template-columns: 1fr;
     font-size: 0.8rem;
 }
+
+main h3 {
+    padding-top: .50rem;
+    margin: 0 0 0 0;
+    font: 1em;
+}
+
 main section {
     margin: 0.5rem;
     border: 1px solid #bbb;
     padding: 0 1rem;
     background-color: #eee;
+    text-align: center;
+    color: #536878;
 }
+
 section:nth-child(2) {
-    display: none;
+    /* display: none;*/
     margin: 0.5;
 }
+
 .colimage {
     box-shadow: 0 0 30px #333;
 }
+
 footer {
     font-size: .8rem;
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
 }
+
 /* clearfix to help with nav */
 .clearfix after {
-    content:"";
+    content: "";
     display: table;
     clear: both;
 }

@@ -8,6 +8,7 @@
     /*----------- MAIN --------------*/
     main {
         grid-template-columns: 1fr 1fr 1fr;
+        text-align: left;
     }
     section:nth-child(3) {
 		grid-column: span 1;

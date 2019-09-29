@@ -48,6 +48,7 @@ main {
 main h3 {
     padding-top: .50rem;
     margin: 0 0 0 0;
+    text-align: center;
 }
 /* main figure img space image to be 100 percent wide or width 100%*/
 /* main figure img howt o fit on the page */
@@ -74,7 +75,7 @@ main section {
 }
 .space {
     word-spacing: .3em;
-    letter-spaceing:.09em
+    text-align: left;
 }
 footer {
     font-size: 1rem;

@@ -14,45 +14,108 @@
   <!-- link to google api  -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <!-- link to css style sheet  -->
-  <link rel="stylesheet" href="css/normalize3.css">
-  <link rel="stylesheet" href="css/small3.css">
-  <link rel="stylesheet" href="css/meduim3.css">
-  <link rel="stylesheet" href="css/large3.css">
+  <link rel="stylesheet" href="css03/normalize3.css">
+  <link rel="stylesheet" href="css03/small3.css">
+  <link rel="stylesheet" href="css03/meduim3.css">
+  <link rel="stylesheet" href="css03/large3.css">
 
 </head>
 
 <body>
 
-  <header>
+  <header class="clearfix">
     <!-- logo will go here or picture of me -->
-    <!-- <img src="images/w1photocopy.jpg" alt="Profile Picture of Anita Woodford">-->
-
+<img src= "images03/iconfinder_weather-partlycloudy_274769.png" alt="weather logo">
     <!-- Header 1 title my name -->
-    <h1>Weather site Project</h1>
+    <h1>Weather Site Project</h1>
+    <h2>Weather Information</h2>
   </header>
+  <nav class="clearfix">
+    <ul>
+      <li class="active"> <a href="lesson03/index.html">Preston </a></li>
+      <li> <a href="Soda Springs"> Soda Springs</a></li>
+      <li> <a href="Fish Haven"> Fish Haven </a></li>
+      <li> <a href="Storm Center"> Storm Center </a></li>
+      <li> <a href="Gallery"> Gallery </a>
+    </ul>
+
+  </nav>
 
   <main>
     <!-- enter header  h2 = smaller than h1 -->
-    <h2> Weather Site Project</h2>
+    <!-- <h2> Weather Site Project</h2> -->
+    <div id="banner">
+      <h2>Preston</h2>
+    </div>
+    
+    
     <!-- List for assignments Preston, Soda Springs, Fish Haven, Storm Center, and Gallery.-->
-    <ul>
-      <li> Home <a href="Home"> Assignment Link </a></li>
-      <li> Preston<a href="Preston"> Assignment Link </a></li>
-      <li> Soda Springs<a href="Soda Springs"> Assignment Link </a></li>
-      <li> Fish Haven <a href="Fish Haven"> Assignment Link </a></li>
-      <li> Storm Center <a href="Storm Center"> Assignment Link </a></li>
-      <li> Gallery <a href="Gallery"> Link </a> | <a href="#"> Link </a>
-        
-    </ul>
+
+    <section id="one"><!-- this is the first row of content --> 
+      <h3>P.A.R.C White Space</h3>
+      <!-- enter paragraphs<p>  </p>  -->
+      <p>CZ Design<br>
+        <!-- enter picture or screen shot of website pictures should have figures added to them-->
+        <!-- add <figure> <image src="images/cows.jpg" alt="name of pictures" -->
+        <!-- add <figcaption> Herford Cows</figcaption>-->
+        <!-- add <figure> <image src="images/cows.jpg" alt="name of pictures" -->
+        <!-- in another class they did it like the following keeping as is will change latger 9/27/19>-->
+        <a href="https://www.cathyzielske.com/">www.cathyzielske.com/</a></p>
+
+    
+
+      <p class="space">
+        Cathy Z uses whitespace throughout her site. She has adequate amount of negative space
+        on her page. It is not cluttered and the website looks very clean.
+
+      </p>
+    </section>
+
+    <section id="two">
+      <h3>P.A.R.C Repetition</h3>
+      <p>Temples<br>
+        <a href="https://www.churchofjesuschrist.org/temples">www.lds.org</a></p>
+
+    
+      <!-- enter paragraphs<p>  </p>  -->
+      <p class="space">The Church of Jesus Christ of Latter Day Saints uses the alignment tool on the temple site
+        All of the pictures align with one another and scrolls nicely.
+      </p>
+    </section>
+
+    <section id="three">
+      <h3>Fitt's Law</h3>
+      <p>UFCU<br>
+        <a href="https://www.ufcu.org">www.UFCU.org</a></p>
+
+  
+      <!-- enter picture or screen shot of website pictures should have figures added to them-->
+      <!-- add <figure> <image src="images/cows.jpg" alt="name of pictures" -->
+      <!-- add <figcaption> Herford Cows</figcaption>-->
+      <!-- add <figure> <image src="images/cows.jpg" alt="name of pictures" -->
+      <!-- in another class they did it like the following keeping as is will change latger 9/27/19>-->
+      <!-- <picture> </picture>-->
+      <!-- enter paragraphs<p>  </p>  -->
+      <p class="space">
+        University Federal Credit Unions uses Fitt's law to make it easy for it's members to login into their accounts.
+        The put the cursor in the box for the members.
+      </p>
+
+    </section>
+    <section id="four">
+     
+    </section>
+    
   </main>
 
   <footer>
     <p>
       &copy; 2020 | Anita Woodford | Texas | <a href="https://www.byui.edu/online"></href> BYUI Online Learning</a><br>
-      Last Updated: <script>
+      Last Updated:
+      <script>
         var date = document.lastModified;
-        document.write("Last Modified: "+date);
-     </script>
+        document.write("Last Modified: " + date);
+      </script>
     </p>
 
   </footer>

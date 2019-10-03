@@ -3,6 +3,10 @@
     /*----------- BODY --------------*/
     /*----------- HEADER --------------*/
     /*----------- NAVIGATION --------------*/
+header, footer, nav, main {max-width: 75rem; margin: auto;}
+nav ul {padding-left: 25%;}
+nav li{width: auto;}
+nav a {padding: .5rem 1rem;}
       /* navigation li rules here width auto padding .5rem 1rem */
        /* navigation ul rules here padding left 2% to get everything to line up */
     /*----------- MAIN --------------*/
@@ -14,6 +18,7 @@
 		grid-column: span 1;
 	}
     /* main figure change width to 31% */
+
     /*----------- FOOTER --------------*/
 }
 /* end of media query */

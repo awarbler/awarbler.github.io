@@ -1,48 +1,155 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-header, nav, main, footer{
-    margin: 0 auto;
-    padding: .75rem;
-    max-width: 45rem;
-    font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
 
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    font-size: 16px;
+    font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #555d66;
+}
+
 header {
-    margin-top:10px;
-}
-header, footer
-{
+    background-color: rgb(255, 255, 255);
+    padding: .5rem 2%;
+    /* inside of box*/
+    color: #aadcdd;
     text-align: center;
-    background: #aadcdd;
-    color: white;
 }
 header img {
-    width: 200px;
-    height: auto;
+    float: left;
+    margin-left: 10px;
+    width: 50px;
 }
-body{
-    font-size: 16px;
-    line-height: 1.5;
-    font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
-    height:100%;
-    color: #555d66;
-
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #aadcdd
 }
-h1{
-    font-size: 1.5rem; 
-    margin: 0.15rem;
-}
-h2{
+header h2 {
+    margin: 0;
     font-size: 1rem;
-    margin: 1.00rem;
-    border-bottom:1px #979797 solid;
-    margin-bottom:.05rem;
+    text-align: center;
+    /*margin: 1.00rem;
+    font-weight: normal;
+    border-bottom: 1px #979797 solid;
+    margin-bottom: .05rem;
     max-width: 75%;
-
+    text-align: center;*/
 }
-main h1 {
-    clear: both;
+
+header,
+nav,
+main,
+footer {
+    margin: 0 auto;
+    max-width: 45rem;
+    text-align: center;
+    max-width: 767px;
+    /*padding: .75rem;
+    max-width: 45rem;
+    font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+    */
+}
+
+/* navigation rules here*/
+nav {
+    background-color: #aadcdd;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav li.active {
+    background-color: #444;
+    color: #fff;
+}
+
+nav a {
+    display: block;
+    padding: .8rem 0;
+    /* 44 min height*/
+    color: white;
+    ;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #aaa;
+    color: #9fcece;
+}
+
+main {
+    margin: 0 auto;
+    padding: 1rem;
+
+    /*display: grid;*/
+    grid-template-columns: 1fr;
+}
+
+main h3 {
+    padding-top: .50rem;
+    margin: 0 0 0 0;
+    text-align: center;
+}
+
+/* main figure img space image to be 100 percent wide or width 100%*/
+/* main figure img howt o fit on the page */
+/* main figure main figure margin:0; */
+/* main figcaption { text-align:center; font size .8rem */
+
+main img {
+    max-width: 100%;
+    height: auto;
+    float: left;
+}
+
+main a:link {
+    color: #f68e36;
+}
+
+main section {
+    margin: 0.5rem;
+    border: 1px solid#f68e36;
+    padding: 0 1rem;
+    background-color: white;
+    text-align: center;
+    color: #4d4d4d;
+    border-radius: 10px;
+}
+
+.space {
+    word-spacing: .3em;
+    text-align: left;
 }
 
 footer {
-font-size: .8rem;
+    font-size: .8rem;
+    background: #aadcdd;
+    color: white;
+    padding: .75rem;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }

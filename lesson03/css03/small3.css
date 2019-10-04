@@ -3,43 +3,41 @@ html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
-
 /*----------- apply a natural box layout model to all elements --------------*/
 * {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
 body {
     font-size: 16px;
     font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #555d66;
 }
-
 header {
     background-color: rgb(255, 255, 255);
-    padding: 1rem 2%;
-    /* inside of box*/
+    padding: .5rem 2%; /* inside of box*/
     color: #aadcdd;
-    text-align: center;
+    text-align: left;
 }
 header img {
     float: left;
-    margin-left: 10px;
+    width: 50px;
 }
 header h1 {
     margin: 0;
-    font-size: 1.5rem;
-    color: #aadcdd
+    font-size: 1.3rem;
+    color: #aadcdd;
+    text-align: center;
 }
 header h2 {
     margin: 0;
     font-size: 1rem;
-    /*margin: 1.00rem;
     font-weight: normal;
+    padding-top: .3rem;
+    text-align: center;
+    /*margin: 1.00rem;
     border-bottom: 1px #979797 solid;
     margin-bottom: .05rem;
     max-width: 75%;
@@ -83,11 +81,10 @@ nav ul li a:hover {
 main {
     margin: 0 auto;
     padding: 1rem;
-
-    /*display: grid;*/
-    grid-template-columns: 1fr;
 }
-
+main h2{
+    text-align: center;
+}
 main h3 {
     padding-top: .50rem;
     margin: 0 0 0 0;

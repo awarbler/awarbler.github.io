@@ -4,7 +4,7 @@
     /*----------- HEADER --------------*/
     /*----------- NAVIGATION --------------*/
 header, footer, nav, main {max-width: 75rem; margin: auto;}
-nav ul {padding-left: 25%;}
+nav ul {padding-left: 10%;}
 nav li{width: auto;}
 nav a {padding: .5rem 1rem;}
       /* navigation li rules here width auto padding .5rem 1rem */

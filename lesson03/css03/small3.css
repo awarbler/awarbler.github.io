@@ -2,32 +2,31 @@
 
 body {
     font-size: 16px;
-    line-height: 1.5;
     font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
-    height: 100%;
     color: #555d66;
 
 }
 
 header {
     margin: 0 auto;
-    padding: .5rem 2%;  
+    padding: .3rem 2%;  
     max-width: 45rem;
     font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
     text-align: center;
     background: white;
     color: #aadcdd;
+    max-width: 767px;
 }
 header a:link {
         color: #f68e36; 
      }
-
 h1 {
     font-size: 1.2rem;
 }
 
 h2 {
     font-size: 1rem;
+    font-weight: normal;
 }
 h2 a:link {
     color: #f68e36; 
@@ -41,6 +40,7 @@ footer {
     max-width: 45rem;
     padding: .5rem 2%; 
     margin: 0 auto; 
+    max-width: 767px;
     
 }
 

@@ -1,133 +1,91 @@
-/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-}
-/*----------- apply a natural box layout model to all elements --------------*/
-* {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 body {
     font-size: 16px;
+    line-height: 1.5;
     font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+    height: 100%;
     color: #555d66;
-}
-header {
-    background-color: rgb(255, 255, 255);
-    padding: .5rem 2%; /* inside of box*/
-    color: #aadcdd;
-    text-align: center;
+
 }
 
-header h1 {
-    margin: 0;
-    font-size: 1.3rem;
+header {
+    margin: 0 auto;
+    padding: .5rem 2%;  
+    max-width: 45rem;
+    font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-align: center;
+    background: white;
     color: #aadcdd;
-    text-align: center;
 }
-header h2 {
-    margin: 0;
+header a:link {
+        color: #f68e36; 
+     }
+
+h1 {
+    font-size: 1.2rem;
+}
+
+h2 {
     font-size: 1rem;
-    font-weight: normal;
-    padding-top: .3rem;
+}
+h2 a:link {
+    color: #f68e36; 
+ }
+nav,
+footer {
+    font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
     text-align: center;
-    /*margin: 1.00rem;
-    border-bottom: 1px #979797 solid;
-    margin-bottom: .05rem;
-    max-width: 75%;
-    text-align: center;*/
+    background: #aadcdd;
+    color: white;
+    max-width: 45rem;
+    padding: .5rem 2%; 
+    margin: 0 auto; 
+    
 }
 
 /* navigation rules here*/
-nav {
-    background-color: #aadcdd;
-}
+nav {background-color: #aadcdd;
+    max-width: 45rem;
 
-nav ul {
-    padding: 0;
-    margin: 0;
 }
+nav ul {margin: 0; padding: 0;}
+nav li {list-style-type: none;}
+nav li.active{background-color: #555d66;}
 
-nav li {
-    list-style-type: none;
-}
-
-nav li.active {
-    background-color: #444;
-    color: #fff;
-}
-
-nav a {
-    display: block;
-    padding: .5rem 0;
-    /* 44 min height*/
-    color: white;
+nav a {display: block;
+    padding: 0;  /* 44 min height*/
+    color: #eee;
     text-align: center;
     text-decoration: none;
 }
+nav a:hover{background-color: #444;}
 
-nav ul li a:hover {
-    background-color: #aaa;
-    color: #9fcece;
-}
+
 
 main {
     margin: 0 auto;
-    padding: 1rem;
-    text-align: left;
-}
-main h2{
-    text-align: left;
-}
-main h3 {
-    padding-top: .50rem;
-    margin: 0 0 0 0;
-    text-align: left;
+    padding: .75rem;
+    max-width: 45rem;
+    font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
 
 }
-
-/* main figure img space image to be 100 percent wide or width 100%*/
-/* main figure img howt o fit on the page */
-/* main figure main figure margin:0; */
-/* main figcaption { text-align:center; font size .8rem */
+main a:link {
+    color: #f68e36; 
+ }
+main h1 {
+    clear: both;
+}
 
 main img {
     max-width: 100%;
-    height: auto;
     float: left;
-}
-
-main a:link {
-    color: #f68e36;
-}
-
-main section {
-    margin: 0.5rem;
-    border: 1px solid#f68e36;
-    padding: 0 1rem;
-    background-color: white;
-    text-align: center;
-    color: #4d4d4d;
-    border-radius: 10px;
-}
-
-.space {
-    word-spacing: .3em;
-    text-align: left;
 }
 
 footer {
     font-size: .8rem;
-    background: #aadcdd;
-    color: white;
-    padding: .75rem;
-    text-align: center;
 }
 
-/*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
     content: "";
     display: table;

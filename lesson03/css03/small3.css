@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 body {
     font-size: 16px;
     font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #555d66;
-
 }
 
 header {
@@ -40,14 +40,12 @@ footer {
     max-width: 45rem;
     padding: .5rem 2%; 
     margin: 0 auto; 
-    max-width: 767px;
     
 }
 
 /* navigation rules here*/
 nav {background-color: #aadcdd;
     max-width: 45rem;
-
 }
 nav ul {margin: 0; padding: 0;}
 nav li {list-style-type: none;}
@@ -61,8 +59,6 @@ nav a {display: block;
 }
 nav a:hover{background-color: #444;}
 
-
-
 main {
     margin: 0 auto;
     padding: .75rem;
@@ -74,6 +70,12 @@ main a:link {
     color: #f68e36; 
  }
 main h1 {
+    clear: both;
+}
+main h2 {
+    clear: both;
+}
+main h3{
     clear: both;
 }
 

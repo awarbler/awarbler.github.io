@@ -10,7 +10,6 @@
     header h2 {
         font-size: 1.5rem;
     }
-
     header,
     footer {
         border-radius: 10px;
@@ -20,35 +19,23 @@
     /* navigation li rules here float left width:25% */
     /*----------- MAIN --------------*/
     main {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
-
     section:nth-child(2) {
         display: block;
     }
-
-    section:nth-child(3) {
+    section:nth-child(3){
         grid-column: span 2;
     }
-
-    /* main <figure { float right width 48% margin left 2% 
-    padding */
-
     main picture {
         display: block;
     }
-
-
-
     main section picture img {
         width: 100%;
         height: auto;
         border: .5px solid #bbb;
         border-radius: 5px;
-
     }
-
-
     /*----------- FOOTER --------------*/
 
 }

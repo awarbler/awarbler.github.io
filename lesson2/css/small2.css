@@ -6,6 +6,7 @@ body {
     font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
     line-height: 1.5;
 }
+
 /* header rules here - work way down*/
 header,
 footer {
@@ -15,23 +16,30 @@ footer {
     margin: 0 auto;
     font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
     justify-content: center;
-    padding: .5rem 2%;   
+    padding: .5rem 2%;
 }
-header, nav,main, footer{
+
+header,
+nav,
+main,
+footer {
     margin: 0 auto;
     max-width: 767px;
 }
+
 /* header h1 is a child of header*/
 header h1 {
     margin: 0;
     font-size: 1.5rem;
 }
+
 /* header h2 is a child of header*/
 header h2 {
     margin: 0;
     font-size: 1rem;
     font-weight: normal;
 }
+
 /* navigation rules here*/
 /* navigation ul rules here usualling margin and padding*/
 /* adjust background li list-style-type none */
@@ -54,32 +62,30 @@ main section {
     color: #4d4d4d;
     border-radius: 10px;
 }
-main picture{
+
+main picture {
     display: block;
 }
-display: grid;
-    grid-template-columns: 1fr;
 
-section:nth-child(2) {
-	display: none;
-	margin: 0.5rem;
-}
-/* main figure img space image to be 100 percent wide or width 100%*/
-/* main figure img howt o fit on the page */
-/* main figure main figure margin:0; */
-/* main figcaption { text-align:center; font size .8rem */
-
-img{
+img {
     max-width: 100%;
     height: auto;
     float: left;
 }
 
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+section:nth-child(2) {
+    display: none;
+    margin: 0.5rem;
+}
+
 a:link {
-    color: #f68e36; 
- }
-
-
+    color: #f68e36;
+}
 .space {
     word-spacing: .3em;
     text-align: left;

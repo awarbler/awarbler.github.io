@@ -6,6 +6,15 @@
       /* navigation li rules here width auto padding .5rem 1rem */
        /* navigation ul rules here padding left 2% to get everything to line up */
     /*----------- MAIN --------------*/
+
+    main {
+      grid-template-columns: 1fr 1fr 1fr;
+      
+  }
+  section:nth-child(3) {
+    grid-column: span 3;
+}
+
     /* main figure change width to 31% */
     /*----------- FOOTER --------------*/
 }

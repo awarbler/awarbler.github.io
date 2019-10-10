@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+
 header, nav, main, footer{
     margin: 0 auto;
     padding: .75rem;
@@ -12,12 +20,13 @@ header {
 header, footer
 {
     text-align: center;
-    background: #aadcdd;
-    color: white;
+    background: white;
+    color:#aadcdd;
+    
 }
-header img {
-    width: 200px;
-    height: auto;
+header img{
+    width: 80px;
+    float: left;
 }
 body{
     font-size: 16px;
@@ -45,4 +54,9 @@ main h1 {
 
 footer {
 font-size: .8rem;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }

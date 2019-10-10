@@ -53,14 +53,15 @@ nav {
 	max-width: 760px;
 	background-color:#aadcdd;
 }
+.responsive li {
+	display: block;
+}
 .navigation {
 	list-style: none;
 	text-align: center;
 	padding: 0;
 }
-.responsive li {
-	display: block;
-}
+
 .navigation li:first-child {
 	display: block;
 }

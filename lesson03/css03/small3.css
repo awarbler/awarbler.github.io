@@ -15,7 +15,7 @@ header {
     text-align: center;
     background: white;
     color: #aadcdd;
-    max-width: 767px;
+    
 }
 header a:link {
         color: #f68e36; 
@@ -40,14 +40,16 @@ footer {
     max-width: 45rem;
     padding: .5rem 2%; 
     margin: 0 auto; 
-    
 }
 
 /* navigation rules here*/
-nav {background-color: #aadcdd;
+nav {
+    background-color: #aadcdd;
     max-width: 45rem;
 }
-nav ul {margin: 0; padding: 0;}
+nav ul {
+    margin: 0; 
+    padding: 0;}
 nav li {list-style-type: none;}
 nav li.active{background-color: #555d66;}
 

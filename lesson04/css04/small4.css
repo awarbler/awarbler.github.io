@@ -49,7 +49,7 @@ nav button {
     color: 555;
 }
 nav {
-    background-color:#ccc;
+    background: #aadcdd;
     text-align:center ;
     max-width: 45rem;
    
@@ -75,8 +75,6 @@ nav ul li a:hover {
 nav ul li .active a {
     background-color: rgba(0, 0, 0, 0.2;color:white )
 }
-
-footer {}
 
 main,
 footer {

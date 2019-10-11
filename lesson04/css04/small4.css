@@ -5,42 +5,46 @@
 /*----------- BODY --------------*/
 body {
     font-size: 16px;
-   line-height: 1.5;
+    line-height: 1.5;
     font-family: "Roboto", Open Sans, Helvetica, Arial, sans-serif;
     color: #555d66;
+    margin: 0;
+    padding: 0;
 }
 
+/*---- flex keeps the header in the middle of the screen --------------*/
 header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
     padding: .3rem 2%;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     background: white;
     color: #aadcdd;
 }
-
-header h1 {
-    font-size: 1.4rem;
-    margin: 0;
+.heading{
+    display: flex; /*---- flex keeps the header in the middle of the screen --------------*/
+    flex-direction: column;
 }
-
-header h2 {
+.heading h1 {
+    font-size: 1.6rem;
+    margin: 0 0 0 17px;
+}
+.m {
     font-size: 1rem;
-    margin: 0;
-    margin-bottom: .02rem;
+    margin: 0 0 0 17px;
     font-weight: normal;
 }
-
 header img {
-    float: left;
     width: 50px;
     margin: 0 2% 0 0;
 }
-
 nav {
     margin: 0 auto;
     background-color: #aadcdd;
     color: white;
-    padding: .5rem 2%; 
+    padding: .5rem 2%;
 }
 
 .navigation {
@@ -67,7 +71,7 @@ nav {
 
 .navigation a:hover {
     color: white;
-    background-color:#555d66;
+    background-color: #aab1b2;
     font-weight: 700;
 }
 

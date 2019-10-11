@@ -17,7 +17,8 @@
 	}
 	.navigation li {
 		display: block;
-		flex: 1 1 100%;
+        flex: 1 1 100%;
+        float: left;
 	}
 	.navigation li a {
 		color: white;

@@ -5,7 +5,7 @@
 /*----------- BODY --------------*/
 body {
     font-size: 16px;
-    /*-----------line-height: 1.5;--------------*/
+   line-height: 1.5;
     font-family: "Roboto", Open Sans, Helvetica, Arial, sans-serif;
     color: #555d66;
 }

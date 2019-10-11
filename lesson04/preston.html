@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="css04/large4.css">
    <!-- have to reference javascript links here  -->
   <script src="js04/scripts.js"></script> 
-  <script src="js04/date.js"></script> 
+ 
 </head>
 
 <body>
@@ -77,12 +77,9 @@
     <p>
       &copy; 2020 | Weather Projection | Attributions | <a href="https://awarbler.github.io/">Anita
         Woodford</a><br>
-      Last Updated:
-      <script>
-        var date = document.lastModified;
-        document.write("Last Modified: " + date);
-      </script>
+        <span id="date"></span>
     </p>
+    <script src="js04/date.js"></script> 
 
   </footer>
 </body>

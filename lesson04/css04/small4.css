@@ -13,7 +13,6 @@ body {
 header {
     margin: 0 auto;
     padding: .3rem 2%;
-    max-width: 45rem;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     background: white;
     color: #aadcdd;
@@ -39,7 +38,6 @@ header img {
 
 nav {
     margin: 0 auto;
-    max-width: 45rem;
     background-color: #aadcdd;
     color: white;
     padding: .5rem 2%; 

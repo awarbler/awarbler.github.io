@@ -103,26 +103,23 @@ main h3 {
     text-align: left;
 }
 
-.hero-ph {
-    margin: 10px auto;
-    background-color: #eee;
-    border: 1px solid #333;
-    width: 960px;
-    height: 300px;
-    border: 1px solid#f68e36;
-}
-
 .herodiv {
     margin: 10px auto;
     position: relative;
     border: 1px solid#f68e36;
 
 }
-
+.hero-ph {
+    margin: 10px auto;
+    background-color: #eee;
+    border: 1px solid #333;
+    width: 45rem;
+    height: 300px;
+    border: 1px solid#f68e36;
+}
 .weathersummary {
     position: absolute;
     top: 10px;
-
 
 }
 

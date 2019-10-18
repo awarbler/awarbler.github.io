@@ -120,25 +120,33 @@ main section {
     position: relative;
     width: 45rem;
     height: 300px;
-    font-size: 30%;
 }
 .herodiv img{
     margin: 0 0 .2rem 2%;
-    width: 65%;
+    width: 50%;
+}
+.herodiv h2{
+    font-size: 65%;
+    text-decoration: underline ;
 }
 
 .weathersummary {
     position: absolute;
-    top: .5rem;
-    left: .5rem;
+    top: 1rem;
+    left: 2rem;
     color: #4d4d4d;
     opacity: .5;
+    font-size: 70%;
+    
 }
 main img{
     width: 100%;
     background-color: #eee;
     height: auto;
    
+}
+.forecast{
+    display: none;
 }
 footer {
     margin: 0 auto;

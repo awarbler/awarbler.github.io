@@ -4,7 +4,8 @@
         width: 100%;
         height: auto;
     }
-    header{
+
+    header {
         border-bottom: 1px solid#aab1b2;
     }
 
@@ -19,6 +20,7 @@
     nav {
         border-bottom: 1px solid#aab1b2;
     }
+
     .navigation {
         display: flex;
         align-items: center;
@@ -34,8 +36,14 @@
         flex: 1 1 100%;
         float: left;
     }
+    .herodiv {
+        font-size: 100%;
+    }
 
+    .herodiv img {
+        width: 96%;
 
+    }
 
     h1 {
         font-size: 2.5rem;
@@ -44,11 +52,12 @@
     h2 {
         font-size: 1.5rem;
     }
-    h3{
+
+    h3 {
         font-size: 1rem;
     }
 
-   
+
     footer {
         border-radius: 10px;
     }

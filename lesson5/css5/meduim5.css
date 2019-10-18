@@ -38,6 +38,7 @@
     }
     .herodiv {
         font-size: 100%;
+        border-bottom:1px solid #f68e36;
     }
 
     .herodiv img {
@@ -47,6 +48,15 @@
 
     .forecast{
         display: block;
+        border-bottom:1px solid #f68e36;
+    }
+    .article{
+        border-bottom:1px solid #f68e36;
+
+    }
+    .contact
+    {
+        border-bottom:1px solid #f68e36;
     }
     h1 {
         font-size: 2.5rem;

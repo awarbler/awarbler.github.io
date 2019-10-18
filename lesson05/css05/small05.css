@@ -23,29 +23,23 @@ header {
     background: white;
     color: #aadcdd;
 }
-
-.heading {
-    display: flex;
-    /*---- flex keeps the header in the middle of the screen --------------*/
+.heading{
+    display: flex; /*---- flex keeps the header in the middle of the screen --------------*/
     flex-direction: column;
 }
-
 .heading h1 {
     font-size: 1.6rem;
     margin: 0 0 0 17px;
 }
-
 .m {
     font-size: 1rem;
     margin: 0 0 0 17px;
     font-weight: normal;
 }
-
 header img {
     width: 50px;
     margin: 0 2% 0 0;
 }
-
 nav {
     margin: 0 auto;
     background-color: #aadcdd;
@@ -93,34 +87,19 @@ main {
 
 }
 
-main h1,
-h2 {
+main h1 {
     text-align: center;
     clear: both;
 }
 
-main h3 {
+main section {
+    margin: 0.5rem;
+    border: 1px solid#f68e36;
+    padding: 0 1rem;
+    background-color: white;
     text-align: left;
-}
-
-.herodiv {
-    margin: 10px auto;
-    position: relative;
-    border: 1px solid#f68e36;
-
-}
-.hero-ph {
-    margin: 10px auto;
-    background-color: #eee;
-    border: 1px solid #333;
-    width: 45rem;
-    height: 300px;
-    border: 1px solid#f68e36;
-}
-.weathersummary {
-    position: absolute;
-    top: 10px;
-
+    color: #4d4d4d;
+    border-radius: 10px;
 }
 
 footer {

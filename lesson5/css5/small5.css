@@ -105,6 +105,9 @@ main h2{
         font-size: 1.0rem;    
 
 }
+h3 {margin: .5rem 2%;}
+
+p {margin: .5rem 2%;}
 
 main section {
     margin: 0.5rem;
@@ -149,11 +152,29 @@ main img{
     width: 100%;
     background-color: #eee;
     height: auto;
-   
 }
+
 .forecast{
     display: none;
 }
+.figure img{
+    display: none;
+}
+
+
+.class p{
+    text-align: wrap
+    ;
+}
+.icons{
+    height:20px;
+    width: 20px;
+    padding:.5em;
+    flex: 1 0 15em;
+    margin:.3em;
+  }
+
+
 footer {
     margin: 0 auto;
     padding: .75rem;

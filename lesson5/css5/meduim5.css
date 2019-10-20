@@ -36,9 +36,10 @@
         flex: 1 1 100%;
         float: left;
     }
+
     .herodiv {
         font-size: 100%;
-        border-bottom:1px solid #f68e36;
+        border-bottom: 1px solid #f68e36;
     }
 
     .herodiv img {
@@ -46,17 +47,18 @@
 
     }
 
-    .forecast{
+    .forecast {
         display: block;
-        border-bottom:1px solid #f68e36;
+        border-bottom: 1px solid #f68e36;
     }
-    .article{
-        border-bottom:1px solid #f68e36;
+
+    .article {
+        border-bottom: 1px solid #f68e36;
 
     }
-    .contact
-    {
-        border-bottom:1px solid #f68e36;
+
+    .contact {
+        border-bottom: 1px solid #f68e36;
     }
 
     h1 {

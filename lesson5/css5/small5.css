@@ -11,12 +11,14 @@ body {
     margin: 0;
     padding: 0;
 }
-#banner{
+
+#banner {
     text-align: center;
     color: #f68e36;
     padding: .1rem;
     background-color: rgb(225, 223, 223);
 }
+
 /*---- flex keeps the header in the middle of the screen --------------*/
 header {
     display: flex;
@@ -27,25 +29,31 @@ header {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     background: white;
     color: #aadcdd;
-   
+
 }
-.heading{
-    display: flex; /*---- flex keeps the header in the middle of the screen --------------*/
+
+.heading {
+    display: flex;
+    /*---- flex keeps the header in the middle of the screen --------------*/
     flex-direction: column;
 }
+
 .heading h1 {
     font-size: 1.6rem;
     margin: 0 0 0 17px;
 }
+
 .m {
     font-size: 1rem;
     margin: 0 0 0 17px;
     font-weight: normal;
 }
+
 header img {
     width: 50px;
     margin: 0 2% 0 0;
 }
+
 nav {
     margin: 0 auto;
     color: #aab1b2;
@@ -53,32 +61,40 @@ nav {
     list-style: none;
     text-align: left;
 }
-nav li.active{
+
+nav li.active {
     color: #aadcdd;
-    background-color:#ecf0f1;
+    background-color: #ecf0f1;
     text-decoration-line: underline;
     border-radius: 4px;
 }
 
-nav ul{
-    margin: 0; padding: 0;
+nav ul {
+    margin: 0;
+    padding: 0;
 }
+
 /*---this is the hamburger for the small view------*/
 .navigation li:first-child {
     display: block;
-    border-top: 1px solid #aab1b2;;
+    border-top: 1px solid #aab1b2;
+    ;
     border-bottom: 1px solid #aab1b2;
 }
+
 .navigation li {
     display: none;
 }
+
 .navigation a {
     display: block;
-    color: #aab1b2;;
+    color: #aab1b2;
+    ;
     padding: 0.75rem;
     text-align: left;
     text-decoration: none;
 }
+
 .navigation a:hover {
     color: #aadcdd;
     background-color: white;
@@ -97,17 +113,24 @@ main {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
-main h1,h2 {
+main h1,
+h2 {
     text-align: center;
     clear: both;
 }
-main h2{
-        font-size: 1.0rem;    
+
+main h2 {
+    font-size: 1.0rem;
 
 }
-h3 {margin: .5rem 2%;}
 
-p {margin: .5rem 2%;}
+h3 {
+    margin: .5rem 2%;
+}
+
+p {
+    margin: .5rem 2%;
+}
 
 main section {
     margin: 0.5rem;
@@ -117,14 +140,16 @@ main section {
     color: #4d4d4d;
     border-radius: 3px;
 }
+
 .herodiv {
     margin: 10px auto;
     position: relative;
     width: 45rem;
-    
-    
+
+
 }
-.herodiv img{
+
+.herodiv img {
     padding: .75rem;
     margin: 0.5rem;
     width: 50%;
@@ -132,9 +157,10 @@ main section {
     border-bottom: 1px solid gray;
     background-color: white;
 }
-.herodiv h2{
+
+.herodiv h2 {
     font-size: 85%;
-    text-decoration: underline ;
+    text-decoration: underline;
 }
 
 .weathersummary {
@@ -146,33 +172,35 @@ main section {
     font-size: 70%;
     border: 3px solid #f68e36;
     text-align: center;
-    
+
 }
-main img{
+
+main img {
     width: 100%;
     background-color: #eee;
     height: auto;
 }
 
-.forecast{
+.forecast {
     display: none;
 }
-.figure img{
+
+.figure img {
     display: none;
 }
 
 
-.class p{
-    text-align: wrap
-    ;
+.class p {
+    text-align: wrap;
 }
-.icons{
-    height:20px;
+
+.icons {
+    height: 20px;
     width: 20px;
-    padding:.5em;
+    padding: .5em;
     flex: 1 0 15em;
-    margin:.3em;
-  }
+    margin: .3em;
+}
 
 
 footer {
@@ -186,8 +214,9 @@ footer {
     max-width: 45rem;
 
 }
-footer a{
-    color:#aadcdd;
+
+footer a {
+    color: #aadcdd;
 }
 
 .clearfix:after {

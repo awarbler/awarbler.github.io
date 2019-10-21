@@ -78,7 +78,6 @@ nav ul {
 .navigation li:first-child {
     display: block;
     border-top: 1px solid #aab1b2;
-    ;
     border-bottom: 1px solid #aab1b2;
 }
 
@@ -133,7 +132,7 @@ p {
 }
 
 main section {
-    margin: 0.5rem;
+    margin: .5rem 2%;
     padding: 0 1rem;
     background-color: white;
     text-align: left;
@@ -142,20 +141,19 @@ main section {
 }
 
 .herodiv {
-    margin: 10px auto;
+    margin: .5rem 2%;
     position: relative;
     width: 45rem;
-
-
 }
-
 .herodiv img {
     padding: .75rem;
-    margin: 0.5rem;
-    width: 50%;
+    margin: .5rem 2%;
+    width: 60%;
     height: auto;
     border-bottom: 1px solid gray;
     background-color: white;
+    height: auto;
+    
 }
 
 .herodiv h2 {
@@ -174,25 +172,19 @@ main section {
     text-align: center;
 
 }
-
-main img {
-    width: 100%;
+.forecastcontainer{
+    display: none;
+}
+.article img{
+    padding: .75rem;
+    margin: .5rem 2%;
+    width: 88%;
+    height: auto;
+    border-bottom: 1px solid gray;
     background-color: #eee;
     height: auto;
 }
 
-.forecast {
-    display: none;
-}
-
-.figure img {
-    display: none;
-}
-
-
-.class p {
-    text-align: wrap;
-}
 
 .icons {
     height: 20px;
@@ -202,7 +194,7 @@ main img {
     margin: .3em;
 }
 
-footer {
+. footer {
     margin: 0 auto;
     padding: .75rem;
     font-size: .8rem;

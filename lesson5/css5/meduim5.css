@@ -39,19 +39,76 @@
 
     .herodiv {
         font-size: 100%;
-        border-bottom: 1px solid #f68e36;
+
     }
 
     .herodiv img {
         width: 96%;
 
     }
-
-    .forecast {
+    .forecastcontainer {
         display: block;
+        margin: 10px;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: 5fr;
+        background:rgb(225, 223, 223)
+        grid-gap: 1px 1px 1px 1px 1px;
+        text-align: center;
         border-bottom: 1px solid #f68e36;
     }
 
+    .cell-1 {
+  
+    }
+    
+    .cell-2 {
+      
+    }
+    
+    .cell-3 {
+       
+    }
+    
+    .cell-4 {
+       
+    }
+    
+    .cell-5 {
+       
+    }
+    
+    .cell-6 {
+       
+    }
+    
+    .cell-7 {
+       
+    }
+    
+    .cell-8 {
+       
+    }
+    
+    .cell-9 {
+        
+    }
+    .cell-10 {
+     
+        
+    }.cell-11 {
+        
+    }.cell-12 {
+        
+    }.cell-13{
+        
+    }.cell-14 {
+        
+    }
+    .cell-15 {
+      
+        
+    }
     .article {
         border-bottom: 1px solid #f68e36;
 

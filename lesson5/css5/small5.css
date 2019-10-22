@@ -12,13 +12,14 @@ body {
     padding: 0;
 }
 
-#banner {
+#message {
     text-align: center;
     color: #f68e36;
     padding: .1rem;
     background-color: rgb(225, 223, 223);
 }
-
+.showme{ display:block}
+.hideme{display: none;}
 /*---- flex keeps the header in the middle of the screen --------------*/
 header {
     display: flex;
@@ -196,7 +197,7 @@ main section {
     grid-gap: 1px 1px 1px 1px 1px;
     text-align: center;
     border-bottom: 1px solid #f68e36;
-    padding: 0 1rem;
+    padding: 1rem 2rem;
 }
 
 .map{

@@ -135,6 +135,7 @@ main section {
     background-color: white;
     text-align: left;
     color: #555d66;
+
 }
 
 .herodiv {
@@ -147,7 +148,6 @@ main section {
     margin: .5rem 2%;
     width: 60%;
     height: auto;
-    border-bottom: 1px solid #f68e36;
     background-color: white;
     
 }
@@ -196,7 +196,7 @@ main section {
     background:white;
     grid-gap: 1px 1px 1px 1px 1px;
     text-align: center;
-    border-bottom: 1px solid #f68e36;
+
     padding: 1rem 2rem;
 }
 
@@ -217,6 +217,7 @@ footer p {
     background: white;
     color: #aab1b2;
     text-align: center;
+    border-top: 1px solid #aab1b2;
 
 
 }

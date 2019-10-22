@@ -50,6 +50,7 @@
     .forecast {
         width: 100%;
         display: block;
+        border-top: 1px solid#f68e36;
     }
 
     .forecastcontainer {
@@ -63,6 +64,8 @@
         padding-bottom: 1rem;
         margin: 0 2%;
         font-size: .5rem;
+        
+        border-bottom: 1px solid#f68e36;
     }
 
     .forecastcontainer img {

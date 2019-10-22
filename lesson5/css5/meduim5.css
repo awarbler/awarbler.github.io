@@ -35,9 +35,9 @@
         flex: 1 1 100%;
         float: left;
     }
-   
+
     .herodiv {
-        
+
         font-size: 100%;
 
     }
@@ -50,7 +50,6 @@
     .forecast {
         width: 100%;
         display: block;
-        border-top: 1px solid#f68e36;
     }
 
     .forecastcontainer {
@@ -64,8 +63,8 @@
         padding-bottom: 1rem;
         margin: 0 2%;
         font-size: .5rem;
-        
         border-bottom: 1px solid#f68e36;
+        border-top: 1px solid#f68e36;
     }
 
     .forecastcontainer img {
@@ -73,11 +72,9 @@
         padding: .75em;
     }
 
-  
-
     .article img {
-        width: 100%;
-        float: left;
+        width:100%;
+        display: block;
     }
 
 

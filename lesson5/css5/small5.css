@@ -48,6 +48,8 @@ header {
 
 .heading h1 {
     font-size: 1.6rem;
+    /* margin top right  bottom left margin: 25px; all four margins are 25px margin: 25px 50px;
+top and bottom margins are 25px right and left margins are 50px*/
     margin: 0 0 0 17px;
 }
 
@@ -96,7 +98,6 @@ nav ul {
 .navigation a {
     display: block;
     color: #aab1b2;
-    ;
     padding: 0.75rem;
     text-align: left;
     text-decoration: none;
@@ -123,6 +124,7 @@ main {
 main h1,
 h2 {
     text-align: center;
+    color: #aadcdd;
     clear: both;
 }
 
@@ -151,12 +153,11 @@ main section {
 }
 
 .herodiv img {
-
     margin: .5rem 2%;
     padding: .75rem;
-    width: 55%;
-    height: auto;
     background-color: white;
+    width: 60%;
+    height: auto;
 
 }
 
@@ -189,7 +190,6 @@ main section {
 .article {
    
     border-bottom: 1px solid#f68e36;
-    border-top: 1px solid#f68e36;
     background-color: white;
     color: #4d4d4d;
     margin: 0 2%;
@@ -200,10 +200,15 @@ main section {
     height: auto;
 
 }
+.article a{
+    color: #aadcdd;
+}
+}
 
 .figure {
     margin: 0;
 }
+
 
 .contactcontainer {
     margin: .5rem 2%;
@@ -241,8 +246,6 @@ footer p {
     color: #aab1b2;
     text-align: center;
     border-top: 1px solid #aab1b2;
-
-
 }
 
 footer a {

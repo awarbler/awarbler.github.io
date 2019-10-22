@@ -124,8 +124,6 @@ main h2 {
 
 }
 
-
-
 p {
     margin: .5rem 2%;
 }
@@ -186,7 +184,11 @@ main section {
     float: left;
     width: 100%;
     padding-right: 2rem;
+    padding-bottom: 1rem;
    
+}
+.figure {
+    margin: 0;
 }
 .contactcontainer {
     margin: .5rem 2%;
@@ -196,12 +198,15 @@ main section {
     background:white;
     grid-gap: 1px 1px  ;
     text-align: center;
-
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
 }
 
 .map{
     display: none;
+}
+.address {
+    padding-top: 1rem;
+    padding-left: 3rem;
 }
 .icons {
     height: 20px;

@@ -109,7 +109,7 @@ main {
     margin: 0 auto;
     max-width: 45rem;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
-
+    
 }
 
 main h1,
@@ -143,9 +143,10 @@ main section {
 }
 .herodiv img {
     padding: .75rem;
-    margin: .2rem 2%;
+    margin: .5rem 2%;
     width: 60%;
     height: auto;
+    border-bottom: 1px solid #f68e36;
     background-color: white;
     
 }
@@ -173,7 +174,6 @@ main section {
     margin: .5rem 2%;
     width: 100%;
     height: auto;
-    border-top: 1px solid#f68e36;
     border-bottom: 1px solid#f68e36;
     background-color:white;
     height: auto;
@@ -184,7 +184,7 @@ main section {
 .article img{
     float: left;
     width: 100%;
-   padding: 2rem;
+    padding-right: 2rem;
    
 }
 .contactcontainer {
@@ -196,7 +196,7 @@ main section {
     grid-gap: 1px 1px 1px 1px 1px;
     text-align: center;
     border-bottom: 1px solid #f68e36;
-    padding: 6rem;
+    padding: 0 1rem;
 }
 
 .map{

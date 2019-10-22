@@ -187,7 +187,7 @@ main section {
 }
 
 .article {
-    height: auto;
+   
     border-bottom: 1px solid#f68e36;
     border-top: 1px solid#f68e36;
     background-color: white;
@@ -197,6 +197,7 @@ main section {
 
 .article img {
     width: 100%;
+    height: auto;
 
 }
 

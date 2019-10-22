@@ -35,44 +35,51 @@
         flex: 1 1 100%;
         float: left;
     }
-
+   
     .herodiv {
+        
         font-size: 100%;
 
     }
+
     .herodiv img {
-        width: 96%;
+        width: 90%;
+        display: block;
     }
+
+    .forecast {
+        width: 100%;
+        display: block;
+    }
+
     .forecastcontainer {
         display: grid;
-        grid-template-columns: auto auto auto auto auto;
-        background:white;
+        grid-template-columns: 80px 80px 80px 80px 80px;
+        background: white;
         text-align: center;
-        border-bottom: 1px solid #f68e36;
         padding: .75rem;
-        margin: .5rem 2%;
+        padding-left: 10rem;
+        padding-right: 10rem;
+        padding-bottom: 1rem;
+        margin: 0 2%;
         font-size: .5rem;
     }
-    .forecastcontainer img{
+
+    .forecastcontainer img {
         width: 20%;
         padding: .75em;
     }
 
+  
 
-}
-    .article {
-        border-bottom: 1px solid #f68e36;
-
+    .article img {
+        width: 100%;
+        float: left;
     }
-    .article img{
-        width: 50%;
-        float: left;}
 
-    .contact {
-        border-bottom: 1px solid #f68e36;
-    }
-    .map{
-        display: 
+
+    .map {
+        display: block;
     }
 
     h1 {
@@ -87,10 +94,6 @@
         font-size: 1rem;
     }
 
-
-    footer {
-        border-radius: 10px;
-    }
 
 
 }

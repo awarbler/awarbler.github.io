@@ -136,7 +136,7 @@ main section {
     padding: 0 1rem;
     background-color: white;
     text-align: left;
-    color: #4d4d4d;
+    color: #555d66;
     border-radius: 3px;
 }
 
@@ -150,9 +150,8 @@ main section {
     margin: .5rem 2%;
     width: 60%;
     height: auto;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #f68e36;
     background-color: white;
-    height: auto;
     
 }
 
@@ -175,16 +174,35 @@ main section {
 .forecastcontainer{
     display: none;
 }
-.article img{
-    padding: .75rem;
+.article {
     margin: .5rem 2%;
     width: 88%;
     height: auto;
-    border-bottom: 1px solid gray;
-    background-color: #eee;
+    border-bottom: 1px solid#f68e36;
+    background-color:white;
     height: auto;
+    color: #4d4d4d;
 }
 
+.article img{
+    float: left;
+    width: 60%;
+    padding-right: 2rem;
+   
+}
+
+
+.contactcontainer {
+    display: block;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    background:white;
+    grid-gap: 1px 1px 1px 1px 1px;
+    text-align: center;
+    border-bottom: 1px solid #f68e36;
+}
 
 .icons {
     height: 20px;

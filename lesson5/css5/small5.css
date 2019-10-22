@@ -193,7 +193,6 @@ main section {
 
 
 .contactcontainer {
-    display: block;
     margin: 10px;
     display: grid;
     grid-template-columns: auto auto;
@@ -211,7 +210,9 @@ main section {
     flex: 1 0 15em;
     margin: .3em;
 }
-
+.map{
+    display: none;
+}
 . footer {
     margin: 0 auto;
     padding: .75rem;

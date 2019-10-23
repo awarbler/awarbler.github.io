@@ -1,9 +1,8 @@
 /* 35em is also 560px (if basefont is 16px) tablet view */
 @media only screen and (min-width: 32.5rem) {
     header img {
-        width: auto;
+        width: 80%;
     }
-
     header {
         border-bottom: 1px solid#aab1b2;
     }
@@ -113,6 +112,9 @@ top and bottom margins are 25px right and left margins are 50px*/
     .map {
         display: block;
         background: #f2f2f2;
+    }
+    .address {
+        padding-left: 3rem;
     }
 
     h1 {font-size: 2.5rem;}

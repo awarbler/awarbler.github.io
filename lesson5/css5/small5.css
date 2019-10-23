@@ -148,6 +148,7 @@ main section {
 
 .herodiv h2 {
     text-decoration: underline;
+    border-radius: 1px;
 }
 
 .weathersummary {
@@ -159,6 +160,7 @@ main section {
     opacity: .5;
     font-size: 70%;
     border: 3px solid #f68e36;
+    border-radius: 1px;
     text-align: center;
     padding: 0 1rem;
 }
@@ -175,6 +177,7 @@ top and bottom margins are 25px right and left margins are 50px*/
     background-color: white;
     color: #4d4d4d;
     padding: 0 1rem;
+    border-radius: 1px;
 }
 
 .article img {

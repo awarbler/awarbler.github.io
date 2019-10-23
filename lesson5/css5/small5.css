@@ -7,9 +7,9 @@ body {
     font-size: 16px;
     line-height: 1.5;
     font-family: "Roboto", Open Sans, Helvetica, Arial, sans-serif;
-    color: #555d66;
     margin: 0;
     padding: 0;
+    color: #555d66;
 }
 
 #message {
@@ -19,13 +19,9 @@ body {
     background-color: rgb(225, 223, 223);
 }
 
-.showme {
-    display: block
-}
+.showme {display: block}
 
-.hideme {
-    display: none;
-}
+.hideme { display: none;}
 
 /*---- flex keeps the header in the middle of the screen --------------*/
 header {
@@ -91,9 +87,7 @@ nav ul {
     border-bottom: 1px solid #aab1b2;
 }
 
-.navigation li {
-    display: none;
-}
+.navigation li {display: none;}
 
 .navigation a {
     display: block;
@@ -110,14 +104,15 @@ nav ul {
     border-radius: 4px;
 }
 
-.responsive li {
-    display: block;
-}
+.responsive li { display: block;}
 
 main {
+      /* margin top right  bottom margin left margin: 25px; all four margins are 25px margin: 25px 50px;
+top and bottom margins are 25px right and left margins are 50px*/
     margin: 0 auto;
     max-width: 45rem;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    color: #aab1b2;
 
 }
 
@@ -128,28 +123,19 @@ h2 {
     clear: both;
 }
 
-main h2 {
-    font-size: 1.0rem;
-
-}
-
-p {
-    margin: .5rem 2%;
-}
+main h2 {font-size: 1.0rem;}
+p {    margin: .5rem 2%;}
 
 main section {
     margin: .5rem 2%;
-    background-color: white;
-    text-align: left;
-    color: #555d66;
-
+    text-align: justify;
+    color: #aab1b2;
 }
 
 .herodiv {
     margin: .5rem 2%;
     position: relative;
     width: 45rem;
-   
 }
 
 .herodiv img {
@@ -158,11 +144,9 @@ main section {
     background-color: white;
     width: 60%;
     height: auto;
-
 }
 
 .herodiv h2 {
-    font-size: 85%;
     text-decoration: underline;
 }
 
@@ -170,61 +154,51 @@ main section {
     position: absolute;
     top: 1rem;
     left: 2rem;
+    background-color: white;
     color: #4d4d4d;
     opacity: .5;
     font-size: 70%;
     border: 3px solid #f68e36;
     text-align: center;
     padding: 0 1rem;
-
 }
 
-.forecast {
-    display: none;
-}
+.forecast {display: none;}
 
-.forecastcontainer {
-    display: none;
-}
+.forecastcontainer { display: none;}
 
 .article {
-   
-    border-bottom: 1px solid#f68e36;
+      /* margin top right  bottom margin left margin: 25px; all four margins are 25px margin: 25px 50px;
+top and bottom margins are 25px right and left margins are 50px*/
+    margin: 2rem 2%;
+    border: 1px solid #f68e36;
     background-color: white;
     color: #4d4d4d;
-    margin: 0 2%;
+    padding: 0 1rem;
 }
 
 .article img {
     width: 100%;
     height: auto;
+}
+.article a{color: #aadcdd;}
 
-}
-.article a{
-    color: #aadcdd;
-}
-}
-
-.figure {
-    margin: 0;
-}
+.figure {margin: 0;}
 
 
 .contactcontainer {
-    margin: .5rem 2%;
+    margin: 1rem 2%;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto;
-    background: white;
+    background: #f2f2f2;
     grid-gap: 1px 1px;
-    text-align: center;
+    text-align: left;
     padding: 1rem 3rem;
 }
 
-.map {
-    display: none;
-}
-
+.map { display: none;}
+   
 .address {
     padding-top: 1rem;
     padding-left: 3rem;
@@ -235,7 +209,6 @@ main section {
     width: 20px;
     padding: .5em;
     flex: 1 0 15em;
-    margin: .3em;
 }
 
 footer p {

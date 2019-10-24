@@ -25,9 +25,7 @@
         justify-content: center;
     }
 
-    .navigation li:first-child {
-        display: none;
-    }
+    .navigation li:first-child { display: none;}
 
     .navigation li {
         display: block;
@@ -35,15 +33,17 @@
         float: left;
     }
 
-    .herodiv {
-        font-size: 100%;
-    }
+    .herodiv {font-size: 100%;}
 
     .herodiv img {
         width: 90%;
         height: auto;
         display: block;
     }
+
+#main{
+    max-width: 600px;
+}
 
     .forecast {
         display: block;
@@ -67,14 +67,12 @@ top and bottom margins are 25px right and left margins are 50px*/
         padding-bottom: 1rem;
         margin: 0 2%;
         font-size: 1rem;
-        max-width: 560px;
     }
 
     .forecastcontainer img {
         width: 70%;
         padding: .75em;
     }
-
     .cell-1,
     .cell-2,
     .cell-3,
@@ -82,7 +80,6 @@ top and bottom margins are 25px right and left margins are 50px*/
     .cell-5 {
         background: #f2f2f2f2;
     }
-
     .cell-6,
     .cell-7,
     .cell-8,
@@ -91,7 +88,6 @@ top and bottom margins are 25px right and left margins are 50px*/
         border-right: 1px solid #f2f2f2f2;
         border-left: 1px solid #f2f2f2f2;
     }
-
     .cell-11,
     .cell-12,
     .cell-13,
@@ -101,21 +97,15 @@ top and bottom margins are 25px right and left margins are 50px*/
         border-bottom: 1px solid #f2f2f2f2;
         border-left: 1px solid #f2f2f2f2;
     }
-
     .cell-6,
-    .cell-11 {
-        border-left: 1px solid #f2f2f2f2;
-    }
-
+    .cell-11 { border-left: 1px solid #f2f2f2f2;}
     .cell-10.cell-15 {border-right: 1px solid #f2f2f2f2;}
 
     .map {
         display: block;
         background: #f2f2f2;
     }
-    .address {
-        padding-left: 3rem;
-    }
+    .address {padding-left: 3rem; }
 
     h1 {font-size: 2.5rem;}
 

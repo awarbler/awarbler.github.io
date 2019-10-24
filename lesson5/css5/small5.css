@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 /*----------- BODY --------------*/
 body {
     font-size: 16px;
@@ -172,12 +173,15 @@ main section {
 .article {
       /* margin top right  bottom margin left margin: 25px; all four margins are 25px margin: 25px 50px;
 top and bottom margins are 25px right and left margins are 50px*/
-    margin: 2rem 2%;
+    margin: .5rem auto;
     border: 1px solid #f68e36;
+    border-radius: 2px;
     background-color: white;
     color: #4d4d4d;
     padding: 0 1rem;
-    border-radius: 1px;
+    display: flex;
+    flex-direction: column;
+   
 }
 
 .article img {

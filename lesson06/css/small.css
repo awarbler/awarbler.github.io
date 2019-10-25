@@ -212,8 +212,8 @@ top and bottom margins are 25px right and left margins are 50px*/
 }
 
 .icons {
-    height: 20px;
-    width: 20px;
+    height: 40px;
+    width: 40px;
     padding: .5em;
     flex: 1 0 15em;
 }

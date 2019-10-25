@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-/*----------- BODY --------------*/
+/* body rules here */
 body {
     font-size: 16px;
     line-height: 1.5;
@@ -23,7 +24,7 @@ body {
 .showme {display: block}
 
 .hideme { display: none;}
-
+/* header rules here - work way down*/
 /*---- flex keeps the header in the middle of the screen --------------*/
 header {
     display: flex;

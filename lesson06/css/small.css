@@ -4,7 +4,7 @@
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-/* body rules here */
+/*----------- BODY --------------*/
 body {
     font-size: 16px;
     line-height: 1.5;
@@ -24,7 +24,7 @@ body {
 .showme {display: block}
 
 .hideme { display: none;}
-/* header rules here - work way down*/
+
 /*---- flex keeps the header in the middle of the screen --------------*/
 header {
     display: flex;
@@ -124,28 +124,32 @@ h2 {
     color: #aadcdd;
     clear: both;
 }
-
 main h2 {font-size: 1.0rem;}
-p {    margin: .5rem 2%;}
+p {     margin: .5rem auto;}
 
 main section {
-    margin: .5rem 2%;
+    margin: .5rem auto;
     text-align: justify;
     color: #aab1b2;
 }
-
+main div img{
+    max-width: 100%;
+}
 .herodiv {
-    margin: .5rem 2%;
+   
+    margin: .5rem auto;
     position: relative;
     width: 45rem;
+    padding: .75rem;
 }
 
+
 .herodiv img {
-    margin: .5rem 2%;
-    padding: .75rem;
     background-color: white;
     width: 60%;
     height: auto;
+    border: 1px solid #f68e36;
+    border-radius: 2px;
 }
 
 .herodiv h2 {
@@ -156,7 +160,7 @@ main section {
 .weathersummary {
     position: absolute;
     top: 1rem;
-    left: 2rem;
+    left: 4rem;
     background-color: white;
     color: #4d4d4d;
     opacity: .5;

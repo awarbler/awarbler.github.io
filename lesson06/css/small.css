@@ -160,7 +160,7 @@ main div img{
 .weathersummary {
     position: absolute;
     top: 1rem;
-    left: 4rem;
+    left: 2rem;
     background-color: white;
     color: #4d4d4d;
     opacity: .5;

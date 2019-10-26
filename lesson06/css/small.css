@@ -145,7 +145,7 @@ main div img{
 
 .herodiv img {
     background-color: white;
-    width: 60%;
+    width: 70%;
     height: auto;
     border: 1px solid #f68e36;
     border-radius: 2px;
@@ -159,12 +159,12 @@ main div img{
 .weathersummary {
     position: absolute;
     top: 1rem;
-    left: rem;
+    left: 1.5rem;
     background-color: white;
     color: #4d4d4d;
     opacity: .5;
     font-size: 70%;
-    border: 3px solid #f68e36;
+    border: 2px solid #f68e36;
     border-radius: 1px;
     text-align: center;
     padding: 0 1rem;
@@ -185,7 +185,6 @@ top and bottom margins are 25px right and left margins are 50px*/
     padding: 0 1rem;
     display: flex;
     flex-direction: column;
-   
 }
 
 .article img {

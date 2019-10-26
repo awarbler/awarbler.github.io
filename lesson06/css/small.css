@@ -102,7 +102,6 @@ nav ul {
 .navigation a:hover {
     color: #aadcdd;
     background-color: white;
-    font-weight: 700;
     border-radius: 4px;
 }
 
@@ -160,7 +159,7 @@ main div img{
 .weathersummary {
     position: absolute;
     top: 1rem;
-    left: 2rem;
+    left: rem;
     background-color: white;
     color: #4d4d4d;
     opacity: .5;
@@ -213,7 +212,7 @@ top and bottom margins are 25px right and left margins are 50px*/
    
 .address {
     padding-top: 1rem;
-    padding-left: 7rem;
+
 }
 
 .icons {

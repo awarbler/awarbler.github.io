@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
 /*----------- apply a natural box layout model to all elements --------------*/
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 /*----------- BODY --------------*/
 body {
     font-size: 16px;
@@ -21,9 +31,13 @@ body {
     background-color: rgb(225, 223, 223);
 }
 
-.showme {display: block}
+.showme {
+    display: block
+}
 
-.hideme { display: none;}
+.hideme {
+    display: none;
+}
 
 /*---- flex keeps the header in the middle of the screen --------------*/
 header {
@@ -89,7 +103,9 @@ nav ul {
     border-bottom: 1px solid #aab1b2;
 }
 
-.navigation li {display: none;}
+.navigation li {
+    display: none;
+}
 
 .navigation a {
     display: block;
@@ -105,10 +121,12 @@ nav ul {
     border-radius: 4px;
 }
 
-.responsive li { display: block;}
+.responsive li {
+    display: block;
+}
 
 main {
-      /* margin top right  bottom margin left margin: 25px; all four margins are 25px margin: 25px 50px;
+    /* margin top right  bottom margin left margin: 25px; all four margins are 25px margin: 25px 50px;
 top and bottom margins are 25px right and left margins are 50px*/
     margin: 0 auto;
     max-width: 45rem;
@@ -124,21 +142,31 @@ h2 {
     color: #aadcdd;
     clear: both;
 }
-main h2 {font-size: 1.0rem;}
-p {     margin: .5rem auto;}
+
+main h2 {
+    font-size: 1.0rem;
+}
+
+p {
+    margin: .5rem auto;
+}
 
 main section {
     margin: 10px;
     color: #aab1b2;
 }
-main div img{
+
+main div img {
     max-width: 100%;
 }
+
 .herodiv {
     position: relative;
     width: 45rem;
     padding: .75rem;
 }
+
+
 .herodiv img {
     background-color: white;
     width: 44%;
@@ -146,6 +174,7 @@ main div img{
     border: 1px solid #f68e36;
     border-radius: 2px;
 }
+
 .herodiv h2 {
     text-decoration: underline;
     border-radius: 1px;
@@ -164,12 +193,16 @@ main div img{
     font-size: 10px;
 }
 
-.forecast {display: none;}
+.forecast {
+    display: none;
+}
 
-.forecastcontainer { display: none;}
+.forecastcontainer {
+    display: none;
+}
 
 .article {
-      /* margin top right  bottom margin left margin: 25px; all four margins are 25px margin: 25px 50px;
+    /* margin top right  bottom margin left margin: 25px; all four margins are 25px margin: 25px 50px;
 top and bottom margins are 25px right and left margins are 50px*/
     margin: .5rem auto;
     border: 1px solid #f68e36;
@@ -185,9 +218,14 @@ top and bottom margins are 25px right and left margins are 50px*/
     width: 100%;
     height: auto;
 }
-.article a{color: #aadcdd;}
 
-.figure {margin: 0;}
+.article a {
+    color: #aadcdd;
+}
+
+.figure {
+    margin: 0;
+}
 
 
 .contactcontainer {
@@ -202,8 +240,10 @@ top and bottom margins are 25px right and left margins are 50px*/
     justify-items: center;
 }
 
-.map { display: none;}
-   
+.map {
+    display: none;
+}
+
 .address {
     padding-top: 1rem;
 

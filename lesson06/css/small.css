@@ -45,7 +45,7 @@ header {
 }
 
 .heading h1 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     /* margin top right  bottom left margin: 25px; all four margins are 25px margin: 25px 50px;
 top and bottom margins are 25px right and left margins are 50px*/
     margin: 0 0 0 17px;
@@ -145,7 +145,7 @@ main div img{
 
 .herodiv img {
     background-color: white;
-    width: 70%;
+    width: 44%;
     height: auto;
     border: 1px solid #f68e36;
     border-radius: 2px;
@@ -158,7 +158,7 @@ main div img{
 
 .weathersummary {
     position: absolute;
-    top: 1rem;
+    top: .5rem;
     left: 1.5rem;
     background-color: white;
     color: #4d4d4d;
@@ -204,13 +204,15 @@ top and bottom margins are 25px right and left margins are 50px*/
     background: #f2f2f2;
     grid-gap: 1px 1px;
     text-align: left;
-    padding: 1rem 3rem;
+    padding: 1rem 1rem;
+    justify-items: center;
 }
 
 .map { display: none;}
    
 .address {
     padding-top: 1rem;
+
 
 }
 

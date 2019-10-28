@@ -62,16 +62,16 @@
       images/cit230_image_franklin-800w.jpg 800w, 
       images/cit230_image_franklin-1028w.jpg 1028w"
       sizes="50w"
-      img src="images/cit230_image_franklin-400w.jpg" alt="Blue Dark Clouds">
+      img src="images/cit230_image_franklinOriginal.jpeg" alt="Blue Dark Clouds">
       
     </picture>
       <section class="weathersummary">
         <h2>Weather Summary</h2>
-        <p>Currently: <span id="current"> Sunny </span> <br>
-          High: <span id="high"> 76 &deg;F</span><br>
-          Wind Chill: <span id="chill">&deg; F</span><br>
-          Humidity:<span id="humidity"> 69% </span><br>
-          Wind Speed: <span id="speed"> 5 mph </span></p>
+        <p>Currently: <span class="current"> Sunny </span><br>
+          High: <span id="high"> 76 </span> &deg;F<br>  <!-- use for tempF -->
+          Wind Chill: <span id="chill">&deg; F</span><br> 
+          Humidity:<span class="humidity"> 69% </span><br>
+          Wind Speed: <span class="wSpeed"> 5 mph </span></p><!--var windSpeed -->
       </section>
     </div>
     <div class="forecast">
@@ -136,7 +136,8 @@
     <script src="js/date.js"></script>
     <!-- have to reference javascript links here  -->
     <script src="js/scripts.js"></script>
-    <script>
+    <script src="js/windspeed.js"></script>
+  <script>
       const today = new Date();
       console.log(today);
       const dayNumber = today.getDay();

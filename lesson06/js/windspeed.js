@@ -13,9 +13,10 @@ function doInputOutput() {
     }
 }
 
-function windChill(tempf, speed) {
+function windChill(tempf, speed)
+ {
     // convert the celsius temperature into fahrenheit
-    var f = (35.74 + (0.6215 * tempf) - (35.75 * Math.pow(speed, 0.16)) + (0.4275 * tempf * Math.pow(speed, 0.16)).toFixed(2) 
+    var f = (35.74 + (0.6215 * tempf) - (35.75 * Math.pow(speed, 0.16)) + (0.4275 * tempf) * Math.pow(speed, 0.16)).toFixed(2) 
     return f;
     }
 

@@ -162,14 +162,13 @@ main div img {
 
 .herodiv {
     position: relative;
-    width: 45rem;
     padding: .75rem;
 }
 
 
 .herodiv img {
     background-color: white;
-    width: 44%;
+    width: 100%;
     height: auto;
     border: 1px solid #f68e36;
     border-radius: 2px;

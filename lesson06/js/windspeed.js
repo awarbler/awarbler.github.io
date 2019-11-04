@@ -21,7 +21,7 @@ windChill = Math.round(windChill);
 if (tempNumber <=50 && speedNumber >3){
     // display the fahrenheit temperature to the user
     // using textContent instead since data is not html it is text 
-    document.getElementById("chill").textContent ="Wind Chill:"+windChill+"\xB0F";
+    document.getElementById("chill").textContent ="Wind Chill: "+windChill+"\xB0F";
 } 
 else {
     document.getElementById("chill").textContent ="Wind Chill: N/A";

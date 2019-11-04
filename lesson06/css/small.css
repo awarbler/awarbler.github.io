@@ -190,6 +190,13 @@ main div img {
     border-radius: 1px;
     text-align: center;
     font-size: 10px;
+    padding-left:  .75rem;
+    padding-right: .75rem;
+}
+.weathersummary p{
+    margin: 0;
+    padding-left:  .75rem;
+    text-align: left;
 }
 
 .forecast {

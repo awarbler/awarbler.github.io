@@ -1,43 +1,28 @@
 // read a fahrenheit temperature from html document page 138 javascript book
 // programming fundamentals rex a breeze
-function doInputOutput() {
-    var tempf = parseFloat(document.getElementById('high').textContent);
-    var windSpeed = parseFloat(document.getElementById('wSpeed').textContent);
-    var calculate = windChill(tempF, windspeed);
-    if (tempf <= 50 && windSpeed > 3) {
-        // display the fahrenheit temperature to the user
-        // using textContent instead since data is not html it is text 
-        document.getElementById('chill').textContent = calculate;
-    } else {
-        document.getElementById('chill').textContent = " N/A"
-    }
-}
+//const tempString = document.getElementById("high").textContent;
+//console.log(tempString)  // this is to check our work 
+//const tempNumber = parseFloat(tempString);
+// console.log(tempNumber)  // this is to check our work makes a blue number conversion of a string to a number
+// or just do what is below
 
-function windChill(tempf, speed)
- {
-    // convert the celsius temperature into fahrenheit
-    var calculate = (35.74 + (0.6215 * tempf) - (35.75 * Math.pow(speed, 0.16)) + (0.4275 * tempf) * Math.pow(speed, 0.16)).toFixed(2) 
-    return calculate;
-    }
+const tempNumber = parseFloat(document.getElementById("high").textContent);
+//console.log(tempNumber);
 
-    /* Input: get temperature and wind speed from user
-     * process: calculate
-     * output : the temp convet to celsius
-     */
-    //function doInputOutput(){
+const speedNumber = parseFloat(document.getElementById('wSpeed').textContent);
+//console.log(speedNumber);
 
-    // read a fahrenheit temperature from the user
-    // parseFloat to convert what the user typed from tet into a number
-    //var temperature= parseFloat(document.getElementById("tempInputBox").value);
-    //var windSpeed= parseFloat(document.getElementById("windInputBox").value);
-    //var calculate = windChill(temperature, windSpeed);
+let windChill = 35.74 + (0.6215 * tempNumber) - (35.75 * Math.pow(speedNumber, 0.16)) + 
+(0.4275 * tempNumber * Math.pow(speedNumber, 0.16));
+//console.log(windChill);
+windChill = Math.round(windChill);
+//console.log(windChill);
 
+if (tempNumber <=50 && speedNumber >3){
     // display the fahrenheit temperature to the user
-    // document.getElementById("celsiusDiv").innerHTML = calculate;   
-    //}
-
-    //function windChill(tempf, speed){
-    // convert the celsius temperature into fahrenheit
-    //  var f = 35.74 + 0.6215 * tempf - 35.75 * Math.pow(speed,0.16) + 0.4275 * tempf * Math.pow(speed,0.16)
-    //  return f;
-    // }
+    // using textContent instead since data is not html it is text 
+    document.getElementById("chill").textContent ="Wind Chill:"+windChill+"\xB0F";
+} 
+else {
+    document.getElementById("chill").textContent ="Wind Chill: N/A";
+}

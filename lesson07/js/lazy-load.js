@@ -22,18 +22,15 @@ if ('IntersectionObserver' in window) {
                     observer.unobserve(item.target);
                 }
             });
-        },
-        imgOptions);
+        });
+        imagesToLoad.forEach((img) =>{
+            observer.observe(img);
+        });
     // all images inside of image we was it to observe the image. 
     // apply observer for each image observe the image
-    images.forEach((img) => {
-
-        observer.observe(img);
-
-
-    });
+    }
     else {
-        images.forEach((img) =>){
+        imagesToLoad.forEach((img) =>{
             loadImages(img);
         });
         }

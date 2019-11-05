@@ -14,11 +14,18 @@ html {
     box-sizing: border-box;
 }
 
+
+img[data-src]{
+    filter: blur(.2em);
+
+}
 img {
     min-width: 50px;
     min-height: 50px;
     border: 1px solid #f68e36;
     padding: 2px;
     filter: blur(0em);
-    transition: filter 0.5s;
+    transition: filter .5s;
+    display: block;
+    margin: 10px auto;
 }

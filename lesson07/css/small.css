@@ -24,14 +24,6 @@ body {
     color: #555d66;
 }
 /*----------- for images lazy loading --------------*/
-img{
-    min-width: 50px;
-    min-height: 50px;
-    border: 1px solid #f68e36;
-    padding: 2px;
-    filter: blur(0em);
-    transition:filter 0.5s;
-}
 
 #message {
     text-align: center;

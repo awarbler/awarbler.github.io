@@ -10,10 +10,12 @@
   }
   /* hover class box shadow over image*/
   .gallery:hover{
+    display: grid;
       box-shadow: 0 0 50px #333;
   }
   /*show font in large view*/
   .gallerycontainer figcaption{
+    display: grid;
       font-size: smaller;
   }
   /*----------- FOOTER --------------*/

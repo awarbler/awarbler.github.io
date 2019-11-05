@@ -14,7 +14,7 @@ html {
     box-sizing: border-box;
 }
 
-/*----------- BODY --------------*/
+/*----------- BODY ---- preston -- gallery--------*/
 body {
     font-size: 16px;
     line-height: 1.5;
@@ -23,8 +23,7 @@ body {
     padding: 0;
     color: #555d66;
 }
-/*----------- for images lazy loading --------------*/
-
+/*---preston css------*/
 #message {
     text-align: center;
     color: #f68e36;
@@ -52,13 +51,13 @@ header {
     color: #aadcdd;
 
 }
-
+/*---preston css------*/
 .heading {
     display: flex;
     /*---- flex keeps the header in the middle of the screen --------------*/
     flex-direction: column;
 }
-
+/*---preston css------*/
 .heading h1 {
     font-size: 1.5rem;
     /* margin top right  bottom left margin: 25px; all four margins are 25px margin: 25px 50px;
@@ -66,17 +65,18 @@ top and bottom margins are 25px right and left margins are 50px*/
     margin: 0 0 0 17px;
 }
 
+/*---preston css------*/
 .m {
     font-size: 1rem;
     margin: 0 0 0 17px;
     font-weight: normal;
 }
-
+/*---preston css------*/
 header img {
     width: 50px;
     margin: 0 2% 0 0;
 }
-
+/*---preston css------*/
 nav {
     margin: 0 auto;
     color: #aab1b2;
@@ -84,14 +84,14 @@ nav {
     list-style: none;
     text-align: left;
 }
-
+/*---preston css------*/
 nav li.active {
     color: #aadcdd;
     background-color: #ecf0f1;
     text-decoration-line: underline;
     border-radius: 4px;
 }
-
+/*---preston css------*/
 nav ul {
     margin: 0;
     padding: 0;
@@ -166,7 +166,7 @@ main div img {
     padding: .75rem;
 }
 
-
+/*---preston css------*/
 .herodiv img {
     background-color: white;
     width: 100%;
@@ -174,12 +174,12 @@ main div img {
     border: 1px solid #f68e36;
     border-radius: 2px;
 }
-
+/*---preston css------*/
 .herodiv h2 {
     text-decoration: underline;
     border-radius: 1px;
 }
-
+/*---preston css------*/
 .weathersummary {
     position: absolute;
     top: .5rem;
@@ -195,15 +195,16 @@ main div img {
     padding-right: .50rem;
     padding-bottom: .50rem;
 }
+/*---preston css------*/
 .weathersummary p{
     margin: 0;
     text-align: left;
 }
-
+/*---preston css------*/
 .forecast {
     display: none;
 }
-
+/*---preston css------*/
 .forecastcontainer {
     display: none;
 }
@@ -233,8 +234,7 @@ top and bottom margins are 25px right and left margins are 50px*/
 .figure artitcle {
     margin: 0;
 }
-
-
+/*---preston css------*/
 .contactcontainer {
     margin: 1rem 2%;
     display: grid;
@@ -246,17 +246,17 @@ top and bottom margins are 25px right and left margins are 50px*/
     padding: 1rem 1rem;
     justify-items: center;
 }
-
+/*---preston css------*/
 .map {
     display: none;
 }
-
+/*---preston css------*/
 .address {
     padding-top: 1rem;
 
 
 }
-
+/*---preston css------*/
 .icons {
     height: 40px;
     width: 40px;
@@ -278,7 +278,7 @@ footer a {
     color: #aadcdd;
 }
 
-/*---gallery html------*/
+/*---gallery css------*/
 
 .gallerycontainer
 {
@@ -290,6 +290,9 @@ footer a {
         text-align: center;
         padding: 1rem 1rem;
         justify-items: center;
+}
+.galleryheading h1{
+    margin: 0;
 }
 .clearfix:after {
     content: "";

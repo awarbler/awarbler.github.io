@@ -59,7 +59,6 @@ top and bottom margins are 25px right and left margins are 50px*/
         font: bold;
     }
 
-
     .forecastcontainer {
         display: grid;
         grid-template-columns: 80px 80px 80px 80px 80px;

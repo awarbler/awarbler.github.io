@@ -294,23 +294,22 @@ footer a {
     color: #aadcdd;
 }
 
-/*---gallery css------*/
+/*---gallery css = paddding /* top | right | bottom | left */
 
 .gallerycontainer {
     display: grid;
-    margin: 0 auto;
-    display: grid;
     grid-template-columns: 1fr;
+    grid-gap: 10px;
     text-align: center;
-    padding: .5rem;
-
+    place-items: center center;
 }
 
 .galleryheading h1 {
     margin: 0;
 }
-
-
+.gallerycontainer figcaption{
+    display: none;
+}
 
 .clearfix:after {
     content: "";

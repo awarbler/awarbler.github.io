@@ -143,9 +143,10 @@ top and bottom margins are 25px right and left margins are 50px*/
 .item{
     border-radius: 3px;
     border: 1px solid #dbe1e2;
-    padding-top: 24px;
-    padding-right: 20px;
-    padding-left: 20px;
+    width: 100%;
+    padding: 10px 10px 9px 10px;
+    
+    
 }
 
 

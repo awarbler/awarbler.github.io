@@ -8,7 +8,11 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
   }
+
    /*---gallery html------*/
+   .gallerycontainer figcaption{
+    display: grid;
+}
 /* hover class box shadow over image*/
 .item:hover {
   box-shadow: 0 0 20px #333;
@@ -17,6 +21,10 @@
 /*show font in large view*/
 .item {
   font-size: smaller;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
 }
 
 

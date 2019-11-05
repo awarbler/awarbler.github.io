@@ -6,17 +6,19 @@
 
   .gallerycontainer {
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     max-width: 1048px;
   }
-  /* hover class box shadow over image*/
-  .gallery:hover{
-    display: grid;
-      box-shadow: 0 0 50px #333;
-  }
-  /*show font in large view*/
-  .gallerycontainer figcaption{
-    display: grid;
-      font-size: smaller;
-  }
+/* hover class box shadow over image*/
+.galleryimg:hover {
+  box-shadow: 0 0 50px #333;
+}
+
+/*show font in large view*/
+.gallerycontainer figcaption {
+  font-size: smaller;
+}
+  
+
   /*----------- FOOTER --------------*/
 }

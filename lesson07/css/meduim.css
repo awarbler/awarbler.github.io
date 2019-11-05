@@ -136,6 +136,7 @@ top and bottom margins are 25px right and left margins are 50px*/
 .gallerycontainer
 {
         grid-template-columns: 1fr 1fr;
+        grid-gap: 0.25em;
 }
 
 

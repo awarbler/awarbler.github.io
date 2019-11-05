@@ -291,11 +291,12 @@ footer a {
         padding: 1rem 1rem;
         justify-items: center;
 }
+.gallerycontainer img{
+    width:100%;
+    height: auto;
+}
 .galleryheading h1{
     margin: 0;
-}
-.gallery:hover,.gallerycontainer figcaption{
-    display: none;
 }
 
 .clearfix:after {

@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <!-- Set character encoding for the document -->
+    <meta charset="utf-8">
+    <!-- Viewport for responsive web design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Document Title -->
+    <title> CIT 230: Anita Woodford: Lazy Load Page </title>
+    <!-- Meta Description -->
+    <meta name="description"
+        content="CIT 230 Assignment Website: Web Front-End Development, at Brigham Young University - Idaho">
+    <!--<link rel="shortcut icon" href="favicon.ico"> -->
+    <!-- link to google api  -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- link to css style sheet  -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/meduim.css">
+    <link rel="stylesheet" href="css/large.css">
+
+</head>
+
+<body>
+    <header>
+        <!-- logo will go here -->
+        <!-- Header 1 title my name -->
+        <section class="heading">
+            <h1>Lazy Load Page</h1>
+        </section>
+    </header>
+      <!-- NAVIGATION HERE -->
+    <main>
+        <!-- enter header  h2 = smaller than h1 -->
+        <h1> Images</h1>
+
+        <picture>
+                <img src="imglazyload/lazyloading.jpg" data-src="imglazyload/lazyload1" alt='image1'>
+        </picture>
+        <picture>
+                <img src="imglazyload/lazyloading.jpg" data-src="imglazyload/lazyload2_^SEQN^.jpg" alt='image2'>
+        </picture>
+        <picture>
+                <img src="imglazyload/lazyloading.jpg" data-src="imglazyload/lazyload2_^SEQN^.jpg" alt='image2'>
+        </picture>
+        <picture>
+                <img src="imglazyload/lazyloading.jpg" data-src="imglazyload/lazyload2_^SEQN^.jpg" alt='image2'>
+        </picture>
+        <picture>
+                <img src="imglazyload/lazyloading.jpg" data-src="imglazyload/lazyload2_^SEQN^.jpg" alt='image2'>
+        </picture>
+        <picture>
+                <img src="imglazyload/lazyloading.jpg" data-src="imglazyload/lazyload2_^SEQN^.jpg" alt='image2'>
+        </picture>
+        
+
+    </main>
+    <footer>
+        <p>
+            &copy; 2020 | Weather Projection | Attributions | <a href="https://awarbler.github.io/">Anita
+                Woodford</a><br>
+            <span id="date"></span>
+        </p>
+        <script src="js/date.js"></script>
+        <!-- have to reference javascript links here  -->
+        <script src="js/scripts.js"></script>
+        <script src="js/windspeed.js"></script>
+        <script>
+            const today = new Date();
+            console.log(today);
+            const dayNumber = today.getDay();
+            console.log(dayNumber);
+            const element = document.getElementById("message");
+
+            if (dayNumber == 5) {
+                element.classList.add("showme");
+            }
+            else {
+                element.classList.add("hideme");
+            }
+        </script>
+        <script src="js/lazy-load.js"></script>
+    </footer>
+</body>
+
+</html>

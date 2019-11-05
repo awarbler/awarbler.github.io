@@ -1,5 +1,14 @@
-const images = document.querySelectorAll("[data-src]");
+// get all imgs with data - src attribute imagesToLoad
+const images = document.querySelectorAll("img[data-src]");
 
+// optional parameters being set for the Intersectional Observer
+const imgOptions = {
+    threshold:0, 
+    rootMargin: " 0px 0px 50px 0px"
+};
+const loadImages = (image) => {
+    image.setAttribute('src', image.getAttribute('data-src'));
+}
 function preloadImage(img) {
     const src = img.getAttribute("data-src");
     if (!src) {
@@ -9,10 +18,7 @@ function preloadImage(img) {
     img.src = src; // actual img source
 }
 
-const imgOptions = {
-    threshold:0, 
-    rootMargin: " 0px 0px 50px 0px"
-};
+
 
 const imgObserver = new IntersectionObserver((entries,
     imgObserver) => {

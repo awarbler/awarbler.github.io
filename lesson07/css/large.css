@@ -2,12 +2,19 @@
 @media only screen and (min-width: 64em) {
   header img {
     width: 100%;
-}
+  }
 
-.gallerycontainer
-{
-        grid-template-columns: 1fr 1fr 1fr;
-}
-
+  .gallerycontainer {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1048px;
+  }
+  /* hover class box shadow over image*/
+  .gallery:hover{
+      box-shadow: 0 0 50px #333;
+  }
+  /*show font in large view*/
+  .gallerycontainer figcaption{
+      font-size: smaller;
+  }
   /*----------- FOOTER --------------*/
 }

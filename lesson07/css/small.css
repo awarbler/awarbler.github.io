@@ -294,6 +294,10 @@ footer a {
 .galleryheading h1{
     margin: 0;
 }
+.gallery:hover,.gallerycontainer figcaption{
+    display: none;
+}
+
 .clearfix:after {
     content: "";
     display: table;

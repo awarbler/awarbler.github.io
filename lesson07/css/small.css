@@ -23,6 +23,7 @@ body {
     padding: 0;
     color: #555d66;
 }
+
 /*---preston css------*/
 #message {
     text-align: center;
@@ -51,12 +52,14 @@ header {
     color: #aadcdd;
 
 }
+
 /*---preston css------*/
 .heading {
     display: flex;
     /*---- flex keeps the header in the middle of the screen --------------*/
     flex-direction: column;
 }
+
 /*---preston css------*/
 .heading h1 {
     font-size: 1.5rem;
@@ -71,11 +74,13 @@ top and bottom margins are 25px right and left margins are 50px*/
     margin: 0 0 0 17px;
     font-weight: normal;
 }
+
 /*---preston css------*/
 header img {
     width: 50px;
     margin: 0 2% 0 0;
 }
+
 /*---preston css------*/
 nav {
     margin: 0 auto;
@@ -84,6 +89,7 @@ nav {
     list-style: none;
     text-align: left;
 }
+
 /*---preston css------*/
 nav li.active {
     color: #aadcdd;
@@ -91,6 +97,7 @@ nav li.active {
     text-decoration-line: underline;
     border-radius: 4px;
 }
+
 /*---preston css------*/
 nav ul {
     margin: 0;
@@ -174,11 +181,13 @@ main div img {
     border: 1px solid #f68e36;
     border-radius: 2px;
 }
+
 /*---preston css------*/
 .herodiv h2 {
     text-decoration: underline;
     border-radius: 1px;
 }
+
 /*---preston css------*/
 .weathersummary {
     position: absolute;
@@ -191,19 +200,22 @@ main div img {
     border-radius: 1px;
     text-align: center;
     font-size: 9px;
-    padding-left:  .50rem;
+    padding-left: .50rem;
     padding-right: .50rem;
     padding-bottom: .50rem;
 }
+
 /*---preston css------*/
-.weathersummary p{
+.weathersummary p {
     margin: 0;
     text-align: left;
 }
+
 /*---preston css------*/
 .forecast {
     display: none;
 }
+
 /*---preston css------*/
 .forecastcontainer {
     display: none;
@@ -231,9 +243,10 @@ top and bottom margins are 25px right and left margins are 50px*/
     color: #aadcdd;
 }
 
-.figure artitcle {
+.figure article {
     margin: 0;
 }
+
 /*---preston css------*/
 .contactcontainer {
     margin: 1rem 2%;
@@ -246,16 +259,19 @@ top and bottom margins are 25px right and left margins are 50px*/
     padding: 1rem 1rem;
     justify-items: center;
 }
+
 /*---preston css------*/
 .map {
     display: none;
 }
+
 /*---preston css------*/
 .address {
     padding-top: 1rem;
 
 
 }
+
 /*---preston css------*/
 .icons {
     height: 40px;
@@ -280,24 +296,21 @@ footer a {
 
 /*---gallery css------*/
 
-.gallerycontainer
-{
+.gallerycontainer {
     display: grid;
-        margin: 1rem 2%;
-        display: grid;
-        grid-template-columns: auto;
-        grid-gap: 5px;
-        text-align: center;
-        padding: 1rem 1rem;
-        justify-items: center;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: .5rem;
+
 }
-.gallerycontainer img{
-    width:100%;
-    height: auto;
-}
-.galleryheading h1{
+
+.galleryheading h1 {
     margin: 0;
 }
+
+
 
 .clearfix:after {
     content: "";

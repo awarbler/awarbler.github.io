@@ -3,22 +3,22 @@
   header img {
     width: 100%;
   }
-
+ /*---gallery html------*/
   .gallerycontainer {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    max-width: 1048px;
   }
+   /*---gallery html------*/
 /* hover class box shadow over image*/
-.galleryimg:hover {
-  box-shadow: 0 0 50px #333;
+.item:hover {
+  box-shadow: 0 0 20px #333;
 }
-
+ /*---gallery html------*/
 /*show font in large view*/
-.gallerycontainer figcaption {
+.item {
   font-size: smaller;
 }
-  
+
 
   /*----------- FOOTER --------------*/
 }

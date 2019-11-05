@@ -132,6 +132,12 @@ top and bottom margins are 25px right and left margins are 50px*/
         font-size: 2rem;
     }
 
+    /*---gallery html------*/
+
+.gallerycontainer
+{
+        grid-template-columns: 1fr 1fr;
+}
 
 
 

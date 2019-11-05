@@ -230,7 +230,7 @@ top and bottom margins are 25px right and left margins are 50px*/
     color: #aadcdd;
 }
 
-.figure {
+.figure artitcle {
     margin: 0;
 }
 
@@ -278,6 +278,19 @@ footer a {
     color: #aadcdd;
 }
 
+/*---gallery html------*/
+
+.gallerycontainer
+{
+    display: grid;
+        margin: 1rem 2%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 5px;
+        text-align: center;
+        padding: 1rem 1rem;
+        justify-items: center;
+}
 .clearfix:after {
     content: "";
     display: table;

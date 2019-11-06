@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My spending record table</title>
+    <link href="css/spendingrecord.css" rel="stylesheet" type="text/css">
+    <style>
+    </style>
+  </head>
+  <body>
+
+    <!-- Let's put these new elements into action.First of all, make a local 
+    copy of spending-record.html and minimal-table.css in a new folder.Try 
+    opening it in a browser — You'll see that it looks OK, but it could 
+    stand to be improved. The "SUM" row that contains a summation of the 
+    spent amounts seems to be in the wrong place, and there are some detail
+    missing from the code.Put the obvious headers row inside a <thead> 
+    element, the "SUM" row inside a <tfoot> element, and the rest of the 
+    content inside a <tbody> element.Save and refresh, and you'll see that 
+    adding the <tfoot> element has caused the "SUM" row to go down to the 
+    bottom of the table.Next, add a colspan attribute to make the "SUM" cell 
+    span across the first four columns, so the actual number appears at the 
+    bottom of the "Cost" column.Let's add some simple extra styling to the 
+    table, to give you an idea of how useful these elements are for applying 
+    CSS. Inside the head of your HTML document, you'll see an empty <style> 
+        element. Inside this element, add the following lines of CSS code: -->
+        <h1>My spending record</h1>
+    
+          <table>
+            <caption>How I chose to spend my money</caption>
+            <thead>
+              <tr>
+                <th>Purchase</th>
+                <th>Location</th>
+                <th>Date</th>
+                <th>Evaluation</th>
+                <th>Cost (€)</th>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <td colspan="4">SUM</td>
+                <td>118</td>
+              </tr>
+            </tfoot>
+            <tbody>
+              <tr>
+                <td>Haircut</td>
+                <td>Hairdresser</td>
+                <td>12/09</td>
+                <td>Great idea</td>
+                <td>30</td>
+              </tr>
+              <tr>
+                <td>Lasagna</td>
+                <td>Restaurant</td>
+                <td>12/09</td>
+                <td>Regrets</td>
+                <td>18</td>
+              </tr>
+              <tr>
+                <td>Shoes</td>
+                <td>Shoeshop</td>
+                <td>13/09</td>
+                <td>Big regrets</td>
+                <td>65</td>
+              </tr>
+              <tr>
+                <td>Toothpaste</td>
+                <td>Supermarket</td>
+                <td>13/09</td>
+                <td>Good</td>
+                <td>5</td>
+              </tr>
+            </tbody>
+        </table>
+    
+      </body>
+    </html>

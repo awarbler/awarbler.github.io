@@ -4,6 +4,7 @@ html {
   }
   
   table {
+    table-layout: fixed;
     border-collapse: collapse;
     border: 2px solid rgb(200,200,200);
     letter-spacing: 1px;
@@ -11,11 +12,13 @@ html {
     margin: auto;
     margin-top: 20px;
     margin-bottom:20px;
-    table-layout: fixed;
+    box-shadow:10px 10px 10px #628ca6;
+    
   }
 
   h1{
     font: 2rem;
+    font-style: bold;
     margin: 0;
   }
   td, th {

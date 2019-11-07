@@ -90,13 +90,10 @@ top and bottom margins are 25px right and left margins are 50px*/
     max-width: 45rem;
     padding: .75rem;
     font-family:  'Ubuntu', sans-serif;
-    color: #aab1b2;
 }
 
-main h1,
-h2 {
+main {
     text-align: center;
-    color: #aadcdd;
     clear: both;
 }
 
@@ -105,23 +102,8 @@ main h2 {
     font-size: 1.0rem;
 }
 
-p {
-    margin: .5rem auto;
-}
-
 main section {
     margin: 10px;
-    color: #aab1b2;
-}
-
-
-
-/*---preston css------*/
-.icons {
-    height: 40px;
-    width: 40px;
-    padding: .5em;
-    flex: 1 0 15em;
 }
 
 footer p {
@@ -139,8 +121,6 @@ footer a {
 }
 
 /*---gallery css = paddding /* top | right | bottom | left */
-
-
 
 .clearfix:after {
     content: "";

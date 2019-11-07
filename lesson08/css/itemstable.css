@@ -1,6 +1,4 @@
 
-
-
 html {
   font-family: 'Ubuntu', sans-serif;
   }
@@ -13,8 +11,13 @@ html {
     margin: auto;
     margin-top: 20px;
     margin-bottom:20px;
+    table-layout: fixed;
   }
 
+  h1{
+    font: 2rem;
+    margin: 0;
+  }
   td, th {
     border: 1px solid rgb(190,190,190);
     padding: 10px 20px;

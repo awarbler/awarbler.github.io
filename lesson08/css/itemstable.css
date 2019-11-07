@@ -1,31 +1,18 @@
-header, nav, main, footer{
-  margin: 0 auto;
-  padding: .75rem;
-  max-width: 45rem;
-  font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
 
-}
-header {
-  margin-top:10px;
-}
-header, footer
-{
-  text-align: center;
-  background: #aadcdd;
-  color: white;
-}
 
 
 html {
-    font-family: sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   }
   
   table {
     border-collapse: collapse;
     border: 2px solid rgb(200,200,200);
     letter-spacing: 1px;
-    font-size: 0.8rem;
-    width: d
+    table-layout: auto;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom:20px;
   }
 
   td, th {
@@ -50,6 +37,3 @@ html {
     background-color: rgb(235,235,235);
   }
   
-  caption {
-    padding: 10px;
-  }

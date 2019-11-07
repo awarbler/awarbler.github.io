@@ -18,7 +18,7 @@ html {
 body {
     font-size: 16px;
     line-height: 1.5;
-    font-family: "Roboto", Open Sans, Helvetica, Arial, sans-serif;
+    font-family:'Ubuntu', sans-serif;
     margin: 0;
     padding: 0;
     color: #555d66;
@@ -47,7 +47,7 @@ header {
     justify-content: center;
     margin: 0 auto;
     padding: .3rem 2%;
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     background: white;
     color: #aadcdd;
 
@@ -80,68 +80,17 @@ header img {
     width: 50px;
     margin: 0 2% 0 0;
 }
-
-/*---preston css------*/
-nav {
-    margin: 0 auto;
-    color: #aab1b2;
-    padding: .5rem 2%;
-    list-style: none;
-    text-align: left;
+header {
+    border-bottom: 1px solid#aab1b2;
 }
-
-/*---preston css------*/
-nav li.active {
-    color: #aadcdd;
-    background-color: #ecf0f1;
-    text-decoration-line: underline;
-    border-radius: 4px;
-}
-
-/*---preston css------*/
-nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-/*---this is the hamburger for the small view------*/
-.navigation li:first-child {
-    display: block;
-    border-top: 1px solid #aab1b2;
-    border-bottom: 1px solid #aab1b2;
-}
-
-.navigation li {
-    display: none;
-}
-
-.navigation a {
-    display: block;
-    color: #aab1b2;
-    padding: 0.75rem;
-    text-align: left;
-    text-decoration: none;
-}
-
-.navigation a:hover {
-    color: #aadcdd;
-    background-color: white;
-    border-radius: 4px;
-}
-
-.responsive li {
-    display: block;
-}
-
 main {
     /* margin top right  bottom margin left margin: 25px; all four margins are 25px margin: 25px 50px;
 top and bottom margins are 25px right and left margins are 50px*/
     margin: 0 auto;
     max-width: 45rem;
     padding: .75rem;
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-family:  'Ubuntu', sans-serif;
     color: #aab1b2;
-
 }
 
 main h1,
@@ -150,6 +99,7 @@ h2 {
     color: #aadcdd;
     clear: both;
 }
+
 
 main h2 {
     font-size: 1.0rem;
@@ -164,113 +114,7 @@ main section {
     color: #aab1b2;
 }
 
-main div img {
-    max-width: 100%;
-}
 
-.herodiv {
-    position: relative;
-    padding: .75rem;
-}
-
-/*---preston css------*/
-.herodiv img {
-    background-color: white;
-    width: 100%;
-    height: auto;
-    border: 1px solid #f68e36;
-    border-radius: 2px;
-}
-
-/*---preston css------*/
-.herodiv h2 {
-    text-decoration: underline;
-    border-radius: 1px;
-}
-
-/*---preston css------*/
-.weathersummary {
-    position: absolute;
-    top: .5rem;
-    left: 1rem;
-    background-color: white;
-    color: #4d4d4d;
-    opacity: .5;
-    border: 2px solid #f68e36;
-    border-radius: 1px;
-    text-align: center;
-    font-size: 9px;
-    padding-left: .50rem;
-    padding-right: .50rem;
-    padding-bottom: .50rem;
-}
-
-/*---preston css------*/
-.weathersummary p {
-    margin: 0;
-    text-align: left;
-}
-
-/*---preston css------*/
-.forecast {
-    display: none;
-}
-
-/*---preston css------*/
-.forecastcontainer {
-    display: none;
-}
-
-.article {
-    /* margin top right  bottom margin left margin: 25px; all four margins are 25px margin: 25px 50px;
-top and bottom margins are 25px right and left margins are 50px*/
-    margin: .5rem auto;
-    border: 1px solid #f68e36;
-    border-radius: 2px;
-    background-color: white;
-    color: #4d4d4d;
-    padding: 0 1rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.article img {
-    width: 100%;
-    height: auto;
-}
-
-.article a {
-    color: #aadcdd;
-}
-
-.figure article {
-    margin: 0;
-}
-
-/*---preston css------*/
-.contactcontainer {
-    margin: 1rem 2%;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto auto;
-    background: #f2f2f2;
-    grid-gap: 1px 1px;
-    text-align: left;
-    padding: 1rem 1rem;
-    justify-items: center;
-}
-
-/*---preston css------*/
-.map {
-    display: none;
-}
-
-/*---preston css------*/
-.address {
-    padding-top: 1rem;
-
-
-}
 
 /*---preston css------*/
 .icons {
@@ -296,20 +140,7 @@ footer a {
 
 /*---gallery css = paddding /* top | right | bottom | left */
 
-.gallerycontainer {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-    text-align: center;
-    place-items: center center;
-}
 
-.galleryheading h1 {
-    margin: 0;
-}
-.gallerycontainer figcaption{
-    display: none;
-}
 
 .clearfix:after {
     content: "";

@@ -7,34 +7,30 @@
   <!-- Viewport for responsive web design -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Document Title -->
-  <title> CIT 230: Anita Woodford: Weather Projection: Preston </title>
+  <title> CIT 230: Anita Woodford: W08 Activity Table Build </title>
   <!-- Meta Description -->
   <meta name="description"
     content="CIT 230 Assignment Website: Web Front-End Development, at Brigham Young University - Idaho">
-  <link rel="shortcut icon" href="favicon.ico">
   <!-- link to google api  -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
   <!-- link to css style sheet  -->
   <link rel="stylesheet" href="css/normalize.css">
-  <link href="css/itemstable.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/small.css">
+  <link href="css/itemstable.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/meduim.css">
   <link rel="stylesheet" href="css/large.css">
 
 </head>
 <header>
     <!-- logo will go here or picture of me -->
-
     <!-- Header 1 title my name -->
-    <h1>Anita Woodford</h1>
+    <h1>W08 Activity: Table Build</h1>
   </header>
 
 
 <body>
-  
-    <h1>Table Practice</h1>
-
-    <table id="tablebuild">
+    <table >
 
         <!-- content of every table is enclosed by these 2 tags:<table></table>-->
 
@@ -54,7 +50,7 @@
      you want spanned. For example, colspan="2" makes a cell span two columns. -->
      <thead>
         <tr>
-            <th colspan="3" style="background-color:#7fb9c2">ACME WILDEST</th>
+            <th colspan="3" style="background-color:#7fb9c2">ACME Wildest</th>
         </tr>
 
 
@@ -72,8 +68,8 @@
     and change all the <td> elements surrounding the table headers into <th> 
     elements. use rowspan span across two rows. -->
 
-        <!-- The scope attribute specifies whether a header cell is a header for a column
-    , row, or group of columns or rows.-->
+        <!-- What is unique about <tfoot> is the placement in the HTML. It comes after 
+          <thead> and before <tbody>!-->
 
         <tr>
             <th style="color: white;background-color:#628ca6">Period </th>
@@ -81,8 +77,13 @@
             <th style="color: white;background-color:#628ca6">Sales Goal</th>
         </tr>
     </thead>
+<!-- The scope attribute specifies whether a header cell is a header for a column
+    , row, or group of columns or rows.-->
+    <tfoot>
+        <td colspan="3"style="background-color:#7fb9c2">Compiled 11/06/2019 by aWoodford</td>
+      </tfoot>
 
-
+<tbody>
         <tr>
             <td scope="row">August</td>
             <td>$3,590</td>
@@ -113,11 +114,7 @@
             <td>$6,820</td>
             <td>$7,500</td>
         </tr>
-        <td colspan="3"style="background-color:#7fb9c2">Compiled date by aWoodford</td>
-
-
-
-        <!-- link to css style sheet  -->
+      </tbody>
 
     </table>
 </body>
@@ -126,7 +123,7 @@
 
   <footer>
     <p>
-      &copy; 2020 | Weather Projection | Attributions | <a href="https://awarbler.github.io/">Anita
+      &copy; 2020 | TableBuild  | Attributions | <a href="https://awarbler.github.io/">Anita
         Woodford</a><br>
       <span id="date"></span>
     </p>

@@ -27,7 +27,7 @@ html {
   }
   
   th {
-    background-color: rgb(235,235,235);
+  
 
   }
 
@@ -36,10 +36,12 @@ html {
   }
   
   tr:nth-child(even) td {
-    background-color: #e7f0ed;
+    background-color: #e7ffed;
   }
   
   tr:nth-child(odd) td {
     background-color: rgb(235,235,235);
   }
-  
+  tfoot{
+    font-size: .8rem;
+  }

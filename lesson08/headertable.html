@@ -11,17 +11,15 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <!-- link to css style sheet  -->
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
-    <link rel="stylesheet" href="css/scope-template.css">
-    <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/meduim.css">
-    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/itemstable.css">
+
 
 </head>
 
 <body>
     <h1>Table template</h1>
 
-    <table>
+    <table id="tablebuild">
 
         <!-- content of every table is enclosed by these 2 tags:<table></table>-->
 
@@ -39,58 +37,11 @@
     have the colspan and rowspan attributes, which allow us to do just those things. 
     Both accept a unitless number value, which equals the number of rows or columns
      you want spanned. For example, colspan="2" makes a cell span two columns. -->
+     <thead>
+        <tr>
+            <th colspan="3" style="background-color:#7fb9c2">ACME WILDEST</th>
+        </tr>
 
-        <thead>
-            <tr>
-                <th colspan="3">ACME WILDEST</th>
-            </tr>
-        </thead>
-        <!-- To recognize the table headers as headers, both visually and semantically, 
-    you can use the <th> element ('th' stands for 'table header').Go into your HTML, 
-    and change all the <td> elements surrounding the table headers into <th> 
-    elements. use rowspan span across two rows. -->
-
-        <!-- The scope attribute specifies whether a header cell is a header for a column
-    , row, or group of columns or rows.-->
-    <thead> <tr>
-            <th id="period">Period </th>
-            <th id="sales">Sales</th>
-            <th id="salesgoal">Sales Goal</th>
-        </tr> </thead>
-
-
-        <tbody>
-            <tr>
-                <th scope="row">August</th>
-                <td>$3,590</td>
-                <td>$4,000</td>
-            </tr>
-            <tr>
-                <th scope="row">September</th>
-                <td>$4,442</td>
-                <td>$5,000</td>
-            </tr>
-            <tr>
-                <th scope="row">October</th>
-                <td>$3,590</td>
-                <td>$5,000</td>
-            </tr>
-            <tr>
-                <th scope="row">November</th>
-                <td>$3,590</td>
-                <td>$7,500</td>
-            </tr>
-            <!-- use colspan to make 3200 across 2 columns. -->
-            <tr>
-                <th scope="row">Black Friday</th>
-                <td colspan="2">$3,200</td>
-            </tr>
-            <tr>
-                <th scope="row">December</th>
-                <td>$6,820</td>
-                <td>$7,500</td>
-            </tr>
-        </tbody>
 
         <!-- use colspan to make compiled across 3 columns. -->
         <!-- The <tfoot> element needs to wrap the part of the table that is the 
@@ -98,29 +49,59 @@
         for example. You can include the table footer right at the bottom of the 
         table as you'd expect, or just below the table header (the browser will 
         still render it at the bottom of the table). -->
-        <tfoot>
-            <td colspan="3">Compiled date by aWoodford</td>
-        </tfoot>
 
 
 
+        <!-- To recognize the table headers as headers, both visually and semantically, 
+    you can use the <th> element ('th' stands for 'table header').Go into your HTML, 
+    and change all the <td> elements surrounding the table headers into <th> 
+    elements. use rowspan span across two rows. -->
 
-        <!-- link to css style sheet  -->
-        <!-- link to css style sheet  -->
-        <!-- link to css style sheet  -->
-        <!-- link to css style sheet  -->
-        <!-- link to css style sheet  -->
-        <!-- link to css style sheet  -->
-        <!-- link to css style sheet  -->
-        <!-- link to css style sheet  -->
-        <!-- link to css style sheet  -->
-        <!-- link to css style sheet  -->
-        <!-- link to css style sheet  -->
-        <!-- link to css style sheet  -->
-        <!-- link to css style sheet  -->
-        <!-- link to css style sheet  -->
-        <!-- link to css style sheet  -->
-        <!-- link to css style sheet  -->
+        <!-- The scope attribute specifies whether a header cell is a header for a column
+    , row, or group of columns or rows.-->
+
+        <tr>
+            <th style="color: white;background-color:#628ca6">Period </th>
+            <th style="color: white;background-color:#628ca6">Sales</th>
+            <th style="color: white;background-color:#628ca6">Sales Goal</th>
+        </tr>
+    </thead>
+
+
+        <tr>
+            <td scope="row">August</td>
+            <td>$3,590</td>
+            <td>$4,000</td>
+        </tr>
+        <tr>
+            <td scope="row">September</td>
+            <td>$4,442</td>
+            <td>$5,000</td>
+        </tr>
+        <tr>
+            <td scope="row">October</td>
+            <td>$3,590</td>
+            <td>$5,000</td>
+        </tr>
+        <tr>
+            <td scope="row">November</td>
+            <td>$3,590</td>
+            <td style="color: white;background-color:#628ca6">$7,500</td>
+        </tr>
+        <!-- use colspan to make 3200 across 2 columns. -->
+        <tr>
+            <td scope="row">Black Friday</td>
+            <td colspan="2">$3,200</td>
+        </tr>
+        <tr>
+            <td scope="row">December</td>
+            <td>$6,820</td>
+            <td>$7,500</td>
+        </tr>
+        <td colspan="3"style="background-color:#7fb9c2">Compiled date by aWoodford</td>
+
+
+
         <!-- link to css style sheet  -->
 
     </table>

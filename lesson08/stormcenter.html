@@ -9,7 +9,8 @@
   <!-- Document Title -->
   <title> CIT 230: Anita Woodford: Weather Projection: Storm Center </title>
   <!-- Meta Description -->
-  <meta name="description" content="CIT 230 Assignment Website: Web Front-End Development, at Brigham Young University - Idaho">
+  <meta name="description"
+    content="CIT 230 Assignment Website: Web Front-End Development, at Brigham Young University - Idaho">
   <link rel="shortcut icon" href="favicon.ico">
   <!-- link to google api  -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
@@ -22,7 +23,7 @@
 </head>
 
 <body>
-     <!-- Banner for top of website -->
+  <!-- Banner for top of website -->
   <div id="message">
     <!-- us js to display or hide accounding to day of the week-->
     <p>Saturday: Preston Pancakes in the Park! 9:00 am</p>
@@ -31,81 +32,119 @@
   <!-- HEADER HERE -->
   <header>
     <!-- logo will go here or picture of me -->
-    <picture>
-      <img src="images/weather200copy.png" alt="weather logo">
-    </picture>
+    <picture><img src="images/weather200copy.png" alt="weather logo"></picture>
     <!-- Header 1 title my name -->
     <section class="heading">
       <h1>Weather Projection</h1>
+      <!-- Assigned class m to get it line up correctly-->
       <div class="m">Past|Present|Future</div>
     </section>
   </header>
-  <!-- NAVIGATION HERE -->
+  <!-- NAVIGATION HERE assigned a class -->
   <nav class="navigation">
+    <!-- navagation list # is a placeholder -->
     <ul>
+      <!-- togglemenu is for the hamburger menu-->
       <li><a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
       <li><a href="#"> Home </a></li>
       <li><a href="preston.html">Preston</a></li>
       <li><a href="#">Soda Springs</a></li>
       <li><a href="#">First Haven</a></li>
+      <!-- class active is to notate which page we are on-->
       <li class="active"><a href="stormcenter.html">Storm Center</a></li>
       <li> <a href="gallery.html">Gallery</a></li>
     </ul>
   </nav>
-
+  <!-- MAIN -->
   <main>
     <!-- enter header  h2 = smaller than h1 -->
-    <h2> Storm Center</h2>
+    <h2> Storm Center - Report Severe Weather</h2>
+    <!-- CREATING FORM  i need to look up "get" I believe it is the html for submit form thank you -->
     <form method="get" action="thanks.html">
-            <fieldset>
-                <legend>Contact Information</legend>
-                <label class="top">First Name* <input type="text" name="fname" required></label>
-                <label class="top">Last Name* <input type="text" name="lname" required></label>
-                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com"></label>
-                <label class="top">Phone <input type="tel" name="phone" placeholder="1235551234"requird></label>
-                <label class="top">Zip Code <input type="number" name="zipcode" placeholder="77777"required></label>
-                <label class="top">Website <input type="url" name="url" placeholder="http://"></label>
-            </fieldset>
-    
-            <fieldset>
-               <legend>Course Information</legend>
-                <div>Audience</div>
-                <!-- // wrapping in a label tag kept audiece the smae so if we click one the other
-                will deactivate-->
-               <label class="sbs"><input type="radio" name="audience" value="beginner">Beginner </label> 
-                <label class="sbs"><input type="radio" name="audience" value="intermediate">Intermediate </label> 
-                <label class="sbs"><input type="radio" name="audience" value="advanced">Advanced </label> 
-                
-                <div>Software Needed</div>
-                <!-- alpha order-->
-                <label class="sbs"><input type="checkbox" name="code" value="y"> Coding </label>
-                <label class="sbs"><input type="checkbox" name="client" value="y"> FTP Client </label>
-                <label class="sbs"><input type="checkbox" name="process" value="y"> Preprocessor </label>
-                 <label class="sbs"><input type="checkbox" name="editing" value="y"> Photo Editing</label> 
-                
-            </fieldset>
-            
-            <fieldset>
-               <legend>Funding</legend>
-               <label class="top">Anticipated Completion Date<input type="date" name="completeDate"> </label> 
-                <label class="top">Course Subject
-                    <select name="subject"> 
-                        <!--per video no arrow downs onplease select but I see it however if I need to add later I will go to the option value after the work please select I will type &#9662; to add the arrow down-->
-                         <option value="">Please Select</option>
-                         <option value="software">Software Development</option>
-                         <option value="creative">Creative Professional</option>
-                         <option value="info">Information Technology</option>
-                         <option value="data">Data Professional</option>
-                         <option value="construction">Construction Development</option>
-                         <option value="manufacturing">Manufacturing Development</option>
-                        <option value="cyber">CyberSecurity</option>
-                    </select>
-                </label>
-                <label>How Many Authors<input type="number" name="authors"> </label> 
-            </fieldset>
-            <input type="submit" value= "Propose My Course" class="submitBtn">
-        </form>      
-        </main>
+      <!-- MAIN fieldset is to identify a section legend is the heading label is each input name on form-->
+      <fieldset>
+        <legend>Contact Information</legend>
+        <!--give each fieldset a class to group together "top" required will not let form be 
+                submitted unless it is filled out -->
+        <label class="top">Name* <input type="text" name="fname" required></label>
+        <!-- MAIN-fieldset legend label placeholder is to give user an idea of what to input-->
+        <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
+        <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
+        <label class="top">Zip Code*<input type="number" name="zipcode" placeholder="77777" required></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Storm Report</legend>
+        <!-- top means input label will go on top above or the left-->
+        <label class="top">Date of Incident<input type="date" name="thedate"></label>
+        <label class="top">Storm Event
+          <select name="weatherConditons">
+            <!--per video no arrow downs onplease select but I see it however if I need to add later I will go to the option value after the work please select I will type &#9662; to add the arrow down-->
+            <option value="">Please Select &#9662;</option>
+            <option value="flood">Flash Flood</option>
+            <option value="hail">Hail</option>
+            <option value="hurricane">Hurricane</option>
+            <option value="snow">Snow</option>
+            <option value="thunderston">Thunderstorm</option>
+            <option value="tornado">Tornado</option>
+            <option value="wind">Wind Damage</option>
+          </select>
+        </label>
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range-->
+        <!-- step value came from html5tutorial.info This is Step scale factor of the slider, 
+                default value is 1 and only allowing integer number unless minimum value is non integer number
+              copied brother blazzards formI dont understand a lot of it-->
+        <label class="flexly" for="rating"> Rating &nbsp;&nbsp;&nbsp; <input type="range" name="rating" value="10"
+            min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)"
+            onchange="adjustRating(this.value)">
+          <span id="ratingvalue">5</span>
+        </label>
+        <!-- list attribute specifying the ID of a <datalist> which defines a series of hash marks on the control.
+              Each point is represented using an <option> element with its value set to the range's value at which a 
+              mark should be drawn. -->
+        <datalist id="tickmarks">
+          <option value="0">
+          <option value="1">
+          <option value="2">
+          <option value="3">
+          <option value="4">
+          <option value="5">
+          <option value="6">
+          <option value="7">
+          <option value="8">
+          <option value="9">
+          <option value="10">
+        </datalist>
+        <label class="top">Region
+          <!--per video no arrow downs on please select but I see it however if I need to add 
+                      later I will go to the option value after the work please select I will type &#9662; to add the arrow down-->
+          <select name="stormregion">
+            <!--I want to disable the select region instead of value I use selected -->
+            <option selected="true" disabled="disabled">Select Region &#9662;</option>
+            <option value="preston">Preston</option>
+            <option value="sodasprings">Soda Springs</option>
+            <option value="fishhaven">Fishe Haven</option>
+          </select>
+        </label>
+        <!--radio example  or click the button example :)-->
+        <div>Are you safe?</div>
+        <!--// wrapping in a label tag kept audiece the same so if we click one the other
+                will deactivate -->
+        <label class="sbs"><input type="radio" name="safe" value="yes">Yes </label>
+        <label class="sbs"><input type="radio" name="safe" value="maybe">Maybe </label>
+        <label class="sbs"><input type="radio" name="safe" value="no">No</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additonal Information </legend>
+        <div class="comments">Comments</div>
+        <textarea cols="40" rows="7" name="comments" form="usrform">Please provide any additonal information.</textarea>
+        </textarea>
+
+      </fieldset>
+      <input type="submit" value="Report Severe Weather" class="submitBtn">
+    </form>
+  </main>
 
   <footer>
     <p>
@@ -118,6 +157,7 @@
     <script src="js/scripts.js"></script>
     <script src="js/windspeed.js"></script>
     <script src="js/lazy-load.js"></script>
+    <script src="js/stormrating.js"></script>
     <script>
       const today = new Date();
       console.log(today);

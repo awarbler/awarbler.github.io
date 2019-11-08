@@ -24,7 +24,7 @@ body {
     color: #555d66;
 }
 
-/*---preston css------*/
+/*---banner css------*/
 #message {
     text-align: center;
     color: #f68e36;
@@ -178,7 +178,6 @@ main div img {
     background-color: white;
     width: 100%;
     height: auto;
-    border: 1px solid #f68e36;
     border-radius: 2px;
 }
 

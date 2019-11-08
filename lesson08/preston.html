@@ -60,14 +60,14 @@
       <picture>
         <img src="imagespreston/heroimg-400w.jpg" alt="Blue Dark Clouds" srcset="imagespreston/heroimg-1028w.jpg 1028w,
         imagespreston/heroimg-800w.jpg 800w, imagespreston/heroimg-600w.jpg 600w,
-        imagespreston/heroimg-400w.jpg 400w" sizes="100vw">
+      imagespreston/heroimg-400w.jpg 400w" sizes="100vw">
 
       </picture>
       <section class="weathersummary">
         <h2>Weather Summary</h2>
         <p>Currently: <span class="current"> Sunny </span><br></p>
-        <p> High: <span id="high">30</span>&deg;<br> </p><!-- use for tempF -->
-        <p id="chill"><br> </p><!-- answer-->
+        <p> High: <span id = "high">30</span>&deg;<br> </p><!-- use for tempF -->
+        <p id = "chill"><br> </p><!-- answer-->
         <p> Humidity:<span class="humidity"> 69% </span><br></p>
         <p> Wind Speed: <span id="wSpeed">9</span> mph</p>
       </section>
@@ -97,20 +97,22 @@
       <div class="article">
         <h2>Preston FFA Soil Team Places State</h2>
         <article>
-          <img src="imagespreston/prestonarticleimg-400w.jpg" alt="Cattle">
+          <img src="images/agriculture-animal-cattle-2932130.jpg" alt="Cattle">
           <!--  <figcaption>FFA Cattle</figcaption>  HEADER HERE -->
-          <div class="articledata"> Earlier this fall Franklin County Soil and Water Conservation
-            District hosted the Southeast Idaho FFA Soil and Land Evaluation event. Over 75 FFA
-            members from area schools took part in the activity. Preston’s team earned top team
-            honors on the day and placed the top three high individuals...
-            <a href="https://www.hjnews.com/preston/">Read More</a>
-          </div>
+          <div class="articledata"> Earlier this fall Franklin County Soil and Water Conservation District hosted the
+            Southeast Idaho FFA Soil
+            and
+            Land Evaluation event. Over 75 FFA members from area schools took part in the activity. Preston’s team
+            earned
+            top team honors on the day and placed the top three high individuals...<a
+              href="https://www.hjnews.com/preston/">Read More</a>
+        
+        </div>
         </article>
     </section>
 
- <!--contact information  -->
-    <div class="contactcontainer">
 
+    <div class="contactcontainer">
       <div class="map"> <img src="images/prestonmap.png" alt="Preston City Map"></div>
       <div class="address">Weather Projection<br>
         1250 Industrial Park Road<br>
@@ -147,7 +149,8 @@
 
       if (dayNumber == 5) {
         element.classList.add("showme");
-      } else {
+      }
+      else {
         element.classList.add("hideme");
       }
     </script>

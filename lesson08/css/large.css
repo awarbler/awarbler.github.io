@@ -27,6 +27,12 @@
   padding-bottom: 10px;
 }
 
+/* stormcenter---*/
+  /*--change the large check boxes to smaller one for large view only  --*/
+  form label.sbs{
+    /*--this changes the size and brings them closer together  --*/
+   padding: .4rem 0;
+}
 
   /*----------- FOOTER --------------*/
 }

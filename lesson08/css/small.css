@@ -14,8 +14,9 @@ html {
     box-sizing: border-box;
 }
 
-/*----------- BODY ---- preston -- gallery--------*/
+/*-- BODY --*/
 body {
+    /*-- BODY font size for the whole page--*/
     font-size: 16px;
     line-height: 1.5;
     font-family: "Roboto", Open Sans, Helvetica, Arial, sans-serif;
@@ -24,7 +25,7 @@ body {
     color: #555d66;
 }
 
-/*---preston css------*/
+/*---preston css top border message------*/
 #message {
     text-align: center;
     color: #f68e36;
@@ -32,10 +33,12 @@ body {
     background-color: rgb(225, 223, 223);
 }
 
+/*---preston css top border message using js------*/
 .showme {
     display: block
 }
 
+/*---preston css top border message using js------*/
 .hideme {
     display: none;
 }
@@ -53,14 +56,12 @@ header {
 
 }
 
-/*---preston css------*/
 .heading {
     display: flex;
     /*---- flex keeps the header in the middle of the screen --------------*/
     flex-direction: column;
 }
 
-/*---preston css------*/
 .heading h1 {
     font-size: 1.5rem;
     /* margin top right  bottom left margin: 25px; all four margins are 25px margin: 25px 50px;
@@ -68,64 +69,83 @@ top and bottom margins are 25px right and left margins are 50px*/
     margin: 0 0 0 17px;
 }
 
-/*---preston css------*/
 .m {
     font-size: 1rem;
     margin: 0 0 0 17px;
     font-weight: normal;
 }
 
-/*---preston css------*/
 header img {
     width: 50px;
     margin: 0 2% 0 0;
 }
 
-/*---preston css------*/
+/*---nav = navigation section as a whole------*/
 nav {
+    /*---nav width 100vw uses the vieport width at 100% to take entire screen
+    this is not needed we can take it out-*/
+    width: 100vw;
     margin: 0 auto;
+    /*if I want i can add background-color: #ecf0f1;but I want it white so not needed*/
+    /* text color*/
     color: #aab1b2;
     padding: .5rem 2%;
-    list-style: none;
     text-align: left;
 }
 
-/*---preston css------*/
+/*---nav unordered list or in this case .navigation------*/
+nav ul {
+    /*--gets rid of annoying white space alone sides of nav bar--*/
+    margin: 0;
+    padding: 0;
+    /*--nav ul should take up the width of the page--*/
+    /*-- can be put here or in li this takes away the bullet points*/
+    list-style: none;
+
+}
+
+/*---navigation list= li or nav li or .navigation li------*/
+.navigation li {
+    /*---hide nav li or class navigation list in small view for hamburger-*/
+    display: none;
+}
+
+/*---navigation active hover?? ------*/
 nav li.active {
+    /* I changed the color*/
     color: #7fb9c2;
     background-color: #ecf0f1;
     text-decoration-line: underline;
     border-radius: 4px;
 }
 
-/*---preston css------*/
-nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-/*---this is the hamburger for the small view------*/
+/*---navigation this is the hamburger menu for the small view to show it------*/
 .navigation li:first-child {
     display: block;
     border-top: 1px solid #aab1b2;
     border-bottom: 1px solid #aab1b2;
 }
 
-.navigation li {
-    display: none;
-}
-
-.navigation a {
+/*---nav li a href links use nav a or .navigation a------*/
+nav a {
+    /*-- deletes line from under link or get rid also of that underline*/
+    text-decoration: none;
+    /*-- diplay block for hamburger menu on small screen only change in med css*/
     display: block;
+    /* I changed the color*/
     color: #aab1b2;
+    /*I added some padding*/
     padding: 0.75rem;
     text-align: left;
-    text-decoration: none;
 }
 
-.navigation a:hover {
+/*---navigation change color when mouse pass by I can use .navigation
+or nav a:hover since I used a class I can use the class but i wont
+property that will change when I move the mouse on the element here------*/
+nav a:hover {
+    /* I changed the color*/
     color: #7fb9c2;
-    background-color: white;
+    text-decoration: underline;
     border-radius: 4px;
 }
 

@@ -66,7 +66,7 @@
         <legend>Contact Information</legend>
         <!--give each fieldset a class to group together "top" required will not let form be 
                 submitted unless it is filled out -->
-        <label class="top">Name* <input type="text" name="fname" required></label>
+        <label class="top">Name* <input type="text" name="name" required></label>
         <!-- MAIN-fieldset legend label placeholder is to give user an idea of what to input-->
         <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
         <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
@@ -94,7 +94,7 @@
         <!-- step value came from html5tutorial.info This is Step scale factor of the slider, 
                 default value is 1 and only allowing integer number unless minimum value is non integer number
               copied brother blazzards formI dont understand a lot of it-->
-        <label class="flexly" for="rating"> Rating &nbsp;&nbsp;&nbsp; <input type="range" name="rating" value="10"
+        <label class="flexly" for= "rating"> Rating &nbsp;&nbsp;&nbsp; <input type="range" name="rating" value="10"
             min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)"
             onchange="adjustRating(this.value)">
           <span id="ratingvalue">5</span>

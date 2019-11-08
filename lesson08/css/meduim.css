@@ -63,7 +63,7 @@ top and bottom margins are 25px right and left margins are 50px*/
         display: grid;
         grid-template-columns: 80px 80px 80px 80px 80px;
         background: white;
-        color: #aadcdd;
+        color: #7fb9c2;
         text-align: center;
         padding: .75rem;
         padding-left: 10rem;
@@ -114,6 +114,7 @@ top and bottom margins are 25px right and left margins are 50px*/
         border-right: 1px solid #f2f2f2f2;
     }
 
+    
     .map {
         display: block;
         background: #f2f2f2;

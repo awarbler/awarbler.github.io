@@ -19,7 +19,6 @@
   <link rel="stylesheet" href="css/small.css">
   <link rel="stylesheet" href="css/meduim.css">
   <link rel="stylesheet" href="css/large.css">
-
 </head>
 
 <body>
@@ -32,10 +31,10 @@
   <!-- HEADER HERE -->
   <header>
   <!-- logo will go here -->
-    <picture>
-      <img src="images/weather200copy.png" alt="weather logo">
+  <picture>
+    <img src="images/weather200copy.png" alt="weather logo">
     </picture>
-    <!-- Header 1 title my name -->
+  <!-- Header 1 title my name -->
     <section class="heading">
       <h1>Weather Projection</h1>
       <div class="m">Past|Present|Future</div>
@@ -50,20 +49,20 @@
       <li> <a href="#">Soda Springs</a></li>
       <li> <a href="#">First Haven</a></li>
       <li> <a href="#">Storm Center</a></li>
-      <li> <a href="#">Gallery</a></li>
+      <li> <a href="gallery.html">Gallery</a></li>
     </ul>
   </nav>
 
   <main>
-    <!-- enter header  h2 = smaller than h1 -->
+  <!-- enter header  h2 = smaller than h1 -->
     <h2> Preston Idaho</h2>
     <div class="herodiv">
+
       <picture>
         <img src="images/heroimg-400w.jpg" alt="Sunset on water" srcset="images/heroimg-1028w.jpg 1028w,
-       images/heroimg-800w.jpg 800w, images/heroimg-600w.jpg 600w, 
-      images/cit230_image_franklin-400w.jpg 400w" sizes="100vw">
+        images/heroimg-800w.jpg 800w, images/heroimg-600w.jpg 600w, 
+        images/cit230_image_franklin-400w.jpg 400w" sizes="100vw"></picture>
 
-      </picture>
       <section class="weathersummary">
         <h2>Weather Summary</h2>
         <p>Currently: <span class="current"> Sunny </span><br></p>
@@ -73,6 +72,7 @@
         <p> Wind Speed: <span id="wSpeed">9</span> mph</p>
       </section>
     </div>
+
     <div class="forecast">
       <h2> 5 Day Forecast</h2>
     </div>
@@ -83,13 +83,13 @@
       <div class="cell cell-4">Thur</div>
       <div class="cell cell-5">Fri</div>
       <div class="cell cell-6"><img src="images/weathercloud.jpg" alt="weather sun "></div>
-      <div class="cell cell-7"><img src="images/rainclouds.jpg" alt="weather sun "></div>
+      <div class="cell cell-7"><img src="images/rainclouds.jpg"    alt="weather sun "></div>
       <div class="cell cell-8"><img src="images/weatherclouds.jpg" alt="weather sun "></div>
       <div class="cell cell-9"><img src="images/weatherclouds.jpg" alt="weather sun "></div>
       <div class="cell cell-10"><img src="images/weatherclouds.jpg" alt="weather sun "></div>
       <div class="cell cell-11">51 &#8457;</div>
       <div class="cell cell-12">42 &#8457;</div>
-      <div class="cell cell-13"> 42 &#8457;</div>
+      <div class="cell cell-13">42 &#8457;</div>
       <div class="cell cell-14">48 &#8457;</div>
       <div class="cell cell-15">54 &#8457;</div>
     </div>
@@ -98,27 +98,28 @@
       <div class="article">
         <h2>Preston FFA Soil Team Places State</h2>
         <article>
-          <img src="imagespreston/prestonarticleimg-400w.jpg" alt="Cattle" srcset="imagespreston/prestonarticleimg-1028w.jpg 1028w,
-          imagespreston/prestonarticleimg-800w.jpg 800w, imagespreston/prestonarticleimg-600w.jpg 600w, imagespreston/prestonarticleimg-400w.jpg 400w" sizes="100vw">
+          <img src="imagespreston/prestonarticleimg-400w.jpg" alt="Cattle">
           <!--  <figcaption>FFA Cattle</figcaption>  HEADER HERE -->
           <div class="articledata"> Earlier this fall Franklin County Soil and Water Conservation District hosted the
-            Southeast Idaho FFA Soil
-            and
-            Land Evaluation event. Over 75 FFA members from area schools took part in the activity. Preston’s team
-            earned
-            top team honors on the day and placed the top three high individuals...<a
-              href="https://www.hjnews.com/preston/">Read More</a>
-
+            Southeast Idaho FFA Soil and Land Evaluation event. Over 75 FFA members from area schools took part in
+            the activity. Preston’s team earned top team honors on the day and placed the top three high
+            individuals...<a href="https://www.hjnews.com/preston/">Read More</a>
           </div>
         </article>
     </section>
 
 
     <div class="contactcontainer">
-      <div class="map"> <img src="images/prestonmap.png" alt="Preston City Map"></div>
-      <div class="address">Weather Projection<br>
+      <figure class="itemmap"> <img src="https://via.placeholder.com/300x300.png"
+          data-src="imagespreston/prestonmap.png " alt="Preston City Map">
+        <figcaption>Preston Map</figcaption>
+      </figure>
+      <figure class="item addicon"> <img src="https://via.placeholder.com/200x200.png"
+        data-src="images/addressicon.png " alt="address icon">
+    </figure>
+      <div class=" item address">Weather Projection<br>
         1250 Industrial Park Road<br>
-        Preston, Idaho 83263<br><br> <br>
+        Preston, Idaho 83263<br></div>
         208-555-5555<br>
         www.weatherprojection.com<br>
         <div class="socialMedia"><a class="socialMedia" target="_blank" href="https://www.facebook.com"><img
@@ -138,6 +139,7 @@
       <span id="date"></span>
     </p>
     <script src="js/date.js"></script>
+    <script src="js/lazy-load.js"></script>
     <!-- have to reference javascript links here  -->
     <script src="js/scripts.js"></script>
     <script src="js/windspeed.js"></script>
@@ -150,8 +152,7 @@
 
       if (dayNumber == 5) {
         element.classList.add("showme");
-      }
-      else {
+      } else {
         element.classList.add("hideme");
       }
     </script>

@@ -6,14 +6,12 @@ html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
-
 /*----------- apply a natural box layout model to all elements --------------*/
 * {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-
 /*----------- BODY ---- preston -- gallery--------*/
 body {
     font-size: 16px;
@@ -31,7 +29,6 @@ body {
     padding: .1rem;
     background-color: rgb(225, 223, 223);
 }
-
 .showme {
     display: block
 }
@@ -49,7 +46,7 @@ header {
     padding: .3rem 2%;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     background: white;
-    color: #aadcdd;
+    color: #7fb9c2;
 
 }
 
@@ -92,8 +89,8 @@ nav {
 
 /*---preston css------*/
 nav li.active {
-    color: #aadcdd;
-    background-color: #ecf0f1;
+    color: #7fb9c2;
+    /*background-color: #ecf0f1; looks better without it-*/
     text-decoration-line: underline;
     border-radius: 4px;
 }
@@ -124,7 +121,7 @@ nav ul {
 }
 
 .navigation a:hover {
-    color: #aadcdd;
+    color: #7fb9c2;
     background-color: white;
     border-radius: 4px;
 }
@@ -147,7 +144,7 @@ top and bottom margins are 25px right and left margins are 50px*/
 main h1,
 h2 {
     text-align: center;
-    color: #aadcdd;
+    color: #7fb9c2;
     clear: both;
 }
 
@@ -178,7 +175,6 @@ main div img {
     background-color: white;
     width: 100%;
     height: auto;
-    border: 1px solid #f68e36;
     border-radius: 2px;
 }
 
@@ -240,24 +236,25 @@ top and bottom margins are 25px right and left margins are 50px*/
 }
 
 .article a {
-    color: #aadcdd;
-}
-
-.figure article {
-    margin: 0;
+    color: #7fb9c2;
 }
 
 /*---preston css------*/
 .contactcontainer {
-    margin: 1rem 2%;
     display: grid;
-    grid-template-columns: auto auto;
+    margin: 1rem 2%;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto;
     background: #f2f2f2;
     grid-gap: 1px 1px;
     text-align: left;
     padding: 1rem 1rem;
     justify-items: center;
+}
+
+.itemmap{
+        grid-column-start: 1;
+        grid-column-end: 3;
 }
 
 /*---preston css------*/
@@ -291,7 +288,7 @@ footer p {
 }
 
 footer a {
-    color: #aadcdd;
+    color: #7fb9c2;
 }
 
 /*---gallery css = paddding /* top | right | bottom | left */

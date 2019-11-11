@@ -396,7 +396,7 @@ form label.top select {
 
 form label.sbs {
     /*-display each as a block so they stack display: block;--*/
-
+    display: block;
     /*-use padding for 44 px tall so they can be touched on a mobile device --*/
     padding: .75rem 0;
     /*-repeat the color of 55 for text good design  --*/

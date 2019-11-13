@@ -1,5 +1,10 @@
 header h1 {
-	text-align: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: .3rem 2%;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  background: white;
+  color: #7fb9c2;
 }
 
 

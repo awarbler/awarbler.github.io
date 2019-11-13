@@ -7,7 +7,7 @@
   <!-- Viewport for responsive web design -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Document Title -->
-  <title> CIT 230: Anita Woodford: Presentation </title>
+  <title> CIT 230: Anita Woodford: Weather Projection: Storm Center </title>
   <!-- Meta Description -->
   <meta name="description"
     content="CIT 230 Assignment Website: Web Front-End Development, at Brigham Young University - Idaho">
@@ -27,13 +27,37 @@
 <!-- HEADER HERE -->
   <header>
     <!-- logo will go here or picture of me -->
-
+    <picture><img src="images/weather200copy.png" alt="weather logo"></picture>
+    <!-- Header 1 title my name -->
+    <section class="heading">
+      <h1>Weather Projection</h1>
+      <!-- Assigned class  to get it line up correctly-->
+      <div class="heading2">Past|Present|Future</div>
+    </section>
   </header>
+    
+<!-- NAVIGATION HERE -->
+  <!-- NAVIGATION HERE assigned a class to get it to work right but Idont know why-->
+  <nav class="navigation">
+    <!-- navagation list # is a placeholder -->
+    <ul>
+      <!-- togglemenu is for the hamburger menu-->
+      <li><a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
+      <li><a href="#"> Home </a></li>
+      <li><a href="preston.html">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">First Haven</a></li>
+      <!-- class active is to notate which page we are on-->
+      <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+      <li> <a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
     
     
 <!-- CONTENT HERE -->
 <main>
-        <p>Thanks for submitting your form.</p>
+    <h1>Storm Center </h1>
+        <p>Thanks for submitting your inquiry to the Storm Center.</p>
 
           
         
@@ -41,7 +65,11 @@
     
 <!-- FOOTER HERE -->   
 <footer>
-
+        <p>
+          &copy; 2020 | Weather Projection | Attributions | <a href="https://awarbler.github.io/">Anita
+            Woodford</a><br>
+          <span id="date"></span>
+        </p>
         <script src="js/date.js"></script>
         <!-- have to reference javascript links here  -->
         <script src="js/scripts.js"></script>

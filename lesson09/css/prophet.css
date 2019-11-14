@@ -2,18 +2,24 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 /*----font-family: 'Roboto', sans-serif;--*/
-
 /*-- BODY --*/
+
 body {
     /*-- BODY font size for the whole page--*/
     font-size: 16px;
-    line-height: 1.5;
     font-family: "Roboto", Open Sans, Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #555d66;
 }
-
+section {
+    border: 1px solid rgb(127,185,194);
+    margin: 10px;
+    padding: .3rem 2%;
+    background-color: rgba(127,185,194,.5);
+    text-align: center;
+    max-width: 35rem;
+}
 header h1{
     text-align: center;
     margin: 0 auto;
@@ -23,14 +29,7 @@ header h1{
     background-color: white;
     color: rgb(127,185,194);
 }
-section {
-    border: 1px solid rgb(127,185,194);
-    margin: 25px;
-    padding: .3rem 2%;
-    background-color: rgba(127,185,194,.5);
-    text-align: center;
-    max-width: 35rem;
-}
+
 div.cards{
     display: block;
     background-color: white;
@@ -47,8 +46,7 @@ img {
     box-shadow: 0 0 5px gray;
     
 }
-h2{
-    margin-bottom: 5px;
+h2{ 
     color: rgb(127,185,194);
 }
 p{

@@ -51,11 +51,12 @@ div.cards{
 }
 img {
     display: block;
-    margin: auto;
+    margin: auto auto 3% auto;
     max-width: 100%;
     width: 320px;
     height: auto;
     box-shadow: 0 0 10px gray;
+    
 }
 h2{
     margin-bottom: 5px;
@@ -98,4 +99,4 @@ footer a {
     
 
 }
-
+}

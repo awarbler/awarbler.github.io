@@ -29,7 +29,7 @@ body {
 /*---preston css top border message------*/
 #message {
     text-align: center;
-    color: #f68e36;
+    color: #EDC87E;
     padding: .1rem;
     background-color: rgb(225, 223, 223);
 }
@@ -213,7 +213,7 @@ main div img {
     background-color: white;
     color: #4d4d4d;
     opacity: .5;
-    border: 2px solid #f68e36;
+    border: 2px solid #EDC87E;
     border-radius: 1px;
     text-align: center;
     font-size: 9px;
@@ -242,7 +242,7 @@ main div img {
     /* margin top right  bottom margin left margin: 25px; all four margins are 25px margin: 25px 50px;
 top and bottom margins are 25px right and left margins are 50px*/
     margin: .5rem auto;
-    border: 1px solid #f68e36;
+    border: 1px solid #EDC87E;
     border-radius: 2px;
     background-color: white;
     color: #4d4d4d;
@@ -334,7 +334,7 @@ form fieldset {
     /*-seperate from each other -*/
     margin: 2rem 0;
     /*-thing solid blue border--*/
-    border: 1px solid #f68e36;
+    border: 1px solid #EDC87E;
     /*-rounded corners--*/
     border-radius: 10px;
     /*--padding inside --*/
@@ -428,7 +428,7 @@ form input.submitBtn {
 /*- help the user quickly identify the requried input with a red block of color  --*/
 form label.top input:required {
     /*--set border --*/
-    border-left: #f68e36 solid 6px;
+    border-left: #EDC87E solid 6px;
 }
 
 /*--:required is a psuedo code --*/

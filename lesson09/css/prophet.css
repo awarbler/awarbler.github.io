@@ -6,19 +6,27 @@
 
 body {
     /*-- BODY font size for the whole page--*/
-    font-size: 16px;
+    font-size: 14px;
     font-family: "Roboto", Open Sans, Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #555d66;
 }
-section {
+.cards > section {
     border: 1px solid rgb(127,185,194);
+    background-color: rgba(127,185,194,.5);
     margin: 10px;
     padding: .3rem 2%;
-    background-color: rgba(127,185,194,.5);
     text-align: center;
     max-width: 35rem;
+}
+.cards {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 5px;
+    box-shadow: 0 0 10px rgba(128,128,128,.5);
+    
+
 }
 header h1{
     text-align: center;
@@ -28,15 +36,9 @@ header h1{
     font-weight: bold;
     background-color: white;
     color: rgb(127,185,194);
+    box-shadow: 0 0 5px rgba(128,128,128,.5)
 }
 
-div.cards{
-    display: block;
-    background-color: white;
-    box-shadow: 0 0 5px gray;
-    padding: .3rem 2%;
-    margin: 0 auto;
-}
 img {
     display: block;
     margin: auto auto 3% auto;
@@ -61,6 +63,7 @@ footer p {
     color: #aab1b2;
     text-align: center;
     border-top: 1px solid #aab1b2;
+    box-shadow: 0 0 5px rgba(128,128,128,.5);
 }
 
 footer a {
@@ -68,22 +71,19 @@ footer a {
 }
 
 
-@media only screen and (min-width: 32.5rem)
+@media only screen and (min-width: 37.5em)
 {
 
-    div.cards{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-
+    .cards{
+        grid-template-columns: auto auto;
     }
-}
-@media only screen and (min-width: 64em)  {
-    div.cards{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    
 
 }
+@media only screen and (min-width: 60em) {
+   
+    .cards{
+        grid-template-columns: auto auto auto auto;
+    }
+
+
 }

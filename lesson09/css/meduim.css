@@ -2,7 +2,7 @@
 @media only screen and (min-width:560px*/
 @media only screen and (min-width: 32.5rem) {
     header img {
-        width: 50%;
+        width: 80px;
     }
 
     header {
@@ -12,8 +12,8 @@
     .heading h1 {
         font-size: 2.5rem;
     }
-
-    .m {
+/*-- m*/
+    .heading2{
         font-size: 1.5rem;
     }
    /*-- navigation the whole section*/

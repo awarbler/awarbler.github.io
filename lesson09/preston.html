@@ -20,7 +20,6 @@
   <link rel="stylesheet" href="css/small.css">
   <link rel="stylesheet" href="css/meduim.css">
   <link rel="stylesheet" href="css/large.css">
-
 </head>
 
 <body>
@@ -42,8 +41,8 @@
     </section>
   </header>
   <!-- NAVIGATION HERE -->
-  <nav class="navigation">
-    <ul>
+  <nav>
+    <ul class="navigation">
       <li> <a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
       <li><a href="index.html"> Home </a></li>
       <li class="active"><a href="preston.html">Preston</a></li>
@@ -53,15 +52,14 @@
       <li> <a href="gallery.html">Gallery</a></li>
     </ul>
   </nav>
- 
+
   <main>
     <!-- enter header  h2 = smaller than h1 -->
     <h2> Preston Idaho</h2>
-    
+
     <div class="herodiv">
       <picture>
-        <img src="imagespreston/heroimg-400w.jpg" alt="Blue Dark Clouds" 
-        srcset="imagespreston/heroimg1-1028w.jpg 1028w,
+        <img src="imagespreston/heroimg-400w.jpg" alt="Blue Dark Clouds" srcset="imagespreston/heroimg1-1028w.jpg 1028w,
         imagespreston/heroimg-800w.jpg 800w, 
         imagespreston/heroimg-600w.jpg 600w,
         imagespreston/heroimg-400w.jpg 400w" sizes="100vw">
@@ -70,8 +68,8 @@
       <section class="weathersummary">
         <h2>Weather Summary </h2>
         <p>Currently: <span class="current"> Sunny </span><br></p>
-        <p> High: <span id = "high">30</span>&deg;<br> </p><!-- use for tempF -->
-        <p id = "chill"><br> </p><!-- answer-->
+        <p> High: <span id="high">30</span>&deg;<br> </p><!-- use for tempF -->
+        <p id="chill"><br> </p><!-- answer-->
         <p> Humidity:<span class="humidity"> 69% </span><br></p>
         <p> Wind Speed: <span id="wSpeed">9</span> mph</p>
       </section>
@@ -110,10 +108,10 @@
             earned
             top team honors on the day and placed the top three high individuals...<a
               href="https://www.hjnews.com/preston/">Read More</a>
-        
-        </div>
-        </div>
-        </article>
+
+          </div>
+      </div>
+      </article>
     </section>
 
     <div class="contactcontainer">
@@ -152,8 +150,7 @@
 
       if (dayNumber == 5) {
         element.classList.add("showme");
-      }
-      else {
+      } else {
         element.classList.add("hideme");
       }
     </script>

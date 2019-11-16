@@ -85,16 +85,18 @@ nav {
     /*---nav width 100vw uses the vieport width at 100% to take entire screen
     this is not needed we can take it out-*/
     width: 100vw;
+    /* i want the nav to go all the way across otherwise max width to 600px margin10px auto*/
     margin: 0 auto;
     /*if I want i can add background-color: #ecf0f1;but I want it white so not needed*/
     /* text color*/
     color: #aab1b2;
     padding: .5rem 2%;
     text-align: left;
+    font-size: .75em;
 }
 
-/*---nav unordered list or in this case .navigation------*/
-nav ul {
+/*---nav unordered list or in this case .navigation or nav ul------*/
+.navigation {
     /*--gets rid of annoying white space alone sides of nav bar--*/
     margin: 0;
     padding: 0;
@@ -103,52 +105,53 @@ nav ul {
     list-style: none;
 
 }
-
-/*---navigation list= li or nav li or .navigation li------*/
-.navigation li {
-    /*---hide nav li or class navigation list in small view for hamburger-*/
-    display: none;
-}
-
-/*---navigation active hover?? ------*/
-nav li.active {
-    /* I changed the color*/
-    color: #7fb9c2;
-    background-color: #ecf0f1;
-    text-decoration-line: underline;
-    border-radius: 4px;
-}
-
 /*---navigation this is the hamburger menu for the small view to show it------*/
 .navigation li:first-child {
     display: block;
     border-top: 1px solid #aab1b2;
     border-bottom: 1px solid #aab1b2;
 }
-
-/*---nav li a href links use nav a or .navigation a------*/
-nav a {
-    /*-- deletes line from under link or get rid also of that underline*/
-    text-decoration: none;
-    /*-- diplay block for hamburger menu on small screen only change in med css*/
+/*---navigation list= li or nav li or .navigation li------*/
+.navigation li {
+    /*---hide nav li or class navigation list in small view for hamburger-*/
+    display: none;
+}
+/*---nav class navigation a style the menu items can also be called nav a or nav li a------*/
+.navigation a{
+    /*---nav ul li a href links use nav a or .navigation a------*/
     display: block;
-    /* I changed the color*/
+     /* I changed the color*/
     color: #aab1b2;
-    /*I added some padding*/
+     /*I added some padding*/
     padding: 0.75rem;
     text-align: left;
+     /*-- deletes line from under link or get rid also of that underline*/
+    text-decoration: none;
 }
-
-/*---navigation change color when mouse pass by I can use .navigation
-or nav a:hover since I used a class I can use the class but i wont
-property that will change when I move the mouse on the element here------*/
-nav a:hover {
-    /* I changed the color*/
+/*---hange color when mouse passes by I can use .navigation a:hover
+or nav a:hover since I used a class I can use the class -----*/
+.navigation a:hover{
     color: #7fb9c2;
     text-decoration: underline;
+    font-weight: 700;
+}
+
+/*---navigation active page or class .navigation li a ------*/
+nav li.active {
+    /* I changed the color-nav*/
+    color: #7fb9c2;
+    background-color: #ecf0f1;
+    text-decoration-line: underline;
     border-radius: 4px;
 }
 
+/* when the button is clicked - the responsive class is added 
+and accounted for here  or it could be called . responsive li if there 
+isnt a class assigned to it*/
+/* the onclick JS toggles the .repsonsive class from display none 
+(.navigation li) to display block because the repsonsive class is added 
+to the end of the class list like this in HTML Line #6.<ul class="navigation responsive">
+  */
 .responsive li {
     display: block;
 }

@@ -10,11 +10,11 @@
     }
 
     .heading h1 {
-        font-size: 2.5rem;
+        font-size: 2.0rem;
     }
 /*-- m*/
     .heading2{
-        font-size: 1.5rem;
+        font-size: 1.0rem;
     }
    /*-- navigation the whole section*/
     nav {
@@ -28,15 +28,16 @@
         align-items: center;
         justify-content: center;
     }
-
     .navigation li:first-child {
         display: none;
     }
 
     .navigation li {
         display: block;
-        flex: 1 1 100%;
-        float: left;
+        flex: 1 1 10%;
+    }
+    .navigation li a{
+        text-align: center;
     }
 
     .herodiv {
@@ -49,7 +50,7 @@
     }
 
     #main {
-        max-width: 600px;
+        max-width: 760px;
     }
 
     .forecast {

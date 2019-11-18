@@ -30,6 +30,8 @@ fetch(requestURL)
 
         // this is to go through all prophets with a for loop
         for (let i = 0; i < towns.length; i++) {
+            // add if statement page 149 example
+            if (towns[i].name == 'Fish Haven' || towns[i].name == 'Preston'|| towns[i].name == 'Soda Springs') {
 
             // build the HTML of the prophet card using the createElement(), textContent(), 
             //and appendChild() methods on the document. We will place all of these prophet 
@@ -42,6 +44,7 @@ fetch(requestURL)
             // this is to populate the page , this needs to be done in the loop
 
             let card = document.createElement('section'); // how do I know this so each card will be a section
+            let div = document.createElement('div')
             let h2 = document.createElement('h2'); // create an h2 because it is 
             let h3 = document.createElement('h3'); // create an h2 because it is 
             let yearFounded = document.createElement('p'); // creates date of birth 
@@ -59,8 +62,8 @@ fetch(requestURL)
             population.textContent = "Population: " + towns[i].currentPopulation;
             rainFall.textContent = "Annual Rain: " + towns[i].averageRainfall;
             
-            image.setAttribute('src', towns[i].imageurl);
-            image.setAttribute('alt', towns[i].name + ' ' + towns[i].photo);
+            image.setAttribute('src',"imagehome/" + towns[i].photo);
+            image.setAttribute('alt', towns[i].photo + ' ' + towns[i].name);
 
             // card is the section and this puts the information into section
             card.appendChild(h2);
@@ -72,6 +75,7 @@ fetch(requestURL)
 
             // this tells query selection to find div cards
             document.querySelector('div.cards').appendChild(card);
+            }
         }
     });
 

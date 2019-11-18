@@ -60,6 +60,10 @@
         font-size: 30px;
     }
 
+ 
+
+
+
     #main {
         max-width: 760px;
     }
@@ -161,6 +165,9 @@ top and bottom margins are 25px right and left margins are 50px*/
     padding: 10px 10px 9px 10px;
     
     
+}
+.cards{
+    grid-template-columns: auto auto;
 }
 
 

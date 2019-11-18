@@ -55,59 +55,23 @@
     
     <div class="herodiv">
       <picture>
-        <img src="imagespreston/heroimg-400w.jpg" alt="Blue Dark Clouds" 
-        srcset="imagespreston/heroimg1-1028w.jpg 1028w,
-        imagespreston/heroimg-800w.jpg 800w, 
-        imagespreston/heroimg-600w.jpg 600w,
-        imagespreston/heroimg-400w.jpg 400w" sizes="100vw">
+        <img src="imagehome/herohomeimg-400w.jpg" alt="snowy field" 
+        srcset="imagehome/herohomeimg-1028w.jpg 1028w,
+        imagehome/herohomeimg-800w.jpg 800w, 
+        imagehome/herohomeimg-600w.jpg 600w,
+        imagehome/herohomeimg-400w.jpg 400w" sizes="100vw">
       </picture>
 
-      <section class="weathersummary">
-        <h2>Winter Adventures </h2>
-       
+      <section class="homesummary">
+        <h2>Winter <br>Adventures </h2>
       </section>
     </div>
-    <div class="forecast">
-      <h2> Start Planning your ADVENTURE</h2>
-    </div>
-    <div class="forecastcontainer">
-      <div class="cell cell-1">Mon</div>
-      <div class="cell cell-2">Tues</div>
-      <div class="cell cell-3">Wed</div>
-      <div class="cell cell-4">Thur</div>
-      <div class="cell cell-5">Fri</div>
-      <div class="cell cell-6"><img src="images/weathercloud.jpg" alt="weather sun "></div>
-      <div class="cell cell-7"><img src="images/rainclouds.jpg" alt="weather sun "></div>
-      <div class="cell cell-8"><img src="images/weatherclouds.jpg" alt="weather sun "></div>
-      <div class="cell cell-9"><img src="images/weatherclouds.jpg" alt="weather sun "></div>
-      <div class="cell cell-10"><img src="images/weatherclouds.jpg" alt="weather sun "></div>
-      <div class="cell cell-11">51 &#8457;</div>
-      <div class="cell cell-12">42 &#8457;</div>
-      <div class="cell cell-13"> 42 &#8457;</div>
-      <div class="cell cell-14">48 &#8457;</div>
-      <div class="cell cell-15">54 &#8457;</div>
-    </div>
+    <div> <h2> Plan your ADVENTURES!</h2><div>
 
     <section>
       <div class="cards"></div>
     </section>
-
-
-    <div class="contactcontainer">
-      <div class="map"> <img src="images/prestonmap.png" alt="Preston City Map"></div>
-      <div class="address">South Idaho Weather<br>
-        1250 Industrial Park Road<br>
-        Preston, Idaho 83263<br><br> <br>
-        208-555-5555<br>
-        www.southidahoweather.com<br>
-        <div class="socialMedia"><a class="socialMedia" target="_blank" href="https://www.facebook.com"><img
-              class="icons" src="images/facebook(1).png" alt="Facebook Icon"></a>
-          <a class="socialMedia" target="_blank" href="https://www.instagram.com"><img class="icons"
-              src="images/instagram(1).png" alt="Instagram Icon"></a>
-          <a class="socialMedia" target="_blank" href="https://www.twitter.com"><img class="icons"
-              src="images/twitter(1).png" alt="Twitter Icon"></a></div>
-      </div>
-    </div>
+    
   </main>
 
   <footer>
@@ -115,26 +79,19 @@
       &copy; 2020 | South Idaho Weather | Attributions | <a href="https://awarbler.github.io/">Anita
         Woodford</a><br>
       <span id="date"></span>
+      <div class="wireframes"><a target=_blank href="imageswireframes/iPhone 6-7-8 – 1.png">Iphone WireFrame</a>,
+        <a target=_blank href="imageswireframes/iPad Pro 12.9in – 3.png">Ipad WireFrame</a>
+        <a target=_blank href="imageswireframes/Web 1280 – 1.png">web Wirefram</a></div>
     </p>
+    
     <script src="js/date.js"></script>
-    <!-- have to reference javascript links here  -->
+   
+    <script src="js/homecards.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="js/windspeed.js"></script>
     <script>
-      const today = new Date();
-      console.log(today);
-      const dayNumber = today.getDay();
-      console.log(dayNumber);
-      const element = document.getElementById("message");
 
-      if (dayNumber == 5) {
-        element.classList.add("showme");
-      }
-      else {
-        element.classList.add("hideme");
-      }
     </script>
   </footer>
-</body>
+  </body>
 
-</html>
+  </html>

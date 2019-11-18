@@ -302,6 +302,27 @@ top and bottom margins are 25px right and left margins are 50px*/
     flex: 1 0 15em;
 }
 
+.homesummary{
+    position: absolute;
+    top:5rem;
+    left:10.5rem;
+    background-color: white;
+    opacity: .5;
+    border: 4px solid #EDC87E;
+    border-radius: 1px;
+    text-align: center;
+    padding-left: .50rem;
+    padding-right: .50rem;
+}
+.homesummary h2{
+    font-style: italic;
+    font: bold;
+    color: gray;
+    text-decoration: none;
+    margin: 0;
+    letter-spacing: 2pt;
+}
+
 footer p {
     padding: .75rem;
     font-size: .8rem;
@@ -314,6 +335,14 @@ footer p {
 
 footer a {
     color: #7fb9c2;
+}
+.wireframes{
+    font-size: .8rem;
+    margin-top: 5px;
+    background: white;
+    color: #aab1b2;
+    text-align: center;
+
 }
 
 /*---gallery css = paddding /* top | right | bottom | left */
@@ -478,6 +507,24 @@ textarea {
     resize: none;
     /*-background color for inputs --*/
     background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.cards > section {
+    border: 1px solid rgb(127,185,194);
+    background-color: rgba(127,185,194,.5);
+    margin: 10px;
+    padding: .3rem 2%;
+    text-align: center;
+    max-width: 35rem;
+}
+.cards {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 5px;
+    box-shadow: 0 0 10px rgba(128,128,128,.5);
+    
+
 }
 
 .clearfix:after {

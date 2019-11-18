@@ -43,7 +43,7 @@ fetch(requestURL)
 
             let card = document.createElement('section'); // how do I know this so each card will be a section
             let h2 = document.createElement('h2'); // create an h2 because it is 
-            let h1 = document.createElement('h1'); // create an h2 because it is 
+            let h3 = document.createElement('h3'); // create an h2 because it is 
             let yearFounded = document.createElement('p'); // creates date of birth 
             let population = document.createElement('p');// creates place of birth 
             let rainFall= document.createElement('p');// creates place of birth 
@@ -54,7 +54,7 @@ fetch(requestURL)
             // do this for all information 
             // textcontent is putting whatever is in the string
             h2.textContent = towns[i].name;
-            h1.textContent = towns[i].motto;
+            h3.textContent = towns[i].motto;
             yearFounded.textContent = "Year Founded: " + towns[i].yearFounded;
             population.textContent = "Population: " + towns[i].currentPopulation;
             rainFall.textContent = "Annual Rain: " + towns[i].averageRainfall;
@@ -64,7 +64,7 @@ fetch(requestURL)
 
             // card is the section and this puts the information into section
             card.appendChild(h2);
-            card.appendChild(h1);
+            card.appendChild(h3);
             card.appendChild(yearFounded);
             card.appendChild(population);
             card.appendChild(rainFall);

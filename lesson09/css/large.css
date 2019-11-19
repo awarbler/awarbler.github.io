@@ -14,6 +14,10 @@
     
     font-size: 30px;
 }
+.homesummary img{
+  width: 100%;
+  height: auto;
+}
   /*---gallery html------*/
   .gallerycontainer {
     grid-template-columns: 1fr 1fr 1fr;
@@ -48,10 +52,41 @@
   }
 
   .cards{
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    max-width: 800px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+   
 }
-.cards h3{
-  font-size:12px;
+.cards section{ display: block;}
+  .towns h2 {
+   padding: 0 ;
+  margin: 0;
+  text-align: center;
+}
+
+.towns h3 {
+  padding: 0 ;
+  margin: 0;
+  text-align: center;
+}
+
+.towns p {
+  padding: 0 ;
+  margin: 0;
+  text-align: center;
+}
+
+.townimage {
+    width: 100%;
+    height: auto;
+}
+
+.towndata {
+    width: auto;
 }
 
   /*----------- FOOTER --------------*/

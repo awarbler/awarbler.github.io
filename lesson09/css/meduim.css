@@ -12,22 +12,26 @@
     .heading h1 {
         font-size: 2.0rem;
     }
-/*-- m*/
-    .heading2{
+
+    /*-- m*/
+    .heading2 {
         font-size: 1.0rem;
     }
-   /*-- navigation the whole section*/
+
+    /*-- navigation the whole section*/
     nav {
         border-bottom: 1px solid#aab1b2;
     }
-     /*-- Display in a row using ul in this case I am using a class
+
+    /*-- Display in a row using ul in this case I am using a class
      .navigation the whole section* using class*/
     .navigation {
-         /*-- diplaying links elements in a row flex direction row*/
+        /*-- diplaying links elements in a row flex direction row*/
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
     .navigation li:first-child {
         display: none;
     }
@@ -36,10 +40,12 @@
         display: block;
         flex: 1 1 10%;
     }
-    .navigation li a{
+
+    .navigation li a {
         text-align: center;
     }
-/* this is for home page and preston page main picture*/
+
+    /* this is for home page and preston page main picture*/
     .herodiv {
         font-size: 100%;
     }
@@ -49,14 +55,15 @@
         height: auto;
     }
 
-    .homesummary{
+    .homesummary {
         position: absolute;
         top: 7rem;
         left: 13rem;
-        
+
     }
-    .homesummary h2{
-        
+
+    .homesummary h2 {
+
         font-size: 30px;
     }
 
@@ -147,22 +154,30 @@ top and bottom margins are 25px right and left margins are 50px*/
 
     /*---gallery html------*/
 
-.gallerycontainer
-{
+    .gallerycontainer {
         grid-template-columns: 1fr 1fr;
         border-radius: 2px;
         place-items: center center;
-}
+    }
 
-.item{
-    border-radius: 3px;
-    border: 1px solid #dbe1e2;
-    width: 100%;
-    padding: 10px 10px 9px 10px;
-    
-    
-}
-<<<<<<< HEAD
+    .item {
+        border-radius: 3px;
+        border: 1px solid #dbe1e2;
+        width: 100%;
+        padding: 10px 10px 9px 10px;
+
+
+    }
+
+    /*cards is the individual sections
+.cards sections is the info in the sections 
+.cards sections nth child odd 
+. cards h2
+.cards h3
+.cards p
+.townimage 
+.towndata
+
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -171,16 +186,45 @@ top and bottom margins are 25px right and left margins are 50px*/
     align-items: center;
     max-width: 760px;
 
-=======
-.cards{
-    display:grid;
-    grid-template-columns: 1fr;
->>>>>>> 2d5abc3422fe8f49e6141bdffc4149437ec7fc9f
-}
+}*/
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 700px;
+    }
+
+    .cards section {
+        display: flex;
+        flex-direction: row;
+
+    }
+    .towns h2 {
+        padding: 15px 0 0 15px;
+        margin: 0;
+        text-align: left;
+    }
+
+    .towns h3 {
+        margin: 0;
+        padding: 0 32px 25px 15px;
+        text-align: left;
+    }
+
+    .towns p {
+        padding: 0 0 0 15px;
+        margin: 0;
+        text-align: left;
+    }
+
+    .townimage {
+        width: 300px;
+        height: auto;
+        padding: 15px;
+    }
+
+    .towndata {
+        width: 350px;
+    }
 
 }
-
-<<<<<<< HEAD
-=======
-}
->>>>>>> 2d5abc3422fe8f49e6141bdffc4149437ec7fc9f

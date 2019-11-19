@@ -20,8 +20,6 @@ weatherObject.onload = function(){
     console.log(weatherInfo);
     // click source control
 
-
-
 } // end of onload function 
 
 

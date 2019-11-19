@@ -163,6 +163,7 @@ top and bottom margins are 25px right and left margins are 50px*/
     
 }
 .cards{
+    display:grid;
     grid-template-columns: 1fr;
 }
 div.card section{

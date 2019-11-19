@@ -44,7 +44,7 @@ fetch(requestURL)
             // this is to populate the page , this needs to be done in the loop
 
             let card = document.createElement('section'); // how do I know this so each card will be a section
-            let div = document.createElement('div')
+            let data = document.createElement('div')
             let h2 = document.createElement('h2'); // create an h2 because it is 
             let h3 = document.createElement('h3'); // create an h2 because it is 
             let yearFounded = document.createElement('p'); // creates date of birth 
@@ -64,13 +64,16 @@ fetch(requestURL)
             
             image.setAttribute('src',"imagehome/" + towns[i].photo);
             image.setAttribute('alt', towns[i].photo + ' ' + towns[i].name);
+            image.setAttribute('class','townimage');
+            image.setAttribute('class' 'towndata');
 
             // card is the section and this puts the information into section
-            card.appendChild(h2);
-            card.appendChild(h3);
-            card.appendChild(yearFounded);
-            card.appendChild(population);
-            card.appendChild(rainFall);
+            data.appendChild(h2);
+            data.appendChild(h3);
+            data.appendChild(yearFounded);
+            data.appendChild(population);
+            data.appendChild(rainFall);
+            card.appendChild(data);
             card.appendChild(image);
 
             // this tells query selection to find div cards

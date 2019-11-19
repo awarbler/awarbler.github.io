@@ -162,6 +162,7 @@ top and bottom margins are 25px right and left margins are 50px*/
     
     
 }
+<<<<<<< HEAD
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -170,7 +171,16 @@ top and bottom margins are 25px right and left margins are 50px*/
     align-items: center;
     max-width: 760px;
 
+=======
+.cards{
+    display:grid;
+    grid-template-columns: 1fr;
+>>>>>>> 2d5abc3422fe8f49e6141bdffc4149437ec7fc9f
 }
 
 }
 
+<<<<<<< HEAD
+=======
+}
+>>>>>>> 2d5abc3422fe8f49e6141bdffc4149437ec7fc9f

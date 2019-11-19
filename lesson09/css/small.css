@@ -507,20 +507,24 @@ textarea {
     /*-background color for inputs --*/
     background-color: rgba(0, 0, 0, 0.1);
 }
-
+.cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 35rem;
+}
 .cards section {
     border: 1px solid rgb(127,185,194);
     background-color: rgba(127,185,194,.2);
-    max-width: 35rem;
-    grid-template-columns: auto;
+    
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.cards{
+div.cards section{
     display: grid;
     grid-template-columns: 1fr;
 }
+
 .cards h2,{
 
     font-family: 'Roboto', sans-serif;

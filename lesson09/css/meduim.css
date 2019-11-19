@@ -162,9 +162,20 @@ top and bottom margins are 25px right and left margins are 50px*/
     
     
 }
-.cards{
-    grid-template-columns: auto;
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: .25rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 760px;
+
 }
 
-
+.towndata, .townimage{
+    display: grid;
+    grid-auto-columns: 1fr 2fr;
+ 
 }
+}
+

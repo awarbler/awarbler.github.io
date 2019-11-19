@@ -65,7 +65,7 @@ fetch(requestURL)
             image.setAttribute('src',"imagehome/" + towns[i].photo);
             image.setAttribute('alt', towns[i].photo + ' ' + towns[i].name);
             image.setAttribute('class','townimage');
-            image.setAttribute('class' 'towndata');
+            data.setAttribute('class', 'towndata');
 
             // card is the section and this puts the information into section
             data.appendChild(h2);

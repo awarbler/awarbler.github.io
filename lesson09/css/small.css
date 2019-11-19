@@ -235,7 +235,7 @@ main div img {
 .homesummary{
     position: absolute;
     top: 6rem;
-    left:8rem;
+    left:9.5rem;
     background-color: white;
     opacity: .5;
     border: 4px solid #EDC87E;
@@ -323,26 +323,6 @@ top and bottom margins are 25px right and left margins are 50px*/
     flex: 1 0 15em;
 }
 
-.homesummary{
-    position: absolute;
-    top:5rem;
-    left:8rem;
-    background-color: white;
-    opacity: .5;
-    border: 4px solid #EDC87E;
-    border-radius: 1px;
-    text-align: center;
-    padding-left: .50rem;
-    padding-right: .50rem;
-}
-.homesummary h2{
-    font-style: italic;
-    font: bold;
-    color: gray;
-    text-decoration: none;
-    margin: 0;
-    letter-spacing: 2pt;
-}
 
 footer p {
     padding: .75rem;

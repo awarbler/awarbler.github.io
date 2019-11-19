@@ -515,7 +515,6 @@ textarea {
 .cards section {
     border: 1px solid rgb(127,185,194);
     background-color: rgba(127,185,194,.2);
-    
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -538,7 +537,9 @@ div.cards section{
     font-style: italic;
     font-size: smaller;
 }
-
+.cards p{
+    padding: 0%;
+}
 
 .clearfix:after {
     content: "";

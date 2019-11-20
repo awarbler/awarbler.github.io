@@ -37,7 +37,7 @@ weatherObject.onload = function(){
 
     // full path looks weather image looks like //openwethermap.org/img/w/01n.png we remove the html protocol so it will work anywhere , notice the file name 01n , the file name is given to us in the json data. will create dynamic path to create image name with the json data create a const icon path = " " ++ " "; the first part of the name of the image will go inside the first quotes the file name extension will go inside the last quotes  and the variable icon code from json data will go between the ++
     // should look like this create a const with icon_path as the variable you have quotes with the path, you have a + to concat ( to join 2 or more strings together) then the variable iconcode we created for the icon another + to close the concat then we glue on the last part with "" and we put the extension in the middle, make sure you add ; to close 
-    const icon_path = "//openwethermap.org/img/w/" + iconcode + ".png";
+    const icon_path = "//openweathermap.org/img/w/" + iconcode + ".png";
 
     // to check to see if icon_path works or will display we will put it in console
     console.log(icon_path);

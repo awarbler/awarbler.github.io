@@ -6,6 +6,7 @@
 html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
+    box-sizing: border-box;
 }
 
 /*----------- apply a natural box layout model to all elements --------------*/
@@ -33,10 +34,12 @@ body {
     padding: .1rem;
     background-color: rgb(225, 223, 223);
 }
+
 /*---preston css top border message using js------*/
 .showme {
     display: block
 }
+
 /*---preston css top border message using js------*/
 .hideme {
     display: none;
@@ -65,6 +68,7 @@ header {
 top and bottom margins are 25px right and left margins are 50px*/
     margin: 0 0 0 17px;
 }
+
 /*---was .m -----*/
 .heading2 {
     font-style: italic;
@@ -105,32 +109,36 @@ nav {
     list-style: none;
 
 }
+
 /*---navigation this is the hamburger menu for the small view to show it------*/
 .navigation li:first-child {
     display: block;
     border-top: 1px solid #aab1b2;
     border-bottom: 1px solid #aab1b2;
 }
+
 /*---navigation list= li or nav li or .navigation li------*/
 .navigation li {
     /*---hide nav li or class navigation list in small view for hamburger-*/
     display: none;
 }
+
 /*---nav class navigation a style the menu items can also be called nav a or nav li a------*/
-.navigation a{
+.navigation a {
     /*---nav ul li a href links use nav a or .navigation a------*/
     display: block;
-     /* I changed the color*/
+    /* I changed the color*/
     color: #aab1b2;
-     /*I added some padding*/
+    /*I added some padding*/
     padding: 0.75rem;
     text-align: left;
-     /*-- deletes line from under link or get rid also of that underline*/
+    /*-- deletes line from under link or get rid also of that underline*/
     text-decoration: none;
 }
+
 /*---hange color when mouse passes by I can use .navigation a:hover
 or nav a:hover since I used a class I can use the class -----*/
-.navigation a:hover{
+.navigation a:hover {
     color: #7fb9c2;
     text-decoration: underline;
     font-weight: 700;
@@ -232,10 +240,11 @@ main div img {
     margin: 0;
     text-align: left;
 }
-.homesummary{
+
+.homesummary {
     position: absolute;
     top: 6rem;
-    left:9.5rem;
+    left: 9.5rem;
     background-color: white;
     opacity: .5;
     border: 4px solid #EDC87E;
@@ -244,7 +253,8 @@ main div img {
     padding-left: .50rem;
     padding-right: .50rem;
 }
-.homesummary h2{
+
+.homesummary h2 {
     font-style: italic;
     font: bold;
     color: gray;
@@ -337,7 +347,8 @@ footer p {
 footer a {
     color: #7fb9c2;
 }
-.wireframes{
+
+.wireframes {
     font-size: .8rem;
     margin-top: 5px;
     background: white;
@@ -508,38 +519,42 @@ textarea {
     /*-background color for inputs --*/
     background-color: rgba(0, 0, 0, 0.1);
 }
-.cards{
+
+.cards {
     display: grid;
     grid-template-columns: 1fr;
     max-width: 35rem;
 }
+
 .cards section {
-    border: 1px solid rgb(127,185,194);
-    background-color: rgba(127,185,194,.2);
+    border: 1px solid rgb(127, 185, 194);
+    background-color: rgba(127, 185, 194, .2);
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.cards h2{
+.cards h2 {
 
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
-    color:rgb(127,185,194);
-    
+    color: rgb(127, 185, 194);
+
 }
-.cards h3{
- 
+
+.cards h3 {
+
     font-family: 'Roboto', sans-serif;
     font-style: italic;
     font-size: smaller;
 }
-.cards p{
+
+.cards p {
     padding: 0%;
 }
 
 /* api*/
-.apih2{
+.apih2 {
     text-align: center;
 }
 

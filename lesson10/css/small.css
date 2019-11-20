@@ -538,6 +538,11 @@ textarea {
     padding: 0%;
 }
 
+/* api*/
+.apih2{
+    text-align: center;
+}
+
 .clearfix:after {
     content: "";
     display: table;

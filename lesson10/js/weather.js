@@ -25,6 +25,8 @@ weatherObject.onload = function(){
     // to get the current tempt on html- change id to currentTemp from id on html and change json reference
     document.getElementById('currentTemp').innerHTML = weatherInfo.main.temp;
 
+    document.getElementById('windSpeed').innerHTML = weatherInfo.wind.speed;
+
 
 } // end of onload function 
 

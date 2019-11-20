@@ -19,11 +19,11 @@ weatherObject.onload = function(){
     // data from the object is convert to variable formatted as json 
     // to look at the infor type console
     console.log(weatherInfo);
-    // get the document and the id element we created was place in single quotes set the dot inner html to weatherInfo it is a json object to we need to use values seperated by dot chrome tells us what to type go to chrome open up triangle to access the data you will see to get the name we simply type name: 
+    // get the document and the id element we created a 'place' in single quotes set the dot inner html to weatherInfo it is a json object so we need to use values seperated by dot. chrome will tell us what to type go to chrome open up triangle to access the data put mouse over it and you will see the element to assign or get the name we simply type name: 
     // we are using ajax from the api 
     document.getElementById('place').innerHTML = weatherInfo.name;
     // to get the current tempt on html- change id to currentTemp from id on html and change json reference
-    document.getElementById('currentTemp').innerHTML = weatherInfo.name;
+    document.getElementById('currentTemp').innerHTML = weatherInfo.main.temp;
 
 
 } // end of onload function 

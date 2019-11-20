@@ -15,7 +15,7 @@ weatherObject.send();
 // onload method set to equal a function
 weatherObject.onload = function(){
     // new variable set to equal to json.parse , parse the weather data to response.text . response text is info just downloaded from the website
-    let weatherInfo = JSON.parse(weatherObject.responseText)
+    let weatherInfo = JSON.parse(weatherObject.responseText);
     // data from the object is convert to variable formatted as json 
     // to look at the infor type console
     console.log(weatherInfo);

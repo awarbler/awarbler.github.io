@@ -71,47 +71,28 @@
         max-width: 760px;
     }
 
-    .forecast {
-        display: block;
-        text-align: center;
-        /* margin top right  bottom margin left margin: 25px; all four margins are 25px margin: 25px 50px;
-top and bottom margins are 25px right and left margins are 50px*/
-        margin: 20px 20px 0px 20px;
-        font: bold;
-    }
-
+    /*---preston css------*/
     .forecastcontainer {
         display: grid;
-        grid-template-columns: 80px 80px 80px 80px 80px;
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: auto auto auto;
         background: white;
         color: #7fb9c2;
         text-align: center;
-        padding: .75rem;
-        padding-left: 10rem;
-        padding-right: 10rem;
-        padding-bottom: 1rem;
-        margin: 0 2%;
         font-size: 1rem;
+        max-width: 760px;
+        padding: .75rem;
     }
 
     .forecastcontainer img {
-        width: 70%;
-        padding: .75em;
+        width: 100%;
     }
 
-    .cell-1,
-    .cell-2,
-    .cell-3,
-    .cell-4,
-    .cell-5 {
+   .days {
         background: #f2f2f2f2;
     }
 
-    .cell-6,
-    .cell-7,
-    .cell-8,
-    .cell-9,
-    .cell-10 {
+   .weather_icon {
         border-right: 1px solid #f2f2f2f2;
         border-left: 1px solid #f2f2f2f2;
     }
@@ -169,24 +150,7 @@ top and bottom margins are 25px right and left margins are 50px*/
 
     }
 
-    /*cards is the individual sections
-.cards sections is the info in the sections 
-.cards sections nth child odd 
-. cards h2
-.cards h3
-.cards p
-.townimage 
-.towndata
 
-.cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: .25rem;
-    justify-content: center;
-    align-items: center;
-    max-width: 760px;
-
-}*/
     .cards {
         display: flex;
         flex-wrap: wrap;
@@ -199,6 +163,7 @@ top and bottom margins are 25px right and left margins are 50px*/
         flex-direction: row;
 
     }
+
     .towns h2 {
         padding: 15px 0 0 15px;
         margin: 0;

@@ -9,13 +9,6 @@ html {
     box-sizing: border-box;
 }
 
-/*----------- apply a natural box layout model to all elements --------------*/
-* {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
 /*-- BODY --*/
 body {
     /*-- BODY font size for the whole page--*/
@@ -214,14 +207,17 @@ main div img {
 
 /*---preston css------*/
 .herodiv h2 {
-    text-decoration: underline;
+
     border-radius: 1px;
 }
-
-/*---preston css------*/
+/*---preston css this could also be .herodiv h2------*/
+.weathersummary h2{
+    text-decoration: underline;
+}
+/*---preston css style actual box ------*/
 .weathersummary {
     position: absolute;
-    top: .5rem;
+    top: 1rem;
     left: 1rem;
     background-color: white;
     color: #4d4d4d;
@@ -229,10 +225,16 @@ main div img {
     border: 2px solid #EDC87E;
     border-radius: 1px;
     text-align: center;
-    font-size: 9px;
-    padding-left: .50rem;
-    padding-right: .50rem;
-    padding-bottom: .50rem;
+    font-size: 10px;
+    padding: .50rem;
+}
+/*---preston css style actual box style contents in box------*/
+.weathersummary{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-auto-rows: ;
+    grid-gap: 1px;
 }
 
 /*---preston css------*/
@@ -240,7 +242,14 @@ main div img {
     margin: 0;
     text-align: left;
 }
-
+.weatherh2{
+ margin: 0;
+}
+.openmap {
+    text-decoration: underline;
+    font-size: xx-small;
+}
+/*---home css------*/
 .homesummary {
     position: absolute;
     top: 6rem;

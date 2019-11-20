@@ -26,7 +26,7 @@ weatherObject.onload = function(){
     // to get the current tempt on html- change id to currentTemp from id on html and change json reference
     document.getElementById('currentTemp').innerHTML = weatherInfo.main.temp;
 
-    document.getElementById('windSpeed').innerHTML = weatherInfo.wind.speed;
+     // document.getElementById('windSpeed').innerHTML = weatherInfo.wind.speed;
 
     // add image from data file add a const to add iconcode set to the appropriate element in the json file
     // by going to goolgle hover over icon and the name will appear -- double quotes unnecessary

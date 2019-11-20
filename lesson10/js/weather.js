@@ -1,5 +1,5 @@
 // create the weather object and http request requires method, url, async, user
-const weatherObject = new XMLHttpRequest()
+const weatherObject = new XMLHttpRequest();
 // choose open method each paramenter is seperated by comma
 // get the examole of api call from open weather map by copy and then paste second
 // changed the zip code to whatever town 

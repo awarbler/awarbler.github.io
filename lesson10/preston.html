@@ -11,8 +11,9 @@
   <!-- Meta Description -->
   <meta name="description"
     content="CIT 230 Assignment Website: Web Front-End Development, at Brigham Young University - Idaho">
+  <!--favicon -->
   <link rel="shortcut icon" href="favicon.ico">
-  <!-- link to google api  -->
+  <!-- link to google api fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <!-- link to css style sheet  -->
@@ -23,29 +24,34 @@
 </head>
 
 <body>
+  <!-- banner # message at the top of the page displays only on fridays-->
   <div id="message">
-    <!-- us js to display or hide accounding to day of the week-->
+    <!-- us js to display or hide accourding to day of the week-->
     <p>Saturday: Preston Pancakes in the Park! 9:00 am</p>
     <p> Saturday at the City Park Pavilion</p>
   </div>
+
   <!-- HEADER HERE -->
   <header>
-    <!-- logo will go here or picture of me -->
+    <!-- logo will go here -->
     <picture>
       <img src="images/iconfinder_kweather_18095 (1).png" alt="weather logo">
     </picture>
-    <!-- Header 1 title my name -->
+    <!-- Header 1 title name of Website -->
     <section class="heading">
       <h1>South Idaho Weather</h1>
+      <!-- website quote -->
       <div class="heading2">Keeps you on your adventure!</div>
     </section>
   </header>
   <!-- NAVIGATION HERE -->
   <nav>
-    <ul class="navigation">
-      <li> <a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
-      <li><a href="index.html"> Home </a></li>
-      <li class="active"><a href="preston.html">Preston</a></li>
+   
+    <ul class="navigation"> <!-- assigned class for hamburger menu-->
+     
+      <li> <a href="#" onclick="toggleMenu()">&#9776;Menu</a></li> <!-- toggleMenu for hamburger menu-->
+      <li><a href="index.html"> Home </a></li>  <!-- home is always index.html main file-->
+      <li class="active"><a href="preston.html">Preston</a></li> <!-- active is for active webpage-->
       <li> <a href="sodaspring.html">Soda Springs</a></li>
       <li> <a href="fishhaven.html">Fish Haven</a></li>
       <li> <a href="stormcenter.html">Storm Center</a></li>
@@ -56,15 +62,16 @@
   <main>
     <!-- enter header  h2 = smaller than h1 -->
     <h2> Preston Idaho</h2>
-
+    <!--picture at the top of the page div class is herodiv the container is herodiv  -->
     <div class="herodiv">
       <picture>
+        <!-- responsive photos  -->
         <img src="imagespreston/heroimg-400w.jpg" alt="Blue Dark Clouds" srcset="imagespreston/heroimg1-1028w.jpg 1028w,
         imagespreston/heroimg-800w.jpg 800w, 
         imagespreston/heroimg-600w.jpg 600w,
         imagespreston/heroimg-400w.jpg 400w" sizes="100vw">
       </picture>
-
+      <!-- weather summary container for the herodiv-->
       <section class="weathersummary">
         <h2>Weather Summary </h2>
         <p>Currently: <span class="current"> Sunny </span><br></p>

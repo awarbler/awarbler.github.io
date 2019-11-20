@@ -29,7 +29,10 @@ weatherObject.onload = function(){
 
     // add image from data file add a const to add iconcode set to the appropriate element in the json file
     // by going to goolgle hover over icon and the name will appear -- double quotes unnecessary
+    // the phone name looks like 
     const iconcode = weatherInfo.weather[0].icon;
+    // check to see if iconcode works by doing a console.log
+    console.log(iconcode);
 
 
 } // end of onload function 

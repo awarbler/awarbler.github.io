@@ -31,8 +31,11 @@ weatherObject.onload = function(){
     // by going to goolgle hover over icon and the name will appear -- double quotes unnecessary
     // the phone name looks like 
     const iconcode = weatherInfo.weather[0].icon;
-    // check to see if iconcode works by doing a console.log
+    // check to see if iconcode works by doing a console.log it should print out a number and letter
     console.log(iconcode);
+    // full path looks weather image looks like //openwethermap.org/img/w/01n.png we remove the html protocol so it will work anywhere , notice the file name 01n , the file name is given to us in the json data. will create dynamic path to create image name with the json data create a const icon path = " " ++ " "; the first part of the name of the image will go inside the first quotes the file name and the extension will go inside the last quotes variable icon code from json data will go between the ++
+    const icon_path = "//openwethermap.org/img/w/ " + iconcode + "01n.png";
+
 
 
 } // end of onload function 

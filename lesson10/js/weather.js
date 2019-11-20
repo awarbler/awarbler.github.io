@@ -27,6 +27,10 @@ weatherObject.onload = function(){
 
     document.getElementById('windSpeed').innerHTML = weatherInfo.wind.speed;
 
+    // add image from data file add a const to add iconcode set to the appropriate element in the json file
+    // by going to goolgle hover over icon and the name will appear -- double quotes unnecessary
+    const iconcode = weatherInfo.weather[0].icon;
+
 
 } // end of onload function 
 

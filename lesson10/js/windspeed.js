@@ -9,7 +9,7 @@
 const tempNumber = parseFloat(document.getElementById("high").textContent);
 //console.log(tempNumber);
 
-const speedNumber = parseFloat(document.getElementById('wSpeed').textContent);
+const speedNumber = parseFloat(document.getElementById('windSpeed').textContent);
 //console.log(speedNumber);
 
 let windChill = 35.74 + (0.6215 * tempNumber) - (35.75 * Math.pow(speedNumber, 0.16)) + 
@@ -21,8 +21,8 @@ windChill = Math.round(windChill);
 if (tempNumber <=50 && speedNumber >3){
     // display the fahrenheit temperature to the user
     // using textContent instead since data is not html it is text 
-    document.getElementById("chill").textContent ="Wind Chill: "+windChill+"\xB0F";
+    document.getElementById("windChill").textContent =+windChill;
 } 
 else {
-    document.getElementById("chill").textContent ="Wind Chill: N/A";
+    document.getElementById("windChill").textContent ="Wind Chill: N/A";
 }

@@ -8,7 +8,7 @@ const weatherObject = new XMLHttpRequest()
 // type true to 
 // add protocall and type https:// or // before api
 // to add f temp add & units imperial
-weatherObject.open( "GET", "//api.openweathermap.org/data/2.5/weather?zip=84653,us,us&appid=73cd33c03f2980c4fbeb11973fc5f602&units=imperial", true)
+weatherObject.open( "GET", "//api.openweathermap.org/data/2.5/weather?zip=84653,us&appid=73cd33c03f2980c4fbeb11973fc5f602&units=imperial", true)
 // this does not open it only sets it up 
 // to actually get the data .send store data on local device nothing will appear
 weatherObject.send();
@@ -19,7 +19,9 @@ weatherObject.onload = function(){
     // data from the object is convert to variable formatted as json 
     // to look at the infor type console
     console.log(weatherInfo);
-    // click source control
+    // get the document and the id on the 
+    document.getElementById('place').innerHTML = weatherInfo
+
 
 } // end of onload function 
 

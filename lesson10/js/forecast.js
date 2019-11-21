@@ -12,7 +12,7 @@ fetch(requestURL)
     //packed array of records named "prophets". See JSON source.
 
     // this is an array 
-    const prophets = jsonObject['prophets'];
+const prophets = jsonObject['prophets'];
 forecastObject.onload = function () {
   // new variable set to equal to json.parse , parse the weather data to response.text 
   //.response text is info just downloaded from the website

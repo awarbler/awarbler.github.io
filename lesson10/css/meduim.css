@@ -84,37 +84,31 @@
         padding: .75rem;
     }
 
-    .forecastcontainer img {
-        width: 100%;
-    }
 
    .days {
         background: #f2f2f2f2;
     }
 
-   .weather_icon {
+   .forecastcontainer  {
         border-right: 1px solid #f2f2f2f2;
         border-left: 1px solid #f2f2f2f2;
     }
 
-    .cell-11,
-    .cell-12,
-    .cell-13,
-    .cell-14,
-    .cell-15 {
+    .currentTemp{
         border-right: 1px solid #f2f2f2f2;
         border-bottom: 1px solid #f2f2f2f2;
         border-left: 1px solid #f2f2f2f2;
     }
-
-    .cell-6,
-    .cell-11 {
-        border-left: 1px solid #f2f2f2f2;
-    }
-
-    .cell-10.cell-15 {
+    .weather_icon{
         border-right: 1px solid #f2f2f2f2;
+        border-left: 1px solid #f2f2f2f2;
+
     }
+    .forecastcontainer img {
+        width: 100%;
+    }
+
+ 
 
     .map {
         display: block;

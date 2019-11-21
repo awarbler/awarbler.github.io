@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+  <!-- Set character encoding for the document -->
+  <meta charset="utf-8">
+  <!-- Viewport for responsive web design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Document Title -->
+  <title> CIT 230: Anita Woodford: South Idaho Weather: Home </title>
+  <!-- Meta Description -->
+  <meta name="description"
+    content="CIT 230 Assignment Website: Web Front-End Development, at Brigham Young University - Idaho">
+  <link rel="shortcut icon" href="favicon.ico">
+  <!-- link to google api  -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <!-- link to css style sheet  -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/meduim.css">
+  <link rel="stylesheet" href="css/large.css">
+
+</head>
+
+<body>
+
+  <!-- HEADER HERE -->
+  <header>
+    <!-- logo will go here or picture of me -->
+    <picture>
+        <img src="images/iconfinder_kweather_18095 (1).png" alt="weather logo">
+    </picture>
+    <!-- Header 1 title my name -->
+    <section class="heading">
+      <h1>South Idaho Weather</h1>
+      <div class="heading2">Using AJAX and JSON</div>
+    </section>
+  </header>
+  <!-- NAVIGATION HERE -->
+
+  <main>
+    
+        <h1 class="apih1">OpenWeatherMap.org API Test</h1>
+        <h2>Weather Conditions for <span id="place">city</span></h2>
+        <p >Current Temperature is <span id="currentTemp">00</span>&deg; F</p>
+        <p >Current Wind Speed <span id="windSpeed">mph</span>&deg;</p>
+        <!--we can also add images replace it with an image from the data file we will add
+        an id tag to the html -->
+        <img id="weather_icon" src="images/placeholder.png" alt="current weather">
+        
+
+    <h2> 5 Day Forecast for </h2>
+    <div class="forecastcontainer">
+      <div class="days">Mon</div>
+      <div class="days">Tues</div>
+      <div class="days">Wed</div>
+      <div class="days">Thur</div>
+      <div class="days">Fri</div>
+      <div class="weather_icon"><img id="applyicon" src="images/placeholder.png" alt="current weather"></div>
+      <div class="weather_icon"><img id="weather_icon" src="images/placeholder.png" alt="current weather"></div>
+      <div class="weather_icon"><img id="weather_icon" src="images/placeholder.png" alt="current weather"></div>
+      <div class="weather_icon"><img id="weather_icon" src="images/placeholder.png" alt="current weather"></div>
+      <div class="weather_icon"><img id="weather_icon" src="images/placeholder.png" alt="current weather"></div>
+      <div class="currentTemp">  <span id="currentTemp">00</span>&deg; F</div>
+      <div class="currentTemp">  <span id="currentTemp">00</span>&deg; F</div>
+      <div class="currentTemp">  <span id="currentTemp">00</span>&deg; F</div>
+      <div class="currentTemp">  <span id="currentTemp">00</span>&deg; F</div>
+      <div class="currentTemp">  <span id="currentTemp">00</span>&deg; F</div>
+    </div>
+
+    <div class="component__weather-box">
+            <div class="component__weather-content">
+              <div class="weather-content__overview"></div>
+              <div class="weather-content__temp"></div>
+            </div>
+            <div class="component__forecast-box"></div>
+          </div>
+
+    <section>
+    
+   
+  </main>
+
+  <footer>
+    <p>
+      &copy; 2020 | South Idaho Weather | Attributions | <a href="https://awarbler.github.io/">Anita
+        Woodford</a><br>
+      <span id="date"></span>
+     
+    </p>
+
+    <script src="js/date.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/forecast.js"></script>
+    <script>
+
+    </script>
+  </footer>
+  </body>
+
+  </html>

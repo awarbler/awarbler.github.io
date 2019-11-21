@@ -52,6 +52,3 @@ weatherObject.onload = function(){
 } // end of onload function 
 
 
-
-// 
-

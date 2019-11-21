@@ -48,26 +48,51 @@
         <!--we can also add images replace it with an image from the data file we will add
         an id tag to the html -->
         <img id="weather_icon" src="images/placeholder.png" alt="current weather">
-        
+      </div>
 
-    <h2> 5 Day Forecast for </h2>
-    <div class="forecastcontainer">
-      <div class="days">Mon</div>
-      <div class="days">Tues</div>
-      <div class="days">Wed</div>
-      <div class="days">Thur</div>
-      <div class="days">Fri</div>
-      <div class="weather_icon"><img id="applyicon" src="images/placeholder.png" alt="current weather"></div>
-      <div class="weather_icon"><img id="weather_icon" src="images/placeholder.png" alt="current weather"></div>
-      <div class="weather_icon"><img id="weather_icon" src="images/placeholder.png" alt="current weather"></div>
-      <div class="weather_icon"><img id="weather_icon" src="images/placeholder.png" alt="current weather"></div>
-      <div class="weather_icon"><img id="weather_icon" src="images/placeholder.png" alt="current weather"></div>
-      <div class="currentTemp">  <span id="currentTemp">00</span>&deg; F</div>
-      <div class="currentTemp">  <span id="currentTemp">00</span>&deg; F</div>
-      <div class="currentTemp">  <span id="currentTemp">00</span>&deg; F</div>
-      <div class="currentTemp">  <span id="currentTemp">00</span>&deg; F</div>
-      <div class="currentTemp">  <span id="currentTemp">00</span>&deg; F</div>
-    </div>
+      <h2> 5 Day Forecast</h2>
+      <div class="forecastcontainer">
+        <div class="days">Mon</div>
+        <div class="days">Tues</div>
+        <div class="days">Wed</div>
+        <div class="days">Thur</div>
+        <div class="days">Fri</div>
+        <div class="weather_icon"><img id="weather_icon" src="images/placeholder.png" alt="current weather"></div>
+        <div class="weather_icon"><img id="weather_icon" src="images/placeholder.png" alt="current weather"></div>
+        <div class="weather_icon"><img id="weather_icon" src="images/placeholder.png" alt="current weather"></div>
+        <div class="weather_icon"><img id="weather_icon" src="images/placeholder.png" alt="current weather"></div>
+        <div class="weather_icon"><img id="weather_icon" src="images/placeholder.png" alt="current weather"></div>
+        <div class="currentTemp">  <span id="currentTemp">00</span>&deg; F</div>
+        <div class="currentTemp">  <span id="currentTemp">00</span>&deg; F</div>
+        <div class="currentTemp">  <span id="currentTemp">00</span>&deg; F</div>
+        <div class="currentTemp">  <span id="currentTemp">00</span>&deg; F</div>
+        <div class="currentTemp">  <span id="currentTemp">00</span>&deg; F</div>
+      </div>
+  
+
+        <div class="forecastContainer">
+          <h3>5 Day Forecast</h3>
+          <div class="forecast">
+
+              <div class="days"><span id="day1"></span></div>
+              <div class="days"><span id="day2"></span></div>
+              <div class="days"><span id="day3"></span></div>
+              <div class="days"><span id="day4"></span></div>
+              <div class="days"><span id="day5"></span></div>
+
+              <div class="precip"><img id="icon1"></div>
+              <div class="precip"><img id="icon2"></div>
+              <div class="precip"><img id="icon3"></div>
+              <div class="precip"><img id="icon4"></div>
+              <div class="precip"><img id="icon5"></div>
+
+              <div class="temp"><span id="temp1"></span> &#8457;</div>
+              <div class="temp"><span id="temp2"></span> &#8457;</div>
+              <div class="temp"><span id="temp3"></span> &#8457;</div>
+              <div class="temp"><span id="temp4"></span> &#8457;</div>
+              <div class="temp"><span id="temp5"></span> &#8457;</div>
+          </div>
+      </div>
 
     <div class="component__weather-box">
             <div class="component__weather-content">
@@ -80,6 +105,42 @@
     <section>
     
       <div class="cards"></div>
+      <div>
+				<table>
+					<thead>
+						<tr>
+							<th>Wed</th>
+							<th>Thurs</th>
+							<th>Fri</th>
+							<th>Sat</th>
+							<th>Sun</th>
+						</tr>
+					</thead>
+					<tr>
+						<td><img id="weatherimage1"  alt="weather Image 1"></td>
+						<td><img id="weatherimage2" alt="weather Image 2"></td>
+						<td><img id="weatherimage3" alt="weather Image 3"></td>
+						<td><img id="weatherimage4" alt="weather Image 4"></td>
+						<td><img id="weatherimage5" alt="weather Image 5"></td>
+						
+					</tr>
+					<tr>
+						<td id="forecastday1">&deg; F</td>
+						<td id="forecastday2">&deg; F</td>
+						<td id="forecastday3">&deg; F</td>
+						<td id="forecastday4">&deg; F</td>
+						<td id="forecastday5">&deg; F</td>
+					</tr>
+        </table>
+        
+        <div class="component__weather-box">
+          <div class="component__weather-content">
+            <div class="weather-content__overview"></div>
+            <div class="weather-content__temp"></div>
+          </div>
+          <div class="component__forecast-box"></div>
+        </div>
+				
   </main>
 
   <footer>

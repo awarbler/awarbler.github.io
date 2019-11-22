@@ -42,13 +42,19 @@ weatherObject.onload = function(){
     // should look like this create a const with icon_path as the variable you have quotes with the path, you have a + to concat ( to join 2 or more strings together) then the variable iconcode we created for the icon another + to close the concat then we glue on the last part with "" and we put the extension in the middle, make sure you add ; to close 
     const icon_path = "//openweathermap.org/img/w/" + iconcode + ".png";
 
+    
+
     // to check to see if icon_path works or will display we will put it in console
     console.log(icon_path);
     
     // to add the image to html 
     document.getElementById('weather_icon').src = icon_path;
-
-
 } // end of onload function 
 
-
+// forecast section
+const apiURL = "...";
+fetch(apiURL)
+  .then((response) => response.json())
+  .then((jsObject) => {
+    console.log(jsObject);
+  });

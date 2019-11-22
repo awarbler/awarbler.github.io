@@ -32,8 +32,8 @@
   </div>
   <!-- HEADER HERE -->
   <header>
-    <!-- logo will go here -->
     <picture>
+      <!-- logo will go here -->
       <img src="images/iconfinder_kweather_18095 (1).png" alt="weather logo">
     </picture>
     <!-- Header 1 title name of Website -->
@@ -59,8 +59,8 @@
   </nav>
   <!-- main / body here  -->
   <main>
-    <!-- enter header  h2 = smaller than h1 -->
-    <h2> <span id="place">city</span>, Idaho</h2>
+    
+    <h2> <span id="place">city</span>, Idaho</h2> <!-- enter header  h2 = smaller than h1 -->
     <!--picture at the top of the page div class is herodiv the container is herodiv  -->
     <div class="herodiv">
       <picture>
@@ -69,8 +69,7 @@
         imagespreston/heroimg-800w.jpg 800w, 
         imagespreston/heroimg-600w.jpg 600w,
         imagespreston/heroimg-400w.jpg 400w" sizes="100vw">
-      </picture>
-      <!-- weather summary container for the herodiv-->
+      </picture><!-- weather summary container for the herodiv-->
       <section class="weathersummary">
         <h2 class="weatherh2">Weather Summary </h2> <!-- css this is herodiv h2 or .weathersummary h2 -->
         <p> Currently: <span id="currentTemp"> 00</span>&deg;F</p>
@@ -90,25 +89,17 @@
       <div class="days">Wed</div>
       <div class="days">Thur</div>
       <div class="days">Fri</div>
-      <div class="weather_icon"><img id="weather_icon" src="images/placeholder.png" alt="current weather"></div>
-      <div class="weather_icon"><img id="weather_icon" src="images/placeholder.png" alt="current weather"></div>
-      <div class="weather_icon"><img id="weather_icon" src="images/placeholder.png" alt="current weather"></div>
-      <div class="weather_icon"><img id="weather_icon" src="images/placeholder.png" alt="current weather"></div>
-      <div class="weather_icon"><img id="weather_icon" src="images/placeholder.png" alt="current weather"></div>
-      <div class="currentTemp"> <span id="currentTemp">00</span>&deg; F</div>
-      <div class="currentTemp"> <span id="currentTemp">00</span>&deg; F</div>
-      <div class="currentTemp"> <span id="currentTemp">00</span>&deg; F</div>
-      <div class="currentTemp"> <span id="currentTemp">00</span>&deg; F</div>
-      <div class="currentTemp"> <span id="currentTemp">00</span>&deg; F</div>
+      <div class="weather_icon"><span id="imagesrc"></span> &nbsp; <img src="" alt=" " id="icon"></div>
+      <div class="weather_icon"><img id="" src="images/placeholder.png" alt="current weather"></div>
+      <div class="weather_icon"><img id="" src="images/placeholder.png" alt="current weather"></div>
+      <div class="weather_icon"><img id="" src="images/placeholder.png" alt="current weather"></div>
+      <div class="weather_icon"><img id="" src="images/placeholder.png" alt="current weather"></div>
+      <div class="currentTemp"> <span id="current-temp">00</span>&deg; F</div>
+      <div class="currentTemp"> <span id="current-temp">00</span>&deg; F</div>
+      <div class="currentTemp"> <span id="current-temp">00</span>&deg; F</div>
+      <div class="currentTemp"> <span id="current-temp">00</span>&deg; F</div>
+      <div class="currentTemp"> <span id="current-temp">00</span>&deg; F</div>
     </div>
- <!--  get value for ids  from json api current -temp -->
-    <h2>OpenWeatherMap.org API Test</h2>
-    <p>The current temperature in <span id="cityId"></span>, Idaho is <span id="current-temp"></span>&deg; F</p>
-    <hr>
-     <!--  image icon alt blank this source comes from open weather map -->
-    <p>Image Icon Path Test: <span id="imagesrc"></span> &nbsp; <img src="" alt="" id="icon"></p>
-
-
     <section>
       <div class="article">
         <h2>Preston FFA Soil Team Places State</h2>
@@ -116,13 +107,9 @@
           <img src="images/agriculture-animal-cattle-2932130.jpg" alt="Cattle">
           <!--  <figcaption>FFA Cattle</figcaption>  HEADER HERE -->
           <div class="articledata"> Earlier this fall Franklin County Soil and Water Conservation District hosted the
-            Southeast Idaho FFA Soil
-            and
-            Land Evaluation event. Over 75 FFA members from area schools took part in the activity. Preston’s team
-            earned
-            top team honors on the day and placed the top three high individuals...<a
-              href="https://www.hjnews.com/preston/">Read More</a>
-
+            Southeast Idaho FFA Soil and Land Evaluation event. Over 75 FFA members from area schools took part in the activity. Preston’s team
+            earned top team honors on the day and placed the top three high individuals...<a
+            href="https://www.hjnews.com/preston/">Read More</a>
           </div>
       </div>
       </article>

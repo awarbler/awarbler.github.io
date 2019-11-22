@@ -9,12 +9,12 @@ const weatherObject = new XMLHttpRequest();
 // add protocall and type https:// or // before api
 // to add f temp add & units imperial
 
-weatherObject.open( "GET", "//api.openweathermap.org/data/2.5/weather?id=5604473&appid=73cd33c03f2980c4fbeb11973fc5f602&units=imperial", true);
+weatherObject.open("GET", "//api.openweathermap.org/data/2.5/weather?id=5604473&appid=73cd33c03f2980c4fbeb11973fc5f602&units=imperial", true);
 // this does not open it only sets it up 
 // to actually get the data .send store data on local device nothing will appear
 weatherObject.send();
 // onload method set to equal a function
-weatherObject.onload = function(){
+weatherObject.onload = function () {
     // new variable set to equal to json.parse , parse the weather data to response.text . response text is info just downloaded from the website
     let weatherInfo = JSON.parse(weatherObject.responseText);
     // data from the object is convert to variable formatted as json 
@@ -42,19 +42,47 @@ weatherObject.onload = function(){
     // should look like this create a const with icon_path as the variable you have quotes with the path, you have a + to concat ( to join 2 or more strings together) then the variable iconcode we created for the icon another + to close the concat then we glue on the last part with "" and we put the extension in the middle, make sure you add ; to close 
     const icon_path = "//openweathermap.org/img/w/" + iconcode + ".png";
 
-    
+
 
     // to check to see if icon_path works or will display we will put it in console
     console.log(icon_path);
-    
+
     // to add the image to html 
     document.getElementById('weather_icon').src = icon_path;
 } // end of onload function 
 
-// forecast section
-const apiURL = "...";
+// forecast section use the forecast data use a query stringname this comes after a ? carry data over 
+// create a variable named apiURL with a const to store the url so we dont have to type url all the type
+// set up for city id change temp units to imperial and api account 
+// const variable is called apiURL
+// comes back as a json file account - get api account 
+// go to file called data but we put slashes for all the ? seperates the file from the rest of the information 
+// an & seperates or concatnates the values together add units
+// this is an url that we are adding 
+// use your own api no one elses
+
+const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=73cd33c03f2980c4fbeb11973fc5f602";
+
+// use fetch feed apiurl 
+// it will get the info for you and you tell me what to do in stages 
 fetch(apiURL)
-  .then((response) => response.json())
-  .then((jsObject) => {
-    console.log(jsObject);
-  });
+    // here we are waiting for the info to come back 
+    .then((response) => response.json())
+    // this sets up the object from the response 
+    .then((jsObject) => {
+        // this lets us look at what we did 
+        console.log(jsObject);
+        // this closes everything out nothing will print on screen only in console
+    });
+    // now we aregoing to go to the document and tell it change current-temp and change its text 
+    //content to jsobject information main.temp
+    document.getElementById('current-temp').textContent = jsObject.main.temp;
+    console.log(current-temp);
+    document.getElementById('cityId').textContent = jsObject.city.name;
+    console.log(cityID);
+
+const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png'; // note the concatenation
+const desc = jsObject.weather[0].description; // note how we reference the weather array
+document.getElementById('imagesrc').textContent = imagesrc; // informational specification only
+document.getElementById('icon').setAttribute('src', imagesrc); // focus on the setAttribute() method
+document.getElementById('icon').setAttribute('alt', desc);

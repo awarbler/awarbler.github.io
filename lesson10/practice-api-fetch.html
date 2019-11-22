@@ -24,12 +24,7 @@
 </head>
 
 <body>
-  <!-- banner # message at the top of the page displays only on fridays-->
-  <div id="message">
-    <!-- us js to display or hide accourding to day of the week-->
-    <p>Saturday: Preston Pancakes in the Park! 9:00 am</p>
-    <p> Saturday at the City Park Pavilion</p>
-  </div>
+
   <!-- HEADER HERE -->
   <header>
     <!-- logo will go here -->
@@ -62,45 +57,10 @@
     <!-- enter header  h2 = smaller than h1 -->
     <h2> <span id="place">city</span>, Idaho</h2>
     <!--picture at the top of the page div class is herodiv the container is herodiv  -->
-    <div class="herodiv">
-      <picture>
-        <!-- responsive photos  -->
-        <img src="imagespreston/heroimg-400w.jpg" alt="Blue Dark Clouds" srcset="imagespreston/heroimg1-1028w.jpg 1028w,
-        imagespreston/heroimg-800w.jpg 800w, 
-        imagespreston/heroimg-600w.jpg 600w,
-        imagespreston/heroimg-400w.jpg 400w" sizes="100vw">
-      </picture>
-      <!-- weather summary container for the herodiv-->
-      <section class="weathersummary">
-        <h2 class="weatherh2">Weather Summary </h2> <!-- css this is herodiv h2 or .weathersummary h2 -->
-        <p> Currently: <span id="currentTemp"> 00</span>&deg;F</p>
-        <p> High: <span id="high">30</span>&deg;F<br></p><!-- use for tempF -->
-        <p> <span id="windChill"> </span>&deg;F</p>
-        <!--not sure if we need this windChill answer-->
-        <p> Humidity: <span id="humidity"> </span> %</p>
-        <p> Wind Speed: <span id="windSpeed"> </span> mph</p>
-        <p class="openmap" href="https://openweathermap.org/"> Open Maps</p>
-      </section>
-    </div>
+   
+     
 
-    <h2> 5 Day Forecast</h2>
-    <div class="forecastcontainer">
-      <div class="days">Mon</div>
-      <div class="days">Tues</div>
-      <div class="days">Wed</div>
-      <div class="days">Thur</div>
-      <div class="days">Fri</div>
-      <div class="weather_icon"><img id="weather_icon" src="images/placeholder.png" alt="current weather"></div>
-      <div class="weather_icon"><img id="weather_icon" src="images/placeholder.png" alt="current weather"></div>
-      <div class="weather_icon"><img id="weather_icon" src="images/placeholder.png" alt="current weather"></div>
-      <div class="weather_icon"><img id="weather_icon" src="images/placeholder.png" alt="current weather"></div>
-      <div class="weather_icon"><img id="weather_icon" src="images/placeholder.png" alt="current weather"></div>
-      <div class="currentTemp"> <span id="currentTemp">00</span>&deg; F</div>
-      <div class="currentTemp"> <span id="currentTemp">00</span>&deg; F</div>
-      <div class="currentTemp"> <span id="currentTemp">00</span>&deg; F</div>
-      <div class="currentTemp"> <span id="currentTemp">00</span>&deg; F</div>
-      <div class="currentTemp"> <span id="currentTemp">00</span>&deg; F</div>
-    </div>
+    
  <!--  get value for ids  from json api current -temp -->
     <h2>OpenWeatherMap.org API Test</h2>
     <p>The current temperature in <span id="cityId"></span>, Idaho is <span id="current-temp"></span>&deg; F</p>
@@ -109,24 +69,7 @@
     <p>Image Icon Path Test: <span id="imagesrc"></span> &nbsp; <img src="" alt="" id="icon"></p>
 
 
-    <section>
-      <div class="article">
-        <h2>Preston FFA Soil Team Places State</h2>
-        <article>
-          <img src="images/agriculture-animal-cattle-2932130.jpg" alt="Cattle">
-          <!--  <figcaption>FFA Cattle</figcaption>  HEADER HERE -->
-          <div class="articledata"> Earlier this fall Franklin County Soil and Water Conservation District hosted the
-            Southeast Idaho FFA Soil
-            and
-            Land Evaluation event. Over 75 FFA members from area schools took part in the activity. Preston’s team
-            earned
-            top team honors on the day and placed the top three high individuals...<a
-              href="https://www.hjnews.com/preston/">Read More</a>
-
-          </div>
-      </div>
-      </article>
-    </section>
+    
 
     <div class="contactcontainer">
       <div class="map"> <img src="images/prestonmap.png" alt="Preston City Map"></div>

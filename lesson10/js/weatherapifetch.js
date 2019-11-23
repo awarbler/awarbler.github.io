@@ -8,7 +8,7 @@ fetch(apiURL)
     // arrow function is a shortcut it is a promise 
     .then((jsObject) => {
         // this lets us look at what we did 
-        console.log(jsObject);
+        //console.log(jsObject);
         // this closes everything out nothing will print on screen only in console
         // now we aregoing to go to the document and tell it change current-temp and change its text 
         //content to jsobject information main.temp

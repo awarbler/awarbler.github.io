@@ -14,7 +14,7 @@ fetch(requestURL)
         return response.json();
     })
     .then(function (jsonObject) {
-    console.table(jsonObject); // temporary checking for valid response and data parsing
+    //console.table(jsonObject); // temporary checking for valid response and data parsing
 
         //store the results of the converted response into an array since the data source is a neatly
         //packed array of records named "prophets". See JSON source.

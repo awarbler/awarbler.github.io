@@ -5,7 +5,7 @@ forecastObject.open("GET", "//api.openweathermap.org/data/2.5/forecast?id=560447
 forecastObject.send();
 forecastObject.onload = function () {
   let forecastInfo = JSON.parse(forecastObject.responseText);
-  console.log(forecastInfo);
+  //console.log(forecastInfo);
 
   var forecastItems = forecastInfo.list;
   //console.log(forecastItems);
@@ -33,7 +33,7 @@ forecastObject.onload = function () {
 fetch('https://api.openweathermap.org/data/2.5/forecast?id=5604473&&cnt=7&units=imperial&appid=73cd33c03f2980c4fbeb11973fc5f602')
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
+   // console.log(jsObject);
 
     let forecast = [];
     let list = jsObject.list;
@@ -61,18 +61,18 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?id=5604473&&cnt=7&units=
     // new variable set to equal to json.parse , parse the weather data to response.text 
     //. response text is info just downloaded from the website
     let forecastInfo1 = JSON.parse(forecastObject1.responseText);
-    console.log(forecastInfo1);
+    //console.log(forecastInfo1);
 // get the document and the id element we created a 'place' in single quotes set the dot 
 //inner html to weatherInfo it is a json object so we need to use values seperated by dot. 
 //chrome will tell us what to type go to chrome open up triangle to access the data put 
 //mouse over it and you will see the element to assign or get the name we simply type name: 
     // we are using ajax from the api
     var forecastData = forecastInfo1.list;
-    console.log
+    //console.log
 
     const iconcode = forecastInfo1.weather[0].icon;
     const icon_path = "//openweathermap.org/img/w/" + iconcode + ".png";
-    console.log(icon_path);
+   // console.log(icon_path);
     document.getElementById('weather_icon').src = icon_path;
   
   

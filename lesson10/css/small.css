@@ -562,6 +562,22 @@ textarea {
     text-align: center;
 }
 
+
+section#weatherforecast {
+	display: flex;
+	flex-wrap: wrap;
+}
+section#weatherforecast div {
+	flex-basis: 46%;
+	margin: 1rem 2%;
+	border: 1px solid #999;
+	text-align: center;
+}
+section#weatherforecast div span {
+	background-color: aqua; 
+	display: block;
+	padding: .5rem 0;
+}
 .clearfix:after {
     content: "";
     display: table;

@@ -1,3 +1,4 @@
+
 // create the weather object and http request requires method, url, async, user
 const weatherObject = new XMLHttpRequest();
 // choose open method: each paramenter is seperated by comma
@@ -19,7 +20,7 @@ weatherObject.onload = function () {
     let weatherInfo = JSON.parse(weatherObject.responseText);
     // data from the object is convert to variable formatted as json 
     // to look at the info type console we need to llok at the data to assing the elements by id info.
-//    console.log(weatherInfo);
+    //    console.log(weatherInfo);
     // get the document and the id element we created a 'place' in single quotes set the dot inner html to weatherInfo it is a json object so we need to use values seperated by dot. chrome will tell us what to type go to chrome open up triangle to access the data put mouse over it and you will see the element to assign or get the name we simply type name: 
     // we are using ajax from the api 
     document.getElementById('place').innerHTML = weatherInfo.name;
@@ -47,9 +48,30 @@ weatherObject.onload = function () {
 
     // to add the image to html dont need for this project
     //document.getElementById('weather_icon').src = icon_path;
-    
-};// end of onload function 
 
+}; // end of onload function 
+//What is Today's encoded Date?
+const d = new Date();
+//console.log(d);
 
+//What day of the week is it?
+const todayDayNumber = d.getDay();
+//console.log(todayDayNumber);
 
+//Build my own array to convert the day to a word
+const weekday = new Array(7);
+weekday[0] = "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
 
+// Now what is today's day name?
+//console.log(weekday[todayDayNumber]);
+fetch(requestURL)
+.then(function(response) {
+    return response.json();
+})
+console.log(jsonObject);

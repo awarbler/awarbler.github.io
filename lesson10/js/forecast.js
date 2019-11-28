@@ -1,80 +1,44 @@
-//What is Today's encoded Date?
-const d = new Date();
-//console.log(d);
+fetch('https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=73cd33c03f2980c4fbeb11973fc5f602')
+    .then((response) => response.json())
+    .then((jsObject) => {
+        console.log(jsObject);
 
-//What day of the week is it?
-const todayDayNumber = d.getDay();
-//console.log(todayDayNumber);
+        let forecast = [];
+        let icon = [];
+        let days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
+        let list = jsObject.list;
+        let day = 1;
+        let ico = 1;
+        let d = 1;
+        var weekday = new Array(7);
+        weekday[0] = "Sunday";
+        weekday[1] = "Monday";
+        weekday[2] = "Tuesday";
+        weekday[3] = "Wednesday";
+        weekday[4] = "Thursday";
+        weekday[5] = "Friday";
+        weekday[6] = "Saturday";
 
-//Build my own array to convert the day to a word
-const weekday = new Array(7);
-weekday[0] = "Sunday";
-weekday[1] = "Monday";
-weekday[2] = "Tuesday";
-weekday[3] = "Wednesday";
-weekday[4] = "Thursday";
-weekday[5] = "Friday";
-weekday[6] = "Saturday";
+        for (let i = 1; i <= 5; i++) {
+            jsObject.list.forEach(x => {
+                if (x.dt_txt.includes('18:00:00')) {
+                    forecast[day] = x.main.temp;
+                    day++;
+                    icon[ico] = x.weather[0].icon;
+                    ico++;
 
-// Now what is today's day name?
-//console.log(weekday[todayDayNumber]);
+                    days[d] = new Date(x.dt_txt);
+                    n = weekday[days[i].getDay()];
+                    d++;
 
-let weatherObject =  new XMLHttpRequest();
-
-weatherObject.open('GET','//api.openweathermap.org/data/2.5/forecast?zip=84653,us&appid=73cd33c03f2980c4fbeb11973fc5f602=imperial',true);
-
-weatherObject.send();
-
-weatherObject.onload =  function() {
-let weatherInfo = JSON.parse(weatherObject.responseText);
-console.log(weatherInfo);
-
-let list = weatherInfo.list;
-//console.log(list.length);
-
-let forcastDayNumber=todayDayNumber;
-for (let i = 0; i < list.length; i++) {
-	
-	var time = list[i].dt_txt;
-	//console.log(i + "--" + time);
-	
-	if (time.includes('18:00:00')) {
-		console.log("Noon on day "+i + "--" + time);
-		//console.log(weatherInfo.list[i].main.temp+ "°");
-		
-		forcastDayNumber += 1;
-		if (forcastDayNumber === 7){forcastDayNumber = 0;}
-		console.log(forcastDayNumber);
-		
-		var theDayName = document.createElement("span");
-		theDayName.textContent = weekday[forcastDayNumber];
-		console.log(">"+weekday[forcastDayNumber]);
-		
-		var theTemp = document.createElement("p");
-		theTemp.textContent = weatherInfo.list[i].main.temp + "\xB0";
-		console.log(">"+weatherInfo.list[i].main.temp);
-		
-		var iconcode = weatherInfo.list[i].weather[0].icon;
-		var iconPath = "//openweathermap.org/img/w/" + iconcode + ".png";
-		var theIcon = document.createElement("img");
-		theIcon.src=iconPath;
-		
-		var theDay = document.createElement("div");
-		theDay.appendChild(theDayName);
-		theDay.appendChild(theTemp);
-		theDay.appendChild(theIcon);
-		
-		document.getElementById('weatherforecast').appendChild(theDay);
-	} // end if
-} //end for
+                    let imagesrc = '//openweathermap.org/img/w/' + icon[i] + '.png';
+                    document.getElementById("icon" + i).setAttribute('src', imagesrc);
+                    document.getElementById('temp' + i).innerHTML = forecast[i];
+                    document.getElementById('day' + i).innerHTML = n;
+                }
+            });
 
 
 
-
-
-
-//var iconcode = weatherInfo.weather[0].icon;
-//var icon_path = "//openweathermap.org/img/w/" + iconcode + ".png";
-
-//document.getElementById('weather_icon').src = icon_path;
-} // end of function
+        }
+    });

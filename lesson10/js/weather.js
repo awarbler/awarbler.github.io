@@ -50,28 +50,17 @@ weatherObject.onload = function () {
     //document.getElementById('weather_icon').src = icon_path;
 
 }; // end of onload function 
-//What is Today's encoded Date?
-const d = new Date();
-//console.log(d);
-
-//What day of the week is it?
-const todayDayNumber = d.getDay();
-//console.log(todayDayNumber);
-
-//Build my own array to convert the day to a word
-const weekday = new Array(7);
-weekday[0] = "Sunday";
-weekday[1] = "Monday";
-weekday[2] = "Tuesday";
-weekday[3] = "Wednesday";
-weekday[4] = "Thursday";
-weekday[5] = "Friday";
-weekday[6] = "Saturday";
-
-// Now what is today's day name?
-//console.log(weekday[todayDayNumber]);
-fetch(requestURL)
-.then(function(response) {
-    return response.json();
-})
-console.log(jsonObject);
+function windChill() {
+    var temp = parseFloat(document.getElementById("tempnow").innerHTML);
+    var wSpeed = parseFloat(document.getElementById("wind").innerHTML);
+    
+    wChill = 35.74 + 0.6215 * temp - (35.75 * Math.pow(wSpeed, 0.16)) + (0.4275 * temp * Math.pow(wSpeed, 0.16));
+    
+    if (temp <= 50 && wSpeed > 3) {
+        document.getElementById("windChill").innerHTML = wChill.toFixed(0) + "\xB0F";
+    }
+    else {
+        document.getElementById("windChill").innerHTML = "N/A";
+    }
+   }
+   windChill();

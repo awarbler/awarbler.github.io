@@ -10,7 +10,7 @@ const weatherObject = new XMLHttpRequest();
 // add protocall and type https:// or // before api
 // to add f temp add & units imperial
 
-weatherObject.open("GET", "//api.openweathermap.org/data/2.5/weather?id=5604473&appid=73cd33c03f2980c4fbeb11973fc5f602&units=imperial", true);
+weatherObject.open("GET", "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=73cd33c03f2980c4fbeb11973fc5f602&units=imperial", true);
 // this does not open it only sets it up 
 // to actually get the data .send store data on local device nothing will appear
 weatherObject.send();
@@ -25,16 +25,16 @@ weatherObject.onload = function () {
     // we are using ajax from the api 
     document.getElementById('place').innerHTML = weatherInfo.name;
     // to get the current tempt on html- change id to currentTemp from id on html and change json reference
-    document.getElementById('currentTemp').innerHTML = weatherInfo.main.temp;
-    document.getElementById('high').innerHTML = weatherInfo.main.temp_max;
+    document.getElementById('currentTemp').innerHTML = weatherInfo.main.temp.toFixed(0);
+    document.getElementById('high').innerHTML = weatherInfo.main.temp_max.toFixed(0);
     document.getElementById('humidity').innerHTML = weatherInfo.main.humidity;
-    document.getElementById('windSpeed').innerHTML = weatherInfo.wind.speed;
+    document.getElementById('windSpeed').innerHTML = weatherInfo.wind.speed.toFixed(0);
 
 
     // add image from data file add a const to add iconcode set to the appropriate element in the json file
     // by going to goolgle hover over icon and the name will appear -- double quotes unnecessary
     // the phone name looks like 
-    const iconcode = weatherInfo.weather[0].icon;
+    //const iconcode = weatherInfo.weather[0].icon;
 
     // check to see if iconcode works by doing a console.log it should print out a number and letter
     //console.log(iconcode);
@@ -51,16 +51,18 @@ weatherObject.onload = function () {
 
 }; // end of onload function 
 function windChill() {
-    var temp = parseFloat(document.getElementById("tempnow").innerHTML);
-    var wSpeed = parseFloat(document.getElementById("wind").innerHTML);
+    var tempNumber = parseFloat(document.getElementById("high").innerHTML);
+    var speedNumber= parseFloat(document.getElementById("windSpeed").innerHTML);
     
-    wChill = 35.74 + 0.6215 * temp - (35.75 * Math.pow(wSpeed, 0.16)) + (0.4275 * temp * Math.pow(wSpeed, 0.16));
+    windChill = 35.74 + 0.6215 * tempNumber - (35.75 * Math.pow(speedNumber, 0.16)) + (0.4275 * tempNumber * Math.pow(speedNumber, 0.16));
     
-    if (temp <= 50 && wSpeed > 3) {
-        document.getElementById("windChill").innerHTML = wChill.toFixed(0) + "\xB0F";
+    if (tempNumber <= 50 && speedNumber > 3) {
+        document.getElementById("windChill").innerHTML = windChill.toFixed(0) + "\xB0F";
     }
     else {
-        document.getElementById("windChill").innerHTML = "N/A";
+        document.getElementById("windChill").innerHTML = " Wind Chill:N/A";
     }
    }
    windChill();
+
+   

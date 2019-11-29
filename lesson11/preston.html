@@ -60,7 +60,7 @@
   <!-- main / body here  -->
   <main>
 
-    <h2> <span id= "place">city</span>, Idaho</h2> <!-- enter header  h2 = smaller than h1 -->
+    <h2> <span id="place">city</span>, Idaho</h2> <!-- enter header  h2 = smaller than h1 -->
     <!--picture at the top of the page div class is herodiv the container is herodiv  -->
     <div class="herodiv">
       <picture>
@@ -70,6 +70,7 @@
         imagespreston/heroimg-600w.jpg 600w,
         imagespreston/heroimg-400w.jpg 400w" sizes="100vw">
       </picture><!-- weather summary container for the herodiv-->
+
       <section class="weathersummary">
         <h2 class="weatherh2">Weather Summary </h2> <!-- css this is herodiv h2 or .weathersummary h2 -->
         <p> Currently: <span id="currentTemp"> 00</span>&deg;F</p>
@@ -78,9 +79,9 @@
         <!--not sure if we need this windChill answer-->
         <p> Humidity: <span id="humidity"> </span> %</p>
         <p> Wind Speed: <span id="windSpeed"> </span> mph</p>
-        <p class="openmap" href="https://openweathermap.org/"> Open Maps</p>
       </section>
     </div>
+
     <div class="weatherforecast">
       <h2> 5 Day Forecast</h2>
       <div class="forecastcontainer">
@@ -96,7 +97,7 @@
         <div class="weather_icon"><img src="images/placeholder.png" alt="description" id="icon3"></div>
         <div class="weather_icon"><img src="images/placeholder.png" alt="description" id="icon4"></div>
         <div class="weather_icon"><img src="images/placeholder.png" alt="description" id="icon5"></div>
-        
+
         <div class="currentTemp"> <span id="temp1"></span>&#8457;</div>
         <div class="currentTemp"> <span id="temp2"></span>&#8457;</div>
         <div class="currentTemp"> <span id="temp3"></span>&#8457;</div>
@@ -104,43 +105,46 @@
         <div class="currentTemp"> <span id="temp5"></span>&#8457;</div>
       </div>
     </div>
-    
-        <div class="article">
-          <h2>Preston FFA Soil Team Places State</h2>
-          <article>
-            <img src="images/agriculture-animal-cattle-2932130.jpg" alt="Cattle">
-            <!--  <figcaption>FFA Cattle</figcaption>  HEADER HERE -->
-            <div class="articledata"> Earlier this fall Franklin County Soil and Water Conservation District hosted the
-              Southeast Idaho FFA Soil and Land Evaluation event. Over 75 FFA members from area schools took part in the
-              activity. Preston’s team
-              earned top team honors on the day and placed the top three high individuals...<a
-                href="https://www.hjnews.com/preston/">Read More</a>
-            </div>
-        </div>
-        </article>
-      </section>
 
-      <div class="contactcontainer">
-        <div class="map"> <img src="images/prestonmap.png" alt="Preston City Map"></div>
-        <div class="address">South Idaho Weather<br>
-          1250 Industrial Park Road<br>
-          Preston, Idaho 83263<br><br> <br>
-          208-555-5555<br>
-          www.southidahoweather.com<br>
-          <div class="socialMedia"><a class="socialMedia" target="_blank" href="https://www.facebook.com"><img
-                class="icons" src="images/facebook(1).png" alt="Facebook Icon"></a>
-            <a class="socialMedia" target="_blank" href="https://www.instagram.com"><img class="icons"
-                src="images/instagram(1).png" alt="Instagram Icon"></a>
-            <a class="socialMedia" target="_blank" href="https://www.twitter.com"><img class="icons"
-                src="images/twitter(1).png" alt="Twitter Icon"></a></div>
+    <div class="article">
+      <h2>Preston FFA Soil Team Places State</h2>
+      <article>
+        <img src="images/agriculture-animal-cattle-2932130.jpg" alt="Cattle">
+        <!--  <figcaption>FFA Cattle</figcaption>  HEADER HERE -->
+        <div class="articledata"> Earlier this fall Franklin County Soil and Water Conservation District hosted the
+          Southeast Idaho FFA Soil and Land Evaluation event. Over 75 FFA members from area schools took part in the
+          activity. Preston’s team
+          earned top team honors on the day and placed the top three high individuals...<a
+            href="https://www.hjnews.com/preston/">Read More</a>
+        </div>
+    </div>
+    </article>
+    </section>
+
+    <div class="contactcontainer">
+      <div class="map"> <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.726282685086!2d-111.91534444801691!3d42.099805311838125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1575006624942!5m2!1sen!2sus"
+          width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+
+      <div class="address">South Idaho Weather<br>
+        1250 Industrial Park Road<br>
+        Preston, Idaho 83263<br><br>
+        208-555-5555<br>
+        www.southidahoweather.com<br>
+        <div class="socialMedia">
+          <a target="_blank" href="https://www.facebook.com"><img src="images/facebook(1).png" alt="Facebook Icon"></a>
+          <a target="_blank" href="https://www.instagram.com"><img src="images/instagram(1).png" alt="Instagram Icon"></a>
+          <a target="_blank" href="https://www.twitter.com">  <img src="images/twitter(1).png" alt="Twitter Icon"></a>
         </div>
       </div>
+    </div>
   </main>
 
   <footer>
     <p>
       &copy; 2020 | South Idaho Weather | Attributions | <a href="https://awarbler.github.io/">Anita Woodford</a><br>
-      <span id="date"></span>
+      <span id="date"></span><br>
+      <a href="https://openweathermap.org/"> Open Maps
     </p>
     <script src="js/date.js"></script>
     <!-- have to reference javascript links here  -->

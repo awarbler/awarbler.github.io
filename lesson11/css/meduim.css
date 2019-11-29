@@ -57,35 +57,21 @@
 
     .homesummary {
         position: absolute;
-        top: 7rem;
-        left: 13rem;
+        top: 8rem;
+        left: 13.5rem;
 
     }
 
     .homesummary h2 {
 
-        font-size: 30px;
+        font-size: 35px;
     }
 
     #main {
         max-width: 760px;
     }
 
-    .forecastContainer {
-        display: block;
-        text-align: center;
-        margin: 20px;
-    }
-    .forecastContainer h2 {
-        margin: 0;
-    }
-    .forecast {
-        max-width: 500px;
-        display: grid;
-        grid-template-columns: auto auto auto auto auto;
-        margin: 0 auto;
-        padding: 15px;
-	}
+  
 
     /*---preston css------*/
     .forecastcontainer {
@@ -103,32 +89,40 @@
 
    .days {
         background: #f2f2f2f2;
+       border: 1px solid #EDC87E;
     }
 
    .forecastcontainer  {
-        border-right: 1px solid #f2f2f2f2;
-        border-left: 1px solid #f2f2f2f2;
+        border-right: 1px solid white;
+        border-left: 1px solid white;
     }
 
     .currentTemp{
-        border-right: 1px solid #f2f2f2f2;
-        border-bottom: 1px solid #f2f2f2f2;
-        border-left: 1px solid #f2f2f2f2;
+        border-right: 1px solid #EDC87E;
+        border-bottom: 1px solid #EDC87E;
+        border-left: 1px solid #EDC87E;
     }
     .weather_icon{
-        border-right: 1px solid #f2f2f2f2;
-        border-left: 1px solid #f2f2f2f2;
+        border-right: 1px solid #EDC87E;
+        border-left: 1px solid #EDC87E;
 
     }
     .forecastcontainer img {
         width: 100%;
     }
 
- 
+    .contactcontainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-gap: 1px 1px;
+        text-align: left;
+        justify-items: center;
+    }
 
     .map {
         display: block;
-        background: #f2f2f2;
+    
     }
 
     .address {
@@ -156,10 +150,7 @@
         border: 1px solid #dbe1e2;
         width: 100%;
         padding: 10px 10px 9px 10px;
-
-
     }
-
 
     .cards {
         display: flex;
@@ -171,7 +162,6 @@
     .cards section {
         display: flex;
         flex-direction: row;
-
     }
 
     .towns h2 {

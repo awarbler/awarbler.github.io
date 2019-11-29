@@ -227,13 +227,13 @@ main div img {
     text-align: center;
     font-size: 10px;
     padding: .50rem;
+    color: black;
 }
 /*---preston css style actual box style contents in box------*/
 .weathersummary{
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto auto;
-    grid-auto-rows: ;
     grid-gap: 1px;
 }
 
@@ -252,8 +252,8 @@ main div img {
 /*---home css------*/
 .homesummary {
     position: absolute;
-    top: 6rem;
-    left: 9.5rem;
+    top: 3rem;
+    left: 4.5rem;
     background-color: white;
     opacity: .5;
     border: 4px solid #EDC87E;
@@ -261,6 +261,7 @@ main div img {
     text-align: center;
     padding-left: .50rem;
     padding-right: .50rem;
+    
 }
 
 .homesummary h2 {
@@ -271,6 +272,7 @@ main div img {
     margin: 0;
     letter-spacing: 2pt;
 }
+
 
 /*---preston css------*/
 .forecastcontainer {
@@ -305,15 +307,16 @@ top and bottom margins are 25px right and left margins are 50px*/
 
 /*---preston css------*/
 .contactcontainer {
-    margin: 1rem 2%;
+
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
     background: #f2f2f2;
     grid-gap: 1px 1px;
     text-align: left;
-    padding: 1rem 1rem;
     justify-items: center;
+    padding: 1rem;
+
 }
 
 /*---preston css------*/
@@ -538,45 +541,36 @@ textarea {
 }
 
 .cards h2 {
-
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
     color: rgb(127, 185, 194);
-
 }
 
 .cards h3 {
-
     font-family: 'Roboto', sans-serif;
     font-style: italic;
-    font-size: smaller;
+    font-size: .9rem;
 }
 
-.cards p {
-    padding: 0%;
+.cards p { 
+    font-size: 1em;
+    margin: 0; 
+    padding: 1px;
 }
-
+.cards img{
+    display: block;
+    max-width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
 /* api*/
 .apih2 {
     text-align: center;
 }
 
 
-section#weatherforecast {
-	display: flex;
-	flex-wrap: wrap;
-}
-section#weatherforecast div {
-	flex-basis: 46%;
-	margin: 1rem 2%;
-	border: 1px solid #999;
-	text-align: center;
-}
-section#weatherforecast div span {
-	background-color: aqua; 
-	display: block;
-	padding: .5rem 0;
-}
+
 .clearfix:after {
     content: "";
     display: table;

@@ -57,8 +57,13 @@
 
     .homesummary {
         position: absolute;
-        top: 8rem;
-        left: 13.5rem;
+        top: 3rem;
+        left: 9rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        margin: 4rem;
 
     }
 
@@ -71,7 +76,7 @@
         max-width: 760px;
     }
 
-  
+
 
     /*---preston css------*/
     .forecastcontainer {
@@ -87,26 +92,28 @@
     }
 
 
-   .days {
+    .days {
         background: #f2f2f2f2;
-       border: 1px solid #EDC87E;
+        border: 1px solid #EDC87E;
     }
 
-   .forecastcontainer  {
+    .forecastcontainer {
         border-right: 1px solid white;
         border-left: 1px solid white;
     }
 
-    .currentTemp{
+    .currentTemp {
         border-right: 1px solid #EDC87E;
         border-bottom: 1px solid #EDC87E;
         border-left: 1px solid #EDC87E;
     }
-    .weather_icon{
+
+    .weather_icon {
         border-right: 1px solid #EDC87E;
         border-left: 1px solid #EDC87E;
 
     }
+
     .forecastcontainer img {
         width: 100%;
     }
@@ -122,7 +129,7 @@
 
     .map {
         display: block;
-    
+
     }
 
     .address {
@@ -191,14 +198,15 @@
     .towndata {
         width: 350px;
     }
+
     /* 35em is also 560px (if basefont is 16px) */
-@media only screen and (min-width: 35rem) {
+    @media only screen and (min-width: 35rem) {
 
 
-    /*----------- BODY --------------*/
-    section#weatherforecast div {
-        flex-basis: 29%;
+        /*----------- BODY --------------*/
+        section#weatherforecast div {
+            flex-basis: 29%;
+        }
+
+
     }
-    
-
-}

@@ -68,16 +68,12 @@
     }
 
     .homesummary h2 {
-
         font-size: 35px;
     }
 
     #main {
         max-width: 760px;
     }
-
-
-
     /*---preston css------*/
     .forecastcontainer {
         display: grid;
@@ -111,7 +107,6 @@
     .weather_icon {
         border-right: 1px solid #EDC87E;
         border-left: 1px solid #EDC87E;
-
     }
 
     .forecastcontainer img {

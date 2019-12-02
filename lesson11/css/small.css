@@ -251,6 +251,25 @@ main div img {
 .forecastcontainer {
     display: none;
 }
+.events{
+    display: grid;
+    grid-template-columns: auto;
+    background: white;
+    grid-gap: 1px 1px;
+    text-align: left;
+    justify-items: center;
+    padding: 1rem;
+    max-width: 760px;
+    border: 1px solid #EDC87E;
+    text color: #7fb9c2;
+    border-radius: 1px;
+}
+.events h3{
+    text-align: center;
+}
+.events p{
+    text-align: left;
+}
 
 .article {
     /* margin top right  bottom margin left margin: 25px; all four margins are 25px margin: 25px 50px;
@@ -277,6 +296,7 @@ top and bottom margins are 25px right and left margins are 50px*/
 .figure article {
     margin: 0;
 }
+
 
 /*---preston css------*/
 .contactcontainer {

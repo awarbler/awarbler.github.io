@@ -17,7 +17,6 @@ html {
 
 img[data-src]{
     filter: blur(.2em);
-
 }
 img {
     min-width: 50px;

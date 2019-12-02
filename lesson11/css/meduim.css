@@ -189,7 +189,6 @@
         height: auto;
         padding: 15px;
     }
-
     .towndata {
         width: 350px;
     }
@@ -202,6 +201,4 @@
         section#weatherforecast div {
             flex-basis: 29%;
         }
-
-
-    }
+    

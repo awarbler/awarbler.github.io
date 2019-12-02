@@ -58,7 +58,6 @@
     /*--this changes the size and brings them closer together  --*/
     padding: .4rem 0;
   }
-
   .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

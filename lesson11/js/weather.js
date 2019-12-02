@@ -9,7 +9,6 @@ const weatherObject = new XMLHttpRequest();
 // type true to 
 // add protocall and type https:// or // before api
 // to add f temp add & units imperial
-
 weatherObject.open("GET", "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=73cd33c03f2980c4fbeb11973fc5f602&units=imperial", true);
 // this does not open it only sets it up 
 // to actually get the data .send store data on local device nothing will appear

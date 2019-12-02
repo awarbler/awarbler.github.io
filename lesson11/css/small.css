@@ -145,7 +145,6 @@ nav li.active {
     text-decoration-line: underline;
     border-radius: 4px;
 }
-
 /* when the button is clicked - the responsive class is added 
 and accounted for here  or it could be called . responsive li if there 
 isnt a class assigned to it*/

@@ -51,7 +51,6 @@ fetch(requestURL)
             let population = document.createElement('p');// creates place of birth 
             let rainFall= document.createElement('p');// creates place of birth 
             let image = document.createElement('img');  // creates the image 
-
             // h2 heading textcontext is going to change to prophets name using the array 
             // then use the back ticks to make a string 
             // do this for all information 

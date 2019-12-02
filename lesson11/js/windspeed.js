@@ -7,8 +7,7 @@
 // or just do what is below
 
 const tempNumber = parseFloat(document.getElementById("high").textContent);
-//console.log(tempNumber);
-
+//console.log(tempNumber);s
 const speedNumber = parseFloat(document.getElementById('windSpeed').textContent);
 //console.log(speedNumber);
 

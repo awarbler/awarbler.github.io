@@ -9,7 +9,6 @@ function setDate() {
         "Friday",
         "Saturday"
     ];
-
     var months = [
         "January",
         "February",

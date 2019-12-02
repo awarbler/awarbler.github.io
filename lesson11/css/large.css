@@ -4,17 +4,7 @@
     width: 80%;
   }
 
-  .homesummary {
-    position: absolute;
-    top: 1rem;
-    left: 8rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 2rem;
-    padding-top: 2rem;
-    margin: 6rem;
 
-  }
 
   .homesummary h2 {
 
@@ -102,11 +92,6 @@
     width: auto;
   }
 
-
-  /*----------- MAIN --------------*/
-  section#weatherforecast div {
-    flex-basis: 16%;
-  }
 
   /*----------- FOOTER --------------*/
 }

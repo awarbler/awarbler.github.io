@@ -145,6 +145,7 @@ nav li.active {
     text-decoration-line: underline;
     border-radius: 4px;
 }
+
 /* when the button is clicked - the responsive class is added 
 and accounted for here  or it could be called . responsive li if there 
 isnt a class assigned to it*/
@@ -152,7 +153,8 @@ isnt a class assigned to it*/
 (.navigation li) to display block because the repsonsive class is added 
 to the end of the class list like this in HTML Line #6.<ul class="navigation responsive">
   */
-.responsive li {  display: block;
+.responsive li {
+    display: block;
 }
 
 main {
@@ -193,6 +195,7 @@ main div img {
 .herodiv {
     position: relative;
     padding: .75rem;
+  
 }
 
 /*---preston css------*/
@@ -208,10 +211,12 @@ main div img {
 
     border-radius: 1px;
 }
+
 /*---preston css this could also be .herodiv h2------*/
-.weathersummary h2{
+.weathersummary h2 {
     text-decoration: underline;
 }
+
 /*---preston css style actual box ------*/
 .weathersummary {
     position: absolute;
@@ -226,8 +231,9 @@ main div img {
     padding: .50rem;
     color: black;
 }
+
 /*---preston css style actual box style contents in box------*/
-.weathersummary{
+.weathersummary {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto auto;
@@ -239,19 +245,26 @@ main div img {
     margin: 0;
     text-align: left;
 }
-.weatherh2{
- margin: 0;
+
+.weatherh2 {
+    margin: 0;
 }
+
 .openmap {
     text-decoration: underline;
     font-size: xx-small;
+}
+
+.weatherforecast {
+    display: none;
 }
 
 /*---preston css------*/
 .forecastcontainer {
     display: none;
 }
-.events{
+
+.events {
     display: grid;
     grid-template-columns: auto;
     background: white;
@@ -260,14 +273,16 @@ main div img {
     justify-items: center;
     padding: 1rem;
     max-width: 760px;
-    border: 1px solid #EDC87E;
-    text color: #7fb9c2;
-    border-radius: 1px;
+
 }
-.events h3{
+
+.events h3 {
     text-align: center;
+   
+    color: #7fb9c2;
 }
-.events p{
+
+.events p {
     text-align: left;
 }
 
@@ -275,13 +290,15 @@ main div img {
     /* margin top right  bottom margin left margin: 25px; all four margins are 25px margin: 25px 50px;
 top and bottom margins are 25px right and left margins are 50px*/
     margin: .5rem auto;
-    border: 1px solid #EDC87E;
+    border: 1px solid #aab1b2;
     border-radius: 2px;
     background-color: white;
     color: #4d4d4d;
     padding: 0 1rem;
     display: flex;
     flex-direction: column;
+    padding-bottom: .5rem;
+
 }
 
 .article img {
@@ -478,6 +495,7 @@ form label.top input:required:valid {
     /*-repeat the color of 55 for text good design  --*/
     color: #aab1b2;
 }
+
 /* storm center range input= flexiy input */
 #ratingvalue {
     margin: 0 15px;
@@ -528,18 +546,20 @@ textarea {
     font-size: .9rem;
 }
 
-.cards p { 
+.cards p {
     font-size: 1em;
-    margin: 0; 
+    margin: 0;
     padding: 1px;
 }
-.cards img{
+
+.cards img {
     display: block;
     max-width: 96%;
     margin-left: auto;
     margin-right: auto;
     padding: 5px;
 }
+
 /* api*/
 .apih2 {
     text-align: center;
@@ -549,19 +569,19 @@ textarea {
 /*---home css------*/
 .homesummary {
     position: absolute;
-    top: 1rem;
-    left: 4rem;
+    z-index: 999;
     background-color: white;
     opacity: .5;
     border: 4px solid #EDC87E;
     border-radius: 1px;
     text-align: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 2rem;
-    padding-top: 2rem;
-    margin: 30px;
-    
+    top: 35%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 40%;
+  
+
 }
 
 .homesummary h2 {
@@ -574,7 +594,7 @@ textarea {
 }
 
 
-        .clearfix:after {
+.clearfix:after {
     content: "";
     display: table;
     clear: both;

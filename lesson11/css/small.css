@@ -152,8 +152,7 @@ isnt a class assigned to it*/
 (.navigation li) to display block because the repsonsive class is added 
 to the end of the class list like this in HTML Line #6.<ul class="navigation responsive">
   */
-.responsive li {
-    display: block;
+.responsive li {  display: block;
 }
 
 main {

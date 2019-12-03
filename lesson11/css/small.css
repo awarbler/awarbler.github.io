@@ -264,28 +264,6 @@ main div img {
     display: none;
 }
 
-.events {
-    display: grid;
-    grid-template-columns: auto;
-    background: white;
-    grid-gap: 1px 1px;
-    text-align: left;
-    justify-items: center;
-    padding: 1rem;
-    max-width: 760px;
-
-}
-
-.events h3 {
-    text-align: center;
-   
-    color: #7fb9c2;
-}
-
-.events p {
-    text-align: left;
-}
-
 .article {
     /* margin top right  bottom margin left margin: 25px; all four margins are 25px margin: 25px 50px;
 top and bottom margins are 25px right and left margins are 50px*/
@@ -313,35 +291,46 @@ top and bottom margins are 25px right and left margins are 50px*/
 .figure article {
     margin: 0;
 }
-
-
 /*---preston css------*/
 .contactcontainer {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto;
     background: white;
     grid-gap: 1px 1px;
     text-align: left;
     justify-items: center;
     padding: 1rem;
-    max-width: 760px;
-
+    background-color:rgba(127, 185, 194, .2);
+    
 }
 
 /*---preston css------*/
 .map {
     display: none;
 }
-
-/*---preston css------*/
-.address {
-    padding-top: 1rem;
+.address h4{
+    text-align: center;
+    color: #7fb9c2;
+    padding: 0;
+    margin: 0;
 }
-
 /*---preston css------*/
-
-
+.socialMedia img{
+width: 10%;
+}
+.events h4{
+    text-align: center;
+    color: #7fb9c2;
+    margin: 0;
+}
+.events p{
+    font-size: smaller;
+    justify-content: left;
+    text-align: center;
+    background-color:rgba(127, 185, 194, .2);
+}
+/*---preston css------*/
 footer p {
     padding: .75rem;
     font-size: .8rem;

@@ -7,23 +7,23 @@ fetch(requestURL)
         const towns = jsonObject['towns'];
         for (let i=0; i<towns.length; i++) {
             if (towns[i].name == 'Preston') {
-                let card = document.createElement('section');
-                let h3 = document.createElement('h3');
+                let ecard = document.createElement('div');
+                let h4 = document.createElement('h4');
                 let p1 = document.createElement('p');
                 let p2 = document.createElement('p');
                 let p3 = document.createElement('p');
 
-                h3.textContent = "Upcoming Events";
+                h4.textContent = "Upcoming Events";
                 p1.textContent = towns[i].events[0];
                 p2.textContent = towns[i].events[1];
                 p3.textContent = towns[i].events[2];
 
-                card.appendChild(h3);
-                card.appendChild(p1);
-                card.appendChild(p2);
-                card.appendChild(p3);
+                ecard.appendChild(h4);
+                ecard.appendChild(p1);
+                ecard.appendChild(p2);
+                ecard.appendChild(p3);
                 
-                document.querySelector('div.events').appendChild(card);
+                document.querySelector('div.events').appendChild(ecard);
 
             }
         }});

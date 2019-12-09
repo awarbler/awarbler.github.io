@@ -87,7 +87,6 @@ nav {
     /*if I want i can add background-color: #ecf0f1;but I want it white so not needed*/
     /* text color*/
     color: #aab1b2;
-    padding: .5rem 2%;
     text-align: left;
     font-size: .75em;
 }
@@ -107,7 +106,6 @@ nav {
 .navigation li:first-child {
     display: block;
     border-top: 1px solid #aab1b2;
-    border-bottom: 1px solid #aab1b2;
 }
 
 /*---navigation list= li or nav li or .navigation li------*/
@@ -161,8 +159,6 @@ main {
     /* margin top right  bottom margin left margin: 25px; all four margins are 25px margin: 25px 50px;
 top and bottom margins are 25px right and left margins are 50px*/
     margin: 0 auto;
-    max-width: 45rem;
-    padding: .75rem;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     color: #aab1b2;
 }
@@ -192,23 +188,10 @@ main div img {
     max-width: 100%;
 }
 
-.herodiv {
-    position: relative;
-    padding: .75rem;
-  
-}
 
-/*---preston css------*/
-.herodiv img {
-    background-color: white;
-    width: 100%;
-    height: auto;
-    border-radius: 2px;
-}
 
 /*---preston css------*/
 .herodiv h2 {
-
     border-radius: 1px;
 }
 

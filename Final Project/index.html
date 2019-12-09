@@ -51,43 +51,95 @@
         <li> <a href="">Contact</a></li>
       </ul>
     </nav>
-  <main>
-    <!-- enter header  h2 = smaller than h1 -->
-    <h2>South Idaho Weather </h2>
-    <div class="herodiv">
-      <picture>
-        <img src="imagehome/herohomeimg-400w.jpg" alt="snowy field" 
-        srcset="imagehome/herohomeimg-1028w.jpg 1028w,
-        imagehome/herohomeimg-800w.jpg 800w, 
-        imagehome/herohomeimg-600w.jpg 600w,
-        imagehome/herohomeimg-400w.jpg 400w" sizes="100vw">
-      </picture>
 
-      <section class="homesummary">
-        <h2>Winter <br>Adventures </h2>
-      </section>
-    </div>
-    <h2>Plan your ADVENTURE!</h2>
-    <div class='cards'> </div>
-  </main>
+    <main>
+            <!-- enter header  h2 = smaller than h1 -->
+            <div class="herodiv">
+              <picture>
+                <img src="imageshome/palm-trees-at-night-258154.jpg" alt="snowy field" srcset="imageshome/palm-trees-at-night-258154.jpg 1028w,
+                imagehome/herohomeimg-800w.jpg 800w, 
+                imagehome/herohomeimg-600w.jpg 600w,
+                imagehome/herohomeimg-400w.jpg 400w" sizes="100vw">
+              </picture>
+            </div>
 
-  <footer>
-    <p>
-      &copy; 2020 | South Idaho Weather | Attributions | <a href="https://awarbler.github.io/">Anita
-        Woodford</a><br>
-      <span id="date"></span>
-      <div class="wireframes"><a target=_blank href="imageswireframes/iPhone 6-7-8 – 1.png">Iphone WireFrame</a>,
-        <a target=_blank href="imageswireframes/iPad Pro 12.9in – 3.png">Ipad WireFrame, </a>
-        <a target=_blank href="imageswireframes/Web 1280 – 1.png">Web Wireframe</a></div>
-    </p>
+            <h2> Book A Stay</h2>
+            <!-- CREATING FORM  i need to look up "get" I believe it is the html for submit form thank you -->
+            <form method="get" action="thanks.html">
+              <!-- MAIN fieldset is to identify a section legend is the heading label is each input name on form-->
+      
+              <fieldset>
+                <legend>Storm Report</legend>
+                <!-- top means input label will go on top above or the left-->
+                <label class="top">Date of Stay <input type="date" name="thedate"></label>
 
-    <script src="js/date.js"></script>
-    <script src="js/homecards.js"></script>
-    <script src="js/scripts.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-
-
-  </footer>
-  </body>
-
-  </html>
+    
+                <label class="top">Region
+                  <!--per video no arrow downs on please select but I see it however if I need to add 
+                            later I will go to the option value after the work please select I will type &#9662; to add the arrow down-->
+                  <select name="stormregion">
+                    <!--I want to disable the select region instead of value I use selected -->
+                    <option selected="" disabled="disabled">Select Region &#9662;</option>
+                    <option value="preston">Preston</option>
+                    <option value="sodasprings">Soda Springs</option>
+                    <option value="fishhaven">Fishe Haven</option>
+                  </select>
+                </label>
+                <!--radio example  or click the button example :)-->
+                <div>Are you safe?</div>
+                <!--// wrapping in a label tag kept audiece the same so if we click one the other
+                      will deactivate -->
+                <label class="sbs"><input type="radio" name="safe" value="yes">Yes </label>
+                <label class="sbs"><input type="radio" name="safe" value="maybe">Maybe </label>
+                <label class="sbs"><input type="radio" name="safe" value="no">No</label>
+              </fieldset>
+      
+              <fieldset>
+                <legend>Additonal Information </legend>
+                <label class="top">Comments</label>
+                <textarea cols="40" rows="7" name="comments">Please provide any additonal information.</textarea>
+      
+      
+              </fieldset>
+              <input type="submit" value="Report Severe Weather" class="submitBtn">
+            </form>
+      
+        
+            <h2>Plan your ADVENTURE!</h2>
+            <div class='cards'> </div>
+        
+          </main>
+        
+          <footer>
+            <div class="contactcontainer">
+        
+              <div class="address">
+                <h4>Contact Us</h4>
+                South Idaho Weather<br>
+                1250 Industrial Park Road<br>
+                Preston, Idaho 83263<br><br>
+                208-555-5555<br>
+                www.southidahoweather.com<br>
+                <div class="socialMedia">
+                  <a target="_blank" href="https://www.facebook.com"><img src="images/facebook(1).png" alt="Facebook Icon"></a>
+                  <a target="_blank" href="https://www.instagram.com"><img src="images/instagram(1).png"
+                      alt="Instagram Icon"></a>
+                  <a target="_blank" href="https://www.twitter.com"> <img src="images/twitter(1).png" alt="Twitter Icon"></a>
+                </div>
+              </div>
+        
+              <div class="map"> 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.726282685086!2d-111.91534444801691!3d42.099805311838125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1575006624942!5m2!1sen!2sus"
+                  width="200" height="175" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+            </div>
+        
+            <p> &copy; 2020 | South Idaho Weather |<a href="attributions.html">Attributions |</a><a href="https://awarbler.github.io/">Anita Woodford </a><br>
+                <span id="date"></span> <br> Weather Information through <a href="https://openweathermap.org/"> Open Maps</a></p>
+              <script src="js/date.js"></script>
+              <script src="js/homecards.js"></script>
+              <script src="js/scripts.js"></script>
+        
+          </footer>
+        </body>
+        
+        </html>

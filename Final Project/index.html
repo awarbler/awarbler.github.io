@@ -63,18 +63,18 @@
               </picture>
             </div>
 
-            <h2> Book A Stay</h2>
             <!-- CREATING FORM  i need to look up "get" I believe it is the html for submit form thank you -->
             <form method="get" action="thanks.html">
               <!-- MAIN fieldset is to identify a section legend is the heading label is each input name on form-->
       
               <fieldset>
-                <legend>Storm Report</legend>
+                <legend>Book A Stay</legend>
                 <!-- top means input label will go on top above or the left-->
-                <label class="top">Date of Stay <input type="date" name="thedate"></label>
+                <label class="top">Check In <input type="date" name="thedate"></label>
+                <label class="top">Check In <input type="date" name="thedate"></label>
 
     
-                <label class="top">Region
+                <label class="top">Location
                   <!--per video no arrow downs on please select but I see it however if I need to add 
                             later I will go to the option value after the work please select I will type &#9662; to add the arrow down-->
                   <select name="stormregion">
@@ -85,14 +85,26 @@
                     <option value="fishhaven">Fishe Haven</option>
                   </select>
                 </label>
+
+                    <label class="top">Adults
+                      <!--per video no arrow downs on please select but I see it however if I need to add 
+                                later I will go to the option value after the work please select I will type &#9662; to add the arrow down-->
+                      <select name="stormregion">
+                        <!--I want to disable the select region instead of value I use selected -->
+                        <option selected="" disabled="disabled">Select Region &#9662;</option>
+                        <option value="preston">1</option>
+                        <option value="sodasprings">2</option>
+                        <option value="fishhaven">3</option>
+                        <option value="fishhaven">4</option>
+                        <option value="fishhaven">5</option>
+                        <option value="fishhaven">6</option>
+                        <option value="fishhaven">7</option>
+                        <option value="fishhaven">8</option>
+                        <option value="fishhaven">Large Groups please call</option>
+                  </select>
+                </label>
                 <!--radio example  or click the button example :)-->
-                <div>Are you safe?</div>
-                <!--// wrapping in a label tag kept audiece the same so if we click one the other
-                      will deactivate -->
-                <label class="sbs"><input type="radio" name="safe" value="yes">Yes </label>
-                <label class="sbs"><input type="radio" name="safe" value="maybe">Maybe </label>
-                <label class="sbs"><input type="radio" name="safe" value="no">No</label>
-              </fieldset>
+         
       
               <fieldset>
                 <legend>Additonal Information </legend>

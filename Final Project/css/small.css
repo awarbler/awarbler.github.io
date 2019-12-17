@@ -404,7 +404,7 @@ form label.top select {
     /*-small screens we want the inputs to be full width --*/
     width: 100%;
     /*-large screens we want the inputs to be smaller so they dont look so dumb we do this by setting a max-width--*/
-    max-width: 20rem;
+    max-width: 10rem;
     /*-background color for inputs --*/
     background-color: rgba(0, 0, 0, 0.1);
 }

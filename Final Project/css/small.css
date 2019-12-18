@@ -12,12 +12,15 @@ html {
 /*-- BODY --*/
 body {
     /*-- BODY font size for the whole page--*/
-    font-size: 16px;
     line-height: 1.5;
     font-family: "Roboto", Open Sans, Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #555d66;
+}
+h1,h2,h3,p{
+    margin: 0;
+    padding: 0;
 }
 
 /*---preston css top border message------*/
@@ -42,8 +45,7 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 5px 0;
+    padding: .5rem 2%;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     background: white;
     color: #7fb9c2;
@@ -56,25 +58,25 @@ header {
 }
 
 .heading h1 {
-    font-size: 1.6rem;
+    font-size: 1rem;
     /* margin top right  bottom left margin: 25px; all four margins are 25px margin: 25px 50px;
 top and bottom margins are 25px right and left margins are 50px*/
-    margin: 0 0 0 17px;
+    margin: 0 0 0 15px;
 }
 
-/*---was .m -----*/
+/*---was .m now heading for h2 -----*/
 .heading2 {
     font-style: italic;
-    letter-spacing: 1pt;
     font-size: .75rem;
-    margin-left: 20px;
+    margin: 0 0 0 15px;
     font-weight: normal;
-    color: #EDC87E;
+    color: #555d66;
 }
 
 header img {
-    width: 60px;
+    width: 155px;
     margin: 0 2% 0 0;
+
 }
 
 /*---nav = navigation section as a whole------*/
@@ -83,12 +85,13 @@ nav {
     this is not needed we can take it out-*/
     width: 100vw;
     /* i want the nav to go all the way across otherwise max width to 600px margin10px auto*/
-    margin: 0 auto;
-    /*if I want i can add background-color: #ecf0f1;but I want it white so not needed*/
+    margin: 0 2% 0 0;
+    background-color: #012778;
     /* text color*/
-    color: #aab1b2;
+    color: #fff;
     text-align: left;
     font-size: .75em;
+
 }
 
 /*---nav unordered list or in this case .navigation or nav ul------*/
@@ -105,7 +108,7 @@ nav {
 /*---navigation this is the hamburger menu for the small view to show it------*/
 .navigation li:first-child {
     display: block;
-    border-top: 1px solid #aab1b2;
+
 }
 
 /*---navigation list= li or nav li or .navigation li------*/
@@ -274,45 +277,54 @@ top and bottom margins are 25px right and left margins are 50px*/
 .figure article {
     margin: 0;
 }
+
 /*---preston css------*/
 .contactcontainer {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    background: white;
     grid-gap: 1px 1px;
     text-align: left;
     justify-items: center;
     padding: 1rem;
-    background-color:rgba(127, 185, 194, .2);
-    
+    background-color: rgba(1,39,120, .4);
+
 }
 
 /*---preston css------*/
 .map {
     display: none;
 }
-.address h4{
+
+.address h4 {
     text-align: center;
-    color: #7fb9c2;
+    color: white;
     padding: 0;
     margin: 0;
 }
-/*---preston css------*/
-.socialMedia img{
-width: 10%;
+.address a{
+    text-decoration: none;
+    color: gray;
 }
-.events h4{
+
+/*---preston css------*/
+.socialMedia img {
+    width: 10%;
+}
+
+.events h4 {
     text-align: center;
     color: #7fb9c2;
     margin: 0;
 }
-.events p{
+
+.events p {
     font-size: smaller;
     justify-content: left;
     text-align: center;
-    background-color:rgba(127, 185, 194, .2);
+    background-color: rgba(127, 185, 194, .2);
 }
+
 /*---preston css------*/
 footer p {
     padding: .75rem;
@@ -552,7 +564,7 @@ textarea {
     left: 0;
     right: 0;
     width: 40%;
-  
+
 
 }
 

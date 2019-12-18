@@ -2,7 +2,7 @@
 @media only screen and (min-width:560px*/
 @media only screen and (min-width: 32.5rem) {
     header img {
-        width: 80px;
+        width: 200px;
     }
 
     header {
@@ -10,7 +10,7 @@
     }
 
     .heading h1 {
-        font-size: 2.0rem;
+        font-size: 1.5rem;
     }
 
     /*-- m*/
@@ -54,8 +54,6 @@
         width: 100%;
         height: auto;
     }
-
-
 
     .homesummary h2 {
         font-size: 35px;

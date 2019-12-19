@@ -18,33 +18,20 @@
         font-size: 1.0rem;
     }
 
-    /*-- navigation the whole section*/
-    nav {
-        border-bottom: 1px solid#aab1b2;
-    }
-
-    /*-- Display in a row using ul in this case I am using a class
-     .navigation the whole section* using class*/
     .navigation {
-        /*-- diplaying links elements in a row flex direction row*/
         display: flex;
-        align-items: center;
-        justify-content: center;
     }
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+   
+
+  
 
     .navigation li:first-child {
         display: none;
     }
-
-    .navigation li {
-        display: block;
-        flex: 1 1 10%;
-    }
-
-    .navigation li a {
-        text-align: center;
-    }
-
     /* this is for home page and preston page main picture*/
     .herodiv {
         font-size: 100%;
@@ -55,53 +42,8 @@
         height: auto;
     }
 
-    .homesummary h2 {
-        font-size: 35px;
-    }
-
     #main {
         max-width: 760px;
-    }
-    /*---preston css------*/
-    .weatherforecast{
-        display: block;
-    }
-    .forecastcontainer {
-        display: grid;
-        grid-template-columns: auto auto auto auto auto;
-        grid-template-rows: auto auto auto;
-        background: white;
-        color: #7fb9c2;
-        text-align: center;
-        font-size: 1rem;
-        max-width: 760px;
-        padding: 1rem;
-        margin: 0;
-    }
-
-    .days {
-        background: #f2f2f2f2;
-        border: 1px solid #aab1b2;
-    }
-
-    .forecastcontainer {
-        border-right: 1px solid white;
-        border-left: 1px solid white;
-    }
-
-    .currentTemp {
-        border-right: 1px solid #aab1b2;
-        border-bottom: 1px solid #aab1b2;
-        border-left: 1px solid #aab1b2;
-    }
-
-    .weather_icon {
-        border-right: 1px solid #aab1b2;
-        border-left: 1px solid #aab1b2;
-    }
-
-    .forecastcontainer img {
-        width: 100%;
     }
 
     .contactcontainer {
@@ -114,7 +56,6 @@
     .map {
         display: block;
         padding: 1rem;
-
     }
 
     h1 {
@@ -123,6 +64,17 @@
 
     h2 {
         font-size: 2rem;
+    }
+
+    .article img {
+        float: left;
+        width: 50%;
+    }
+
+    .article data {
+        float: right;
+        justify-content: space-evenly;
+        padding: 1rem;
     }
 
     /*---gallery html------*/
@@ -175,9 +127,9 @@
         height: auto;
         padding: 15px;
     }
+
     .towndata {
         width: 350px;
     }
 
 }
-    

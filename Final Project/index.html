@@ -38,7 +38,6 @@
       <h1>Bethesda Temple Inn & Suites</h1>
       <!---- <section class="heading"> -->
       <div class="heading2">Home Away from Home</div>
-
       <!--  <h2>Home Away from Home</h2>-->
     </section>
 
@@ -47,14 +46,20 @@
   <!-- NAVIGATION HERE -->
   <nav>
     <ul class="navigation">
-      <li> <a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
+      <li> <a class = "ham" href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
       <li class="active"><a href="index.html"> Home </a></li>
       <li><a href="reservations.html">Reservations</a></li>
-      <li><a href="services.html">Services</a>
-      <li> <a href="">Reception</a></li>
-      <li> <a href="">Missionary</a></li>
-      <li> <a href="">Temple</a></li>
-      <li> <a href="">Contact</a></li>
+      <li><a href="services.html">Services<span class="caret"></span></a>
+        <div>
+          <ul class="services">
+              <li> <a href="#"></a></li>
+          <li> <a href="reception.html">Reception</a></li>
+          <li> <a href="missionary.html">Missionary</a></li>
+        </ul>
+      </div>
+      </li>
+      <li> <a href="temple.html">Temple</a></li>
+      <li> <a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
@@ -78,22 +83,30 @@
         <!---destination --><label class="top">Destination
           <!--per video no arrow downs on please select but I see it however if I need to add 
                             later I will go to the option value after the work please select I will type &#9662; to add the arrow down-->
-          <select name="stormregion">
+          <select name="hotelregion">
             <!--I want to disable the select region instead of value I use selected -->
             <option selected="" disabled="disabled">Select Region &#9662;</option>
-            <option value="preston">Preston</option>
-            <option value="sodasprings">Soda Springs</option>
-            <option value="fishhaven">Fishe Haven</option>
+            <option value="preston">Dallas Temple</option>
+            <option value="sodasprings">Salt Lake Temple</option>
+            <option value="fishhaven">Washington Temple</option>
+            <option value="fishhaven">a</option>
+            <option value="fishhaven">b</option>
+            <option value="fishhaven">c</option>
+            <option value="fishhaven">Wd</option>
+            <option value="fishhaven">e</option>
+
           </select>
         </label>
         <!-- top means input label will go on top above or the left-->
         <label class="top">Dates <input type="date" name="thedate"></label>
         <label class="top">1 night <input type="date" name="thedate"></label>
-      </fieldset>
-      <input type="submit" value="Find Hotel" class="submitBtn">
-    </form>
-    <div class="article">
 
+        <input type="submit" value="Find Hotel" class="submitBtn">
+      </fieldset>
+      
+    </form>
+
+    <div class="article">
       <article>
         <h2>Kensington, Maryland - Washington DC Temple</h2>
         <p>Address: 9900 Stoneybrook Dr.
@@ -114,8 +127,6 @@
       </article>
     </div>
 
-
-    <h2></h2>
 
 
   </main>
@@ -141,8 +152,8 @@
 
       <div class="map">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.726282685086!2d-111.91534444801691!3d42.099805311838125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1575006624942!5m2!1sen!2sus"
-          width="200" height="175" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3099.9412680648265!2d-77.1055833496121!3d39.01665324741147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7cc0008616b55%3A0x1d0c9dd68a473aea!2s5151%20Pooks%20Hill%20Rd%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1576695125334!5m2!1sen!2sus"
+          width="200" height="175" frameborder="0" style="border:0;" allowfullscreen=""></iframe>></div>
     </div>
 
     <p> &copy; 2020 | Temple Inn & Suites |<a href="attributions.html"> Attributions |</a><a
@@ -150,7 +161,7 @@
       <span id="date"></span> <br> Weather Information through <a href="https://openweathermap.org/"> Open Maps</a></p>
     <script src="js/date.js"></script>
     <script src="js/homecards.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/toggle.js"></script>
 
   </footer>
 </body>

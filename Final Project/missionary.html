@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+  <!-- Set character encoding for the document -->
+  <meta charset="utf-8">
+  <!-- Viewport for responsive web design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Document Title -->
+  <title> Temple Inn & Suites : Missionary </title>
+  <!-- Meta Description -->
+  <meta name="description"
+    content="CIT 230 Assignment Website: Web Front-End Development, at Brigham Young University - Idaho">
+  <!--<link rel="shortcut icon" href="favicon.ico"> https://www.favicon.cc/-->
+  <link rel="shortcut icon" href="favicon.ico">
+  <!-- link to google api  -->
+ 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <!-- link to css style sheet  -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/meduim.css">
+  <link rel="stylesheet" href="css/large.css">
+
+</head>
+
+<body>
+  <!-- HEADER HERE -->
+  <header>
+    <!-- logo will go here or picture of me -->
+    <picture>
+      <img src="images/templeicon1.png" alt="hotel Logo">
+    </picture>
+    <!-- Header 1 title my name -->
+    <section class="heading">
+      <h1>Bethesda Temple Inn & Suites</h1>
+      <!---- section class="heading" -->
+      <div class="heading2">Home Away from Home</div>
+      <!--  <h2>Home Away from Home</h2>-->
+    </section>
+
+
+  </header>
+  <!-- NAVIGATION HERE -->
+  <nav>
+    <ul class="navigation">
+      <li> <a class="ham" href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
+      <li class="active"><a href="index.html"> Home </a></li>
+      <li><a href="reservations.html">Reservations</a></li>
+      <li><a href="services.html">Services<span class="caret"></span></a>
+        <div>
+          <ul class="services">
+            <li> <a href="#"></a></li>
+            <li> <a href="reception.html">Reception</a></li>
+            <li> <a href="missionary.html">Missionary</a></li>
+          </ul>
+        </div>
+      </li>
+      <li> <a href="temple.html">Temple</a></li>
+      <li> <a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- enter header  h2 = smaller than h1 -->
+    <div class="herodiv">
+      <picture>
+        <img src="imageshome/palm-trees-at-night-258154.jpg" alt="snowy field" srcset="imageshome/palm-trees-at-night-258154.jpg 1028w,
+                imagehome/herohomeimg-800w.jpg 800w, 
+                imagehome/herohomeimg-600w.jpg 600w,
+                imagehome/herohomeimg-400w.jpg 400w" sizes="100vw">
+      </picture>
+    </div>
+
+    <!-- CREATING FORM  i need to look up "get" I believe it is the html for submit form thank you -->
+    <form method="get" action="thanks.html">
+      <!-- MAIN fieldset is to identify a section legend is the heading label is each input name on form-->
+
+      <fieldset>
+        <legend>Book A Stay</legend>
+        <!---destination -->
+        <label class="top">Destination
+          <!--per video no arrow downs on please select but I see it however if I need to add 
+                            later I will go to the option value after the work please select I will type &#9662; to add the arrow down-->
+          <select name="hotelregion">
+            <!--I want to disable the select region instead of value I use selected -->
+            <option selected="" disabled="disabled">Select Region &#9662;</option>
+            <option value="preston">Dallas Temple</option>
+            <option value="sodasprings">Salt Lake Temple</option>
+            <option value="fishhaven">Washington Temple</option>
+            <option value="fishhaven">a</option>
+            <option value="fishhaven">b</option>
+            <option value="fishhaven">c</option>
+            <option value="fishhaven">Wd</option>
+            <option value="fishhaven">e</option>
+          </select>
+        </label>
+        <!-- top means input label will go on top above or the left-->
+        <label class="top">Dates <input type="date" name="thedate"></label>
+        <label class="top">1 night <input type="date" name="thedate"></label>
+        <input type="submit" value="Reserve Now" class="submitBtn">
+      </fieldset>
+    </form>
+
+      <article>
+        <h2>Kensington, Maryland - Washington DC Temple</h2>
+        <h3> 9900 Stoneybrook Dr.
+          Kensington ,MD 20895-3199
+        </h3><br>
+        <figure><img src="imageshome/washington-dc-temple-lds-783289-wallpaper.jpg" alt="Washington, DC Temple">
+          <figcaption> Washington DC Temple</figcaption>
+        </figure>
+
+        <p>On March 3, 2018, the Washington D.C. Temple closed for an extensive renovation
+          project. The temple's mechanical and electrical systems will be upgraded, and all finishes and furnishings
+          will be refreshed. A minor addition to the exterior will house stairs and a new elevator system. Changes will
+          also be made to the grounds. The temple is anticipated to reopen in 2020, following a public open house and
+          rededication ceremony. The visitors' center will remain open during the entire renovation, and the annual
+          Festival of Lights will still go on display in December.1...<a
+            href="https://churchofjesuschristtemples.org/washington-d.c.-temple/">Read More</a>
+        </p>
+
+      </article>
+
+  </main>
+
+  <footer>
+    <div class="contactcontainer">
+
+      <div class="address">
+        <h4>Contact Us</h4>
+        Temple Inn & Suites<br>
+        5151 Pooks Hill Rd<br>
+        Bethesda, MD 20814<br><br>
+        <a href="tel:301-555-5555">+1 301-555-5555 </a><br>
+
+        <a href="mailto:support@TempleInnsuites.com">www.TempleInn&Suites.com</a><br>
+        <div class="socialMedia">
+          <a target="_blank" href="https://www.facebook.com"><img src="images/facebook(1).png" alt="Facebook Icon"></a>
+          <a target="_blank" href="https://www.instagram.com"><img src="images/instagram(1).png"
+              alt="Instagram Icon"></a>
+          <a target="_blank" href="https://www.twitter.com"> <img src="images/twitter(1).png" alt="Twitter Icon"></a>
+        </div>
+      </div>
+
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3099.9412680648265!2d-77.1055833496121!3d39.01665324741147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7cc0008616b55%3A0x1d0c9dd68a473aea!2s5151%20Pooks%20Hill%20Rd%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1576695125334!5m2!1sen!2sus"
+          width="200" height="175"></iframe></div>
+    </div>
+
+    <p> &copy; 2020 | Temple Inn & Suites |<a href="attributions.html"> Attributions |</a><a
+        href="https://awarbler.github.io/"> Anita Woodford </a><br>
+      <span id="date"></span> <br> Weather Information through <a href="https://openweathermap.org/"> Open Maps</a></p>
+    <script src="js/date.js"></script>
+    <script src="js/toggle.js"></script>
+
+  </footer>
+</body>
+
+</html>

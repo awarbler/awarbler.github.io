@@ -26,8 +26,12 @@
         flex: 1 1 100%;
     }
    
-
-  
+    .navigation a {
+        display: block;
+        padding: 0.75rem;
+        text-align: center;
+        text-decoration: none;
+    }
 
     .navigation li:first-child {
         display: none;
@@ -45,6 +49,26 @@
     #main {
         max-width: 760px;
     }
+
+/*-form legend is the title of the section--*/
+form legend {
+    /*--add blue color--*/
+    color: #aab1b2;
+    /*--margin to slide it over-*/
+    margin: 0 1rem;
+    /*---to push the little line away from the words---*/
+    padding: 0 .5rem;
+}
+article p{
+    text-align: left;
+}
+article figure{
+    float: left;
+    width: 50%;
+    margin-left: 2%;
+    padding-bottom: .5rem;
+    padding-right: 10px;
+}
 
     .contactcontainer {
         display: grid;
@@ -77,59 +101,5 @@
         padding: 1rem;
     }
 
-    /*---gallery html------*/
-
-    .gallerycontainer {
-        grid-template-columns: 1fr 1fr;
-        border-radius: 2px;
-        place-items: center center;
-    }
-
-    .item {
-        border-radius: 3px;
-        border: 1px solid #dbe1e2;
-        width: 100%;
-        padding: 10px 10px 9px 10px;
-    }
-
-    .cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        max-width: 700px;
-    }
-
-    .cards section {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .towns h2 {
-        padding: 15px 0 0 15px;
-        margin: 0;
-        text-align: left;
-    }
-
-    .towns h3 {
-        margin: 0;
-        padding: 0 32px 25px 15px;
-        text-align: left;
-    }
-
-    .towns p {
-        padding: 0 0 0 15px;
-        margin: 0;
-        text-align: left;
-    }
-
-    .townimage {
-        width: 300px;
-        height: auto;
-        padding: 15px;
-    }
-
-    .towndata {
-        width: 350px;
-    }
-
+  
 }

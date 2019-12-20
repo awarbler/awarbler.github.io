@@ -411,7 +411,7 @@ form label.top select {
     /*- adjust font --*/
     font-size: 1rem;
     /*-gray border around the input boxes  --*/
-    border: solid 1px #999;
+    border: solid 1px rgb(151, 83, 83);
     /*-round the corners make them at least 44px so they can be touched on a mobile device-*/
     border-radius: 4px;
     /*-padding to give them space in the box and to get them off of the line in the box --*/

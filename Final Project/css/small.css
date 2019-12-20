@@ -12,6 +12,8 @@ html {
 /*-- BODY --*/
 body {
     /*-- BODY font size for the whole page--*/
+    font-size: 16px;
+    line-height: 1.5;
     font-family: "Roboto", Open Sans, Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -25,6 +27,7 @@ p {
     margin: 0;
     padding: 0;
 }
+
 /*---- flex keeps the header in the middle of the screen --------------*/
 header {
     display: flex;
@@ -68,6 +71,7 @@ nav {
     margin: 0 auto;
     overflow: hidden;
 }
+
 .navigation {
     list-style: none;
     text-align: center;
@@ -85,7 +89,7 @@ nav {
 .navigation a {
     display: block;
     padding: 0.75rem;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
 }
 
@@ -103,6 +107,7 @@ nav ul li {
     -o-transition: all 0.2s;
     transition: all 0.2s;
 }
+
 /*---hover states -----*/
 nav>ul>li :hover {
     color: white;
@@ -116,7 +121,7 @@ nav>ul>li :hover>a {
 
 /*--Drop-down Menu -----*/
 nav>ul>li>div {
-    background-color:#daa520;
+    background-color: #daa520;
     border-top: 0;
     border-radius: 0 0 2px 2px;
 
@@ -167,17 +172,22 @@ top and bottom margins are 25px right and left margins are 50px*/
     margin: 0 auto;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     color: #aab1b2;
+
 }
 
 main h1,
-h2 {
+h2, h3 {
     text-align: center;
     color: #aab1b2;
     clear: both;
+
 }
 
 main h2 {
     font-size: 1.0rem;
+}
+main h3{
+    font-size: .75em;
 }
 
 p {
@@ -194,37 +204,42 @@ main div img {
     max-width: 100%;
 }
 
-
-.article {
+article {
     /* margin top right  bottom margin left margin: 25px; all four margins are 25px margin: 25px 50px;
 top and bottom margins are 25px right and left margins are 50px*/
-    margin: .5rem auto;
-    border: 1px solid #aab1b2;
-    border-radius: 2px;
+    margin:0;
     background-color: white;
     color: #4d4d4d;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: .5rem;
+    padding: 0;
+    display: block;
+    padding: 0px 20px;
+}
+
+article h2{
+    margin-top: .7rem;
+    color: #384f81;
 
 }
 
-.article img {
+article figure img{
     width: 100%;
-    height: auto;
+    display: block;
+    margin: 0 1.5em 0em 0;
+}
+article figure{
+    width: 100%;
+    margin: 0;
+}
+article figcaption{
+    text-align: center;
+    font-size: .8rem;
 }
 
-.article a {
-    color: #7fb9c2;
-}
 
-.figure article {
-    margin: 0.5 auto;
-}
 
 /*---footer all -----*/
 .contactcontainer {
+    clear: both;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;

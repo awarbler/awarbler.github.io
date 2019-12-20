@@ -21,11 +21,12 @@
     .navigation {
         display: flex;
     }
+
     .navigation li {
         display: block;
         flex: 1 1 100%;
     }
-   
+
     .navigation a {
         display: block;
         padding: 0.75rem;
@@ -36,6 +37,7 @@
     .navigation li:first-child {
         display: none;
     }
+
     /* this is for home page and preston page main picture*/
     .herodiv {
         font-size: 100%;
@@ -50,25 +52,91 @@
         max-width: 760px;
     }
 
-/*-form legend is the title of the section--*/
-form legend {
-    /*--add blue color--*/
-    color: #aab1b2;
-    /*--margin to slide it over-*/
-    margin: 0 1rem;
-    /*---to push the little line away from the words---*/
-    padding: 0 .5rem;
-}
-article p{
-    text-align: left;
-}
-article figure{
-    float: left;
-    width: 50%;
-    margin-left: 2%;
-    padding-bottom: .5rem;
-    padding-right: 10px;
-}
+    legend {
+        display: block;
+    }
+
+    label {
+        display: inline;
+    }
+
+    form fieldset {
+        /*-seperate from each other -*/
+        margin: 1rem 0;
+        /*-thing solid blue border--*/
+        border: solid #aab1b2;
+        /*--padding inside --*/
+        padding: .5rem 2%;
+
+    }
+
+    /*-form legend is the title of the section--*/
+    form legend {
+        /*--add blue color--*/
+        color: #aab1b2;
+        /*--margin to slide it over-*/
+        margin: 0 1rem;
+        /*---to push the little line away from the words---*/
+        padding: 0 .5rem;
+    }
+
+    /*--Style the user instructions label.top = class style the division
+ so form div-*/
+    form label.top,
+    form div {
+        /*-seperate from each other using padding  --*/
+        padding-top: 1rem;
+        padding-right: 1rem;
+        /*-change color to red --*/
+        color: #aab1b2;
+        /*-reduce the font size --*/
+        font-size: .8rem;
+
+    }
+
+    form label.top input,
+    form label.top select {
+        /*the validation the drop downs are not following the rules add webikit appearance to none--*/
+        -webkit-appearance: none;
+        /*- make the boxes to appear below their titles --*/
+        display: inline;
+        /*- adjust font --*/
+        font-size: 1rem;
+        /*-round the corners make them at least 44px so they can be touched on a mobile device-*/
+        border-radius: 4px;
+        /*-padding to give them space in the box and to get them off of the line in the box --*/
+        padding: .75rem;
+        /*- change the text color --*/
+        color: #aab1b2;
+        /*-small screens we want the inputs to be full width --*/
+        width: 100%;
+        /*-large screens we want the inputs to be smaller so they dont look so dumb we do this by setting a max-width--*/
+        max-width: 12rem;
+        /*-background color for inputs --*/
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    form input.submitBtn {
+        /*- round the corners 1rem--*/
+        border-radius: 4px;
+        /*- the width changed messed up the view with a larger screen so we are going to add a max-width to correct it just like the input --*/
+        max-width: 12rem;
+        /*- the button is touching the footer and lined up with the on the left side with the field set push over the button with margin for set margin 0 top 0 right 2rem bottom 2% left --*/
+        margin: 0 2%;
+
+    }
+
+    article p {
+        text-align: left;
+    }
+
+    article figure {
+        float: left;
+        width: 50%;
+        margin-left: 2%;
+        padding-bottom: .5rem;
+        padding-right: 10px;
+    }
 
     .contactcontainer {
         display: grid;
@@ -90,16 +158,7 @@ article figure{
         font-size: 2rem;
     }
 
-    .article img {
-        float: left;
-        width: 50%;
-    }
 
-    .article data {
-        float: right;
-        justify-content: space-evenly;
-        padding: 1rem;
-    }
 
-  
+
 }

@@ -12,7 +12,7 @@ html {
 /*-- BODY --*/
 body {
     /*-- BODY font size for the whole page--*/
-    font-size: 16px;
+    font-size: 100%;
     line-height: 1.5;
     font-family: "Roboto", Open Sans, Helvetica, Arial, sans-serif;
     margin: 0;
@@ -45,7 +45,7 @@ header {
 }
 
 .heading h1 {
-    font-size: 1rem;
+    font-size: 1em;
     /* margin top right  bottom left margin: 25px; all four margins are 25px margin: 25px 50px;
 top and bottom margins are 25px right and left margins are 50px*/
     margin: 0 0 0 15px;
@@ -203,6 +203,30 @@ main section {
 main div img {
     max-width: 100%;
 }
+fieldset{
+    border: none;
+}
+legend{
+    display: none;
+}
+ /* only on small screen bring back on medium*/
+label{
+    display: none;
+}
+/*- fix the button --*/
+form input.submitBtn {
+    /*-take the border away from the button background color disapperas fix after the border  --*/
+    border: none;
+    /*-fix background color use the same color we used earlier --*/
+    background-color: #012778;
+    /*-get the text to show up change it to white --*/
+    color: white;
+    /*- increase the click area of the button by adding padding --*/
+    padding: .75rem .75rem;
+    /*-set the width to 96% to match the input on smaller screens --*/
+    width: 100%;
+    /*- the width changed messed up the view with a larger screen so we are going to add a max-width to correct it just like the input --*/
+}
 
 article {
     /* margin top right  bottom margin left margin: 25px; all four margins are 25px margin: 25px 50px;
@@ -235,8 +259,6 @@ article figcaption{
     font-size: .8rem;
 }
 
-
-
 /*---footer all -----*/
 .contactcontainer {
     clear: both;
@@ -248,6 +270,7 @@ article figcaption{
     justify-items: center;
     padding: 1rem;
     background-color: rgba(1, 39, 120, .4);
+    color: white;
 }
 
 /*---footer all css------*/
@@ -264,25 +287,12 @@ article figcaption{
 
 .address a {
     text-decoration: none;
-    color: gray;
+    color: white;
 }
 
 /*---preston css------*/
 .socialMedia img {
-    width: 10%;
-}
-
-.events h4 {
-    text-align: center;
-    color: #7fb9c2;
-    margin: 0;
-}
-
-.events p {
-    font-size: smaller;
-    justify-content: left;
-    text-align: center;
-    background-color: rgba(127, 185, 194, .2);
+    width: 20%;
 }
 
 /*---all css------*/
@@ -297,9 +307,8 @@ footer p {
 }
 
 footer a {
-    color: #7fb9c2;
+    color: #012778;
 }
-
 
 .clearfix:after {
     content: "";

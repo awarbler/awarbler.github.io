@@ -158,10 +158,6 @@ nav>ul>li>div ul>li>a {
     text-decoration: none;
 }
 
-nav>ul>li>div ul>li:hover>a {
-    background-color: ;
-}
-
 .responsive li {
     display: block;
 }

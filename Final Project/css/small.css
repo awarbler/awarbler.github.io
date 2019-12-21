@@ -100,11 +100,7 @@ nav li a {
 nav ul li {
     display: inline-block;
     list-style: none;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
+  
 }
 
 /*---hover states -----*/
@@ -131,11 +127,6 @@ nav>ul>li>div {
     width: 165px;
     visibility: hidden;
 
-    -webkit-transiton: opacity 0.2s;
-    -moz-transition: opacity 0.2s;
-    -ms-transition: opacity 0.2s;
-    -o-transition: opacity 0.2s;
-    -transition: opacity 0.2s;
 
 }
 

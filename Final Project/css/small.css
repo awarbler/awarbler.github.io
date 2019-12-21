@@ -100,7 +100,6 @@ nav li a {
 nav ul li {
     display: inline-block;
     list-style: none;
-
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     -ms-transition: all 0.2s;
@@ -199,17 +198,19 @@ main section {
 main div img {
     max-width: 100%;
 }
+/* home only on small screen bring back on medium*/
 fieldset{
     border: none;
 }
+/* home only on small screen bring back on medium*/
 legend{
     display: none;
 }
- /* only on small screen bring back on medium*/
+ /* home only on small screen bring back on medium*/
 label{
     display: none;
 }
-/*- fix the button --*/
+/*- home fix the button --*/
 form input.submitBtn {
     /*-take the border away from the button background color disapperas fix after the border  --*/
     border: none;
@@ -223,6 +224,146 @@ form input.submitBtn {
     width: 100%;
     /*- the width changed messed up the view with a larger screen so we are going to add a max-width to correct it just like the input --*/
 }
+
+/*---contact */
+.form-contact fieldset {
+
+    /*-thing solid blue border--*/
+    border: none;
+    max-width: 960px;
+}
+/*---contact */
+/*-form legend is the title of the section--*/
+.form-contact legend {
+    /*--add blue color--*/
+    color: #aab1b2;
+    /*--margin to slide it over-*/
+    margin: 0 1rem;
+    /*---to push the little line away from the words---*/
+    padding: 0 .5rem;
+}
+/*---contact */
+/*--Style the user instructions label.top = class style the division
+ so form div-*/
+.form-contact label.top,
+.form-contact div {
+    /*--display-*/
+    display: block;
+    /*-seperate from each other using padding  --*/
+    padding-top: 1rem;
+    /*-change color to red --*/
+    color: #aab1b2;
+    /*-reduce the font size --*/
+    font-size: .8rem;
+}
+/*---contact */
+/*- start with first and third section covers all of the inputs 
+next form label top select to include selections--*/
+.form-contact label.top input,
+.form-contact label.top select {
+    /*the validation the drop downs are not following the rules add webikit appearance to none--*/
+    -webkit-appearance: none;
+    /*- make the boxes to appear below their titles --*/
+    display: block;
+    /*- adjust font --*/
+    font-size: 1rem;
+    /*-gray border around the input boxes  --*/
+    border: solid 1px #daa520;
+    /*-round the corners make them at least 44px so they can be touched on a mobile device-*/
+    border-radius: 4px;
+    /*-padding to give them space in the box and to get them off of the line in the box --*/
+    padding: .75rem;
+    /*- change the text color --*/
+    color: #aab1b2;
+    /*-small screens we want the inputs to be full width --*/
+    width: 100%;
+    /*-large screens we want the inputs to be smaller so they dont look so dumb we do this by setting a max-width--*/
+    max-width: 20rem;
+    /*-background color for inputs --*/
+    background-color: rgba(0, 0, 0, 0.1);
+}
+/*---contact */
+.form-style-1 {
+	margin:10px auto;
+	max-width: 400px;
+	padding: 20px 12px 10px 20px;
+}
+.form-style-1 li {
+	padding: 0;
+	display: block;
+	list-style: none;
+	margin: 10px 0 0 0;
+}
+.form-style-1 label{
+	margin:0 0 3px 0;
+	padding:0px;
+	display:block;
+	font-weight: bold;
+}
+.form-style-1 input[type=text], 
+.form-style-1 input[type=date],
+.form-style-1 input[type=datetime],
+.form-style-1 input[type=number],
+.form-style-1 input[type=search],
+.form-style-1 input[type=time],
+.form-style-1 input[type=url],
+.form-style-1 input[type=email],
+textarea, 
+select{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border:1px solid #BEBEBE;
+	padding: 7px;
+	margin:0px;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;	
+}
+.form-style-1 input[type=text]:focus, 
+.form-style-1 input[type=date]:focus,
+.form-style-1 input[type=datetime]:focus,
+.form-style-1 input[type=number]:focus,
+.form-style-1 input[type=search]:focus,
+.form-style-1 input[type=time]:focus,
+.form-style-1 input[type=url]:focus,
+.form-style-1 input[type=email]:focus,
+.form-style-1 textarea:focus, 
+.form-style-1 select:focus{
+
+	box-shadow: 0 0 8px #daa520;
+	border: 1px solid #daa520;
+}
+.form-style-1 .field-divided{
+	width: 49%;
+}
+
+.form-style-1 .field-long{
+	width: 100%;
+}
+.form-style-1 .field-select{
+	width: 100%;
+}
+.form-style-1 .field-textarea{
+	height: 100px;
+}
+.form-style-1 input[type=submit], .form-style-1 input[type=button]{
+	background: #012778;
+	padding: 8px 15px 8px 15px;
+	border: none;
+	color: #fff;
+}
+.form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
+	background: #012778;
+	box-shadow:none;
+
+}
+.form-style-1 .required{
+	color:#daa520;
+}
+
 
 article {
     /* margin top right  bottom margin left margin: 25px; all four margins are 25px margin: 25px 50px;
@@ -279,11 +420,13 @@ article figcaption{
     color: white;
     padding: 0;
     margin: 0;
+    clear: both;
 }
 
 .address a {
     text-decoration: none;
     color: white;
+    clear: both;
 }
 
 /*---preston css------*/
@@ -309,91 +452,6 @@ footer a {
 }
 
 /* contact us */
-
-.form-style-1 {
-	margin:10px auto;
-	max-width: 400px;
-	padding: 20px 12px 10px 20px;
-	font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-}
-.form-style-1 li {
-	padding: 0;
-	display: block;
-	list-style: none;
-	margin: 10px 0 0 0;
-}
-.form-style-1 label{
-	margin:0 0 3px 0;
-	padding:0px;
-	display:block;
-	font-weight: bold;
-}
-.form-style-1 input[type=text], 
-.form-style-1 input[type=date],
-.form-style-1 input[type=datetime],
-.form-style-1 input[type=number],
-.form-style-1 input[type=search],
-.form-style-1 input[type=time],
-.form-style-1 input[type=url],
-.form-style-1 input[type=email],
-textarea, 
-select{
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	border:1px solid #BEBEBE;
-	padding: 7px;
-	margin:0px;
-	-webkit-transition: all 0.30s ease-in-out;
-	-moz-transition: all 0.30s ease-in-out;
-	-ms-transition: all 0.30s ease-in-out;
-	-o-transition: all 0.30s ease-in-out;
-	outline: none;	
-}
-.form-style-1 input[type=text]:focus, 
-.form-style-1 input[type=date]:focus,
-.form-style-1 input[type=datetime]:focus,
-.form-style-1 input[type=number]:focus,
-.form-style-1 input[type=search]:focus,
-.form-style-1 input[type=time]:focus,
-.form-style-1 input[type=url]:focus,
-.form-style-1 input[type=email]:focus,
-.form-style-1 textarea:focus, 
-.form-style-1 select:focus{
-	-moz-box-shadow: 0 0 8px #88D5E9;
-	-webkit-box-shadow: 0 0 8px #88D5E9;
-	box-shadow: 0 0 8px #88D5E9;
-	border: 1px solid #88D5E9;
-}
-.form-style-1 .field-divided{
-	width: 49%;
-}
-
-.form-style-1 .field-long{
-	width: 100%;
-}
-.form-style-1 .field-select{
-	width: 100%;
-}
-.form-style-1 .field-textarea{
-	height: 100px;
-}
-.form-style-1 input[type=submit], .form-style-1 input[type=button]{
-	background: #4B99AD;
-	padding: 8px 15px 8px 15px;
-	border: none;
-	color: #fff;
-}
-.form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
-	background: #4691A4;
-	box-shadow:none;
-	-moz-box-shadow:none;
-	-webkit-box-shadow:none;
-}
-.form-style-1 .required{
-	color:red;
-}
-</style>
 
 .clearfix:after {
     content: "";

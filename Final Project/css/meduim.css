@@ -60,33 +60,45 @@
         display: inline;
     }
 
-    form fieldset {
-        /*-seperate from each other -*/
-        margin: 1rem 0;
-        /*-thing solid blue border--*/
-        border: solid #aab1b2;
-        /*--padding inside --*/
-        padding: .5rem 2%;
 
+
+    article p {
+        text-align: left;
     }
 
-    /*-form legend is the title of the section--*/
-    form legend {
-        /*--add blue color--*/
-        color: #aab1b2;
-        /*--margin to slide it over-*/
-        margin: 0 1rem;
-        /*---to push the little line away from the words---*/
-        padding: 0 .5rem;
+    .form-container {
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+        color: navy;
+        background-color: white;
+        /* Blue */
+        display: flex;
+        justify-content: space-between;
+        /* Add this */
+        
+    }
+
+    .destination {
+        border: 1px solid #fff;
+        /* For debugging */
+        width: 900px;
+        display: flex;
+      
+    }
+
+    form fieldset {
+  
+        /*-thing solid blue border--*/
+        border: solid #aab1b2;
+ 
     }
 
     /*--Style the user instructions label.top = class style the division
  so form div-*/
     form label.top,
     form div {
-        /*-seperate from each other using padding  --*/
-        padding-top: 1rem;
-        padding-right: 1rem;
+  
         /*-change color to red --*/
         color: #aab1b2;
         /*-reduce the font size --*/
@@ -98,20 +110,17 @@
     form label.top select {
         /*the validation the drop downs are not following the rules add webikit appearance to none--*/
         -webkit-appearance: none;
-        /*- make the boxes to appear below their titles --*/
-        display: inline;
+      
         /*- adjust font --*/
         font-size: 1rem;
         /*-round the corners make them at least 44px so they can be touched on a mobile device-*/
         border-radius: 4px;
         /*-padding to give them space in the box and to get them off of the line in the box --*/
-        padding: .75rem;
+        padding: .5rem;
         /*- change the text color --*/
         color: #aab1b2;
-        /*-small screens we want the inputs to be full width --*/
-        width: 100%;
         /*-large screens we want the inputs to be smaller so they dont look so dumb we do this by setting a max-width--*/
-        max-width: 12rem;
+        max-width: 15rem;
         /*-background color for inputs --*/
         background-color: rgba(0, 0, 0, 0.1);
     }
@@ -120,15 +129,14 @@
         /*- round the corners 1rem--*/
         border-radius: 4px;
         /*- the width changed messed up the view with a larger screen so we are going to add a max-width to correct it just like the input --*/
-        max-width: 12rem;
-        /*- the button is touching the footer and lined up with the on the left side with the field set push over the button with margin for set margin 0 top 0 right 2rem bottom 2% left --*/
-        margin: 0 2%;
+        max-width: 15rem;
+        height: auto;
 
     }
 
-    article p {
-        text-align: left;
-    }
+
+
+
 
     article figure {
         float: left;

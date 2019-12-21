@@ -14,7 +14,7 @@
   <!--<link rel="shortcut icon" href="favicon.ico"> https://www.favicon.cc/-->
   <link rel="shortcut icon" href="favicon.ico">
   <!-- link to google api  -->
- 
+
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <!-- link to css style sheet  -->
@@ -34,9 +34,9 @@
     </picture>
     <!-- Header 1 title my name -->
     <section class="heading">
-      <h1>Bethesda Temple Inn & Suites</h1>
+      <h1>Find a Hotel</h1>
       <!---- section class="heading" -->
-      <div class="heading2">Home Away from Home</div>
+  
       <!--  <h2>Home Away from Home</h2>-->
     </section>
 
@@ -46,8 +46,8 @@
   <nav>
     <ul class="navigation">
       <li> <a class="ham" href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
-      <li ><a href="index.html"> Home </a></li>
-      <li class="active"Z><a href="reservations.html">Reservations</a></li>
+      <li><a href="index.html"> Home </a></li>
+      <li class="active"><a href="reservations.html">Reservations</a></li>
       <li><a href="services.html">Services<span class="caret"></span></a>
         <div>
           <ul class="services">
@@ -62,15 +62,127 @@
     </ul>
   </nav>
 
-  <footer>
-        
-        <p> &copy; 2020 | Temple Inn & Suites |<a href="attributions.html"> Attributions |</a><a
-            href="https://awarbler.github.io/"> Anita Woodford </a><br>
-          <span id="date"></span> <br> Weather Information through <a href="https://openweathermap.org/"> Open Maps</a></p>
-        <script src="js/date.js"></script>
-        <script src="js/toggle.js"></script>
-    
-      </footer>
-    </body>
-    
-    </html>
+  <!-- CREATING FORM  i need to look up "get" I believe it is the html for submit form thank you -->
+  <form method="get" action="thanks.html">
+    <!-- MAIN fieldset is to identify a section legend is the heading label is each input name on form-->
+
+    <!---destination -->
+    <ul class="form-style-1">
+
+        <li> <label>Destination <span class="required">*</span></label>
+          <!--per video no arrow downs on please select but I see it however if I need to add 
+                              later I will go to the option value after the work please select I will type &#9662; to add the arrow down-->
+          <select name="hotelregion">
+            <!--I want to disable the select region instead of value I use selected -->
+            <option selected="" disabled="disabled">Select Destination &#9662;</option>
+            <option value="dallas temple">Dallas Temple</option>
+            <option value="slc">Salt Lake Temple</option>
+            <option value="San Antonio, Texas">San Antonio, Texas</option>
+            <option value="Albuquerque, New Mexico,">Albuquerque, New Mexico,</option>
+            <option value="Baton Rouge, Louisiana,">Baton Rouge, Louisiana,</option>
+            <option value="washingtonDC">Washington Temple</option>
+            <option value="washingtonDC">Washington Temple</option>
+            <option value="washingtonDC">Washington Temple</option>
+            <option value="washingtonDC">Washington Temple</option>
+            <option value="washingtonDC">Washington Temple</option>
+            <option value="washingtonDC">Washington Temple</option>
+          </select>
+        </li>
+        <!-- top means input label will go on top above or the left-->
+        <li> <label>Dates<span class="required">*</span> </label><input type="date" name="thedate" class="field-divided"/> <input type="date" name="date2" class="field-divided"/></li>
+        <li> <label>Guest</label>
+          <!--per video no arrow downs on please select but I see it however if I need to add 
+                              later I will go to the option value after the work please select I will type &#9662; to add the arrow down-->
+          <select name="numberadults" class="field-divided" >
+            <!--I want to disable the select region instead of value I use selected -->
+            <option selected="" disabled="disabled">Adults &#9662;</option>
+            <option value="one">1</option>
+            <option value="one">2</option>
+            <option value="one">3</option>
+            <option value="one">4</option>
+            <option value="one">5</option>
+            <option value="one">6</option>
+            <option value="one">7</option>
+            <option value="one">8</option>
+            <option value="one">9</option>
+            <option value="one">10</option>
+            <option value="one">11</option>
+            <option value="one">12</option>
+            <option value="one">13</option>
+            <option value="one">14</option>
+            <option value="one">15</option>
+          </select>
+ 
+          <!--per video no arrow downs on please select but I see it however if I need to add 
+                              later I will go to the option value after the work please select I will type &#9662; to add the arrow down-->
+          <select name="numberchildren"class="field-divided">
+            <!--I want to disable the select region instead of value I use selected -->
+            <option selected="" disabled="disabled">Children&#9662;</option>
+            <option value="one">1</option>
+            <option value="one">2</option>
+            <option value="one">3</option>
+            <option value="one">4</option>
+            <option value="one">5</option>
+            <option value="one">6</option>
+            <option value="one">7</option>
+            <option value="one">8</option>
+            <option value="one">9</option>
+            <option value="one">10</option>
+            <option value="one">11</option>
+            <option value="one">12</option>
+            <option value="one">13</option>
+            <option value="one">14</option>
+            <option value="one">15</option>
+          </select>
+        </li>
+        <li> <label>Rooms</label>
+          <!--per video no arrow downs on please select but I see it however if I need to add 
+                              later I will go to the option value after the work please select I will type &#9662; to add the arrow down-->
+          <select name="rooms" >
+            <!--I want to disable the select region instead of value I use selected -->
+            <option selected="" disabled="disabled">Select # Rooms&#9662;</option>
+            <option value="one">1</option>
+            <option value="one">2</option>
+            <option value="one">3</option>
+            <option value="one">4</option>
+            <option value="one">5</option>
+            <option value="one">6</option>
+            <option value="one">7</option>
+            <option value="one">8</option>
+            <option value="one">9</option>
+            <option value="one">10+</option>
+         
+          </select>
+        </li>
+        <li><label>Full Name <span class="required">*</span></label><input type="text" name="field1"
+           placeholder="Full Name" class="field-select" /> </li>
+        <li>
+          <label>Email <span class="required">*</span></label>
+          <input type="email" name="field3" class="field-long" placeholder="YourEmail@email.com "/>
+        </li>
+
+        <li>
+          <label>Special Request <span class="required">*</span></label>
+          <textarea name="field5" id="field5" class="field-long field-textarea"></textarea>
+        </li>
+
+        <li> <input type="submit" value="Reserve Now" class="submitBtn"></li>
+    </ul>
+  </form>
+  <div class="form-contact">
+
+    </form>
+
+    <footer>
+
+      <p> &copy; 2020 | Temple Inn & Suites |<a href="attributions.html"> Attributions |</a><a
+          href="https://awarbler.github.io/"> Anita Woodford </a><br>
+        <span id="date"></span> <br> Weather Information through <a href="https://openweathermap.org/"> Open Maps</a>
+      </p>
+      <script src="js/date.js"></script>
+      <script src="js/toggle.js"></script>
+
+    </footer>
+</body>
+
+</html>

@@ -80,6 +80,7 @@ top and bottom margins are 25px right and left margins are 50px*/
 header {
     border-bottom: 1px solid#aab1b2;
 }
+
 main {
     /* margin top right  bottom margin left margin: 25px; all four margins are 25px margin: 25px 50px;
 top and bottom margins are 25px right and left margins are 50px*/
@@ -93,8 +94,6 @@ main {
     text-align: center;
     clear: both;
 }
-
-
 
 main section {
     margin: 10px;

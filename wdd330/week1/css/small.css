@@ -22,6 +22,10 @@ body {
     padding: 0;
     color: #555d66;
 }
+/*---body links labelled in index.html as a ------*/
+body a {
+    color: #aadcdd;
+}
 
 /*---- flex keeps the header in the middle of the screen --------------*/
 header
@@ -55,7 +59,8 @@ h2{
     font-size: 1rem;
     margin: 0 0 0 17px;
     font-weight: normal;
-   align-self: center;
+    align-self: center;
+    
 }
 
 /*---nav = navigation section as a whole------*/
@@ -74,7 +79,6 @@ main {
 main h2{
     font-size: 1rem;
     margin: 1.00rem;
-   
     margin-bottom:.05rem;
     max-width: 75%;
 

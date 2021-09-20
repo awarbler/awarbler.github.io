@@ -12,3 +12,5 @@ const list = document.querySelector('weeklyNotes');
 const listItems = listArray.map( (element) => {
     `<li id='${element} 'class='listItem'>${element}</li>` });
   list.innerHTML = listItems.join('');
+
+  

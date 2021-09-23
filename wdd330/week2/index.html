@@ -82,9 +82,8 @@
   <p>
     &copy; 2021 |  <a href="https://awarbler.github.io">Anita
       Woodford</a>| Texas | <a href="https://www.byui.edu/online"></href> BYUI Online Learning</a><br>
-    <script>
-    var date = document.lastModified;
-    document.write("Last Modified: " + date);
+    Last Modified: <span id="dateModified"></span><script>
+    document.getElementById("dateModified").innerHTML = document.lastModified
     </script>
   </p>
 </footer>

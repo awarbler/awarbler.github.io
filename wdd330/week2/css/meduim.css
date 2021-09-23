@@ -39,6 +39,12 @@
     .navigation li a {
         text-align: center;
     }
+    .navigation a {
+        display: block;
+        padding: 0.75rem;
+        text-align: center;
+        text-decoration: none;
+    }
 
     header,footer {
         border-radius: 4px;

@@ -15,7 +15,7 @@ html {
 
 /*---body------*/
 body {
-    font-size: 16px;
+    font-size: 100%;
     line-height: 1.5;
     font-family: "Roboto", Open Sans, Helvetica, Arial, sans-serif;
     margin: 0;
@@ -34,11 +34,11 @@ header
     align-items:center;
     justify-content:center;
     margin: 0 auto;
-    padding: .3rem 2%;
+    padding: .5rem 2%;
     font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
     background: white;
     color: #7fb9c2;
-    margin-top:10px;
+   
     
 }
 
@@ -52,7 +52,7 @@ header
     font-size: 1.6rem;
     /* margin top right  bottom left margin: 25px; all four margins are 25px margin: 25px 50px;
 top and bottom margins are 25px right and left margins are 50px*/
-    margin: 0 0 0 17px;
+    margin: 0 0 0 15px;
 }
 
 /*---was .m -----*/
@@ -60,7 +60,7 @@ top and bottom margins are 25px right and left margins are 50px*/
     font-style: italic;
     letter-spacing: 1pt;
     font-size: .75rem;
-    margin-left: 20px;
+    margin: 0 0 0 15px;
     font-weight: normal;
     color: #EDC87E;
 }
@@ -79,6 +79,7 @@ nav {
     padding: .5rem 2%;
     text-align: left;
     font-size: .75em;
+    overflow: hidden;
 }
 
 /*---nav unordered list or in this case .navigation or nav ul------*/
@@ -89,6 +90,7 @@ nav {
     /*--nav ul should take up the width of the page--*/
     /*-- can be put here or in li this takes away the bullet points*/
     list-style: none;
+    text-align: center;
 
 }
 /*---navigation this is the hamburger menu for the small view to show it------*/

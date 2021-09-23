@@ -9,3 +9,12 @@ To access the DOM of your html file with the JavaScript console:
 1. Open it in a new tab by clicking the `Open in Browser Tab` (right side of the address bar).
 2. Press F12 (or Command + Option + I on a Mac) to open the Developer Tools.
 3. Click on the Console tab.
+
+function functionOne(){
+    // collects number from input id 
+    let output = parseFloat(document.getElementById('inputOne').value);
+    // take let output andplaces it to the 
+    document.getElementById('output'),innerHtml - output;
+
+}
+

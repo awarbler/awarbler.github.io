@@ -1,10 +1,4 @@
-// table of contents
-const link = [{
-    // the lae displays the "Week 1"
-    label: "week 1",
-    url: "wdd330/js/main.js",
-}
-]
+
 // create an array to go through 
 const links = [
     {

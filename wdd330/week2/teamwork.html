@@ -79,14 +79,9 @@
 <!-- Requirement 2 Team Work-->
 <h2>Requirement 2 Team Work </h2>
 <!--
-  * In good program design functions should do one thing and do it well. 
-  * They should be kept simple. Another good programming practice is to 
-  * keep your code DRY (Don't Repeat Yourself). How did you do with your 
-  * functions? Does each do one thing only? Is there any repeated code? 
-  * How could you fix this? If you have repeated lines of code in your f
-  * unctions the most common solution is to pull those repeated lines 
-  * out and create a new function with them. Do this with your code.
-  * -->
+ Write a new function that expects a number as an argument. 
+ It should take that number and sum all the numbers up to the number provided. 
+ (ie n=5…so it would do 1+2+3+4+5 = 15) It should return that value.-->
     Please enter a Number: <input type="text" id="input2" size="4">
     <button type= "button2" onclick="getNum2()">Total</button><br/>
     <!--- put inside a <div> tag. A div tag is a division of content and to give 
@@ -101,12 +96,11 @@
        function getNum2() {
          // set up the variables
          // read the input from the user - we want the value of the input1
-         let input = parseInt(document.getElementById("input2").value);
-         var output = 0;
+         let x = parseInt(document.getElementById("input2").value);
+        let output = 0;
          // create a loop
          for(let i = 0; i<= x; i++){
            output += i
-
          }
         // output
         document.getElementById("outputDiv2").innerHTML = "You Entered: " + input;

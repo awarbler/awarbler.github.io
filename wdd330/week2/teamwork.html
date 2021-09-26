@@ -61,31 +61,67 @@
     <!--- put inside a <div> tag. A div tag is a division of content and to give 
           a section an id  -->
     <div id="outputDiv1"></div>
-    <!-- Function Requirement 1 -->
+    <!-- Function Requirement 1 --> 
     <script>
       /*  Input:    input1  for  num do I use var, let, or const
        *  Process:  Read contents of input1 
        *  Output:   Number entered
        */
        function getNum() {
-         // set up the variables
+         // set up the variables - our team set up as a let I set up as a const
          // read the input from the user - we want the value of the input1
-         const input = parseInt(document.getElementById("input1").value);
+         const input = parseInt(document.getElementById("input1").value); // team used a float I used a int
         // output
         document.getElementById("outputDiv1").innerHTML = "You Entered: " + input;
        } 
     </script> 
 
-<!-- Requirement 2 -->
-<h2>Requirement 2</h2>
+<!-- Requirement 2 Team Work-->
+<h2>Requirement 2 Team Work </h2>
 <!--
-  *  Write a new function that expects a number as an argument. 
-  *  take that number and sum all the numbers up to the number provided. 
-  * (ie n=5…so it would do 1+2+3+4+5 = 15) It should return that value.
-  * button is pressed it should read the number from the input.
-  * Make sure it is a valid number
-  * call the summing function you just wrote
-  * output the result to the div.
+  * In good program design functions should do one thing and do it well. 
+  * They should be kept simple. Another good programming practice is to 
+  * keep your code DRY (Don't Repeat Yourself). How did you do with your 
+  * functions? Does each do one thing only? Is there any repeated code? 
+  * How could you fix this? If you have repeated lines of code in your f
+  * unctions the most common solution is to pull those repeated lines 
+  * out and create a new function with them. Do this with your code.
+  * -->
+    Please enter a Number: <input type="text" id="input2" size="4">
+    <button type= "button2" onclick="getNum2()">Total</button><br/>
+    <!--- put inside a <div> tag. A div tag is a division of content and to give 
+          a section an id  -->
+    <div id="outputDiv2"></div>
+    <!-- Function Requirement 2 -->
+    <script>
+      /*  Input:    input2  for  num do I use var, let, or const
+       *  Process:  Read contents of input1 
+       *  Output:   Number entered
+       */
+       function getNum2() {
+         // set up the variables
+         // read the input from the user - we want the value of the input1
+         let input = parseInt(document.getElementById("input2").value);
+         var output = 0;
+         // create a loop
+         for(let i = 0; i<= x; i++){
+           output += i
+
+         }
+        // output
+        document.getElementById("outputDiv2").innerHTML = "You Entered: " + input;
+       } 
+    </script> 
+<!-- Requirement 2 My Work-->
+<h2>Requirement 2 my Work </h2>
+<!--
+  * In good program design functions should do one thing and do it well. 
+  * They should be kept simple. Another good programming practice is to 
+  * keep your code DRY (Don't Repeat Yourself). How did you do with your 
+  * functions? Does each do one thing only? Is there any repeated code? 
+  * How could you fix this? If you have repeated lines of code in your f
+  * unctions the most common solution is to pull those repeated lines 
+  * out and create a new function with them. Do this with your code.
   * -->
     Please enter a Number: <input type="text" id="input2" size="4">
     <button type= "button2" onclick="getNum2()">Total</button><br/>
@@ -102,11 +138,16 @@
          // set up the variables
          // read the input from the user - we want the value of the input1
          const input = parseInt(document.getElementById("input2").value);
+         let output = 0;
+         // create a loop
+         for(let i = 0; i<= x; i++){
+           output += i
+
+         }
         // output
         document.getElementById("outputDiv2").innerHTML = "You Entered: " + input;
        } 
     </script> 
-
    
 </main>
 <footer>

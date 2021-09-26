@@ -3,15 +3,15 @@
 const links = [
     {
     label: "Week 1",
-    url: "week1.index.html"
+    url: "wdd330/week1/index.html"
     },
     {
         label: "Week 2",
-        url: "week2.index.html"
+        url: "wdd330/week2/index.html"
     },
     {
         label: "Challenge: 1 Todo",
-        url: "week3.index.html"
+        url: "wdd330/week3/index.html"
     }
 ]
 

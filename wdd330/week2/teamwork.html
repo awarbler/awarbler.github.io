@@ -1,28 +1,23 @@
 <!DOCTYPE HTML>
 <html lang="en-us">
 <head>
-   <!-- Set character encoding for the document -->
+<!-- Set character encoding for the document -->
 <meta charset="utf-8">
-
 <!-- Viewport for responsive web design -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <!-- Document Title -->
 <title> WDD 330: Anita Woodford: Portfolio</title>
 <meta name="description" content="WDD 330: Anita Woodford: Portfolio Assignment Website: Web Frontend Development II, at Brigham Young University - Idaho">
-
 <!-- link to google api  -->
 <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-
 <!-- link to css style sheet  -->
-<link rel="stylesheet" href="css/normalize">
+<link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href='css/small.css'>
 <link rel="stylesheet" href="css/meduim.css">
-<script></script>
+<link rel="stylesheet" href="css/large.css">
 <style></style>
 </head>
-
 <body>
 <!-- HEADER HERE -->
   <header>
@@ -34,46 +29,97 @@
     <!-- m = class name for css for <div class="m">Past|Present|Future</div>-->  
   </section>
 </header>
-
 <!-- NAVIGATION HERE -->
-
+<nav>
+  <ul class="navigation">
+    <li> <a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
+    <li class="active"><a href="index.html"> Home </a></li>
+    <li ><a href="#">Read</a></li>
+    <li> <a href="teamwork.html">Team Work</a></li>
+    <li> <a href="notes.html">Notes</a></li>
+  </ul>
+</nav>
 <main>
-
 <!-- enter header  h2 = smaller than h1 -->
-<h2>Week 2</h2>
+<h2>Week 2 </h2>
 <h2> Group Assignment</h2>
-
-<!-- List for assignments  < if we need to ad on this is how we do it >| <a href="Week 07/gallery.html"> Gallery </a>-->
-
 <main>
-
-    Please Enter a Number: <input type="text" id="inputOne">
-    <button type=button onclick="functionOne()">Click Me</button>
-    <br/>
-    The sum of your number and all the numbers up to the number provided is: 
-    <div id="outputOne"></div>
 
     
-    <br/>
-    Please Enter a Second Number <input type="text" id="inputTwo">
-    <button type button onclick="functionTwo()"> Add Your Numbers Here</button>
-    <br/>
-    Your two number added together equals: <div id="outputTwo"></div>
+<!-- Requirement 1 -->
+<h2>Requirement 1</h2>
+<!--
+  * Create a new html file. 
+  * Add the code necessary to make it a valid document
+  * Add a text input and a button. Put an empty div with an ID below those.
+  * Add a script tag, 
+  * write a function that will read the contents of the input
+  * write them to the div.
+  * Call the function when the button is pressed -->
+    Please enter a Number: <input type="text" id="input1" size="4">
+    <button type= "button" onclick="getNum()">Enter</button><br/>
+    <!--- put inside a <div> tag. A div tag is a division of content and to give 
+          a section an id  -->
+    <div id="outputDiv1"></div>
+    <!-- Function Requirement 1 -->
+    <script>
+      /*  Input:    input1  for  num do I use var, let, or const
+       *  Process:  Read contents of input1 
+       *  Output:   Number entered
+       */
+       function getNum() {
+         // set up the variables
+         // read the input from the user - we want the value of the input1
+         const input = parseInt(document.getElementById("input1").value);
+        // output
+        document.getElementById("outputDiv1").innerHTML = "You Entered: " + input;
+       } 
+    </script> 
 
+<!-- Requirement 2 -->
+<h2>Requirement 2</h2>
+<!--
+  *  Write a new function that expects a number as an argument. 
+  *  take that number and sum all the numbers up to the number provided. 
+  * (ie n=5…so it would do 1+2+3+4+5 = 15) It should return that value.
+  * button is pressed it should read the number from the input.
+  * Make sure it is a valid number
+  * call the summing function you just wrote
+  * output the result to the div.
+  * -->
+    Please enter a Number: <input type="text" id="input2" size="4">
+    <button type= "button2" onclick="getNum2()">Total</button><br/>
+    <!--- put inside a <div> tag. A div tag is a division of content and to give 
+          a section an id  -->
+    <div id="outputDiv2"></div>
+    <!-- Function Requirement 2 -->
+    <script>
+      /*  Input:    input2  for  num do I use var, let, or const
+       *  Process:  Read contents of input1 
+       *  Output:   Number entered
+       */
+       function getNum2() {
+         // set up the variables
+         // read the input from the user - we want the value of the input1
+         const input = parseInt(document.getElementById("input2").value);
+        // output
+        document.getElementById("outputDiv2").innerHTML = "You Entered: " + input;
+       } 
+    </script> 
 
+   
 </main>
-
 <footer>
   <p>
     &copy; 2021 |  <a href="https://awarbler.github.io">Anita
       Woodford</a>| Texas | <a href="https://www.byui.edu/online"></href> BYUI Online Learning</a><br>
-    Last Updated:
-    <script>
-    var date = document.lastModified;
-    document.write("Last Modified: " + date);
+    Last Modified: <span id="dateModified"></span><script>
+    document.getElementById("dateModified").innerHTML = document.lastModified
     </script>
   </p>
 </footer>
+
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
    
@@ -84,7 +130,7 @@
   }
   });
  </script>   
- <script src='main/js'></script>
+
 </body>
 </html>
 

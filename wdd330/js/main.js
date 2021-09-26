@@ -21,3 +21,9 @@ function change() {
 }
 btn.addEventListener('click', change);
 
+const link = [{
+    // the lae displays the "Week 1"
+    label: "week 1",
+    url: "wdd330/js/main.js",
+}
+]

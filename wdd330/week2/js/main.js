@@ -15,7 +15,7 @@ function toggleMenu() {
  btn.addEventListener('click', change);
 
  
- /* teamwork.html*/
+ /* teamwork.htm
  function functionOne() {
     // collects number from input id inputOne
     let x = parseInt(document.getElementById("inputOne").value);
@@ -44,4 +44,6 @@ function functionTwo() {
     let output = x + y
     // take let output and places it to the div output.
     document.getElementById("outputTwo").innerHTML = output;
-}
+}*/
+
+

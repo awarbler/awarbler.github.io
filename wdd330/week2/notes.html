@@ -16,15 +16,13 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
 <!-- link to css style sheet  -->
-<link rel="stylesheet" href="css/normalize">
+<link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href='css/small.css'>
 <link rel="stylesheet" href="css/meduim.css">
-<script></script>
-<style></style>
+<link rel="stylesheet" href="css/large.css">
 </head>
 
 <body>
-
 <!-- HEADER HERE -->
   <header>
 <!-- logo will go here or picture of me -->
@@ -36,7 +34,16 @@
   </section>
 </header>
 
-<!-- NAVIGATION HERE -->
+ <!-- NAVIGATION HERE -->
+ <nav>
+  <ul class="navigation">
+    <li> <a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
+    <li class="active"><a href="index.html"> Home </a></li>
+    <li ><a href="#">Read</a></li>
+    <li> <a href="teamwork.html">Team Work</a></li>
+    <li> <a href="notes.html">Notes</a></li>
+  </ul>
+</nav>
 
 <main>
 
@@ -72,10 +79,8 @@
   <p>
     &copy; 2021 |  <a href="https://awarbler.github.io">Anita
       Woodford</a>| Texas | <a href="https://www.byui.edu/online"></href> BYUI Online Learning</a><br>
-    Last Updated:
-    <script>
-    var date = document.lastModified;
-    document.write("Last Modified: " + date);
+    Last Modified: <span id="dateModified"></span><script>
+    document.getElementById("dateModified").innerHTML = document.lastModified
     </script>
   </p>
 </footer>
@@ -89,6 +94,7 @@
   }
   });
  </script>   
- <script src='main/js'></script>
+<script src='js/main.js'></script>
+
 </body>
 </html>

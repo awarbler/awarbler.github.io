@@ -97,10 +97,12 @@
          // set up the variables
          // read the input from the user - we want the value of the input1
          let x = parseInt(document.getElementById("input2").value);
-        let output = 0;
-         // create a loop
+        // define output value 
+         let output = 0;
+         // create a loop for i tot = to input2
          for(let i = 0; i <= x; i++){
-           output += i
+           // adds i current value you to output
+           output += i;
          }
         // output
         document.getElementById("outputDiv2").innerHTML = "You Entered: " + output;

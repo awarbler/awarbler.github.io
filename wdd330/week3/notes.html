@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+   <!-- Set character encoding for the document -->
+<meta charset="utf-8">
+
+<!-- Viewport for responsive web design -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Document Title -->
+<title> WDD 330: Anita Woodford: Portfolio</title>
+<meta name="description" content="WDD 330: Anita Woodford: Portfolio Assignment Website: Web Frontend Development II, at Brigham Young University - Idaho">
+
+<!-- link to google api  -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+<!-- link to css style sheet  -->
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href='css/small.css'>
+<link rel="stylesheet" href="css/meduim.css">
+<link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+<!-- HEADER HERE -->
+  <header>
+<!-- logo will go here or picture of me -->
+<!-- Header 1 title my name -->
+    <section class="heading">
+    <h1>Anita Woodford</h1>
+    <div class="heading2"><h2> WDD 330: Portfolio</h2></div>
+    <!-- m = class name for css for <div class="m">Past|Present|Future</div>-->  
+  </section>
+</header>
+
+ <!-- NAVIGATION HERE -->
+ <nav>
+  <ul class="navigation">
+    <li> <a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
+    <li class="active"><a href="index.html"> Home </a></li>
+    <li ><a href="#">Read</a></li>
+    <li> <a href="teamwork.html">Team Work</a></li>
+    <li> <a href="notes.html">Notes</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<!-- enter header  h2 = smaller than h1 -->
+<h2>Week 3 Notes </h2>
+
+<!-- List for assignments  < if we need to ad on this is how we do it >| <a href="Week 07/gallery.html"> Gallery </a>-->
+
+<ul>
+  <li><a href="wdd330/week3/notes.html">Week 3 Notes</a> </li>
+    <li><a href="https://javascript.info/object-methods">Read Object methods, "this"</a> 
+      Name: and age: are objects this makes sense to me now with the 
+      table of contents array. example : 
+      let user = {
+        name: "John",
+        age: 30
+      };
+      
+      user.sayHi = function() {
+        alert("Hello!");
+      };
+      
+      user.sayHi(); // Hello!
+          <li></li>
+
+    <li>The rule is simple: if obj.f() is called, then this is obj during the call of f. So it’s either user or admin in the example above</li>
+    <li>Rainbow Exercise</li>
+   
+
+  <h3>Questions:</h3>
+    <ol>
+      <li>
+        Where can I find help to set up the dynamic link? 
+        How do I set up dynamic links using an array?
+      </li>
+      <li>
+        How do I copy my console.log to my index.html?
+      </li>
+     
+      <h3>Definitions</h3>
+      <ol>
+        <li> method = A function that is a property of an object </li>
+        <li> object = created to represent entities of the real world, like users, orders and so on </li>
+        <li>OOP = write our code using objects to represent entities, that’s called object-oriented programming, in short</li>
+      
+    </ol>
+  </li>
+</ul>
+</main>
+
+<footer>
+  <p>
+    &copy; 2021 |  <a href="https://awarbler.github.io">Anita
+      Woodford</a>| Texas | <a href="https://www.byui.edu/online"></href> BYUI Online Learning</a><br>
+    Last Modified: <span id="dateModified"></span><script>
+    document.getElementById("dateModified").innerHTML = document.lastModified
+    </script>
+  </p>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+   
+<script>
+  WebFont.load({
+  google: {
+  families: ['open Sans', 'Roboto']
+  }
+  });
+ </script>   
+<script src='js/main.js'></script>
+
+</body>
+</html>

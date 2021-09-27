@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<!-- Set character encoding for the document -->
+<meta charset="utf-8">
+<!-- Viewport for responsive web design -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Document Title -->
+<title> WDD 330: Anita Woodford: Portfolio</title>
+<meta name="description" content="WDD 330: Anita Woodford: Portfolio Assignment Website: Web Frontend Development II, at Brigham Young University - Idaho">
+<!-- link to google api  -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<!-- link to css style sheet  -->
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href='css/small.css'>
+<link rel="stylesheet" href="css/meduim.css">
+<link rel="stylesheet" href="css/large.css">
+<style></style>
+</head>
+<body>
+<!-- HEADER HERE -->
+  <header>
+<!-- logo will go here or picture of me -->
+<!-- Header 1 title my name -->
+    <section class="heading">
+    <h1>Anita Woodford</h1>
+    <div class="heading2"><h2> WDD 330: Portfolio</h2></div>
+    <!-- m = class name for css for <div class="m">Past|Present|Future</div>-->  
+  </section>
+</header>
+<!-- NAVIGATION HERE -->
+<nav>
+  <ul class="navigation">
+    <li> <a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
+    <li class="active"><a href="index.html"> Home </a></li>
+    <li ><a href="#">Read</a></li>
+    <li> <a href="teamwork.html">Team Work</a></li>
+    <li> <a href="notes.html">Notes</a></li>
+  </ul>
+</nav>
+<main>
+<!-- enter header  h2 = smaller than h1 -->
+<h2>Week 2 </h2>
+<h2> Group Assignment</h2>
+<main>
+
+    
+<!-- Requirement 1 -->
+<h2>Requirement 1</h2>
+<!--
+  * Create a new html file. 
+  * Add the code necessary to make it a valid document
+  * Add a text input and a button. Put an empty div with an ID below those.
+  * Add a script tag, 
+  * write a function that will read the contents of the input
+  * write them to the div.
+  * Call the function when the button is pressed -->
+    Please enter a Number: <input type="text" id="input1" size="4">
+    <button type= "button" onclick="getNum()">Enter</button><br/>
+    <!--- put inside a <div> tag. A div tag is a division of content and to give 
+          a section an id  -->
+    <div id="outputDiv1"></div>
+    <!-- Function Requirement 1 --> 
+    <script>
+      /*  Input:    input1  for  num do I use var, let, or const
+       *  Process:  Read contents of input1 
+       *  Output:   Number entered
+       */
+       function getNum() {
+         // set up the variables - our team set up as a let I set up as a const
+         // read the input from the user - we want the value of the input1
+         const input = parseInt(document.getElementById("input1").value); // team used a float I used a int
+        // output
+        document.getElementById("outputDiv1").innerHTML = "You Entered: " + input;
+       } 
+    </script> 
+
+<!-- Requirement 2 Team Work-->
+<h2>Requirement 2 Team Work </h2>
+<!--
+ Write a new function that expects a number as an argument. 
+ It should take that number and sum all the numbers up to the number provided. 
+ (ie n=5…so it would do 1+2+3+4+5 = 15) It should return that value.-->
+    Please enter a Number: <input type="text" id="input2" size="4">
+    <button type= "button2" onclick="getNum2()">Total</button><br/>
+    <!--- put inside a <div> tag. A div tag is a division of content and to give 
+          a section an id  -->
+    <div id="outputDiv2"></div>
+    <!-- Function Requirement 2 -->
+    <script>
+      /*  Input:    input2  for  num do I use var, let, or const
+       *  Process:  Read contents of input1 
+       *  Output:   Number entered
+       */
+       function getNum2() {
+         // set up the variables
+         // read the input from the user - we want the value of the input1
+         let x = parseInt(document.getElementById("input2").value);
+        // define output value 
+         let output = 0;
+         // create a loop for i tot = to input2
+         for(let i = 0; i <= x; i++){
+           // adds i current value you to output
+           output += i;
+         }
+        // output
+        document.getElementById("outputDiv2").innerHTML = "You Entered: " + output;
+       } 
+    </script> 
+<!-- Requirement 2 My Work-->
+<h2>Requirement 2 my Work </h2>
+<!--
+ Write a new function that expects a number as an argument. 
+ It should take that number and sum all the numbers up to the number provided. 
+ (ie n=5…so it would do 1+2+3+4+5 = 15) It should return that value.-->
+    Please enter a Number: <input type="text" id="input2" size="4">
+    <button type= "button2a" onclick="getNum2a()">Total</button><br/>
+    <!--- put inside a <div> tag. A div tag is a division of content and to give 
+          a section an id  -->
+    <div id="outputDiv2a"></div>
+    <!-- Function Requirement 2 -->
+    <script>
+      /*  Input:    input2  for  num do I use var, let, or const
+       *  Process:  Read contents of input1 
+       *  Output:   Number entered
+       */
+       function getNum2a() {
+          // set up the variables - our team set up as a let I set up as a const
+         // read the input from the user - we want the value of the input1
+         const input = parseInt(document.getElementById("input2a").value); // team used a float I used a int
+        // output
+        document.getElementById("outputDiv2a").innerHTML = "You Entered: " + input;
+        } 
+    </script> 
+   
+</main>
+<footer>
+  <p>
+    &copy; 2021 |  <a href="https://awarbler.github.io">Anita
+      Woodford</a>| Texas | <a href="https://www.byui.edu/online"></href> BYUI Online Learning</a><br>
+    Last Modified: <span id="dateModified"></span><script>
+    document.getElementById("dateModified").innerHTML = document.lastModified
+    </script>
+  </p>
+</footer>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+   
+<script>
+  WebFont.load({
+  google: {
+  families: ['open Sans', 'Roboto']
+  }
+  });
+ </script>   
+
+</body>
+</html>
+

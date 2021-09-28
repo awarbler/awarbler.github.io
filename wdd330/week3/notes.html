@@ -74,7 +74,7 @@
       </li><br>
     </ul>
 
-    <h3><a href="zellwk.com/blog/this">This in JavaScript</a></h3>
+    <h3><a href="https://zellwk.com/blog/this/">This in JavaScript</a></h3>
     <li>this is a keyword whose value changes depending on how a function gets called.
     <li>There six different ways where this can take on new values. They are: </li>
     <ol>
@@ -95,7 +95,7 @@
     </ol><br>
 
     <h3><a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/5">JavaScript:
-        Novice to Ninja Objects</a> </h3>
+        Novice to Ninja Objects Chapter 5 </a> </h3>
     <li> Six data types strings numbers, boolean, symbols, undefined , null or an object</li>
     <ol>
       <li>object literals</li>
@@ -122,9 +122,9 @@
         First prooperty is called a name and its value is superman, while fly () is a method.
         value is a function.
       </p>
-     
-        <li>creating objects</li>
-        <uL>
+
+      <li>creating objects</li>
+      <uL>
         <ol>
           <li>curly brackets empty object- const spiderman = {}; </li>
           <li>an object w/ constructor function - const spiderman = new object();</li>
@@ -136,72 +136,95 @@
       <ul>
         <li>using dot notation</li>
         <p>superman.name</p>
-        <li>using bracket notation - it's the only way to access nonstandard 
+        <li>using bracket notation - it's the only way to access nonstandard
           property and method names that don’t follow the variable naming
-           rules. It also lets you evaluate an expression and use it as the property key:</li>
+          rules. It also lets you evaluate an expression and use it as the property key:</li>
         <p>superman['name'] or <br>
           superman["real" + " " + "name"] // the property is built using string concatenation</p>
       </ul>
       <li> Computed Properties </li>
       <ul>
-        <li>This means that JavaScript code can be placed inside square brackets and the property key will be the return value of that code.</li>
+        <li>This means that JavaScript code can be placed inside square brackets and the property key will be the return
+          value of that code.</li>
         <p>const hulk = { name: 'Hulk', ['catch' + 'Phrase']: 'Hulk Smash!' };</p>
         <li> look at the hulk object, we can see the property key is named 'catchPhrase':</li>
         <p> { name: 'Hulk', catchPhrase: 'Hulk Smash!' }</p>
       </ul>
       <li> Calling Method </li>
-      <ul><li>To call an object’s method we can also use dot or bracket notation. Calling a method is the same as invoking a function, so parentheses need to be placed after the method name:</li></ul>
+      <ul>
+        <li>To call an object’s method we can also use dot or bracket notation. Calling a method is the same as invoking
+          a function, so parentheses need to be placed after the method name:</li>
+      </ul>
       <li> Checking Methods</li>
-      <ul><li>The in operator can be used to check whether an object has a particular property. </li>
-      <li>check to see if the property or method doesn’t return undefined</li>
-      <li> hasOwnProperty() . This can be used to check whether an object has a property that is its own, rather than one that has been inherited from another object:</li></ul>
-     
+      <ul>
+        <li>The in operator can be used to check whether an object has a particular property. </li>
+        <li>check to see if the property or method doesn’t return undefined</li>
+        <li> hasOwnProperty() . This can be used to check whether an object has a property that is its own, rather than
+          one that has been inherited from another object:</li>
+      </ul>
+
       <li> Finding all properties of an Object</li>
-        <ul><li>Use a for loop</li>
-          <h3>Example</h3>
-          <p> for(const key in superman) { <br>
-            console.log(key + ": " + superman[key]);<br>
-        }<br>
-        << "name: Superman"<br>
-        << "real name: Clark Kent"<br>
-        << "height: 75"<br>
-        << "weight: 235"<br>
-        << "hero: true"<br>
-        << "villain: false"<br>
-        << "allies: Batman,Supergirl,Superboy"<br>
-        << "fly: function (){<br>
-            console.log(\"Up, up and away!\");<br>
-        }"<br>
-        In this example, we create a variable called key . 
-        We then iterate over the properties of the superman 
-        object and use key to log the property name and 
-        superman[key] to look up the value of each property.</p>
+      <ul>
+        <li>Use a for loop</li>
+        <h3>Example</h3>
+        <p> for(const key in superman) { <br>
+          console.log(key + ": " + superman[key]);<br>
+          }<br>
+          << "name: Superman" <br>
+            << "real name: Clark Kent" <br>
+              << "height: 75" <br>
+                << "weight: 235" <br>
+                  << "hero: true" <br>
+                    << "villain: false" <br>
+                      << "allies: Batman,Supergirl,Superboy" <br>
+                        << "fly: function (){<br>
+            console.log(\" Up, up and away!\");<br>
+                          }"<br>
+                          In this example, we create a variable called key .
+                          We then iterate over the properties of the superman
+                          object and use key to log the property name and
+                          superman[key] to look up the value of each property.
+        </p>
         <li>object’s own properties are returned, a quick check can be implemented beforehand:</li>
         <li>object Keys - return an array of all the keys of any object that is provided as an argument.</li>
-          <h3>Example</h3>
-          <p> for(const key of Object.keys(superman)) {<br>
-            console.log(key);<br>
-        }<br></p>
+        <h3>Example</h3>
+        <p> for(const key of Object.keys(superman)) {<br>
+          console.log(key);<br>
+          }<br></p>
         <li>Object. values - works the same but returans an arry of objects</li>
         <li>Object.entries() - returns an array of key value pairs</li>
-        </ul>
+      </ul>
       <li> TheRegExp object</li>
       <li> Project</li>
     </ol><br>
+    <h3>Chapter 5 Summarya</h3>
+    <ul>
+      <li>
+        Objects are a collection of key-value pairs placed inside curly braces {}.</li>
 
-    <li> To create an object literal, simply enter a pair of curly braces.
-      The following example creates an empty object that is assigned to the
-      variable spiderman : const spiderman = {};</li>
-    <li>It’s also possible to create an object using a constructor function.
-      This example will also create an empty object: const spiderman = new Object();</li>
-    <li>Accessing Properties</li>
+      <li>Objects have properties that can be any JavaScript value. If it’s a function, it’s known as amethod.</li>
+      <li>An object’s properties and methods can be accessed using either dot notation or square bracket notation.</li>
+      <li>Objects are mutable, which means their properties and methods can be changed or removed.</li>
+      <li>Objects can be used as parameters to functions, which allows arguments to be entered in any order, or omitted. </li>
+      <li>Nested objects can be created by placing objects inside objects.</li>
+      <li>JSON is a portable data format that uses JavaScript object literals to exchange information.</li>
+      <li>The Math object gives access to a number of mathematical constants.</li>
+      <li>The Math object can be used to perform mathematical calculations.</li>
+      <li>The Date object can be used to create date objects.</li>
+      <li>Once you’ve created a Date object, you can use the getter methods to access information about that date.</li>
+      <li>Once you’ve created a Date object, setter methods can be used to change information about that date.</li>
+      <li>The Regex object can be used to create regular expressions.
+      </li>
+    </ul>
+
+
     <h3>Questions:</h3>
     <ol>
       <li>
         Why do I keep getting these errors?<br>
         > pattern = /[Jj][aeiou]v[aeiou]/;
         Uncaught TypeError: Assignment to constant variable.
-        Im trying to figure out what I am doing wrong. I cant figure it out. 
+        Im trying to figure out what I am doing wrong. I cant figure it out.
       </li>
       <li>
         How do I copy my console.log to my index.html?

@@ -1,145 +1,244 @@
 <!DOCTYPE HTML>
 <html lang="en-us">
+
 <head>
-   <!-- Set character encoding for the document -->
-<meta charset="utf-8">
+  <!-- Set character encoding for the document -->
+  <meta charset="utf-8">
 
-<!-- Viewport for responsive web design -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Viewport for responsive web design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Document Title -->
+  <title> WDD 330: Anita Woodford: Portfolio</title>
+  <meta name="description"
+    content="WDD 330: Anita Woodford: Portfolio Assignment Website: Web Frontend Development II, at Brigham Young University - Idaho">
 
-<!-- Document Title -->
-<title> WDD 330: Anita Woodford: Portfolio</title>
-<meta name="description" content="WDD 330: Anita Woodford: Portfolio Assignment Website: Web Frontend Development II, at Brigham Young University - Idaho">
+  <!-- link to google api  -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
-<!-- link to google api  -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-
-<!-- link to css style sheet  -->
-<link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href='css/small.css'>
-<link rel="stylesheet" href="css/meduim.css">
-<link rel="stylesheet" href="css/large.css">
+  <!-- link to css style sheet  -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href='css/small.css'>
+  <link rel="stylesheet" href="css/meduim.css">
+  <link rel="stylesheet" href="css/large.css">
 </head>
 
 <body>
-<!-- HEADER HERE -->
+  <!-- HEADER HERE -->
   <header>
-<!-- logo will go here or picture of me -->
-<!-- Header 1 title my name -->
+    <!-- logo will go here or picture of me -->
+    <!-- Header 1 title my name -->
     <section class="heading">
-    <h1>Anita Woodford</h1>
-    <div class="heading2"><h2> WDD 330: Portfolio</h2></div>
-    <!-- m = class name for css for <div class="m">Past|Present|Future</div>-->  
-  </section>
-</header>
+      <h1>Anita Woodford</h1>
+      <div class="heading2">
+        <h2> WDD 330: Portfolio</h2>
+      </div>
+      <!-- m = class name for css for <div class="m">Past|Present|Future</div>-->
+    </section>
+  </header>
 
- <!-- NAVIGATION HERE -->
- <nav>
-  <ul class="navigation">
-    <li> <a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
-    <li class="active"><a href="index.html"> Home </a></li>
-    <li ><a href="#">Read</a></li>
-    <li> <a href="teamwork.html">Team Work</a></li>
-    <li> <a href="notes.html">Notes</a></li>
-  </ul>
-</nav>
-
-<main>
-
-<!-- enter header  h2 = smaller than h1 -->
-<h2>Week 3 Notes </h2>
-
-<!-- List for assignments  < if we need to ad on this is how we do it >| <a href="Week 07/gallery.html"> Gallery </a>-->
-
-<ul>
-  <li><a href="wdd330/week3/notes.html">Week 3 Notes</a> </li>
-    <li><a href="https://javascript.info/object-methods">Read Object methods, "this"</a> 
-      Name: and age: are objects this makes sense to me now with the 
-      table of contents array. example : 
-      let user = {
-        name: "John",
-        age: 30
+  <!-- NAVIGATION HERE -->
+  <nav>
+    <ul class="navigation">
+      <li> <a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
+      <li class="active"><a href="index.html"> Home </a></li>
+      <li><a href="#">Read</a></li>
+      <li> <a href="teamwork.html">Team Work</a></li>
+      <li> <a href="notes.html">Notes</a></li>
+    </ul>
+  </nav>
+  <!--Main here-->
+  <main>
+    <!-- enter header  h2 = smaller than h1 -->
+    <h1>Week 3 Notes </h1>
+    <!-- List for assignments  < if we need to ad on this is how we do it >| <a href="Week 07/gallery.html"> Gallery </a>-->
+    <h3><a href="https://javascript.info/object-methods">Read Object methods, "this"</a> </h3>
+    <ul>
+      <li>Name: and age: are objects this makes sense to me now with the table of contents array.</li>
+      <h3>Example</h3>
+      let user = { <br>
+      name: "John",<br>
+      age: 30<br>
+      };<br>
+      user.sayHi = function() {<br>
+      ale<br>rt("Hello!");<br>
       };
-      
-      user.sayHi = function() {
-        alert("Hello!");
-      };</li>
-      user.sayHi(); // Hello!
-    <li>Methods allow objects to “act” like object.doSomething().
-         Methods can reference the object as this
-         The rule is simple: if obj.f() is called, then this is obj during the call of f. 
-         So it’s either user or admin in the example above.The value of this is defined at run-time.
-         When a function is declared, it may use this, but that this has no value until the function is called.
-         A function can be copied between objects.
-         When a function is called in the “method” syntax: object.method(), the value of this during the call is object.
-      </li>
+      user.sayHi(); // Hello!<br>
+      <li>Methods allow objects to “act” like object.doSomething().
+        Methods can reference the object as this
+        The rule is simple: if obj.f() is called, then this is obj during the call of f.
+        So it’s either user or admin in the example above.The value of this is defined at run-time.
+        When a function is declared, it may use this, but that this has no value until the function is called.
+        A function can be copied between objects.
+        When a function is called in the “method” syntax: object.method(), the value of this during the call is object.
+      </li><br>
+    </ul>
 
-    <li><a href="zellwk.com/blog/this">This in JavaScript</a></li>
-    <li>this is a keyword whose value changes depending on how a function gets called. 
-      <li>There six different ways where this can take on new values. They are: </li>
-      <ol>
+    <h3><a href="zellwk.com/blog/this">This in JavaScript</a></h3>
+    <li>this is a keyword whose value changes depending on how a function gets called.
+    <li>There six different ways where this can take on new values. They are: </li>
+    <ol>
       <li>this in global context </li>
-            <ul><li>Called outside of a function. you wouldn’t use this in a global context anyway, 
-              so the value of this here doesn’t really matter. Let’s move on to the next context.</li></ul>
-      <li> this in object construction</li> 
-            <ul><li>When you create a new instance of an object with the new keyword, 
-              this refers to the instance.</li>
-            </ul>
+      <ul>
+        <li>Called outside of a function. you wouldn’t use this in a global context anyway,
+          so the value of this here doesn’t really matter. Let’s move on to the next context.</li>
+      </ul>
+      <li> this in object construction</li>
+      <ul>
+        <li>When you create a new instance of an object with the new keyword,
+          this refers to the instance.</li>
+      </ul>
       <li> this in an object method</li>
       <li> this in a simple function</li>
       <li> this in an arrow function</li>
-      <li>  this in an event listener </li>
-      </ol>
+      <li> this in an event listener </li>
+    </ol><br>
 
-      <li><a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/5">JavaScript: Novice to Ninja Objects</a> </li>
-      <li> To create an object literal, simply enter a pair of curly braces. 
-        The following example creates an empty object that is assigned to the 
-        variable spiderman : const spiderman = {};</li>
-    <li>It’s also possible to create an object using a constructor function. 
+    <h3><a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/5">JavaScript:
+        Novice to Ninja Objects</a> </h3>
+    <li> Six data types strings numbers, boolean, symbols, undefined , null or an object</li>
+    <ol>
+      <li>object literals</li>
+      <ul>
+        <li>objects are a self contained set of related values in a function.</li>
+        <li>If a property’s value is a function, it is known as amethod</li>
+        <li>objects are like a dictionary or a map in javascxript</li>
+        <li>objects are used to keep info togethe and functionality togehter</li>
+      </ul>
+      <h3>Example - describes the man of steel</h3>
+      <p> const superman = {<br>
+        name: 'Superman',<br>
+        'real name': 'Clark Kent',<br>
+        height: 75,<br>
+        weight: 235,<br>
+        hero: true,<br>
+        villain: false,<br>
+        allies: ['Batman','Supergirl','Superboy'],<br>
+        fly() {<br>
+        return 'Up, up and away!';<br>
+        }
+        };<br>
+        Each property is a key value pair, seperated by commas
+        First prooperty is called a name and its value is superman, while fly () is a method.
+        value is a function.
+      </p>
+     
+        <li>creating objects</li>
+        <uL>
+        <ol>
+          <li>curly brackets empty object- const spiderman = {}; </li>
+          <li>an object w/ constructor function - const spiderman = new object();</li>
+          <li>long way - const ironMan = { name: name, realName: realName };</li>
+          <li>short way - const ironMan = { name, realName};</li>
+        </ol>
+      </uL>
+      <li> Accessing properties</li>
+      <ul>
+        <li>using dot notation</li>
+        <p>superman.name</p>
+        <li>using bracket notation - it's the only way to access nonstandard 
+          property and method names that don’t follow the variable naming
+           rules. It also lets you evaluate an expression and use it as the property key:</li>
+        <p>superman['name'] or <br>
+          superman["real" + " " + "name"] // the property is built using string concatenation</p>
+      </ul>
+      <li> Computed Properties </li>
+      <ul>
+        <li>This means that JavaScript code can be placed inside square brackets and the property key will be the return value of that code.</li>
+        <p>const hulk = { name: 'Hulk', ['catch' + 'Phrase']: 'Hulk Smash!' };</p>
+        <li> look at the hulk object, we can see the property key is named 'catchPhrase':</li>
+        <p> { name: 'Hulk', catchPhrase: 'Hulk Smash!' }</p>
+      </ul>
+      <li> Calling Method </li>
+      <ul><li>To call an object’s method we can also use dot or bracket notation. Calling a method is the same as invoking a function, so parentheses need to be placed after the method name:</li></ul>
+      <li> Checking Methods</li>
+      <ul><li>The in operator can be used to check whether an object has a particular property. </li>
+      <li>check to see if the property or method doesn’t return undefined</li>
+      <li> hasOwnProperty() . This can be used to check whether an object has a property that is its own, rather than one that has been inherited from another object:</li></ul>
+     
+      <li> Finding all properties of an Object</li>
+        <ul><li>Use a for loop</li>
+          <h3>Example</h3>
+          <p> for(const key in superman) { <br>
+            console.log(key + ": " + superman[key]);<br>
+        }<br>
+        << "name: Superman"<br>
+        << "real name: Clark Kent"<br>
+        << "height: 75"<br>
+        << "weight: 235"<br>
+        << "hero: true"<br>
+        << "villain: false"<br>
+        << "allies: Batman,Supergirl,Superboy"<br>
+        << "fly: function (){<br>
+            console.log(\"Up, up and away!\");<br>
+        }"<br>
+        In this example, we create a variable called key . 
+        We then iterate over the properties of the superman 
+        object and use key to log the property name and 
+        superman[key] to look up the value of each property.</p>
+        <li>object’s own properties are returned, a quick check can be implemented beforehand:</li>
+        <li>object Keys - return an array of all the keys of any object that is provided as an argument.</li>
+          <h3>Example</h3>
+          <p> for(const key of Object.keys(superman)) {<br>
+            console.log(key);<br>
+        }<br></p>
+        <li>Object. values - works the same but returans an arry of objects</li>
+        <li>Object.entries() - returns an array of key value pairs</li>
+        </ul>
+      <li> TheRegExp object</li>
+      <li> Project</li>
+    </ol><br>
+
+    <li> To create an object literal, simply enter a pair of curly braces.
+      The following example creates an empty object that is assigned to the
+      variable spiderman : const spiderman = {};</li>
+    <li>It’s also possible to create an object using a constructor function.
       This example will also create an empty object: const spiderman = new Object();</li>
-      <li>Accessing Properties</li>
-  <h3>Questions:</h3>
+    <li>Accessing Properties</li>
+    <h3>Questions:</h3>
     <ol>
       <li>
-        Where can I find help to set up the dynamic link? 
+        Where can I find help to set up the dynamic link?
         How do I set up dynamic links using an array?
       </li>
       <li>
         How do I copy my console.log to my index.html?
       </li>
-     
+
       <h3>Definitions</h3>
       <ol>
         <li> method = A function that is a property of an object </li>
         <li> object = created to represent entities of the real world, like users, orders and so on </li>
-        <li>OOP = write our code using objects to represent entities, that’s called object-oriented programming, in short</li>
-      
-    </ol>
-  </li>
-</ul>
-</main>
+        <li>OOP = write our code using objects to represent entities, that’s called object-oriented programming, in
+          short</li>
 
-<footer>
-  <p>
-    &copy; 2021 |  <a href="https://awarbler.github.io">Anita
-      Woodford</a>| Texas | <a href="https://www.byui.edu/online"></href> BYUI Online Learning</a><br>
-    Last Modified: <span id="dateModified"></span><script>
-    document.getElementById("dateModified").innerHTML = document.lastModified
-    </script>
-  </p>
-</footer>
+      </ol>
+      </li>
+      </ul>
+  </main>
 
-<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-   
-<script>
-  WebFont.load({
-  google: {
-  families: ['open Sans', 'Roboto']
-  }
-  });
- </script>   
-<script src='js/main.js'></script>
+  <footer>
+    <p>
+      &copy; 2021 | <a href="https://awarbler.github.io">Anita
+        Woodford</a>| Texas | <a href="https://www.byui.edu/online"></href> BYUI Online Learning</a><br>
+      Last Modified: <span id="dateModified"></span>
+      <script>
+        document.getElementById("dateModified").innerHTML = document.lastModified
+      </script>
+    </p>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+  <script>
+    WebFont.load({
+      google: {
+        families: ['open Sans', 'Roboto']
+      }
+    });
+  </script>
+  <script src='js/main.js'></script>
 
 </body>
+
 </html>

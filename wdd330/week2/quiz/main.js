@@ -50,3 +50,4 @@ function start(quiz) {
         alert(`Game Over, you scored ${score} point${score !== 1 ? 's' : ''}`);
       }
 }
+start(quiz);

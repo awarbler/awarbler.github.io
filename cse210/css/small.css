@@ -24,7 +24,7 @@ body {
 }
 /*---body links labelled in index.html as a ------*/
 body a {
-    color: #7fb9c2;
+    color: #ffc321;
 }
 
 /*---- flex keeps the header in the middle of the screen --------------*/
@@ -35,7 +35,7 @@ header
     justify-content:center;
     font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
     background: white;
-    color: #7fb9c2;
+    color: #ffc321;
    
     
 }
@@ -123,14 +123,14 @@ nav {
 /*---hange color when mouse passes by I can use .navigation a:hover
 or nav a:hover since I used a class I can use the class -----*/
 .navigation a:hover{
-    color: #7fb9c2;
+    color: #ffc321;
     text-decoration: underline;
     font-weight: 700;
 }
 /*---navigation active page or class .navigation li a ------*/
 nav li.active {
     /* I changed the color-nav*/
-    color: #7fb9c2;
+    color: #ffc321;
 
     text-decoration-line: underline;
     border-radius: 4px;
@@ -155,14 +155,14 @@ main {
     max-width: 45rem;
     padding: .75rem;
     font-family: "Roboto", Open Sans, Helvetica, Arial, sans-serif;
-    color: #aab1b2;
+    color: #ffc321;
 
 }
 
 main h1,
 h2,h3 {
    
-    color: #7fb9c2;
+    color: #ffc321;
     clear: both;
 }
 main h2 {
@@ -175,7 +175,7 @@ main a{
 }
 
 main a:hover{
-    color: #7fb9c2;
+    color: #ffc321;
     text-decoration: underline;
     font-weight: 700;}
 
@@ -189,7 +189,7 @@ main section {
 }
 
 .teamNotes li{
-    color: #EDC87E;
+    color: #ffc321;
 
 }
 

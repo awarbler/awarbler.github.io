@@ -1,0 +1,277 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+  <!-- Set character encoding for the document -->
+  <meta charset="utf-8">
+  <!-- Viewport for responsive web design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Document Title -->
+  <title> CSE 210: Anita Woodford: Portfolio</title>
+  <meta name="description"
+    content="WDD 330: Anita Woodford: Portfolio Assignment Website: Web Frontend Development II, at Brigham Young University - Idaho">
+  <!-- link to google api  -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <!-- link to css style sheet  -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href='css/small.css'>
+  <link rel="stylesheet" href="css/meduim.css">
+  <link rel="stylesheet" href="css/large.css">
+  <style></style>
+</head>
+
+<body>
+  <!-- HEADER HERE -->
+  <header>
+    <!-- logo will go here or picture of me -->
+    <!-- Header 1 title my name -->
+    <section class="heading">
+      <h1>Anita Woodford</h1>
+      <div class="heading2">
+        <h2>CSE 210 | Programming with Classes</h2>
+      </div>
+      <!-- m = class name for css for <div class="m">Past|Present|Future</div>-->
+    </section>
+  </header>
+  <!-- NAVIGATION HERE -->
+  <nav>
+    <ul class="navigation">
+      <li> <a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
+      <li><a href="index.html"> Home </a></li>
+      <li> <a href="notes.html">Notes</a></li>
+      <li class="active"> <a href="teamwork.html">Team Work</a></li>
+    </ul>
+  </nav>
+  <main>
+    <!-- enter header  h2 = smaller than h1 -->
+    <article>
+      <h1>Week 3 : Team Challenge</h1>
+      <h2>Overview</h2>
+      <p>
+        Distributed version control is a form of version control in which the
+        complete codebase, including its full history, is mirrored on every
+        developer's computer. This improves the ability to work offline and
+        does not rely on a single location for backups.</p>
+      <p>The purpose of this assignment is to practice the following:</p>
+
+      <ol>
+        <li>
+          <p>Collaborate with others, using a branch-based workflow in a distributed version control system. </p>
+        </li>
+        <li>
+          <p>Write a program that spans multiple files.</p>
+        </li>
+      </ol>
+      </p>
+      <h2>Instructions</h2>
+      <p>Complete both parts of this assignment to create a program that is spread across multiple files, authored by
+        multiple collaborators, and stored in version control.</p>
+
+      <h3>Part I - Version Control</h3>
+      <ol>
+        <li>
+          <div>
+            Select one person to act as the team lead or the person in charge of creating remote repositories and
+            responding to pull requests.
+
+            <ul class="teamNotes">
+                <li>Team Leader = Michael De Spain  </li>
+            </ul>
+          </div>
+      
+        <li>
+          <div>
+            Team Leader: Create a new remote repository called
+            <i>cse210-tc03</i>. Initialize the repository with a README.
+            md file.
+          </div>
+        </li>
+        <li>
+          <div>
+            All Members: Clone the remote repository on your computer.
+            <ul class="teamNotes">
+              <li> how to clone 
+                - get the repository html link go to link 
+                - click code 
+                - click https
+                - copy the link address</li>
+                <li>go to visual studios 
+                - click view
+                - click command palette
+                - git clone 
+                - enter clone for the github
+                - save new workspace to desktop
+               </li>
+               <li>Or we can clone it in git<br>
+                    navigate to correct directory<br>
+                    ex from book: cd cse210-projects<br>
+                    clone clone the repository<br>
+                    ex from book: git clone https://github.com/byui-burton/my-project
+
+                     </li>
+          </ul>
+          </div>
+        </li>
+        <li>
+          <div>
+            All Members: Create a feature branch called [name]-bio. For
+            example, if your first name was Matt your branch would be called
+            <i>matt-bio</i>.
+            <ul class="teamNotes">
+              <li>ex in terminal: git branch anita-bio</li>
+              <li>Check to see if it was created : <br>
+                  git branch <br></li>
+                  <li>Switch to new branch <br>
+                    git switch anita-bio <br></li>
+                    <li>Switch to new branch in visual studio <br>
+                      go to source control-- more actions or click ... go to branch--- go to create branch-- type branch name<br></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div>
+            All Members: Change into the new feature branch you created. Modify
+            the README.md file by adding your name and a short paragraph about
+            yourself. Commit your changes and push them to the remote
+            repository.
+            <ul class="teamNotes">
+              <li>Switch to new branch <br>
+                Terminal: git switch anita-bio <br></li>
+                <li>edit file-- In visual studio- command s (to save)- source control-- enter message-- click commit, push </li>
+                <li>terminal: after edit  <br>
+                  git switch anita-bio--edit file in visual studio--Terminal: git status--git add .--git commit -m "edit read.md 
+                  file with bio" git push origin anita-bio-- git switch main<br>
+                </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div>
+            All Members: Open a new pull-request for the changes you made in
+            your feature branch.
+            <ul class="teamNotes">
+              <li>Terminal: git pull</li>
+            </ul>
+            
+          </div>
+        </li>
+        <li>
+          <div>
+            Team Leader: Resolve each pull-request by merging each team
+            member's feature branch into the main branch. Delete the feature
+            branch when you are done. You may need to meet with your team
+            members to make sure that you merge their feature branches
+            correctly.
+            <ul class="teamNotes">
+              <li>delete branch Terminal :git branch -d anita-bio </li>
+            </ul>
+          </div>
+      
+          <div>
+            All Members: Synchronize your local repository with the remote repository to obtain everyone's changes.
+          </div>
+        </li>
+      </ol>
+
+      <h3>Part II - Write a program that spans multiple files</h3>
+      <p>For this part, you will follow the same pattern as before, but this time, you will write a program according to
+        the following specifications:</p>
+
+      <ol>
+        <li>
+          <p>Within your repository, create a folder that will contain your Python code. Make sure to follow the
+            convention to include a special file to make it a package.</p>
+        </li>
+        <li>
+          <p>Create a new main file. Make sure to follow the naming conventions for this file, so the package can be run
+            directly.</p>
+        </li>
+        <li>
+          <p>Have this main file output the text, "Welcome to our collaborative program."</p>
+        </li>
+        <li>
+          <p>Commit this file and folder to version control and make sure it is merged into the main branch.</p>
+        </li>
+        <li>
+          <p>Ensure that each person can pull this file to their computers and can run the program.</p>
+        </li>
+        <li>
+          <p>Have each person on the team create their own separate Python file using their last name as the file name
+            (for example, <code>young.py</code>). In that file, create a function to display a greeting that contains
+            your name, such as "Hello from Brigham Young". Then, modify the main program file to include this function
+            from the other file, and call it.</p>
+        </li>
+        <li>
+          <p>Work through committing and merging this code into your repository one person at a time, so that the end
+            result is a folder that contains a file from each person, and a main program that includes a function from
+            each file and calls them each in turn.</p>
+        </li>
+      </ol>
+
+
+
+      <h2>Submitting</h2>
+      <p>
+        All Members: Return to I-Learn and submit the corresponding assignment.
+        Be sure to add the following information in your text entry when you submit. If you do not include all of the
+        information you will not receive a grade for the assignment.
+        <ul>
+          <li>
+            <div>The URL for your team's remote repository</div>
+          </li>
+          <li>
+            <div>The grading category that best describes your team's work</div>
+          </li>
+          <li>
+            <div>One or two sentences justifying your choice</div>
+          </li>
+        </ul>
+        The grading categories are as follows.
+        <ul>
+          <li>
+            <div>Some attempt made (1)</div>
+          </li>
+          <li>
+            <div>Developing but significantly deficient (2)</div>
+          </li>
+          <li>
+            <div>Slightly deficient (3)</div>
+          </li>
+          <li>
+            <div>Meets requirements (4)</div>
+          </li>
+          <li>
+            <div>Exceeds requirements (5)</div>
+          </li>
+        </ul>
+      </p>
+    </article>
+
+  </main>
+  <footer>
+    <p>
+      &copy; 2021 | <a href="https://awarbler.github.io">Anita
+        Woodford</a>| Texas | <a href="https://www.byui.edu/online"></href> BYUI Online Learning</a><br>
+      Last Modified: <span id="dateModified"></span>
+      <script>
+        document.getElementById("dateModified").innerHTML = document.lastModified
+      </script>
+    </p>
+  </footer>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+  <script>
+    WebFont.load({
+      google: {
+        families: ['open Sans', 'Roboto']
+      }
+    });
+  </script>
+
+</body>
+
+</html>

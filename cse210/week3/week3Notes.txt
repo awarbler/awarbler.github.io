@@ -1,0 +1,154 @@
+W03 Team Challenge: Distributed Version Control
+
+    1. make arrangement to meet over slack or zoom , 
+        Wednesday at 8 am MST
+    2. completed Assignment add comment - submitting the specifies 
+        the grading category (5 to 1 scale) best describe your program
+        along with a short justification of your choices. please see
+        see the rubic below
+    3. group submisson , only one member of the group needs to submit 
+        the final Assignment
+        ?  who is submitting the file?  Michael since he is team leader? 
+
+Team Challege 03 
+
+Overview: 
+
+Distributed version control is a form of version control in which the 
+complete codebase, including its full history, is mirrored on every 
+developer's computer. This improves the ability to work offline and 
+does not rely on a single location for backups.
+
+colloborate with others - using a branch based workflow w version control
+
+write a program that spans multiple files
+
+Instructions:
+Complete both parts of this assignment to create a program that is spread 
+across multiple files, authored by multiple collaborators, and stored in 
+version control.
+
+Part I - Version Control 
+
+    1. ✔️ select one person to act as the team lead - Michael De Spain
+       ✔️ one person in charge of creating a remote repositorie 
+       ✔️ same person responsible in pull request
+
+
+    2. ✔️ Team Leader : create a new remote repository 
+       ✔️ name it cse210-tc03
+       ✔️ initialize the repository w/ README.md file
+
+    3. ✔️ All members : Clone remote repository on computer 
+        // We went over the steps to show people how to do this step. 
+        
+        ✔️ a. how to clone 
+            - get the repository html link go to link 
+            - click code 
+            - click https
+            - copy the link address
+    
+        ✔️ b. go to visual studios
+            - click view
+            - click command pallette
+            - git clone 
+            - enter clone for the github
+            - save workspace to desk top 
+                ---- Michael suggested best place to save
+
+    # download a repository on GitHub.com to our machine using the terminal 
+    git clone https://github.com/mdespain35/cse210-Team03.git
+
+    # change into the `cse210-team03' directory
+    cd repo or where it is located but easier to do in visual studios 
+
+    4. ✔️ All members :create a feature branch called [name]-bio 
+            
+            example:anita-bio (Michael & Xander explained how to do it in VS)
+            
+            a. open up the terminal in visual studio  
+            b. check your branch ' git branch'
+            c. create a new branch to make changes 
+                git branch nameOfBranch-branch
+            d, see if branch as has been added
+                git branch 
+            e. In visual studio- command s (to save)- source control-- 
+                enter message-- click commit, push      
+            
+    5. ✔️ all members : change into the new branch -modify the README.md
+        file by adding your name and a short paragraph about yourself.
+        Commit changes and push them to the repository. 
+            
+            a. open up the branch 
+                git checkout nameOfBranch-branch or git switch anita-bio
+            
+            b. make changes, for example, edit `README.md` text editor   
+                adding my bio to the README.md file 
+            
+            c. stage the changed file
+                git add README.md
+
+            d. take a snapshot of the staging area
+                git commit -m "edit README.md with bio"
+
+            e. push changes to github
+                git push    
+
+    6.  ✔️ All Members: Open a new pull-request for the changes you made 
+        in your feature branch.
+
+    7.  ✔️ Team Leader: Resolve each pull-request by merging each team member's 
+        feature branch into the main branch. 
+        
+        ✔️ Delete the feature branch when you are done. 
+            delete branch in the Terminal ' git branch -d anita-bio ' 
+        
+        ✔️ You may need to meet with your team members to make sure that you 
+        merge their feature branches correctly.
+
+    8.  ✔️ All Members: Synchronize your local repository with the remote 
+        repository to obtain everyone's changes.
+
+Part II - Write a program that spans multiple files
+
+For this part, you will follow the same pattern as before, but this time, 
+you will write a program according to the following specifications:      
+
+    1. ✔️ Within your repository, create a folder that will contain your 
+         Python code. Make sure to follow the convention to include a special 
+         file to make it a package.
+         
+
+    2. ✔️ Create a new main file. Make sure to follow the naming conventions 
+         for this file, so the package can be run directly.
+
+    3. ✔️ Have this main file output the text, "Welcome to our collaborative 
+         program."
+
+    4. ✔️ Commit this file and folder to version control and make sure it is 
+        merged into the main branch.
+        
+
+    5. ✔️ Ensure that each person can pull this file to their computers and 
+         can run the program.
+         ---- everyone was able to pull the file to their computers 
+
+    6. Have each person on the team create their own separate Python file
+       using their last name as the file name (for example, young.py). 
+       In that file, create a function to display a greeting that contains 
+       your name, such as "Hello from Brigham Young". Then, modify the main
+       program file to include this function from the other file, and call it.
+       ---- Anita pushed her file two quickly and caused some errors- correted
+       ---- Zach had some issues pushing the files -errors corrected
+       ---- Xander quickly did his and it worked perfectly then he had to
+             go by this time we had been on zoom for 1:20 minutes 
+       ---- Lazaro was having phone issues 
+
+    7. Work through committing and merging this code into your repository one
+      person at a time, so that the end result is a folder that contains a file
+      from each person, and a main program that includes a function from each 
+      file and calls them each in turn.
+
+        
+
+

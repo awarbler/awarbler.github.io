@@ -156,13 +156,10 @@ main {
 }
 
 main h1,
-h2,h3 {
+h2,h3,h4 {
    
     color: #7fb9c2;
     clear: both;
-}
-main h2 {
-    font-size: 1.0rem;
 }
 
 main a{
@@ -182,6 +179,9 @@ p {
 main section {
     margin: 10px;
     color: #aab1b2;
+}
+.teamCode{
+    color: #EDC87E;
 }
 
 

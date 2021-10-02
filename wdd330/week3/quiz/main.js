@@ -79,7 +79,7 @@ window.onload = function() {
             const answer = this.question.realName;
             if(response === answer){
                 //point to view object render through result
-                view.render(view.reult, 'Correct',{'class': 'correct'});
+                view.render(view.reult, 'Correct!',{'class':'correct'});
            // forgot to delete when I added view.render it doesnt say to delete
                alert('Correct!');
             this.score++;

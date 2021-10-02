@@ -16,8 +16,9 @@ window.onload = function() {
 
       // view objects
       /* 
-       * use document to query a selector method to access elements
-       * example div question is accessed in jas cod using view.question
+       * use document query selector method to access elements
+       * assign them to access a variable
+       * example div question is accessed in js using view.question
        * add a help function called render()to update content of elements
        * render() 3 parament 1 displays content, 2nd updated content
        * 3rd an object of html attributes
@@ -38,7 +39,7 @@ window.onload = function() {
           }
 
       };
-
+ 
       const game = {
         start(quiz){
             this.questions = [...quiz];
@@ -64,10 +65,8 @@ window.onload = function() {
             this.check(response);
         },
          /* 
-         * update ask ch 6. 
-         *
-         * 
-        */
+          * update check(response)
+          */
         check(response){
             const answer = this.question.realName;
             if(response === answer){

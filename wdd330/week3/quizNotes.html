@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <!-- Set character encoding for the document -->
+    <meta charset="utf-8">
+
+    <!-- Viewport for responsive web design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Document Title -->
+    <title> WDD 330: Anita Woodford: Portfolio</title>
+    <meta name="description"
+        content="WDD 330: Anita Woodford: Portfolio Assignment Website: Web Frontend Development II, at Brigham Young University - Idaho">
+
+    <!-- link to google api  -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- link to css style sheet  -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href='css/small.css'>
+    <link rel="stylesheet" href="css/meduim.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <header>
+        <!-- logo will go here or picture of me -->
+        <!-- Header 1 title my name -->
+        <section class="heading">
+            <h1>Anita Woodford</h1>
+            <div class="heading2">
+                <h2> WDD 330: Portfolio</h2>
+            </div>
+            <!-- m = class name for css for <div class="m">Past|Present|Future</div>-->
+        </section>
+    </header>
+
+    <!-- NAVIGATION HERE -->
+    <nav>
+        <ul class="navigation">
+            <li> <a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
+            <li><a href="index.html"> Home </a></li>
+            <li class="active"> <a href="notes.html">Notes</a></li>
+            <li> <a href="teamwork.html">Team Work</a></li>
+            <li><a href="quiz/index.html">Ninja</a></li>
+        </ul>
+    </nav>
+    <!--Main here-->
+    <main>
+        <!-- enter header  h2 = smaller than h1 -->
+        <h1>Week 3 Notes Ch. 6 Ninja Quiz </h1>
+        <!-- List for assignments  
+
+        <h3>Chapter 6</h3>
+        <h4>add divs to html for </h4>
+
+        <h4>View Objects add in JS</h4>
+        <p>Now we’re going to namespace the functions we created in the last 
+            chapter. We do this by placing them inside an object called game 
+            that will be the namespace. This means that any references to the 
+            functions need to be replaced with game.function() outside the 
+            object or this.function() inside the object.*/namespace the functions</p>
+        <ul>
+            <li> use document to query a selector method to access elements</li>
+            <li>example div question is accessed in jas cod using view.question</li>
+            <li>add a help function called render()to update content of elements</li>
+            <li>render() 3 parament 1 displays content, 2nd updated content</li>
+            <li>3rd an object of html attributes</li>
+            <li>render loops throught the attributes as the third arguement</li>
+            <li>uses set attribute method toupdate them to values </li>
+            </li>
+        </ul>
+
+        <h3>Questions:</h3>
+        <ol>
+            <li> </li></ol>
+
+        <h3>Chapter 7 Summary</h3>
+        <ul>
+            <li>Objects are a collection of key-value pairs placed inside curly braces {}.</li>
+
+            <li>Objects have properties that can be any JavaScript value. If it’s a function, it’s known as amethod.
+            </li>
+            <li>An object’s properties and methods can be accessed using either dot notation or square bracket notation.
+            </li>
+            <li>Objects are mutable, which means their properties and methods can be changed or removed.</li>
+            <li>Objects can be used as parameters to functions, which allows arguments to be entered in any order, or
+                omitted.
+            </li>
+            <li>Nested objects can be created by placing objects inside objects.</li>
+            <li>JSON is a portable data format that uses JavaScript object literals to exchange information.</li>
+            <li>The Math object gives access to a number of mathematical constants.</li>
+            <li>The Math object can be used to perform mathematical calculations.</li>
+            <li>The Date object can be used to create date objects.</li>
+            <li>Once you’ve created a Date object, you can use the getter methods to access information about that date.
+            </li>
+            <li>Once you’ve created a Date object, setter methods can be used to change information about that date.
+            </li>
+            <li>The Regex object can be used to create regular expressions.
+            </li>
+        </ul>
+
+
+        <h3>Questions:</h3>
+        <ol>
+            <li> </li></ol>
+
+            <h3>Definitions</h3>
+            <ol>
+                <li> </li>
+                <li> </li>
+                <li></li>
+
+            </ol>
+            </li>
+            </ul>
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2021 | <a href="https://awarbler.github.io">Anita
+                Woodford</a>| Texas | <a href="https://www.byui.edu/online"></href> BYUI Online Learning</a><br>
+            Last Modified: <span id="dateModified"></span>
+            <script>
+                document.getElementById("dateModified").innerHTML = document.lastModified
+            </script>
+        </p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+    <script>
+        WebFont.load({
+            google: {
+                families: ['open Sans', 'Roboto']
+            }
+        });
+    </script>
+    <script src='js/main.js'></script>
+
+</body>
+
+</html>

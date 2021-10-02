@@ -24,26 +24,34 @@ window.onload = function() {
        * 3rd an object of html attributes
        * render loops throught the attributes as the third arguement
        * uses set attribute method toupdate them to values 
-       * 
+       * added start to view object ch7
       */
       const view = {
+          
           score: document.querySelector('#score strong'),
           question:  document.querySelector('question'),
           result: document.getElementById('result'),
           info: document.getElementById('info'),
+          start: document.getElementById('start'),
           render(target, content, attributes){
               for(const key in attributes){
                   target.setAttribute(key, attributes[key]);
               }
               target.innerHtml = content;
+          },
+          show(element){
+              element.style.display = 'block';
+          },
+          hide(element){
+              element.style.display = 'none';
           }
-
       };
- 
+ // game object 
       const game = {
         start(quiz){
-            this.questions = [...quiz];
             this.score = 0;
+            this.questions = [...quiz];
+            view.hide(view.start);
             // main game loop
             for(const question of this.questions){
             this.question = question;
@@ -72,12 +80,15 @@ window.onload = function() {
             if(response === answer){
                 //point to view object render through result
                 view.render(view.reult, 'Correct',{'class': 'correct'});
-            alert('Correct!');
+           // forgot to delete when I added view.render it doesnt say to delete
+               alert('Correct!');
             this.score++;
+            view.render(view.score,this.score);
             } else {
                 // point to vievw object render through result
                 // question why does this have two grave or backticks to open and close?
             view.render(view.result,`Wrong! The correct answer was ${answer}`,{'class':'wrong'});
+            // the book didnt say to delete
             alert(`Wrong! The correct answer was ${answer}`);
             }
         },
@@ -86,9 +97,10 @@ window.onload = function() {
             //  why does this accept the quote without any error but it is suppose to be a backtick or grave
             // are backticks the same as a grave? 
             view.render(view.info,`Game Over, you scored ${this.score} point${this.score !== 1 ? 's' : ''}`);
-        
+            view.show(view.start);
         }
     }
-    game.start(quiz);
+    view.start.addEventListener('click', () => game.start(quiz), false);
+
     }, 100);
   };

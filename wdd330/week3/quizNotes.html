@@ -51,31 +51,70 @@
     <main>
         <!-- enter header  h2 = smaller than h1 -->
         <h1>Week 3 Notes Ch. 6 Ninja Quiz </h1>
-        <!-- List for assignments  
+        <!-- List for assignments -->
 
-        <h3>Chapter 6</h3>
-        <h4>add divs to html for </h4>
+        <h3>Chapter 6 - Document Object Model</h3>
+        <ol>
+            <li> Add divs elements to HTML </li>
+            <ul>
+                <li> add div with id named score with a strong emph. </li>
+                <li> add div with id named question </li>
+                <li> add div with id= named result </li>
+                <li> add div with id info
+                </li>
+            </ul>
 
-        <h4>View Objects add in JS</h4>
-        <p>Now we’re going to namespace the functions we created in the last 
-            chapter. We do this by placing them inside an object called game 
-            that will be the namespace. This means that any references to the 
-            functions need to be replaced with game.function() outside the 
-            object or this.function() inside the object.*/namespace the functions</p>
-        <ul>
-            <li> use document to query a selector method to access elements</li>
-            <li>example div question is accessed in jas cod using view.question</li>
-            <li>add a help function called render()to update content of elements</li>
-            <li>render() 3 parament 1 displays content, 2nd updated content</li>
-            <li>3rd an object of html attributes</li>
-            <li>render loops throught the attributes as the third arguement</li>
-            <li>uses set attribute method toupdate them to values </li>
-            </li>
-        </ul>
 
+            <li>View Objects add in JS</li>
+            <p> Use document to query a selector method to access elements<br>
+                Assign them to access a variable<br>
+                Example div question is accessed in js code using view.question<br>
+                Add render()to access the elements to update the contect<br>
+                Render() uses 3 paramenters 1 displays content, 2nd updated content  <br>
+                The 3rd is an object of html attributes<br>
+
+                The function loops through throught the attributes as the third arguement
+                uses set attribute method to update them to values provided. <br>
+                Then uses innerHTML to update the HTML with content provided</p>
+            <ul>
+
+                <li>const view = {</li>
+                <li>score: document.querySelector('#score strong'),</li>
+                <li>question: document.getElementById('question'),</li>
+                <li> result: document.getElementById('result'),</li>
+                <li> info: document.getElementById('info'),</li>
+                <li> render(target,content,attributes) {</li>
+                <li> for(const key in attributes) {</li>
+                <li> target.setAttribute(key, attributes[key]);</li>
+                <li> }</li>
+                <li> target.innerHTML = content;</li>
+                <li>}</li>
+                <li>};</li>
+                </ul>
+                <li>Update methods in JS</li>
+            <p> Place a call to view.render where ther is an alert() or prompt()
+                that displays the same info in the html. 
+                Use view render() to update the score if player gains points</p>
+                </ul>
+            <ul>update ask() ch 6
+                // point it to the view object
+                <li> view.render(view.question, question);,</li>
+                // update check(response)
+                <li> view.render(view.result,'Correct!',{'class':'correct'});</li>
+                <li> view.render(view.score,this.score);</li>
+                <li> view.render(view.result,`Wrong! The correct answer was ${answer}`,{'class':'wrong'});</li>
+                // update gameOver()
+                <li> view.render(view.info,`Game Over, you scored ${this.score} point${this.score !== 1 ? 's' : ''}`);</li>
+                
+            
+            </ul>
+        </ol>
         <h3>Questions:</h3>
         <ol>
-            <li> </li></ol>
+            <li> In update check(response) why does this have two grave or backticks to open and close? </li>
+            <li> Why does this accept the quote without any error but it is suppose to be a backtick or graves?</li> 
+            <li> Are backticks the same as a grave? </li>
+        </ol>
 
         <h3>Chapter 7 Summary</h3>
         <ul>
@@ -105,17 +144,18 @@
 
         <h3>Questions:</h3>
         <ol>
-            <li> </li></ol>
+            <li> </li>
+        </ol>
 
-            <h3>Definitions</h3>
-            <ol>
-                <li> </li>
-                <li> </li>
-                <li></li>
+        <h3>Definitions</h3>
+        <ol>
+            <li> </li>
+            <li> </li>
+            <li></li>
 
-            </ol>
-            </li>
-            </ul>
+        </ol>
+        </li>
+        </ul>
     </main>
 
     <footer>

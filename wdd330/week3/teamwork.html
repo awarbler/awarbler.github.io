@@ -212,37 +212,28 @@
 
       // Array.prototype.reduce() 
       // 4. How many years did all the inventors live all together?
-      // Team Work 
+      // Team Work // My Work 
       const allAges = inventors.reduce((acc, inventor) => acc +
         (inventor.passed - inventor.year), 0);
       console.table(allAges);
-      // My Work 
+      
 
       // 5. Sort the inventors by years lived
       // Team Work 
-      const yearsLived = inventors.sort((a, b) => (a.passed - a.year) - (b.passed - b.year));
+      const yearsLived = inventors.sort((a, b) => (a.passed - a.year) 
+      - (b.passed - b.year));
       console.table(yearsLived);
 
       // my Work
-      // long way 
-      //const oldest = inventors.sort(function(a,b){
-      // const lastGuy = a.passed - a.year;
-      // const nextGuy = b.passed - b.year;
-      //   if(lastGuy > nextGuy){
-      //      return -1; 
-      //     } else {
-      //     return 1;
-      //    }
-      //    });
-      // console.table(oldest)
+     
       // reduced code 
 
-      const oldest = inventors.sort(function (a, b) {
-        const lastGuy = a.passed - a.year;
-        const nextGuy = b.passed - b.year;
-        return lastGuy > nextGuy ? -1 : 1;
-      });
-      console.table(oldest)
+     // const oldest = inventors.sort(function (a, b) {
+     // const lastGuy = a.passed - a.year;
+     //const nextGuy = b.passed - b.year;
+     //return lastGuy > nextGuy ? -1 : 1;
+     //})
+     // console.table(oldest)
 
       // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
       // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
@@ -251,16 +242,18 @@
       // then we need to find the links on the webpage 
 
 
-      // const category = document.querySelector('.mw-category');
-      // const links = category.querySelectorAll('a'); // this helps us to find the links
-      // then call links to see all of the links  
-      // then change const links to an array and you can add a spread 
-      // const links = Array.from(category.querySelectorAll('a')); 
+      // my work, my team did not do, i did this after I class was over
+
+      //const category = document.querySelector('.mw-category');
+      //const links = category.querySelectorAll('a'); // this helps us to find the links
+      //then call links to see all of the links  
+      //then change const links to an array and you can add a spread 
+     // const links = Array.from(category.querySelectorAll('a')); 
 
       // map over the links and then we will get the text form the link and then filter it 
-      // const de = links
-      //             .map(link => link.textContent)
-      //             .filter(streetName => streetName.includes('de'));
+      //const de = links
+        //          .map(link => link.textContent)
+         //         .filter(streetName => streetName.includes('de'));
 
 
 
@@ -605,10 +598,10 @@
   <ol>
     <li>Complete exercise #6 <br> </li>
     <h4>Team Work</h4>
-    <ul class="teamCode">
+  <!---   <ul class="teamCode">
       <li> The code is on the console.</li>
     </ul>
-    <div>
+  <div>
       <h4>My Work</h4>
       <p>/* <br>
         * <br>
@@ -665,7 +658,7 @@
       Read more about <a
         href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">
         Arrow Function </a>
-    </div><br>
+    </div><br>--> 
 
 
 
@@ -677,7 +670,7 @@
     <ul class="teamCode">
       <li> The code is on the console.</li>
     </ul>
-    <div>
+    <!---  <div>
       <h4>My Work</h4>
       <p>/* <br>
         * <br>
@@ -734,7 +727,7 @@
       Read more about <a
         href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">
         Arrow Function </a>
-    </div><br>
+    </div><br>-->
 
 
 <li>Complete exercise #8<br> </li>
@@ -742,7 +735,7 @@
     <ul class="teamCode">
       <li> The code is on the console.</li>
     </ul>
-    <div>
+   <!---   <div>
       <h4>My Work</h4>
       <p>/* <br>
         * <br>
@@ -868,7 +861,7 @@
         Arrow Function </a>
     </div><br>
 
-   
+   --->
 
   </main>
   <footer>

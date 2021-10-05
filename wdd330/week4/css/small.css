@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+
+/*---body------*/
+body {
+    font-size: 100%;
+    line-height: 1.5;
+    font-family: "Roboto", Open Sans, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #555d66;
+}
+/*---body links labelled in index.html as a ------*/
+body a {
+    color: #7fb9c2;
+}
+
+/*---- flex keeps the header in the middle of the screen --------------*/
+header
+{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    margin: 0 auto;
+    padding: .5rem 2%;
+    font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+    background: white;
+    color: #7fb9c2;
+   
+    
+}
+
+.heading {
+    display: flex;
+    /*---- flex keeps the header in the middle of the screen --------------*/
+    flex-direction: column;
+}
+
+.heading h1 {
+    font-size: 1.6rem;
+    /* margin top right  bottom left margin: 25px; all four margins are 25px margin: 25px 50px;
+top and bottom margins are 25px right and left margins are 50px*/
+    margin: 0 0 0 15px;
+}
+
+/*---was .m -----*/
+.heading2 {
+    font-style: italic;
+    letter-spacing: 1pt;
+    font-size: .75rem;
+    margin: 0 0 0 15px;
+    font-weight: normal;
+    color: #EDC87E;
+}
+
+/*---nav = navigation section as a whole------*/
+/*-- NAVIGATION HERE -->*/
+nav {
+    /*---nav width 100vw uses the vieport width at 100% to take entire screen
+    this is not needed we can take it out-*/
+    width: 100vw;
+    /* i want the nav to go all the way across otherwise max width to 600px margin10px auto*/
+    margin: 0 auto;
+    /*if I want i can add background-color: #ecf0f1;but I want it white so not needed*/
+    /* text color*/
+    color: #aab1b2;
+    padding: .5rem 2%;
+    text-align: left;
+    font-size: .75em;
+    overflow: hidden;
+}
+
+/*---nav unordered list or in this case .navigation or nav ul------*/
+.navigation {
+    /*--gets rid of annoying white space alone sides of nav bar--*/
+    margin: 0;
+    padding: 0;
+    /*--nav ul should take up the width of the page--*/
+    /*-- can be put here or in li this takes away the bullet points*/
+    list-style: none;
+    text-align: center;
+
+}
+/*---navigation this is the hamburger menu for the small view to show it------*/
+.navigation li:first-child {
+    display: block;
+    border-top: 1px solid #aab1b2;
+    border-bottom: 1px solid #aab1b2;
+}
+/*---navigation list= li or nav li or .navigation li------*/
+.navigation li {
+    /*---hide nav li or class navigation list in small view for hamburger-*/
+    display: none;
+}
+/*---nav class navigation a style the menu items can also be called nav a or nav li a------*/
+.navigation a{
+    /*---nav ul li a href links use nav a or .navigation a------*/
+    display: block;
+     /* I changed the color*/
+    color: #aab1b2;
+     /*I added some padding*/
+    padding: 0.75rem;
+    text-align: left;
+     /*-- deletes line from under link or get rid also of that underline*/
+    text-decoration: none;
+}
+/*---hange color when mouse passes by I can use .navigation a:hover
+or nav a:hover since I used a class I can use the class -----*/
+.navigation a:hover{
+    color: #7fb9c2;
+    text-decoration: underline;
+    font-weight: 700;
+}
+/*---navigation active page or class .navigation li a ------*/
+nav li.active {
+    /* I changed the color-nav*/
+    color: #7fb9c2;
+
+    text-decoration-line: underline;
+    border-radius: 4px;
+}
+
+/* when the button is clicked - the responsive class is added 
+and accounted for here  or it could be called . responsive li if there 
+isnt a class assigned to it*/
+/* the onclick JS toggles the .repsonsive class from display none 
+(.navigation li) to display block because the repsonsive class is added 
+to the end of the class list like this in HTML Line #6.<ul class="navigation responsive">
+  */
+.responsive li {
+    display: block;
+}
+    /* margin top right  bottom margin left margin: 25px; all four margins are 25px margin: 25px 50px;
+top and bottom margins are 25px right and left margins are 50px*/
+
+main {
+
+    margin: 0 auto;
+    max-width: 45rem;
+    padding: .75rem;
+    font-family: "Roboto", Open Sans, Helvetica, Arial, sans-serif;
+    color: #aab1b2;
+
+}
+
+main h1,
+h2,h3,h4 {
+   
+    color: #7fb9c2;
+    clear: both;
+}
+
+main a{
+    /* I changed the color*/
+    color: #aab1b2;
+}
+
+main a:hover{
+    color: #7fb9c2;
+    text-decoration: underline;
+    font-weight: 700;}
+
+p {
+    margin: .5rem auto;
+}
+
+main section {
+    margin: 10px;
+    color: #aab1b2;
+}
+.teamCode{
+    color: #EDC87E;
+}
+
+
+footer p {
+    padding: .75rem;
+    font-size: .8rem;
+    margin-top: 5px;
+    background: white;
+    color: #aab1b2;
+    text-align: center;
+    border-top: 1px solid #aab1b2;
+}
+
+footer a {
+    color: #7fb9c2;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

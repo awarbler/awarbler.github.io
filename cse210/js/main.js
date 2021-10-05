@@ -16,8 +16,8 @@
         url: "wdd330/week3/index.html"
     },
     {
-        label: "Challenge:1 Todo",
-        url: "challenge-1"
+        label: "Week 4",
+        url: "wdd330/week4/index.html"
     }
     
   ]

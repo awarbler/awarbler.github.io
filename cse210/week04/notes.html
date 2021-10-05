@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <!-- Set character encoding for the document -->
+    <meta charset="utf-8">
+
+    <!-- Viewport for responsive web design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Document Title -->
+    <title> CSE 210: Anita Woodford: Portfolio</title>
+    <meta name="description"
+        content="WDD 330: Anita Woodford: Portfolio Assignment Website: Web Frontend Development II, at Brigham Young University - Idaho">
+
+    <!-- link to google api  -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- link to css style sheet  -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href='css/small.css'>
+    <link rel="stylesheet" href="css/meduim.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <header>
+        <!-- logo will go here or picture of me -->
+        <!-- Header 1 title my name -->
+        <section class="heading">
+          <h1>Anita Woodford</h1>
+          <div class="heading2">
+            <h2>CSE 210 | Programming with Classes</h2>
+          </div>
+          <!-- m = class name for css for <div class="m">Past|Present|Future</div>-->
+        </section>
+      </header>
+    
+    <!-- NAVIGATION HERE -->
+    <nav>
+        <ul class="navigation">
+            <li> <a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
+            <li class="active"><a href="index.html"> Home </a></li>
+            <li> <a href="notes.html">Notes</a></li>
+            <li> <a href="teamwork.html">Team Work</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- enter header  h2 = smaller than h1 -->
+        <h1>Week 4 Study Materials </h1>
+   
+            <li>Week 4 Notes</li>
+            
+            <pre>
+                <code>
+                    # Creates class Car
+                    class Car:
+                    
+                        # create class attributes
+                        name = "c200"
+                        make = "mercedez"
+                        model = 2008
+                    
+                        # create class methods
+                        def start(self):
+                            print ("Engine started")
+                    
+                        def stop(self):
+                            print ("Engine switched off")
+                </code>
+              </pre>
+              <h2>Review Questions</h2>
+            <p>
+                <ul>
+                    <li><div>
+                        How is object-oriented programming related to prodedural programming?<br>
+                            
+                    </div></li>
+                    <li><div>
+                        What is a class?
+                        <br>
+                            Is like an object constructor, or a "blueprint" for creating objects.<br>
+                            Example :
+                            
+                    </div></li>
+                    <li><div>
+                        What is an attribute?<br>
+                        Describe the class ex: name, make, model 
+                    </div></li>
+                    <li><div>
+                        What is a method?<br>
+                        A method is like a function but it uses objects and Classes used to call an object
+                    </div></li>
+                    <li><div>
+                        What is a constructor? is the method we use to initiialize the class attributes
+                    </div></li>
+                    <li><div>
+                        What is an object?
+                    </div></li>
+                    <li><div>
+                        What is the syntax for defining a class?
+                    </div></li>
+                    <li><div>
+                        What is the syntax for defining an attribute?
+                    </div></li>
+                    <li><div>
+                        What is the syntax for defining a method?
+                    </div></li>
+                    <li><div>
+                        What is the syntax for creating an object?
+                    </div></li>
+                    <li><div>
+                        What is the syntax for invoking a method?
+                    </div></li>
+                </ul>
+            </p>
+          
+
+            <li><a href="teamwork.html">Team Work</a></li>
+            <h2>Questions:</h2>
+            <ol>
+                <li></li>
+                <li> </li>
+            </ol>
+            </li>
+        </ul>
+        <h4> defining a class </h4>
+        <pre>
+            <code>
+                class ClassName:
+            </code>
+        </pre>
+        <h4>Syntax for attribute</h4>
+        <pre>
+            <code>
+                # create class attributes
+                    name = "c200"
+                    make = "mercedez"
+                    model = 2008
+            </code>
+        </pre>
+        <h4>syntax for defining a method</h4>
+        <pre>
+            <code>
+                # create class methods
+                    def start(self):
+                        print ("Engine started")
+
+                        def stop(self):
+                        print ("Engine switched off")        
+            </code>
+        </pre>
+        <h4> create an object </h4>
+        <pre>
+            <code>
+                # # create new instance rect1 and rect2 or objects
+                # rect1 = Rectangle()
+                # rect2 = Rectangle()
+            </code>
+        </pre>
+        <h4>Invoke a method </h4>
+        <pre>
+            <code>
+                expr.methodname(additional parameter values)
+            </code>
+        </pre>
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2021 | <a href="https://awarbler.github.io">Anita
+                Woodford</a>| Texas | <a href="https://www.byui.edu/online"></href> BYUI Online Learning</a><br>
+            Last Modified: <span id="dateModified"></span>
+            <script>
+                document.getElementById("dateModified").innerHTML = document.lastModified
+            </script>
+        </p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+    <script>
+        WebFont.load({
+            google: {
+                families: ['open Sans', 'Roboto']
+            }
+        });
+    </script>
+    <script src='js/main.js'></script>
+
+</body>
+
+</html>

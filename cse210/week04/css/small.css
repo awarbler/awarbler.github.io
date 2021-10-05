@@ -193,6 +193,14 @@ main section {
 
 }
 
+pre code {
+    background-color: #eee;
+    border: .05px solid #aab1b2;
+    display: block;
+    padding: 10px;
+    
+  }
+
 footer p {
     padding: .75rem;
     font-size: .8rem;
@@ -212,3 +220,4 @@ footer a {
     display: table;
     clear: both;
 }
+

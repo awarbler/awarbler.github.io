@@ -21,7 +21,6 @@
     }
     
   ]
-
   /**create for loop to go through array and create li and a tags */
 
   var parent = document.getElementById("assignments")

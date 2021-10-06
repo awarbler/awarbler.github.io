@@ -1,5 +1,5 @@
 import random
-
+# https://compucademy.net/python-simple-dice-game/
 # think about the sequence of order to be executed 
 
 # selecting different paths based on conditions
@@ -22,8 +22,8 @@ import random
 
 
 # initialise player score to 0
-player1 = 0
-player2 = 0
+player1_score = 0
+player2_score = 0
 
 # repeat everthing in this block 10 times 
 for i in range(10):

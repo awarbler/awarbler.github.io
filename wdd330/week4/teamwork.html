@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- Viewport for responsive web design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Cardio 💪</title>
+  <!-- link to css style sheet  -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href='css/small.css'>
+  <link rel="stylesheet" href="css/meduim.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+  <!-- HEADER HERE -->
+  <header>
+    <!-- logo will go here or picture of me -->
+    <!-- Header 1 title my name -->
+    <section class="heading">
+      <h1>Anita Woodford</h1>
+      <div class="heading2">
+        <h2> WDD 330: Portfolio</h2>
+      </div>
+      <!-- m = class name for css for <div class="m">Past|Present|Future</div>-->
+    </section>
+  </header>
+
+  <!-- NAVIGATION HERE -->
+  <nav>
+    <ul class="navigation">
+      <li> <a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
+      <li><a href="index.html"> Home </a></li>
+      <li> <a href="notes.html">Notes</a></li>
+      <li> <a href="teamwork.html">Team Work</a></li>
+      <li><a href="quiz/index.html">Ninja</a></li>
+    </ul>
+  </nav>
+  <main>
+
+   
+
+    <h1>W04 Team Work </h1>
+     <!-- List for assignments  < if we need to ad on this is how we do it >| <a href="Week 07/gallery.html"> Gallery </a>-->
+
+     <ul>
+    <li><a href="https://youtu.be/2IJhR6u_S_0">Zoom Meeting</a></li>
+          <li><a href="teamNotes.html">Team Notes</a></li>
+          <li><a href="ticTacToe.html">Tic Tac Toe</a></li>
+      
+    <!-- Instructions -->
+    <div class="instructions">
+      <h2>Instructions</h2>
+      <p><em>Psst: have a look at the JavaScript Console</em> 💁</p>
+
+      <h2>Overview</h2>
+      <p>This activity will review the built in array methods. This was borrowed
+        from a free javascript course from Wes Bos Javascript30. If you sign up
+        you will get access to video solutions for all of the exercises...including
+        the one that this activity is based on: Array Cardio Day 1. If you decide
+        to sign up (I actually would recommend this)...try them all first before
+        looking at the solutions!</p>
+    </div>
+
+    <!-- Requirements-->
+    <div class="requirements">
+      <h2>Core Requirements</h2>
+      <p>
+        Download the
+        <a href="../solutions/week03/index-START.html" target="_blank" rel="noreferrer">starter code</a>
+        and complete exercises 1-5
+      </p>
+      <p>
+        Here is a link to a good summary of a few of the common array
+        methods
+        <a href="https://gist.github.com/ljharb/58faf1cfcb4e6808f74aae4ef7944cff" target="_blank" rel="noreferrer">Array
+          Iteration Thoughts</a>
+      </p>
+    </div>
+
+    <!-- assignment list numbered - team work notes- code my work notes code more notes-->
+    <div class="assignments">
+      <h2>Assignments</h2>
+      <ol>
+        <li> Array.prototype.filter()<br>
+          Filter the list of inventors for those who were born in the 1500's </li>
+        <h4>Team Work</h4>
+        <ul class="teamCode">
+          <li> The code is on the console.</li>
+        </ul>
+        <div>
+          <h4>My Work</h4>
+          <p>/* <br>
+            * get people who were born in the 1500<br>
+            * use a const myWorkBorn to filter over it<br>
+            * filters work by pass it a function and loop over all the item in an array<br>
+            * our array is inventors - decide <br>
+            * if we want to keep the inventor - if the inventor was born(year)is greater or equal<br>
+            * to 1500 and return true - which means we will keep it and output it.<br>
+            * look at the variable on the console and we can put it in a table */ <br>
+            */ </p>
+          <h4>My Code</h4>
+          <ul class="myCode">
+            <li>const myWorkBorn = inventors.filter(function(inventor) {</li>
+            <li>if(inventor.year >= 1500 && inventor.year = 1600){ </li>
+            <li>return true;\n } \n }); </li>
+            <li>// console.log(myWorkBorn); // changed to table</li>
+            <li>console.table(myWorkBorn);</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Notes - Reduce Code to one line</h4>
+          <p>* Change the function(inventor) into an arrow function => <br>
+            * deleting the word function and you can delete the parathesis<br>
+            * reduce the the if statement: since return true or return false<br>
+            * delete the if copy everything in parathesis to first line <br>
+            * delete return true because it is a boolean and it is implied<br>
+          </p>
+          <ul>
+            <li>const myWorkBorn = inventors.filter => <br>
+              inventor(inventor.year >= 1500 && inventor.year = 1600))</li>
+            <li>// console.log(myWorkBorn);</li>
+            <li>console.table(myWorkBorn);</li>
+          </ul>
+        </div>
+
+        <div id="questions">
+          <h4>Questions </h4>
+          <ul>
+            <li>What are arrow functions?</li>
+            <li> how do i put filter() output on my Html it isnt working</li>
+            <li>Why does it take me so long to do this work?</li>
+          </ul> <br>
+
+          Read more about <a
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">
+            Arrow Function </a>
+        </div><br>
+
+        <li> Array.prototype.map()<br>
+          Give us an array of the inventors' first and last names
+        </li>
+        <h4>Team Work</h4>
+        <ul class="teamCode">
+          <li> The code is on the console.</li>
+        </ul>
+        <div>
+          <h4>My Work</h4>
+          <p>/ * Pass a function to map<br>
+            * declare a const myFirstLast <br>
+            * use map to take in the array named inventors <br>
+            * create an arrow function => named inventor <br>
+            * arrow function will go through the array <br>
+            * grabs the element first name plus a space plus last name<br>
+            * map returns a new array of the same lengh of the old array<br>
+            *output to console either by log or by table <br>
+            */ </p>
+          <p>map takes in an array and does something with that array and returns a new array of the same lengh
+            map always return the same amount of items given</p>
+          <h4>My Code - basic</h4>
+          <ul class="myCode">
+            <li>const myFirstLast = inventors.map(inventor => inventor.first + ' ' + inventor.last);</li>
+            <li>console.table(myFirstLast);</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Notes - Reduce Code </h4>
+          <p> problems with the space return backtext and use template strings grave marker
+            and $ { find other varialbe and makes the string bypass errors
+            * delete the plus signs and the space <br>
+            * add a graver tick ` dollar sign<br>
+            * add a dollar sign $ <br>
+            * add a bracket <br>
+          </p>
+          <ul>
+            <li>const myName = inventors.map(inventor => `${inventor.first} ${inventor.last}`);<br>
+              inventor(inventor.year >= 1500 && inventor.year = 1600))</li>
+            <li>console.log(myName);</li>
+            <li>console.table(myName);</li>
+          </ul>
+        </div>
+
+        <div id="questions">
+          <h4>Questions </h4>
+          <ul>
+            <li></li>
+          </ul> <br>
+
+          Read more about <a
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map">
+            map method </a>
+        </div><br>
+
+        <li>Array.prototype.sort()<br>
+          Sort the inventors by birthdate, oldest to youngest</li>
+        <h4>Team Work</h4>
+        <ul class="teamCode">
+          <li> The code is on the console.</li>
+        </ul>
+
+        <div>
+          <h4>My Work</h4>
+
+          / * <br>
+          * Pass a function to sort to grab a birthday oldest to young<br>
+          * declare a const oldToYoung <br>
+          * use sort to take in the array named inventors <br>
+          * create an arrow function => named inventor firstElement a year & secondElement b<br>
+          * if a is greater than b return 1 else return -1 <br>
+          * output to console either by log or by table <br>
+          */
+          <p>sort works by using two items and asked to sort these two items.</p>
+          <h4>My Code - basic</h4>
+          <ul class="myCode">
+            <li>const oldToYoung= inventors.sort(function(a,b) {</li>
+            <li>if(a.year > b.year){</li>
+            <li>return 1;</li>
+            <li>}</li>
+            <li>else{</li>
+            <li>return -1;</li>
+            <li>}</li>
+            <li>});</li>
+            <li>console.table(oldToYoung);</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Notes - Reduce Code </h4>
+          <p> * reduce by using a tenary = short hand of an if statement </p><br>
+          <ul>
+            <li>const ordered = inventors.sort((a, b) => a.year > b.year ? 1 : -1);</li>
+            <li>console.table(ordered)</li>
+
+          </ul>
+        </div>
+
+        <div id="questions">
+          <h4>Questions </h4>
+          <ul>
+            <li>Can you put a unordered list inside a paragraph?</li>
+            <li>how does one use the sort method and put it on html</li>
+          </ul> <br>
+
+          Read more about <a
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort">
+            sort method Function </a>
+        </div><br>
+
+        <li>Array.prototype.reduce()<br>
+          How many years did all the inventors live?</li>
+        <h4>Team Work</h4>
+        <ul class="teamCode">
+          <li> The code is on the console.</li>
+        </ul>
+        <div>
+          <h4>My Work</h4>
+          <p>Reduce will allow you to build on top of an array.
+            it is a callback function - Reduce walks through the
+            array element by element. Reduce will pass in the return value
+            and result in one single value - used for the return sum of
+            elements - running total</p>
+          <p>/*<br>
+            * declare const allAges to get total years lived by inventors<br>
+            * use reduce to take in the array named inventors <br>
+            * create a arrow function using total , inventor <br>
+            * return total plus inventor.passed - inventor.year<br>
+            * use zero to begin the count on the total<br>
+          </p>
+
+          <h4>My Code - basic</h4>
+          <ul class="myCode">
+            <li>const allAges = inventors.reduce((total,inventor) => {</li>
+            <li> * return total + (inventor.passed - inventor.year), 0);</li>
+            <li>console.table(allAges);</li>
+          </ul>
+        </div>
+
+        <div id="questions">
+          <h4>Questions </h4>
+          <ul>
+            <li></li>
+          </ul> <br>
+
+          Read more about <a
+            href="hhttps://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce">
+            reduce method </a>
+        </div><br>
+
+        <li>Sort the inventors by years lived</li>
+        </li>
+        <h4>Team Work</h4>
+        <ul class="teamCode">
+          <li> The code is on the console.</li>
+        </ul>
+        <div>
+          <h4>My Work</h4>
+
+          <p> * <br>
+            * declare const yearsLived to sort by age <br>
+            * declare funtion to sort a to b<br>
+            * use sort to take in the array named inventors<br>
+            * create an arrow function => named inventor firstElement a & secondElement b<br>
+            * declare a to find age of first a.passed - a.year<br>
+            * delare b to find age of second b.passed - b.year<br>
+            * if a is greater than b return -1<br>
+            * else return 1 <br>
+          </p>
+          <p>The sort() method sorts the elements of an array and sort order is ascending</p>
+          <h4>My Code - basic</h4>
+          <ul class="myCode">
+            <li>const yearsLived = inventors.sort(function(a,b){</li>
+            <li>const a = a.passed - a.year;</li>
+            <li>const b = b.passed - b.year;</li>
+            <li>if(a> b){</li>
+            <li> return -1;</li>
+            <li>} else {</li>
+            <li> return 1;</li>
+            <li> }</li>
+            <li> });</li>
+            <li>console.table(yearsLived</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Notes - Reduce Code </h4>
+          <p> * use tenary for if statement <br> </p>
+          <ul>
+            <li>const yearsLived= inventors.sort(function(a,b){</li>
+            <li> const a = a.passed - a.year;</li>
+            <li> const b = b.passed - b.year;</li>
+            <li> return a > b ? -1 : 1;</li>
+            <li> });</li>
+            <li>console.table(yearsLived)</li>
+          </ul>
+        </div>
+
+        <div id="questions">
+          <h4>Questions </h4>
+          <ul>
+            <li></li>
+          </ul> <br>
+
+          Read more about <a
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map">
+            sort method Function </a>
+        </div><br>
+      </ol>
+    </div>
+
+ <!-- stretch Assignment -->
+ <div class="stretch">
+  <h2>Stretch</h2>
+  <ol>
+    <li>Complete exercise #6 <br> </li>
+    <h4>Team Work</h4>
+  <!---   <ul class="teamCode">
+      <li> The code is on the console.</li>
+    </ul>
+  <div>
+      <h4>My Work</h4>
+      <p>/* <br>
+        * <br>
+        * <br>
+        * <br>
+        * <br>
+        * <br>
+        * <br>
+        * <br>
+        */ </p>
+      <h4>My Code</h4>
+      <ul class="myCode">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        
+      </ul>
+    </div>
+
+    <div>
+      <h4>Notes - Reduce Code to one line</h4>
+      <p>/* <br>
+        * <br>
+        * <br>
+        * <br>
+        * <br>
+        * <br>
+        * <br>
+        * <br>
+        */ </p>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+
+    <div id="questions">
+      <h4>Questions </h4>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul> <br>
+
+      Read more about <a
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">
+        Arrow Function </a>
+    </div><br>--> 
+
+
+
+
+
+
+    <li>Complete exercise #7<br> </li>
+    <h4>Team Work</h4>
+    <ul class="teamCode">
+      <li> The code is on the console.</li>
+    </ul>
+    <!---  <div>
+      <h4>My Work</h4>
+      <p>/* <br>
+        * <br>
+        * <br>
+        * <br>
+        * <br>
+        * <br>
+        * <br>
+        * <br>
+        */ </p>
+      <h4>My Code</h4>
+      <ul class="myCode">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        
+      </ul>
+    </div>
+
+    <div>
+      <h4>Notes - Reduce Code to one line</h4>
+      <p>/* <br>
+        * <br>
+        * <br>
+        * <br>
+        * <br>
+        * <br>
+        * <br>
+        * <br>
+        */ </p>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+
+    <div id="questions">
+      <h4>Questions </h4>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul> <br>
+
+      Read more about <a
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">
+        Arrow Function </a>
+    </div><br>-->
+
+
+<li>Complete exercise #8<br> </li>
+    <h4>Team Work</h4>
+    <ul class="teamCode">
+      <li> The code is on the console.</li>
+    </ul>
+   <!---   <div>
+      <h4>My Work</h4>
+      <p>/* <br>
+        * <br>
+        * <br>
+        * <br>
+        * <br>
+        * <br>
+        * <br>
+        * <br>
+        */ </p>
+      <h4>My Code</h4>
+      <ul class="myCode">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        
+      </ul>
+    </div>
+
+    <div>
+      <h4>Notes - Reduce Code to one line</h4>
+      <p>/* <br>
+        * <br>
+        * <br>
+        * <br>
+        * <br>
+        * <br>
+        * <br>
+        * <br>
+        */ </p>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+
+    <div id="questions">
+      <h4>Questions </h4>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul> <br>
+
+      Read more about <a
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">
+        Arrow Function </a>
+    </div><br>
+
+
+
+
+    <li> Complete Array Cardio Day 2<br> </li>
+    <h4>Team Work</h4>
+    <ul class="teamCode">
+      <li> The code is on the console.</li>
+    </ul>
+    <div>
+      <h4>My Work</h4>
+      <p>/* <br>
+        * <br>
+        * <br>
+        * <br>
+        * <br>
+        * <br>
+        * <br>
+        * <br>
+        */ </p>
+      <h4>My Code</h4>
+      <ul class="myCode">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        
+      </ul>
+    </div>
+
+    <div>
+      <h4>Notes - Reduce Code to one line</h4>
+      <p>/* <br>
+        * <br>
+        * <br>
+        * <br>
+        * <br>
+        * <br>
+        * <br>
+        * <br>
+        */ </p>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+
+    <div id="questions">
+      <h4>Questions </h4>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul> <br>
+
+      Read more about <a
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">
+        Arrow Function </a>
+    </div><br>
+
+   --->
+
+  </main>
+  <footer>
+    <p>
+      &copy; 2021 | <a href="https://awarbler.github.io">Anita
+        Woodford</a>| Texas | <a href="https://www.byui.edu/online"></href> BYUI Online Learning</a><br>
+      Last Modified: <span id="dateModified"></span>
+      <script>
+        document.getElementById("dateModified").innerHTML = document.lastModified
+      </script>
+    </p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+  <script>
+    WebFont.load({
+      google: {
+        families: ['open Sans', 'Roboto']
+      }
+    });
+  </script>
+</body>
+
+</html>

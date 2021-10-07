@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+  <!-- Set character encoding for the document -->
+  <meta charset="utf-8">
+  <!-- Viewport for responsive web design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Document Title -->
+  <title> Temple Inn & Suites : Temples </title>
+  <!-- Meta Description -->
+  <meta name="description"
+    content="CIT 230 Assignment Website: Web Front-End Development, at Brigham Young University - Idaho">
+  <!--<link rel="shortcut icon" href="favicon.ico"> https://www.favicon.cc/-->
+  <link rel="shortcut icon" href="favicon.ico">
+  <!-- link to google api  -->
+ 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <!-- link to css style sheet  -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/meduim.css">
+  <link rel="stylesheet" href="css/large.css">
+
+</head>
+
+<body>
+  <!-- HEADER HERE -->
+  <header>
+    <!-- logo will go here or picture of me -->
+    <picture>
+      <img src="images/templeicon1.png" alt="hotel Logo">
+    </picture>
+    <!-- Header 1 title my name -->
+    <section class="heading">
+      <h1>Temples</h1>
+      <!---- section class="heading" -->
+      <div class="heading2">Families are Forever</div>
+      <!--  <h2>Home Away from Home</h2>-->
+    </section>
+
+
+  </header>
+  <!-- NAVIGATION HERE -->
+  <nav>
+    <ul class="navigation">
+      <li> <a class="ham" href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
+      <li ><a href="index.html"> Home </a></li>
+      <li><a href="reservations.html">Reservations</a></li>
+      <li><a href="services.html">Services<span class="caret"></span></a>
+        <div>
+          <ul class="services">
+            <li> <a href="#"></a></li>
+            <li> <a href="reception.html">Reception</a></li>
+            <li> <a href="missionary.html">Missionary</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="active"> <a href="temple.html">Temple</a></li>
+      <li> <a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <footer>
+        <p> &copy; 2020 | Temple Inn & Suites |<a href="resource.html"> Attributions |</a><a
+            href="https://awarbler.github.io/"> Anita Woodford </a><br>
+          <span id="date"></span> <br> Weather Information through <a href="https://openweathermap.org/"> Open Maps</a>
+        </p>
+        <script src="js/date.js"></script>
+        <script src="js/toggle.js"></script>
+      </footer>
+  </body>
+  </html>

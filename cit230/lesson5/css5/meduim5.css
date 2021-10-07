@@ -1,0 +1,139 @@
+/* 35em is also 560px (if basefont is 16px) tablet view */
+@media only screen and (min-width: 32.5rem) {
+    header img {
+        width: 80%;
+    }
+
+    header {
+        border-bottom: 1px solid#aab1b2;
+    }
+
+    .heading h1 {
+        font-size: 2.5rem;
+    }
+
+    .m {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        border-bottom: 1px solid#aab1b2;
+    }
+
+    .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+        float: left;
+    }
+
+    .herodiv {
+        font-size: 100%;
+    }
+
+    .herodiv img {
+        width: 90%;
+        height: auto;
+        display: block;
+    }
+
+    #main {
+        max-width: 600px;
+    }
+
+    .forecast {
+        display: block;
+        text-align: center;
+        /* margin top right  bottom margin left margin: 25px; all four margins are 25px margin: 25px 50px;
+top and bottom margins are 25px right and left margins are 50px*/
+        margin: 20px 20px 0px 20px;
+        font: bold;
+    }
+
+
+    .forecastcontainer {
+        display: grid;
+        grid-template-columns: 80px 80px 80px 80px 80px;
+        background: white;
+        color: #aadcdd;
+        text-align: center;
+        padding: .75rem;
+        padding-left: 10rem;
+        padding-right: 10rem;
+        padding-bottom: 1rem;
+        margin: 0 2%;
+        font-size: 1rem;
+    }
+
+    .forecastcontainer img {
+        width: 70%;
+        padding: .75em;
+    }
+
+    .cell-1,
+    .cell-2,
+    .cell-3,
+    .cell-4,
+    .cell-5 {
+        background: #f2f2f2f2;
+    }
+
+    .cell-6,
+    .cell-7,
+    .cell-8,
+    .cell-9,
+    .cell-10 {
+        border-right: 1px solid #f2f2f2f2;
+        border-left: 1px solid #f2f2f2f2;
+    }
+
+    .cell-11,
+    .cell-12,
+    .cell-13,
+    .cell-14,
+    .cell-15 {
+        border-right: 1px solid #f2f2f2f2;
+        border-bottom: 1px solid #f2f2f2f2;
+        border-left: 1px solid #f2f2f2f2;
+    }
+
+    .cell-6,
+    .cell-11 {
+        border-left: 1px solid #f2f2f2f2;
+    }
+
+    .cell-10.cell-15 {
+        border-right: 1px solid #f2f2f2f2;
+    }
+
+    .map {
+        display: block;
+        background: #f2f2f2;
+    }
+
+    .address {
+        padding-left: 3rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+
+
+
+
+}

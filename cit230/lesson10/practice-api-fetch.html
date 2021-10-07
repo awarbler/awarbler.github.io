@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+  <!-- Set character encoding for the document -->
+  <meta charset="utf-8">
+  <!-- Viewport for responsive web design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Document Title -->
+  <title> CIT 230: Anita Woodford: South Idaho Weather: Preston </title>
+  <!-- Meta Description -->
+  <meta name="description"
+    content="CIT 230 Assignment Website: Web Front-End Development, at Brigham Young University - Idaho">
+  <!--favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+  <!-- link to google api fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <!-- link to css style sheet  -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/meduim.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+
+  <!-- HEADER HERE -->
+  <header>
+    <!-- logo will go here -->
+    <picture>
+      <img src="images/iconfinder_kweather_18095 (1).png" alt="weather logo">
+    </picture>
+    <!-- Header 1 title name of Website -->
+    <section class="heading">
+      <h1>South Idaho Weather</h1>
+      <!-- website quote -->
+      <div class="heading2">Keeps you on your adventure!</div>
+    </section>
+  </header>
+
+  <!-- NAVIGATION HERE -->
+  <nav>
+    <ul class="navigation">
+      <!-- assigned class for hamburger menu-->
+      <li> <a href="#" onclick="toggleMenu()">&#9776;Menu</a></li> <!-- toggleMenu for hamburger menu-->
+      <li><a href="index.html"> Home </a></li> <!-- home is always index.html main file-->
+      <li class="active"><a href="preston.html">Preston</a></li> <!-- active is for active webpage-->
+      <li> <a href="sodaspring.html">Soda Springs</a></li>
+      <li> <a href="fishhaven.html">Fish Haven</a></li>
+      <li> <a href="stormcenter.html">Storm Center</a></li>
+      <li> <a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+  <!-- main / body here  -->
+  <main>
+    <!-- enter header  h2 = smaller than h1 -->
+    <h2> <span id="cityId">city</span>, Idaho</h2>
+    <!--picture at the top of the page div class is herodiv the container is herodiv  -->
+    
+ <!--  get value for ids  from json api current -temp -->
+ <h1>OpenWeatherMap.org API Test</h1>
+ <p>The current temperature in Preston, Idaho is <span id="current-temp"></span>&deg; F</p>
+ <p>Image Icon Path Test: <span id="imagesrc"></span> &nbsp; <img src="" alt=" " id="icon"></p>
+ <!--my example to display weather image description on screen with an array -->
+ <p> Image Description Display : <span id="desc"> </span> </p>
+  </main>
+
+  <footer>
+    <p>
+      &copy; 2020 | South Idaho Weather | Attributions | <a href="https://awarbler.github.io/">Anita Woodford</a><br>
+      <span id="date"></span>
+    </p>
+    <script src="js/date.js"></script>
+    <!-- have to reference javascript links here  -->
+  
+    <script src="js/weatherapifetch.js"></script>
+   
+  </footer>
+</body>
+
+</html>

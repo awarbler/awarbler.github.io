@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <!-- Set character encoding for the document -->
+    <meta charset="utf-8">
+    <!-- Viewport for responsive web design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Document Title -->
+    <title> cit 230- practice blank table template </title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- link to css style sheet  -->
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/scope-template.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/meduim.css">
+    <link rel="stylesheet" href="css/large.css">
+
+</head>
+
+<body>
+    <h1>Table template</h1>
+   
+    <table>
+   <!--he <col> and <colgroup> elements. These exist because it can be a bit 
+   annoying and inefficient having to specify styling on columns we can specify
+    the information once, on a <col> element. <col> elements are  specified 
+    inside a <colgroup> container just below the opening <table> tag.Add a 
+    <colgroup> element at the top of the table, just underneath the <table> 
+    tag, in which you can add your <col> elements —-->
+    <rowgroup>
+
+    </rowgroup>
+    <!-- content of every table is enclosed by these 2 tags:<table></table>-->
+
+     <!--  <thead> element needs to wrap the part of the table that is the header  -->
+
+    <!-- we need to use the <tr> element ('tr' stands for 'table row').to create 
+    rows It goes at begining and end of the row we want each row needs to be 
+    wrapped in an additional <tr> element, with each cell contained in a<td>.-->
+
+    <!-- Every td cell we add makes the row grow longer.it smallest container 
+    inside a table is a table cell, which is created by a <td> element ('td' 
+    stands for 'table data')-->
+
+    <!-- Allowing cells to span multiple rows and columns table headers and cells 
+    have the colspan and rowspan attributes, which allow us to do just those things. 
+    Both accept a unitless number value, which equals the number of rows or columns
+     you want spanned. For example, colspan="2" makes a cell span two columns. -->
+    
+    <thead><tr><th colspan="3">ACME WILDEST</th></tr></thead>
+    <!-- To recognize the table headers as headers, both visually and semantically, 
+    you can use the <th> element ('th' stands for 'table header').Go into your HTML, 
+    and change all the <td> elements surrounding the table headers into <th> 
+    elements. use rowspan span across two rows. -->
+
+    <!-- The scope attribute specifies whether a header cell is a header for a column
+    , row, or group of columns or rows.-->
+    <tr><th scope="col">Period </th><th scope="col">Sales</th><th scope="col">Sales Goal</th></tr>
+    
+    
+    <tbody><tr> <th scope="row">August</th><td>$3,590</td><td>$4,000</td></tr>   
+    <tr> <th scope="row">September</th><td>$4,442</td><td>$5,000</td></tr>
+    <tr> <th scope="row">October</th><td>$3,590</td><td>$5,000</td></tr>
+    <tr> <th scope="row">November</th><td>$3,590</td><td>$7,500</td></tr>
+     <!-- use colspan to make 3200 across 2 columns. -->
+    <tr> <th scope="row">Black Friday</th><td colspan="2">$3,200</td></tr>
+    <tr> <th scope="row">December</th><td>$6,820</td><td>$7,500</td></tr></tbody>
+
+   <!-- use colspan to make compiled across 3 columns. -->
+   <!-- The <tfoot> element needs to wrap the part of the table that is the 
+        footer — this might be a final row with items in the previous rows summed, 
+        for example. You can include the table footer right at the bottom of the 
+        table as you'd expect, or just below the table header (the browser will 
+        still render it at the bottom of the table). -->
+   <tfoot><td colspan="3">Compiled date by aWoodford</td></tfoot>
+        
+       
+       
+        
+        <!-- link to css style sheet  -->
+        <!-- link to css style sheet  -->
+        <!-- link to css style sheet  -->
+        <!-- link to css style sheet  -->
+        <!-- link to css style sheet  -->
+        <!-- link to css style sheet  -->
+        <!-- link to css style sheet  -->
+        <!-- link to css style sheet  -->
+        <!-- link to css style sheet  -->
+        <!-- link to css style sheet  -->
+        <!-- link to css style sheet  -->
+        <!-- link to css style sheet  -->
+        <!-- link to css style sheet  -->
+        <!-- link to css style sheet  -->
+        <!-- link to css style sheet  -->
+        <!-- link to css style sheet  -->
+        <!-- link to css style sheet  -->
+
+    </table>
+</body>
+
+</html>

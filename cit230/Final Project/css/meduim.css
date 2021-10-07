@@ -1,0 +1,172 @@
+/* 35em is also 560px (if basefont is 16px) tablet view 32.5 rem i s 527.10px
+@media only screen and (min-width:560px*/
+@media only screen and (min-width: 32.5rem) {
+    header img {
+        width: 200px;
+    }
+
+    header {
+        border-bottom: 1px solid#aab1b2;
+    }
+
+    .heading h1 {
+        font-size: 1.5rem;
+    }
+
+    /*-- m*/
+    .heading2 {
+        font-size: 1.0rem;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        display: block;
+        padding: 0.75rem;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    /* this is for home page and preston page main picture*/
+    .herodiv {
+        font-size: 100%;
+    }
+
+    .herodiv img {
+        width: 100%;
+        height: auto;
+    }
+
+    #main {
+        max-width: 760px;
+    }
+
+    legend {
+        display: block;
+    }
+
+    label {
+        display: inline;
+    }
+
+
+
+    article p {
+        text-align: left;
+    }
+
+    .form-container {
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+        color: navy;
+        background-color: white;
+        /* Blue */
+        display: flex;
+        justify-content: space-between;
+        /* Add this */
+        
+    }
+
+    .destination {
+        border: 1px solid #fff;
+        /* For debugging */
+        width: 900px;
+        display: flex;
+      
+    }
+
+    form fieldset {
+  
+        /*-thing solid blue border--*/
+        border: solid #aab1b2;
+ 
+    }
+
+    /*--Style the user instructions label.top = class style the division
+ so form div-*/
+    form label.top,
+    form div {
+  
+        /*-change color to red --*/
+        color: #aab1b2;
+        /*-reduce the font size --*/
+        font-size: .8rem;
+
+    }
+
+    form label.top input,
+    form label.top select {
+        /*the validation the drop downs are not following the rules add webikit appearance to none--*/
+        -webkit-appearance: none;
+      
+        /*- adjust font --*/
+        font-size: 1rem;
+        /*-round the corners make them at least 44px so they can be touched on a mobile device-*/
+        border-radius: 4px;
+        /*-padding to give them space in the box and to get them off of the line in the box --*/
+        padding: .5rem;
+        /*- change the text color --*/
+        color: #aab1b2;
+        /*-large screens we want the inputs to be smaller so they dont look so dumb we do this by setting a max-width--*/
+        max-width: 15rem;
+        /*-background color for inputs --*/
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    form input.submitBtn {
+        /*- round the corners 1rem--*/
+        border-radius: 4px;
+        /*- the width changed messed up the view with a larger screen so we are going to add a max-width to correct it just like the input --*/
+        max-width: 15rem;
+        height: auto;
+
+    }
+
+
+
+
+
+    article figure {
+        float: left;
+        width: 50%;
+        margin-left: 2%;
+        padding-bottom: .5rem;
+        padding-right: 10px;
+    }
+
+    .contactcontainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: left;
+        justify-items: center;
+    }
+
+    .map {
+        display: block;
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+
+
+
+}

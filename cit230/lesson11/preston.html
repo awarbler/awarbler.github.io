@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+  <!-- Set character encoding for the document -->
+  <meta charset="utf-8">
+  <!-- Viewport for responsive web design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Document Title -->
+  <title> CIT 230: Anita Woodford: South Idaho Weather: Preston </title>
+  <!-- Meta Description -->
+  <meta name="description"
+    content="CIT 230 Assignment Website: Web Front-End Development, at Brigham Young University - Idaho">
+  <!--favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+  <!-- link to google api fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <!-- link to css style sheet  -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/meduim.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+  <!-- banner # message at the top of the page displays only on fridays-->
+  <div id="message">
+    <!-- us js to display or hide accourding to day of the week-->
+    <p>Saturday: Preston Pancakes in the Park! 9:00 am</p>
+    <p> Saturday at the City Park Pavilion</p>
+  </div>
+  <!-- HEADER HERE -->
+  <header>
+    <picture>
+      <!-- logo will go here -->
+      <img src="images/iconfinder.png" alt="weather logo">
+    </picture>
+    <!-- Header 1 title name of Website -->
+    <section class="heading">
+      <h1>South Idaho Weather</h1>
+      <!-- website quote -->
+      <div class="heading2">Keeps you on your adventure!</div>
+    </section>
+  </header>
+
+  <!-- NAVIGATION HERE -->
+  <nav>
+    <ul class="navigation">
+      <!-- assigned class for hamburger menu-->
+      <li> <a href="#" onclick="toggleMenu()">&#9776;Menu</a></li> <!-- toggleMenu for hamburger menu-->
+      <li><a href="index.html"> Home </a></li> <!-- home is always index.html main file-->
+      <li class="active"><a href="preston.html">Preston</a></li> <!-- active is for active webpage-->
+      <li> <a href="sodaspring.html">Soda Springs</a></li>
+      <li> <a href="fishhaven.html">Fish Haven</a></li>
+      <li> <a href="stormcenter.html">Storm Center</a></li>
+      <li> <a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+  <!-- main / body here  -->
+  <main>
+
+    <h2> <span id="place">city</span>, Idaho</h2> <!-- enter header  h2 = smaller than h1 -->
+    <!--picture at the top of the page div class is herodiv the container is herodiv  -->
+    <div class="herodiv">
+      <picture>
+        <!-- responsive photos  -->
+        <img src="imagespreston/heroimg-400w.jpg" alt="Blue Dark Clouds" srcset="imagespreston/heroimg1-1028w.jpg 1028w,
+        imagespreston/heroimg-800w.jpg 800w, 
+        imagespreston/heroimg-600w.jpg 600w,
+        imagespreston/heroimg-400w.jpg 400w" sizes="100vw">
+      </picture><!-- weather summary container for the herodiv-->
+
+      <section class="weathersummary">
+        <h2 class="weatherh2">Weather Summary </h2> <!-- css this is herodiv h2 or .weathersummary h2 -->
+        <p> Currently: <span id="currentTemp"> 00</span>&deg;F</p>
+        <p> High: <span id="high">30</span>&deg;F<br></p><!-- use for tempF -->
+        <p> <span id="windChill"> </span>&deg;F</p>
+        <!--not sure if we need this windChill answer-->
+        <p> Humidity: <span id="humidity"> </span> %</p>
+        <p> Wind Speed: <span id="windSpeed"> </span> mph</p>
+      </section>
+    </div>
+
+    <div class="weatherforecast">
+      <h2> 5 Day Forecast</h2>
+      <div class="forecastcontainer">
+
+        <div class="days"><span id="day1"></span></div>
+        <div class="days"><span id="day2"></span></div>
+        <div class="days"><span id="day3"></span></div>
+        <div class="days"><span id="day4"></span></div>
+        <div class="days"><span id="day5"></span></div>
+
+        <div class="weather_icon"><img src="images/placeholder.png" alt="description" id="icon1"></div>
+        <div class="weather_icon"><img src="images/placeholder.png" alt="description" id="icon2"></div>
+        <div class="weather_icon"><img src="images/placeholder.png" alt="description" id="icon3"></div>
+        <div class="weather_icon"><img src="images/placeholder.png" alt="description" id="icon4"></div>
+        <div class="weather_icon"><img src="images/placeholder.png" alt="description" id="icon5"></div>
+
+        <div class="currentTemp"> <span id="temp1"></span>&#8457;</div>
+        <div class="currentTemp"> <span id="temp2"></span>&#8457;</div>
+        <div class="currentTemp"> <span id="temp3"></span>&#8457;</div>
+        <div class="currentTemp"> <span id="temp4"></span>&#8457;</div>
+        <div class="currentTemp"> <span id="temp5"></span>&#8457;</div>
+      </div>
+    </div>
+
+    <div class="article">
+      
+      <article>
+          <h2>Preston FFA Soil Team Places State</h2>
+        <img src="images/agriculture-animal-cattle-2932130.jpg" alt="Cattle">
+        <!--  <figcaption>FFA Cattle</figcaption>  HEADER HERE -->
+        <div class="articledata"> Earlier this fall Franklin County Soil and Water Conservation District hosted the
+          Southeast Idaho FFA Soil and Land Evaluation event. Over 75 FFA members from area schools took part in the
+          activity. Preston’s team
+          earned top team honors on the day and placed the top three high individuals...<a
+            href="https://www.hjnews.com/preston/">Read More</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="contactcontainer">
+      
+        <div class="events"></div>
+
+
+      <div class="map"> <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.726282685086!2d-111.91534444801691!3d42.099805311838125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1575006624942!5m2!1sen!2sus"
+          width="200" height="175" ></iframe></div>
+     
+          <div class="address">
+              <h4>Contact Us</h4>
+              South Idaho Weather<br>
+              1250 Industrial Park Road<br>
+              Preston, Idaho 83263<br><br>
+              208-555-5555<br>
+              www.southidahoweather.com<br>
+              <div class="socialMedia">
+                <a target="_blank" href="https://www.facebook.com"><img src="images/facebook(1).png" alt="Facebook Icon"></a>
+                <a target="_blank" href="https://www.instagram.com"><img src="images/instagram(1).png"
+                    alt="Instagram Icon"></a>
+                <a target="_blank" href="https://www.twitter.com"> <img src="images/twitter(1).png" alt="Twitter Icon"></a>
+              </div>
+            </div>
+    </div>
+    <p> &copy; 2020 | South Idaho Weather |<a href="attributions.html">Attributions |</a><a href="https://awarbler.github.io/">Anita Woodford </a><br>
+      <span id="date"></span> <br> Weather Information through <a href="https://openweathermap.org/"> Open Maps</a></p>
+    <!-- have to reference javascript links here  -->
+    <script src="js/date.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/forecast.js"></script>
+    <script src="js/preston-events.js"></script>
+
+    <script>
+      const today = new Date();
+      console.log(today);
+      const dayNumber = today.getDay();
+      console.log(dayNumber);
+      const element = document.getElementById("message");
+      if (dayNumber == 5) {
+        element.classList.add("showme");
+      } else {
+        element.classList.add("hideme");
+      }
+    </script>
+  </footer>
+</body>
+
+</html>

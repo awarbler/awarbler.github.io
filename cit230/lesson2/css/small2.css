@@ -1,0 +1,101 @@
+/* body rules here */
+/* designed to read on mobile devices*/
+/* default size*/
+body {
+    font-size: 100%;
+    font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* header rules here - work way down*/
+header,
+footer {
+    text-align: center;
+    background: #aadcdd;
+    color: white;
+    margin: 0 auto;
+    font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+    justify-content: center;
+    padding: .5rem 2%;
+}
+
+header,
+nav,
+main,
+footer {
+    margin: 0 auto;
+    max-width: 767px;
+}
+
+/* header h1 is a child of header*/
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* header h2 is a child of header*/
+header h2 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+/* navigation rules here*/
+/* navigation ul rules here usualling margin and padding*/
+/* adjust background li list-style-type none */
+/* navigation a rules here display to block padding color text align text decoraton*/
+/* navigation a: hover rules here bacground color to change color*/
+/* navigation tell user so go to html add class of active  li class of active or nav li.active here*/
+/* navigation rules here*/
+main {
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 767px;
+}
+
+main section {
+    margin: 0.5rem;
+    border: 1px solid#f68e36;
+    padding: 0 1rem;
+    background-color: white;
+    text-align: center;
+    color: #4d4d4d;
+    border-radius: 10px;
+}
+
+main picture {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    float: left;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+section:nth-child(2) {
+    display: none;
+    margin: 0.5rem;
+}
+a:link {
+    color: #EDC87E;
+}
+.space {
+    word-spacing: .3em;
+    text-align: left;
+}
+footer {
+    font-size: 1rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+/* clearfix to help with nav */
+.clearfix after {
+    content: "";
+    display: table;
+    clear: both;
+}

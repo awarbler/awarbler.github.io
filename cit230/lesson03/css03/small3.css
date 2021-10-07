@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+    font-size: 16px;
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica, Arial", "sans-serif";
+    color: #555d66;
+}
+
+header {
+    margin: 0 auto;
+    padding: .3rem 2%;  
+    max-width: 45rem;
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica, Arial", "sans-serif";
+    text-align: center;
+    background: white;
+    color: #aadcdd;
+    
+}
+header a:link {
+        color: #f68e36; 
+     }
+h1 {
+    font-size: 1.2rem;
+}
+
+h2 {
+    font-size: 1rem;
+
+}
+h2 a:link {
+    color: #f68e36; 
+ }
+nav,
+footer {
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica, Arial", "sans-serif";
+    text-align: center;
+    background: #aadcdd;
+    color: white;
+    max-width: 45rem;
+    padding: .5rem 2%; 
+    margin: 0 auto; 
+}
+
+/* navigation rules here*/
+nav {
+    background-color: #aadcdd;
+    max-width: 45rem;
+}
+nav ul {
+    margin: 0; 
+    padding: 0;
+}
+nav li {
+    list-style-type: none;
+}
+nav li.active{background-color: #555d66;}
+
+nav a {display: block;
+    padding: 0;  /* 44 min height*/
+    color: #eee;
+    text-align: center;
+    text-decoration: none;
+}
+nav a:hover{background-color: #444;}
+
+main {
+    margin: 0 auto;
+    padding: .75rem;
+    max-width: 45rem;
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica, Arial", "sans-serif";
+}
+main a:link {
+    color: #f68e36; 
+ }
+main h1 {
+    clear: both;
+}
+main h2 {
+    clear: both;
+}
+main h3{
+    clear: both;
+}
+
+main img {
+    max-width: 100%;
+    float: left;
+}
+main p{
+    font-weight: normal;
+}
+
+footer {
+    font-size: .8rem;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

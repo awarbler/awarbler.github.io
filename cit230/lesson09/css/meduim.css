@@ -1,0 +1,230 @@
+/* 35em is also 560px (if basefont is 16px) tablet view 32.5 rem i s 527.10px
+@media only screen and (min-width:560px*/
+@media only screen and (min-width: 32.5rem) {
+    header img {
+        width: 80px;
+    }
+
+    header {
+        border-bottom: 1px solid#aab1b2;
+    }
+
+    .heading h1 {
+        font-size: 2.0rem;
+    }
+
+    /*-- m*/
+    .heading2 {
+        font-size: 1.0rem;
+    }
+
+    /*-- navigation the whole section*/
+    nav {
+        border-bottom: 1px solid#aab1b2;
+    }
+
+    /*-- Display in a row using ul in this case I am using a class
+     .navigation the whole section* using class*/
+    .navigation {
+        /*-- diplaying links elements in a row flex direction row*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 10%;
+    }
+
+    .navigation li a {
+        text-align: center;
+    }
+
+    /* this is for home page and preston page main picture*/
+    .herodiv {
+        font-size: 100%;
+    }
+
+    .herodiv img {
+        width: 100%;
+        height: auto;
+    }
+
+    .homesummary {
+        position: absolute;
+        top: 7rem;
+        left: 13rem;
+
+    }
+
+    .homesummary h2 {
+
+        font-size: 30px;
+    }
+
+    #main {
+        max-width: 760px;
+    }
+
+    .forecast {
+        display: block;
+        text-align: center;
+        /* margin top right  bottom margin left margin: 25px; all four margins are 25px margin: 25px 50px;
+top and bottom margins are 25px right and left margins are 50px*/
+        margin: 20px 20px 0px 20px;
+        font: bold;
+    }
+
+    .forecastcontainer {
+        display: grid;
+        grid-template-columns: 80px 80px 80px 80px 80px;
+        background: white;
+        color: #7fb9c2;
+        text-align: center;
+        padding: .75rem;
+        padding-left: 10rem;
+        padding-right: 10rem;
+        padding-bottom: 1rem;
+        margin: 0 2%;
+        font-size: 1rem;
+    }
+
+    .forecastcontainer img {
+        width: 70%;
+        padding: .75em;
+    }
+
+    .cell-1,
+    .cell-2,
+    .cell-3,
+    .cell-4,
+    .cell-5 {
+        background: #f2f2f2f2;
+    }
+
+    .cell-6,
+    .cell-7,
+    .cell-8,
+    .cell-9,
+    .cell-10 {
+        border-right: 1px solid #f2f2f2f2;
+        border-left: 1px solid #f2f2f2f2;
+    }
+
+    .cell-11,
+    .cell-12,
+    .cell-13,
+    .cell-14,
+    .cell-15 {
+        border-right: 1px solid #f2f2f2f2;
+        border-bottom: 1px solid #f2f2f2f2;
+        border-left: 1px solid #f2f2f2f2;
+    }
+
+    .cell-6,
+    .cell-11 {
+        border-left: 1px solid #f2f2f2f2;
+    }
+
+    .cell-10.cell-15 {
+        border-right: 1px solid #f2f2f2f2;
+    }
+
+    .map {
+        display: block;
+        background: #f2f2f2;
+    }
+
+    .address {
+        padding-left: 3rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    /*---gallery html------*/
+
+    .gallerycontainer {
+        grid-template-columns: 1fr 1fr;
+        border-radius: 2px;
+        place-items: center center;
+    }
+
+    .item {
+        border-radius: 3px;
+        border: 1px solid #dbe1e2;
+        width: 100%;
+        padding: 10px 10px 9px 10px;
+
+
+    }
+
+    /*cards is the individual sections
+.cards sections is the info in the sections 
+.cards sections nth child odd 
+. cards h2
+.cards h3
+.cards p
+.townimage 
+.towndata
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .25rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 760px;
+
+}*/
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 700px;
+    }
+
+    .cards section {
+        display: flex;
+        flex-direction: row;
+
+    }
+    .towns h2 {
+        padding: 15px 0 0 15px;
+        margin: 0;
+        text-align: left;
+    }
+
+    .towns h3 {
+        margin: 0;
+        padding: 0 32px 25px 15px;
+        text-align: left;
+    }
+
+    .towns p {
+        padding: 0 0 0 15px;
+        margin: 0;
+        text-align: left;
+    }
+
+    .townimage {
+        width: 300px;
+        height: auto;
+        padding: 15px;
+    }
+
+    .towndata {
+        width: 350px;
+    }
+
+}

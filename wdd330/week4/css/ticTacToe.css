@@ -1,178 +1,146 @@
-/*--- first set up basic box sizing-----*/
-/*--- everything selector and everything before element 
-Helps withs our width and heights  -----*/
 *, *::after, *::before {
     box-sizing: border-box;
   }
-
-  /*---select root element set css variable -----*/
-  :root{
-      --cell-size: 100px; /*--- this creates a standard cell size for the cells-----*/
-      /*---create a mark size-letters - x&o's we will calculate with cal use our variable
-      var(--cell-size) and multiply it by 90% or .9-----*/
-      --mark-size: calc(var(--cell-size)*.9);
-
+  
+  :root {
+    --cell-size: 100px;
+    --mark-size: calc(var(--cell-size) * .9);
   }
-
-/*---style body  removes  margins-----*/
-body {
+  
+  body {
     margin: 0;
-}
-
-/*---board fill entire screen w=100 h=100 display:grid justify-content center-----*/
-
-.board{
+  }
+  
+  .board {
     width: 100vw;
     height: 100vh;
-    display: grid;  /*--- this centers -----*/
-    justify-content: center;    /*--- -----*/
-    align-content: center;  /*---centers are board element all of the content in the grid -----*/
-    justify-items: center; /*---ensure x and o are always centered justify items center and align items center  -----*/
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
     align-items: center;
-    grid-template-columns: repeat(3,auto); /*select 3 seperate columns same size */
-
-}
-
-/*---cell -----*/
-.cell {             /*select cell*/
+    grid-template-columns: repeat(3, auto)
+  }
+  
+  .cell {
     width: var(--cell-size);
     height: var(--cell-size);
-  /*  background-color: black; /*---to see squares -----*/
-    border: 1px solid black;/*--- to see squares-----*/
-    display: flex; 
+    border: 1px solid black;
+    display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /* set to relative so the x will sit correctly in the box*/
-    cursor: pointer; /* to add hover, light colors, and determine turn*/
-}
-
-
-/*------------------REMOVE BORDER-----------------------*/
-
-/*---get rid of border around tic tac toe box---*/
-
-/* select the first three element in the cell -
-   they are called .cell:first-child , .cell:nth-child(2)
-and third child .cell:nth-child(3) remove border top to none*/
-.cell:first-child , 
-.cell:nth-child(2),
-.cell:nth-child(3){
-    border-top: none;
-}
-
-/* select cell all left cells and remove border on the left side
-   instead of selecting all indivual select .cell:nth-child(3n +1) 
-   
-   this takes 3 * 1 plus 1 = 4 cell no border , 3 * 2 + 1 7 */
-.cell:nth-child(3n+1){
-    border-left: none;
-}
-/*---the right side -----*/
-.cell:nth-child(3n+3){
-    border-right: none;
-}
-/*---bottom -----*/
-.cell:last-child , 
-.cell:nth-child(8),
-.cell:nth-child(7){
-    border-bottom: none;
-}
-
-/*------------------add hover-----------------------*/
-/* to hover over cells we need to add a cursor with a pointer 
-   go to the .cell add cursor: pointer; to add a not allowed sign
-   we need to add to .cell.x and .cell.circle class- to change 
-   the cursor not allowed. */
-   .cell.x,
-   .cell.circle{
-       cursor: not-allowed;
-   }
-
-/*------------------ hover turn -----------------------*/
-/* to determine turn - on HTML add x to class board x
-   every time we hover ove it show us the x over add 
-   hover effect to our cells - select our board with the
-   x or a cell that has a circle class and change the cursor 
-   be not allowed */
-
-   .cell.x,
-  .cell.circle{
-      cursor: not-allowed;
+    position: relative;
+    cursor: pointer;
   }
-
   
-
-
-
-/*------------------create x -----------------------*/
-/* on html page assign x cells to html first div cell 
-   use css to create x use .cell.x::before and .cell.x::after 
-   inside set up a content to an empty string so it will render- 
-   create a width and calculate the size of the width  by 
-   using our root var--mark-size * .15 or about 15 percent- 
-   create a height and caclulate the size of the height by 
-   the root var--mark-size - add a background to see - save 
-   we will get two l next to each other so we will need to render 
-   an x - position Use the .cell.x::before and .cell.x::after 
-   by rotating each by 45 degrees we will need the positions 
-   of both ::berore ::after to have absolute position -----*/
-
-
-.cell.x::before,
-.cell.x::after{
+  .cell:first-child,
+  .cell:nth-child(2),
+  .cell:nth-child(3) {
+    border-top: none;
+  }
+  
+  .cell:nth-child(3n + 1) {
+    border-left: none;
+  }
+  
+  .cell:nth-child(3n + 3) {
+    border-right: none;
+  }
+  
+  .cell:last-child,
+  .cell:nth-child(8),
+  .cell:nth-child(7) {
+    border-bottom: none;
+  }
+  
+  .cell.x,
+  .cell.circle {
+    cursor: not-allowed;
+  }
+  
+  .cell.x::before,
+  .cell.x::after,
+  .cell.circle::before {
+    background-color: black;
+  }
+  
+  .board.x .cell:not(.x):not(.circle):hover::before,
+  .board.x .cell:not(.x):not(.circle):hover::after,
+  .board.circle .cell:not(.x):not(.circle):hover::before {
+    background-color: lightgrey;
+  }
+  
+  .cell.x::before,
+  .cell.x::after,
+  .board.x .cell:not(.x):not(.circle):hover::before,
+  .board.x .cell:not(.x):not(.circle):hover::after {
     content: '';
     position: absolute;
     width: calc(var(--mark-size) * .15);
     height: var(--mark-size);
-    background-color: black;
-}
-
-/* rotate our l by 45 degrees */
-.cell.x::before{
+  }
+  
+  .cell.x::before,
+  .board.x .cell:not(.x):not(.circle):hover::before {
     transform: rotate(45deg);
-}
-/* rotate our after by 45 degrees - */
-
-.cell.x::after{
+  }
+  
+  .cell.x::after,
+  .board.x .cell:not(.x):not(.circle):hover::after {
     transform: rotate(-45deg);
-}
-
-/*on html page assign circle to the second div cell 
-   use css to create a circle use .cell.circle::before 
-   and .cell.circle::after inside set up a content to an empty string to render- 
-   create a width and calculate the size of the width  by 
-   using our root var--mark-size create a height and caclulate the size 
-   of the height by the root var--mark-size - save there will be two 
-   squares on top of each other so we will need to render 
-   an o - position and radius and sizes 
-   First Use the .cell.circle::before and .cell.circle::after- position to absolute
-   add border radius of 50% - keep the ::before the same size and resize::after 
-   ::before width should b var --mark-size and height should be var--mark-size with 
-   a background color of black ::after needs to have w and h of calc var --mark-size times
-   .7 with a white background*/
-
-.cell.circle::before,
-.cell.circle::after{
+  }
+  
+  .cell.circle::before,
+  .cell.circle::after,
+  .board.circle .cell:not(.x):not(.circle):hover::before,
+  .board.circle .cell:not(.x):not(.circle):hover::after {
     content: '';
     position: absolute;
-   border-radius: 50%;
-}
-
-
-/*---keep large and make balck  -----*/
-.cell.circle::before{
+    border-radius: 50%;
+  }
+  
+  .cell.circle::before,
+  .board.circle .cell:not(.x):not(.circle):hover::before {
     width: var(--mark-size);
     height: var(--mark-size);
-    background-color: black;
-}
-/*--- make small and white-----*/
-.cell.circle::after{
-    width: calc(var(--mark-size) *.7);
-    height: calc(var(--mark-size) *.7);
+  }
+  
+  .cell.circle::after,
+  .board.circle .cell:not(.x):not(.circle):hover::after {
+    width: calc(var(--mark-size) * .7);
+    height: calc(var(--mark-size) * .7);
     background-color: white;
-}
-
-/*--- -----*/
-/*--- -----*/
-/*--- -----*/
-/*--- -----*/
+  }
+  
+  .winning-message {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .9);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 5rem;
+    flex-direction: column;
+  }
+  
+  .winning-message button {
+    font-size: 3rem;
+    background-color: white;
+    border: 1px solid black;
+    padding: .25em .5em;
+    cursor: pointer;
+  }
+  
+  .winning-message button:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+  }
+  
+  .winning-message.show {
+    display: flex;
+  }

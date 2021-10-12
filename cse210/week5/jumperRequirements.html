@@ -1,0 +1,277 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <!-- Set character encoding for the document -->
+    <meta charset="utf-8">
+
+    <!-- Viewport for responsive web design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Document Title -->
+    <title> CSE 210: Anita Woodford: Portfolio</title>
+    <meta name="description"
+        content="WDD 330: Anita Woodford: Portfolio Assignment Website: Web Frontend Development II, at Brigham Young University - Idaho">
+
+    <!-- link to google api  -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- link to css style sheet  -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href='css/small.css'>
+    <link rel="stylesheet" href="css/meduim.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <header>
+        <!-- logo will go here or picture of me -->
+        <!-- Header 1 title my name -->
+        <section class="heading">
+            <h1>Anita Woodford</h1>
+            <div class="heading2">
+                <h2>CSE 210 | Programming with Classes</h2>
+            </div>
+            <!-- m = class name for css for <div class="m">Past|Present|Future</div>-->
+        </section>
+    </header>
+
+    <!-- NAVIGATION HERE -->
+    <nav>
+        <ul class="navigation">
+            <li> <a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="soloCheckpoint.html">Solo Checkpoint</a></li>
+            <li> <a href="teamwork.html">Team Work</a></li>
+            <li> <a href="notes.html">Notes</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <!-- enter header  h2 = smaller than h1 -->
+
+        <h1>CSE 210 | Programming With Classes</h1>
+        </header>
+        <article>
+            <h1>Jumper</h1>
+            <openingquote>
+                There are old skydivers and bold skydivers,<br />
+                but there are no old, bold skydivers.<br /><br />
+                - Jeff Wuorio -
+            </openingquote>
+            <h2>Overview</h2>
+            <p>
+                Jumper is a game in which the player seeks to solve a puzzle by
+                guessing the letters of a secret word one at a time.
+            </p>
+            <h2>Rules</h2>
+            <p>
+                Jumper is played according to the following rules.
+                <ol>
+                    <li>
+                        <div>
+                            The puzzle is a secret word randomly chosen from a list.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            The player guesses a letter in the puzzle.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            If the guess is correct, the letter is revealed.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            If the guess is incorrect, a line is cut on the player's
+                            parachute.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            Play continues until the puzzle is solved or the player has no
+                            more parachute.
+                        </div>
+                    </li>
+                </ol>
+            </p>
+            <h2>Interface</h2>
+            <p>
+                <pre class="prettyprint lang-py">
+_ _ _ _ _ 
+
+  ___  
+ /___\ 
+ \   / 
+  \ /  
+   0   
+  /|\  
+  / \  
+         
+^^^^^^^
+  
+Guess a letter [a-z]: a 
+
+_ _ a _ _ 
+
+  ___  
+ /___\ 
+ \   / 
+  \ /  
+   0   
+  /|\  
+  / \  
+         
+^^^^^^^
+  
+Guess a letter [a-z]: z
+
+_ _ a _ _ 
+
+ /___\ 
+ \   / 
+  \ /  
+   0   
+  /|\  
+  / \  
+         
+^^^^^^^
+  
+Guess a letter [a-z]: y
+
+_ _ a _ _ 
+
+ \   / 
+  \ /  
+   0   
+  /|\  
+  / \  
+         
+^^^^^^^
+  
+Guess a letter [a-z]: x
+
+_ _ a _ _ 
+
+  \ /  
+   0   
+  /|\  
+  / \  
+         
+^^^^^^^
+  
+Guess a letter [a-z]: w
+
+_ _ a _ _ 
+
+   x   
+  /|\  
+  / \  
+         
+^^^^^^^
+> _
+</pre>
+
+            </p>
+            <h2>Requirements</h2>
+            <p>
+                Your program must also meet the following requirements.
+                <ol>
+                    <li>
+                        <div>
+                            The program must use the Jumper <a href="https://github.com/byui-cse/cse210-student-jumper">
+                                template</a>.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            The program must have a README file with assignment and author
+                            names.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            The program must have at least four classes.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            Each module, class and method must have a corresponding comment using the style demonstrated
+                            in the solo checkpoint.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            The game must remain generally true to the order of play described in the rules.
+                        </div>
+                    </li>
+                </ol>
+            </p>
+            <h2>Suggestions</h2>
+            <p>
+                Make the game your own by enhancing it any way you like. A few ideas are as follows.
+                <ol>
+                    <li>
+                        <div>
+                            Enhanced word selection (maybe from an external <a
+                                href="https://www.mit.edu/~ecprice/wordlist.10000">file</a>).
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            Enhanced input validation with user-friendly messages.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            Enhanced game play and game over messages.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            Enhanced jumper representation (better ascii art)
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            Enhanced word display (better mask, etc.)
+                        </div>
+                    </li>
+                </ol>
+            </p>
+        </article>
+
+
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2021 | <a href="https://awarbler.github.io">Anita
+                Woodford</a>| Texas | <a href="https://www.byui.edu/online"></href> BYUI Online Learning</a><br>
+            Last Modified: <span id="dateModified"></span>
+            <script>
+                document.getElementById("dateModified").innerHTML = document.lastModified
+            </script>
+        </p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+    <script>
+        WebFont.load({
+            google: {
+                families: ['open Sans', 'Roboto']
+            }
+        });
+    </script>
+    <script src='js/main.js'></script>
+    <script src="js/classesHome.js"></script>
+
+</body>
+
+</html>

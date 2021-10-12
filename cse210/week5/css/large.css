@@ -1,0 +1,16 @@
+/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 64em) {
+    header img {
+      width: 100%;
+  }
+    /*----------- BODY --------------*/
+    /*----------- HEADER --------------*/
+    /*----------- NAVIGATION --------------*/
+      /* navigation li rules here width auto padding .5rem 1rem */
+       /* navigation ul rules here padding left 2% to get everything to line up */
+    /*----------- MAIN --------------*/
+
+    /* main figure change width to 31% */
+    /*----------- FOOTER --------------*/
+}
+/* end of media query */

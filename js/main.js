@@ -20,7 +20,7 @@
         url: "wdd330/week4/index.html"
     },
     {
-        label: "Week 5",
+        label: "Week 5 ",
         url: "wdd330/week5/index.html"
     },
     

@@ -1,43 +1,28 @@
+abstrations means existing in thought or as an idea but not have a physical or concrete existence
 
-Definitions : 
+cosider theoretically or separetly from something elements
 
-You should know these:
-
-Imperative: Programming with an explicit sequence of commands that update state.
-        a.  Control flow - shows the work 
-
-Declarative: Programming by specifying the result you want, not how to get it.
-        a. ontrol flow is defined by nested loops, conditionals, and subroutines, 
-            rather than via gotos. Variables are generally local to blocks 
-            (have lexical scope)
-
-Structured: Programming with clean, goto-free, nested control structures.
-
-Procedural: Imperative programming with procedure calls.
-
-Functional (Applicative): Programming with function calls that avoid any global state.
-
-Function-Level (Combinator): Programming with no variables at all.
-
-Object-Oriented: Programming by defining objects that send messages to each other. 
-Objects have their own internal (encapsulated) state and public interfaces. 
-Object orientation can be:
-Class-based: Objects get state and behavior based on membership in a class.
-Prototype-based: Objects get behavior from a prototype object.
+abstraction  in python terms 
+        theoretical idea or a way to simplify an idea
 
 
-Event-Driven: Programming with emitters and listeners of asynchronous actions.
+abstraction example : print hello
+        reduces the print function  to a simple output 
+        outputting becomes abstracted away from us 
 
-Flow-Driven: Programming processes communicating with each other over predefined channels.
+abstractions manages complexity
 
-Logic (Rule-based): Programming by specifying a set of facts and rules. An engine infers 
-the answers to questions.
+types of abstractions : 
 
-Constraint: Programming by specifying a set of constraints. An engine finds the values 
-that meet the constraints.
+        function - common abstrations
+        rest api endpoints - get data by reqeust
+        database management (dbms) - where or how database is stored 
 
-Aspect-Oriented: Programming cross-cutting concerns applied transparently.
+create abstractions 
+        
 
-Reflective: Programming by manipulating the program elements themselves.
 
-Array: Programming with powerful array operators that usually make loops unnecessary.
+
+
+
+        

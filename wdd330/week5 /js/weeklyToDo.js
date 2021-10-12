@@ -12,17 +12,17 @@
         url: "wdd330/week5/teamwork.html"
     },
     {
-        label: "Week 5 Ninja Quiz",
-        url: "wdd330/week5/quiz/index.html"
+        label: "Week 5 Team Notes",
+        url: "wdd330/week5/teamNotes.html"
     },
     {
-        label: "Week 5 Quiz Notes",
-        url: "wdd330/week5/quizNotes.html"
+      label: "Week 5 Ninja Quiz",
+      url: "wdd330/week5/quiz/index.html"
     },
 
     {
-        label: "Week 5 Other ",
-        url: "wdd330/week5/index.html"
+        label: "Week 5 Other Work",
+        url: "wdd330/week5/other.html"
     }
     
   ]

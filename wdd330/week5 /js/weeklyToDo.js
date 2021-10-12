@@ -9,7 +9,7 @@
     },
     {
         label: "Week 5 Team Work",
-        url: "wdd330/week55/teamwork.html"
+        url: "wdd330/week5/teamwork.html"
     },
     {
         label: "Week 5 Ninja Quiz",
@@ -21,8 +21,8 @@
     },
 
     {
-        label: "Week 5",
-        url: "wdd330/week4/index.html"
+        label: "Week 5 Other ",
+        url: "wdd330/week5/index.html"
     }
     
   ]

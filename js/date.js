@@ -2,7 +2,7 @@
 let daynames =[
     'Sunday',
     'Monday',
-    'tuesday',
+    'Tuesday',
     'Wednesday',
     'Thursday',
     'Friday',

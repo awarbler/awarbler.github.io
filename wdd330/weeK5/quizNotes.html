@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <!-- Set character encoding for the document -->
+    <meta charset="utf-8">
+
+    <!-- Viewport for responsive web design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Document Title -->
+    <title> WDD 330: Anita Woodford: Portfolio</title>
+    <meta name="description"
+        content="WDD 330: Anita Woodford: Portfolio Assignment Website: Web Frontend Development II, at Brigham Young University - Idaho">
+
+    <!-- link to google api  -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- link to css style sheet  -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href='css/small.css'>
+    <link rel="stylesheet" href="css/meduim.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <header>
+        <!-- logo will go here or picture of me -->
+        <!-- Header 1 title my name -->
+        <section class="heading">
+            <h1>Anita Woodford</h1>
+            <div class="heading2">
+                <h2> WDD 330: Portfolio</h2>
+            </div>
+            <!-- m = class name for css for <div class="m">Past|Present|Future</div>-->
+        </section>
+    </header>
+
+    <!-- NAVIGATION HERE -->
+    <nav>
+        <ul class="navigation">
+            <li> <a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
+            <li><a href="index.html"> Home </a></li>
+            <li class="active"> <a href="notes.html">Notes</a></li>
+            <li> <a href="teamwork.html">Team Work</a></li>
+            <li><a href="quiz/index.html">Ninja</a></li>
+        </ul>
+    </nav>
+    <!--Main here-->
+    <main>
+        <!-- enter header  h2 = smaller than h1 -->
+        <h1>Week 3 Notes Ch. 6 Ninja Quiz </h1>
+        <!-- List for assignments -->
+
+        <h3>Chapter 6 - Document Object Model</h3>
+        <ol>
+            <li> Add divs elements to HTML </li>
+            <ul>
+                <li> add div with id named score with a strong emph. </li>
+                <li> add div with id named question </li>
+                <li> add div with id= named result </li>
+                <li> add div with id info
+                </li>
+            </ul>
+
+
+            <li>View Objects add in JS</li>
+            <p> Use document to query a selector method to access elements<br>
+                Assign them to access a variable<br>
+                Example div question is accessed in js code using view.question<br>
+                Add render()to access the elements to update the contect<br>
+                Render() uses 3 paramenters 1 displays content, 2nd updated content  <br>
+                The 3rd is an object of html attributes<br>
+
+                The function loops through throught the attributes as the third arguement
+                uses set attribute method to update them to values provided. <br>
+                Then uses innerHTML to update the HTML with content provided</p>
+            <ul>
+
+                <li>const view = {</li>
+                <li>score: document.querySelector('#score strong'),</li>
+                <li>question: document.getElementById('question'),</li>
+                <li> result: document.getElementById('result'),</li>
+                <li> info: document.getElementById('info'),</li>
+                <li> render(target,content,attributes) {</li>
+                <li> for(const key in attributes) {</li>
+                <li> target.setAttribute(key, attributes[key]);</li>
+                <li> }</li>
+                <li> target.innerHTML = content;</li>
+                <li>}</li>
+                <li>};</li>
+                </ul>
+                <li>Update methods in JS</li>
+            <p> Place a call to view.render where ther is an alert() or prompt()
+                that displays the same info in the html. 
+                Use view render() to update the score if player gains points</p>
+                </ul>
+            <ul>update ask() ch 6
+                // point it to the view object
+                <li> view.render(view.question, question);,</li>
+                // update check(response)
+                <li> view.render(view.result,'Correct!',{'class':'correct'});</li>
+                <li> view.render(view.score,this.score);</li>
+                <li> view.render(view.result,`Wrong! The correct answer was ${answer}`,{'class':'wrong'});</li>
+                // update gameOver()
+                <li> view.render(view.info,`Game Over, you scored ${this.score} point${this.score !== 1 ? 's' : ''}`);</li>
+                
+            
+            </ul>
+        </ol>
+        <h3>Questions:</h3>
+        <ol>
+            <li> In update check(response) why does this have two grave or backticks to open and close? </li>
+            <li> Why does this accept the quote without any error but it is suppose to be a backtick or graves?</li> 
+            <li> Are backticks the same as a grave? </li>
+            <li> I broke my ninja quiz - need help fixing it  </li>
+        </ol>
+
+        <h3>Chapter 7 </h3>
+        
+
+
+        <h3>Questions:</h3>
+        <ol>
+            <li> </li>
+        </ol>
+
+        </ul>
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2021 | <a href="https://awarbler.github.io">Anita
+                Woodford</a>| Texas | <a href="https://www.byui.edu/online"></href> BYUI Online Learning</a><br>
+            Last Modified: <span id="dateModified"></span>
+            <script>
+                document.getElementById("dateModified").innerHTML = document.lastModified
+            </script>
+        </p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+    <script>
+        WebFont.load({
+            google: {
+                families: ['open Sans', 'Roboto']
+            }
+        });
+    </script>
+    <script src='js/main.js'></script>
+
+</body>
+
+</html>

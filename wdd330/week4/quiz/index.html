@@ -8,26 +8,27 @@
   <link rel='stylesheet' href='styles.css'>
 </head>
 
-<body>
-  <section class='dojo'>
+body>
+<section class='dojo'>
     <div class='quiz-body'>
       <header>
-        <div id='score'>Score: <strong>0</strong></div>
         <h1>Quiz Ninja!</h1>
-      </header>
-      <!--display questions -->
-     
+        <div id='timer'>Time: <strong>20</strong></div>
+        <div id='score'>Score: <strong>0</strong></div>
+    </header>
       <div id='question'></div>
-   <!--display results -->
+      <!--add form ch 8 -->
+      <form id="response">
+        <input name="answer" type="text">
+        <button type="submit">Submit Answer</button>
+      </form>
       <div id='result'></div>
-         <!--display info-->
       <div id='info'></div>
-    </div>
+      <!--add button ch 7 -->
+      <button id='start'>Click to Start</button>
     </div>
   </section>
-  <script src='main.js' async defer></script>
-  <!--add button ch 7 -->
-  <button id="start">Click to Start</button>
+  <script src='main.js'></script>
   <footer>
     <p>
       &copy; 2020 | Anita Woodford | Texas | <a href="https://www.byui.edu/online"></href> BYUI Online Learning</a><br>

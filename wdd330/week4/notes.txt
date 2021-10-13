@@ -1,0 +1,20 @@
+Chapter  8 Summary
+Forms are the primary method used for entering data into a browser.
+
+Forms have a variety of controls that are used for entering different types of information.
+
+HTML5 has a large number of new input types that are beginning to be implemented in modern browsers.
+
+document.formswill return an HTML collection of all the forms on a page.
+
+form.elementswill return an HTML collection of all the elements contained within a form.
+
+Forms havefocus,blur, andchangeevents that fire as a user interacts with the form.
+
+Forms also have asubmitevent that can be used to intercept a form before it’s been submitted.
+
+The information entered into a form can be read or updated using thevalueproperty of the form controls.
+
+The HTML5 form validation API can be used to automatically validate a form, but only at a basic level, so a custom validation script may be required.
+
+In the next chapter, we’ll be taking a look at thewindowobject.

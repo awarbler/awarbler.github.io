@@ -31,8 +31,7 @@ class Hider:
         distance = abs(self.location - location)
         print (distance)
 
-        #self.distance.append(watch)
-        #self.location = location        
+        self.distance.append(distance)      
 
 
 # The Hider class must have two methods called get_hint, and watch. 
@@ -43,27 +42,27 @@ class Hider:
 seeker has moved closer or farther away. This is determined by inspecting 
 the last two distances contained in the distance attribute.''' 
 
-# def get_hint(self):
+def get_hint(self):
 
 
-#         # The program interface must resemble the sample provided above.
+        # The program interface must resemble the sample provided above.
 
-#     """Gets a hint from the hider.
+    """Gets a hint from the hider.
 
-#         Args:
-#             self (Hider): An instance of Hider.
+        Args:
+            self (Hider): An instance of Hider.
         
-#         Returns:
-#             string: A hint from the hider
-#         """
-#     hint= "\nI'm going to find you!"    
-#     if self.distance[-1] == 0:
-#             hint = "\nYou found me!"
-#     elif self.distance[-1] < self.distance[-2]:
-#             hint= "\nGetting warmer!"
-#     elif self.distance[-1] > self.distance[-2]:
-#             hint= "\nGetting colder!"
-#     return message
+        Returns:
+            string: A hint from the hider
+        """
+    hint= "\nI'm going to find you!"    
+    if self.distance[-1] == 0:
+            hint = "\nYou found me!"
+    elif self.distance[-1] < self.distance[-2]:
+            hint= "\nGetting warmer!"
+    elif self.distance[-1] > self.distance[-2]:
+            hint= "\nGetting colder!"
+    return hint
    
 
 

@@ -1,3 +1,5 @@
+https://levelup.gitconnected.com/what-is-abstraction-in-programming-2f35c8c72e15
+
 abstrations means existing in thought or as an idea but not have a physical or concrete existence
 
 cosider theoretically or separetly from something elements
@@ -19,10 +21,229 @@ types of abstractions :
         database management (dbms) - where or how database is stored 
 
 create abstractions 
+
+persistence service - takes charge of the data 
+                      give a unique identifier
+                      persist data under identifier
+
+        
+As a programmer, abstractions mean that we don’t need to fully understand 
+every single implementation of our system. We just need to know what inputs 
+to give an abstraction to get the outputs that we actually want.
+
+
+
+
+What is the definition of abstraction as an adjective?
+        existing in thought or as an idea but not have a physical or 
+        concrete existence
+
+What is the definition of abstraction as a verb?
+        cosider theoretically or separetly from something elements
+
+How does abstraction reduce complexity for programmers?
+        inherently complex and making it simple to use and work with.
+
+What programming languages use abstraction?
+        universal to every programming language and exist in every single codebase.
+
+
+
+
+
+
+Object Role Stereotypes (20 min read)
+object role stereotypes
+https://docs.microsoft.com/en-us/archive/msdn-magazine/2008/august/patterns-in-practice-object-role-stereotypes
+
+object orient systems composed of many objects
+
+objects need to collaborate with other objects
+
+object role stereotypes is a concecpt assigned/giving objects responsibilities 
+        to better understand the collabrations between objects.
+
+Single method style of programming easiest form of programming to learn 
+        not easy to manage complexity
+
+monolithic block of code::::::::::
+
+DECOMPOSING A system
+        deal with one issue at a time 
+        ex data validation
+           retrieval
+           display 
+
+     Cons: Adding to this potential for trouble is the fact that a divide-and-conquer 
+     strategy enables you to more easily deliver the system's functionality in 
+     increments, which means that your code will likely have to work seamlessly with 
+     code delivered in a previous release.      
+
+open closed principle : makes code easier less risky 
+                        dividing responsiblilities into seperate modules
+        Cons: distribute responsibilities of system in beneficial ways
+              software design method to distribute responsibilities
+
+Responsibility- Driven Design - linked to a lightweight modeling technique known 
+                as CRC cards (Class or Candidate/Responsibility/Collaborators). 
+                actual cards for exploratory design
+
+
+CRC Cards  
+
+write the names at the top 
+        on unlined -unlined side of the card, write a sentence or two that serves 
+        as a purpose statement for the class
+        The purpose statement should reflect the Object Role Stereotypes of the class.
+        ivide the lined side of the note card into two columns. In the left column, 
+        list the responsibilities of the class (something along the lines of "knows 
+        the invoice header information" or "decides whether to send an e-mail message" 
+        or "sends an e-mail message")
+
+
+
+What is a CRC card? Class or Candidate/Responsibility/Collaborators
+
+What are CRC cards used for?
+        3x5 note cards to divide up proposed classes 
+        
+What is an object stereotype?
+         is a concecpt assigned/giving objects responsibilities 
+        to better understand the collabrations between object
+
+What is Responsibility-Driven Design (RDD)?
+        is an informal design method developed in the Smalltalk community in the late 1980s and early 1990s.
+        Objects are not just simple bundles of logic and data. They are responsible members of an object community."
+
+What are the RDD stereotypes?
+        breaks down a system into various actions and
+        activties that the system performs
+        proceeds to assign these responsibilities to objects
+        within the system 
+        Object responsibilities are described as either knowing, doing, or deciding.
+        You can employ object role stereotypes to help define the role of a single object 
+        in the system and to serve as a guide for assigning responsibilities to the various objects in the system.
+
+
+
+What are the responsibilities of each stereotype?
+
+Stereotype	                        Description
+
+Information Holder	                Knows things and provides information. May make calculations 
+                                        from the data that it holds.
+
+
+Structurer	                        Knows the relationships between other objects.
+
+Controller	                        Controls and directs the actions of other objects. 
+                                        Decides what other objects should do.
+
+Coordinator	                        Reacts to events and relays the events to other objects.
+
+Service Provider	                Does a service for other objects upon request.
+
+Interfacer	                        Objects that provide a means to communicate with other parts 
+                                        of the system, external systems or infrastructure, or end users.
+
+
+Information Holder 
+Example :       quantity of something 
+                in order to compare two quantities in the energy system, you have to know the numeric amount 
+                and unit of measure of both quantities 
+ https://docs.microsoft.com/en-us/archive/msdn-magazine/2008/august/patterns-in-practice-object-role-stereotypes
+
+
+
+
+
+http://c2.com/doc/oopsla89/paper.html
+
+A Laboratory For Teaching
+Object-Oriented Thinking
+Kent Beck, Apple Computer, Inc.
+Ward Cunningham, Wyatt Software Services, Inc.
+
+CRC cards, which characterize objects by class name, responsibilities, and collaborators, 
+as a way of giving learners a direct experience of objects. 
+
+1. Problem
+        learner to give up the global knowledge of control
+        rely on the local knowledge of objects 
+         teaching objects reduces to teaching the design of objects. 
+
+2. Perspective
+        Responsibilities identify problems to be solved. 
+        responsibilities of an object are expressed by a handful of short verb phrases, 
+                each containing an active verb.
+        objects stand in relationship to others
+        name as collaborators objects which will send or be sent messages 
+                in the course of satisfying responsibilities. 
         
 
+3. CRC Cards
+        all the information for an object is written on a 4" x 6" index card.
+        The class name appears underlined in the upper-left hand corner, a bullet- list 
+                of responsibilities appears under it in the left two-thirds of the card, and the 
+                list of collaborators appears in the right third.
 
 
 
+
+
+
+Responsibility Driven Design in Rick's words
+https://www2.cs.arizona.edu/~mercer/Presentations/OOPD/12-RDD-Jukebox.pdf
+
+        Identify candidate objects that model a system as a sensible set of abstractions
+        2. Determine the responsibility of each object
+                — what an instance of the class must be able to do,
+                — and what each instance must know about itself
+        3. Understand the system through role play
+                — To help complete its responsibility, an object 
+                  often needs help from other objects
+
+OO Design Principle
+        The Single Responsibility Principle Classes should have a single responsibility
+                http://en.wikipedia.org/wiki/Single_responsibility_principle
+        ♦Why?
+                — Cohesion, when high, reduces complexity, makes the system more understandable
+                http://en.wikipedia.org/wiki/Cohesion_%28computer_science%29
+                — Maintenance: Fixing or changing a module should not break other parts of the system   
+
+First Design a Model
+Note: design is iterative
+        ♦Find a set of objects (candidate classes) that model a solution
+        ♦Each will be a part of the bigger system
+        ♦Each should have a single responsibility
+
+ ♦What are these objects?    Find the Objects                          
+ 
+ ♦Candidate objects may come from
+        — An understanding of the problem domain
+• knowledge of the system that the problem specification may have missed or took for granted
+        — The words floating around the room Alistair
+Cockburn
+        — The nouns in the problem statement
+        • Underline the noun phrases to look for the objects that could model the system 
+
+ The Problem Specification repeated        
+
+        The <span style="text-decoration:underline;">" student affairs office"</span> want to put some newfound [activity fee funds]
+        toward a [Jukebox] in the student center. The Jukebox must allow students 
+        to play a song. No money will be required. Instead, a student will swipe 
+        a magnetic ID card through a card reader, view the song collection and 
+        choose a song. Students will each be allowed to play up to 1500 minutes 
+        worth of "free" Jukebox music in their academic careers, but never more 
+        than two songs on any given date. Nosong can be played more than five 
+        times a day*.  
+
+
+A First Cut at the Candidate
+        Objects (may become classes)
+        What objects effectively model the system? What is
+        the responsibility, Example
+        Song: Know song title, artist, playtime, how often it's been played today
+        Others?
 
         

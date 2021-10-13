@@ -1,6 +1,6 @@
-from game.console import Console
-from game.seeker import Seeker
-from game.hider import Hider
+from cse210.week5.hide.game.console  import Console
+from cse210.week5.hide.game.seeker import Seeker
+from cse210.week5.hide.game.hider import Hider
 
 class Director:
     """A code template for a person who directs the game. The responsibility of 

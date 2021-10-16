@@ -48,7 +48,62 @@
 
 
 
+  <h3> Team Notes</h3>
+  <ol>
+      <li> Here are my links I decided to do the MVC my team decided not to do it. </li>
+      <ul>
+          <li> </li>
+          <li>  </li>
+          <li>  </li>
+          <li> 
+          </li>
+      </ul>
 
+
+      <li>View Objects add in JS</li>
+      <p> Use document to query a selector method to access elements<br>
+          Assign them to access a variable<br>
+          Example div question is accessed in js code using view.question<br>
+          Add render()to access the elements to update the contect<br>
+          Render() uses 3 paramenters 1 displays content, 2nd updated content  <br>
+          The 3rd is an object of html attributes<br>
+
+          The function loops through throught the attributes as the third arguement
+          uses set attribute method to update them to values provided. <br>
+          Then uses innerHTML to update the HTML with content provided</p>
+      <ul>
+
+          <li>const view = {</li>
+          <li>score: document.querySelector('#score strong'),</li>
+          <li>question: document.getElementById('question'),</li>
+          <li> result: document.getElementById('result'),</li>
+          <li> info: document.getElementById('info'),</li>
+          <li> render(target,content,attributes) {</li>
+          <li> for(const key in attributes) {</li>
+          <li> target.setAttribute(key, attributes[key]);</li>
+          <li> }</li>
+          <li> target.innerHTML = content;</li>
+          <li>}</li>
+          <li>};</li>
+          </ul>
+          <li>Update methods in JS</li>
+      <p> Place a call to view.render where ther is an alert() or prompt()
+          that displays the same info in the html. 
+          Use view render() to update the score if player gains points</p>
+          </ul>
+      <ul>update ask() ch 6
+          // point it to the view object
+          <li> view.render(view.question, question);,</li>
+          // update check(response)
+          <li> view.render(view.result,'Correct!',{'class':'correct'});</li>
+          <li> view.render(view.score,this.score);</li>
+          <li> view.render(view.result,`Wrong! The correct answer was ${answer}`,{'class':'wrong'});</li>
+          // update gameOver()
+          <li> view.render(view.info,`Game Over, you scored ${this.score} point${this.score !== 1 ? 's' : ''}`);</li>
+          
+      
+      </ul>
+  </ol>
 
 
 

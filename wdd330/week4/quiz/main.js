@@ -138,79 +138,97 @@ that is displayed in an alert box ch 2*/
 
 // ch5 change to objects inside an array:: ch4 map a question store in quiz
 const quiz = [ // an array called quiz contains all questions all answers chapt 3
-    {name: "Superman",realName: "Clark Kent"}, // nested array questions first element answer second element chapt 3
-    { name: "Wonder Woman",realName: "Dianna Prince" },
-    { name: "Batman",realName: "Bruce Wayne" },
- ];
-  
-  /* chapter 6 view objects
-   * use document query selector method to access elements
-   * assign them to access a variable
-   * example div question is accessed in js using view.question
-   * add a help function called render()to update content of elements
-   * render() 3 parament 1 displays content, 2nd updated content
-   * 3rd an object of html attributes
-   * render loops throught the attributes as the third arguement
-   * uses set attribute method toupdate them to values 
-   * added start to view object
-   */
-  const view = {                                      // ch 6
-    score: document.querySelector('#score strong'),   // ch 6
-    question: document.getElementById('question'),    // ch 6
-    result: document.getElementById('result'),        // ch 6 
-    info: document.getElementById('info'),            // ch 6
-    start: document.getElementById('start'),          // ch 7 starts game
-    response: document.querySelector('#response'),    // ch8 reference form response  
-    timer: document.querySelector('#timer strong'), // 9 timer 
-    render(target, content, attributes) {             // ch 6 helper function update content of element on page
-        for (const key in attributes) {                 // ch 6
-          target.setAttribute(key, attributes[key]);
-        }       // ch 6
-        target.innerHTML = content; 
-      }, // ch 6
-    show(element) {                                   // ch 7 utility functions that will show and hide elements on a page.
-      element.style.display = 'block';
-    }, // ch 7 utility functions that will show and hide elements on a page.
-    hide(element) {                                   // ch 7 utility functions that will show and hide elements on a page.
-      element.style.display = 'none'; 
-    },      // ch 7 utility functions that will show and hide elements on a page.
-    resetForm(){
-      this.response.answer.value = '';
-      this.response.answer.focus();
-    },// ch 6
-    setup(){
-      this.show(this.question);
-      this.show(this.response);
-      this.show(this.result);
-      this.hide(this.start);
-      this.render(this.score,game.score);
-      this.render(this.result,'');
-      this.render(this.info,'');
-      this.resetForm();
-    },
-    teardown(){
-      this.hide(this.question);
-      this.hide(this.response);
-      this.show(this.start);
-    } 
-  };
-  
-  
-  // game object ch 5:::: add namespace
-  /*ch 4 create functions // window.onload = function() { 
-    setTimeout(() => { 
-    ch 5::: change to namespace ch 4 create functions::::::::: 
-    ch 5 change function start(quiz){  
-    ch4 create functions start function using quiz */
-  const game = { // ch5 
-    start(quiz) {     // ch 5 change let score = 0   //ch3  initialize score to zero 
-      this.score = 0; // ch 5 change to this.score referring to game namespace
-      this.questions = [...quiz]; // ch 5::: namespace
-      view.setup() ;                      //view.hide(view.start);} // ch 7 chg ch 8
-      this.ask();
-      this.secondsRemaining = 20;         // timer c 9
-      this.timer = setInterval( this.countdown , 1000 ); // timer ch 9
-    },
+  {
+    name: "Superman",
+    realName: "Clark Kent"
+  }, // nested array questions first element answer second element chapt 3
+  {
+    name: "Wonder Woman",
+    realName: "Dianna Prince"
+  },
+  {
+    name: "Batman",
+    realName: "Bruce Wayne"
+  },
+];
+
+/* chapter 6 view objects
+ * use document query selector method to access elements
+ * assign them to access a variable
+ * example div question is accessed in js using view.question
+ * add a help function called render()to update content of elements
+ * render() 3 parament 1 displays content, 2nd updated content
+ * 3rd an object of html attributes
+ * render loops throught the attributes as the third arguement
+ * uses set attribute method toupdate them to values 
+ * added start to view object
+ */
+const view = { // ch 6
+  score: document.querySelector('#score strong'), // ch 6
+  question: document.getElementById('question'), // ch 6
+  result: document.getElementById('result'), // ch 6 
+  info: document.getElementById('info'), // ch 6
+  start: document.getElementById('start'), // ch 7 starts game
+  response: document.querySelector('#response'), // ch8 reference form response  
+  timer: document.querySelector('#timer strong'), // 9 timer 
+  render(target, content, attributes) { // ch 6 helper function update content of element on page
+    for (const key in attributes) { // ch 6
+      target.setAttribute(key, attributes[key]);
+    } // ch 6
+    target.innerHTML = content;
+  }, // ch 6
+  show(element) { // ch 7 utility functions that will show and hide elements on a page.
+    element.style.display = 'block';
+  }, // ch 7 utility functions that will show and hide elements on a page.
+  hide(element) { // ch 7 utility functions that will show and hide elements on a page.
+    element.style.display = 'none';
+  }, // ch 7 utility functions that will show and hide elements on a page.
+  resetForm() {
+    this.response.answer.value = '';
+    this.response.answer.focus();
+  }, // ch 6
+  setup() {
+    this.show(this.question);
+    this.show(this.response);
+    this.show(this.result);
+    this.hide(this.start);
+    this.render(this.score, game.score);
+    this.render(this.result, '');
+    this.render(this.info, '');
+    this.resetForm();
+  },
+  teardown() {
+    this.hide(this.question);
+    this.hide(this.response);
+    this.show(this.start);
+  }
+};
+
+
+// game object ch 5:::: add namespace
+/*ch 4 create functions // window.onload = function() { 
+  setTimeout(() => { 
+  ch 5::: change to namespace ch 4 create functions::::::::: 
+  ch 5 change function start(quiz){  
+  ch4 create functions start function using quiz */
+const game = { // ch5 
+  start(quiz) { // ch 5 change let score = 0   //ch3  initialize score to zero 
+    this.score = 0; // ch 5 change to this.score referring to game namespace
+    this.questions = [...quiz]; // ch 5::: namespace
+    view.setup(); //view.hide(view.start);} // ch 7 chg ch 8
+    this.secondsRemaining = 20; // timer c 9
+    this.timer = setInterval(this.countdown, 1000); // timer ch 9
+    this.ask(); // ch 9 
+  },
+
+  // countdown for timer ch 9
+  countdown() {
+    game.secondsRemaining--;
+    view.render(view.timer, game.secondsRemaining);
+    if (game.secondsRemaining < 0) {
+      game.gameOver();
+    }
+  },
   /* ch 3 main game Loop 
    ch 5 :: change to use game namespace
     ch 3 for of loop assigns the variable question and answer 
@@ -232,88 +250,73 @@ const quiz = [ // an array called quiz contains all questions all answers chapt 
     function ask(question){ // ch 4:::
     return prompt(question);// ch 4:::
     }// ch 4::: removed ch 8 */
-   /* ask()
-     const question = `What is ${this.question.name}'s real name?`; // ch 5 change ch8
-      view.render(view.question, question); // ch 6 change ch8
-      const response = prompt(question); // ch 5 change ch8
-      this.check(response); // ch 5 change ch8
-      } // ch 8 
-      } //ch 8 */
-    ask(name){ // ch 5 changed adding name ch 8
-      if(this.questions.length > 0) {       // ch 8 check the lengh of game questions array ch 8 see f any questions left to ask
-        this.question = this.questions.pop(); //  ch 8 if there are the pop function is used to remove the last element
-        const question = `What is ${this.question.name}'s real name?`;
-        view.render(view.question,question);
-      } else {
-        this.gameOver();
-      }
-    },
-// countdown for timer ch 9
-    countdown() {
-      game.secondsRemaining--;
-      view.render(view.timer,game.secondsRemaining);
-      if(game.secondsRemaining < 0) {
-          game.gameOver();
-      }
-  }
-  
-    // ch  6 add view render 
-    // ch 5 change ask function to use game namespace 
-    // ch 4::: function check response
-    // function check(response,answer){//ch 4:::
-    // if(response === answer){ // ch 3 checks answer ch4 moved to function
-    //   alert("correct!"); // ch 3 checks answer ch4 moved to function
-    //   score++; // ch 3 checks answer ch4 moved to function
-    // } else { // ch 3 checks answer ch4 moved to function
-    //   alert(`Wrong! The correct answer was ${answer}`); // ch 3 checks answer ch4 moved to function
-    //   }//  // ch 3 checks answer ch4 moved to function
-    // }//ch 4:::end of function 
-    
+  /* ask()
+    const question = `What is ${this.question.name}'s real name?`; // ch 5 change ch8
+     view.render(view.question, question); // ch 6 change ch8
+     const response = prompt(question); // ch 5 change ch8
+     this.check(response); // ch 5 change ch8
+     } // ch 8 
+     } //ch 8 */
+  ask(name) { // ch 5 changed adding name ch 8
+    if (this.questions.length > 0) { // ch 8 check the lengh of game questions array ch 8 see f any questions left to ask
+      this.question = this.questions.pop(); //  ch 8 if there are the pop function is used to remove the last element
+      const question = `What is ${this.question.name}'s real name?`;
+      view.render(view.question, question);
+    } else {
+      this.gameOver();
+    }
+  },
+  // ch  6 add view render 
+  // ch 5 change ask function to use game namespace 
+  // ch 4::: function check response
+  // function check(response,answer){//ch 4:::
+  // if(response === answer){ // ch 3 checks answer ch4 moved to function
+  //   alert("correct!"); // ch 3 checks answer ch4 moved to function
+  //   score++; // ch 3 checks answer ch4 moved to function
+  // } else { // ch 3 checks answer ch4 moved to function
+  //   alert(`Wrong! The correct answer was ${answer}`); // ch 3 checks answer ch4 moved to function
+  //   }//  // ch 3 checks answer ch4 moved to function
+  // }//ch 4:::end of function 
   check(event) { // ch 5 ch 8 chg response to event
-      event.preventDefault();
-      const response = view.response.answer.value;
-      const answer = this.question.realName; // ch 5 
-      if (response === answer) { // ch 5 
-        view.render(view.result, 'Correct', {'class': 'correct' }); //ch 6 
-        // alert('Correct'); // ch 3 checks answer ch4 moved to function ch 8 chg
-        this.score++; // ch 5 
-        view.render(view.score, this.score); // ch 6
-      } else { // ch 3 checks answer ch4 moved to function
-        view.render(view.result, `Wrong! The correct answer was ${answer}`, {'class': 'wrong' }); //ch 6
-        // alert(`Wrong! The correct answer was ${answer}`); // ch 3 checks answer ch4 moved to function ch 8 chg
-      } // ch 5 
-      view.resetForm(); //ch 8 chg
-      this.ask();//ch 8 chg
-    }, // ch 5 
-  
-    /*ch5 use namespace
-    ch 4::: function  game over()
-    function gameOver(){
-    alert(`Game Over, you scored ${score} 
-    point${score !== 1 ? 's' : ''}`); 
-    // ch 3 At the end of the game, report the player's score*/   
-    gameOver() { // ch5
-      view.render(view.info, `Game Over, you scored ${this.score} point${this.score !== 1 ? 's' : ''}`);
-      view.show(view.start); // ch 7 show and element while game is in progress
-      clearInterval(this.timer);
-    } //ch6 //alert(`Game Over, you scored ${this.score} point${this.score !== 1 ? 's' : ''}`);// ch5
-  }   // ch5
-  
-  
+    event.preventDefault();
+    const response = view.response.answer.value;
+    const answer = this.question.realName; // ch 5 
+    if (response === answer) { // ch 5 
+      view.render(view.result, 'Correct', {
+        'class': 'correct'
+      }); //ch 6 
+      // alert('Correct'); // ch 3 checks answer ch4 moved to function ch 8 chg
+      this.score++; // ch 5 
+      view.render(view.score, this.score); // ch 6
+    } else { // ch 3 checks answer ch4 moved to function
+      view.render(view.result, `Wrong! The correct answer was ${answer}`, {
+        'class': 'wrong'
+      }); //ch 6
+      // alert(`Wrong! The correct answer was ${answer}`); // ch 3 checks answer ch4 moved to function ch 8 chg
+    } // ch 5 
+    view.resetForm(); //ch 8 chg
+    this.ask(); //ch 8 chg
+  }, // ch 5 
+  /*ch5 use namespace
+  ch 4::: function  game over()
+  function gameOver(){
+  alert(`Game Over, you scored ${score} 
+  point${score !== 1 ? 's' : ''}`); 
+  // ch 3 At the end of the game, report the player's score*/
+  gameOver() { // ch5
+    view.render(view.info, `Game Over, you scored ${this.score} point${this.score !== 1 ? 's' : ''}`);
+    //view.show(view.start); // ch 7 show and element while game is in progress
+    view.teardown(); // ch8 
+    clearInterval(this.timer); // ch 9
+  } //ch6 //alert(`Game Over, you scored ${this.score} point${this.score !== 1 ? 's' : ''}`);// ch5
+} // ch5
+
 /*start(quiz); 
-  ch 7 add a click event listener to the button that will start the game
-  ch 4::: functin start quiz  
-  game.start(quiz); // ch5
-  }, 100);*/
-  
-  view.start.addEventListener('click', () => game.start(quiz), false); // ch 7
-  view.response.addEventListener('submit', (event) => game.check(event), false); // ch 8 add event handler fires when for is submitted
-  view.hide(view.response); // ch 8 add event handler fires when for is submitted this will call the game check 
-  
+ ch 7 add a click event listener to the button that will start the game
+ ch 4::: functin start quiz  
+game.start(quiz); // ch5
+}, 100);*/
 
-
-
-
-
-  /* debugging 
-  
+view.start.addEventListener('click', () => game.start(quiz), false); // ch 7
+view.response.addEventListener('submit', (event) => game.check(event), false); // ch 8 add event handler fires when for is submitted
+view.hide(view.response); // ch 8 add event handler fires when for is submitted this will call the game check 

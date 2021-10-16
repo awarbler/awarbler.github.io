@@ -1,56 +1,28 @@
 <!doctype html>
 <html lang='en'>
-
 <head>
   <meta charset='utf-8'>
   <meta name='description' content='A JavaScript Quiz Game'>
   <title>Quiz Ninja</title>
   <link rel='stylesheet' href='styles.css'>
 </head>
-
-body>
+<body>
 <section class='dojo'>
-    <div class='quiz-body'>
-      <header>
-        <h1>Quiz Ninja!</h1>
-        <div id='timer'>Time: <strong>20</strong></div>
-        <div id='score'>Score: <strong>0</strong></div>
+  <div class='quiz-body'>
+    <header>
+      <div id='score'>Score: <strong>0</strong></div>
+      <h1>Quiz Ninja!</h1>
     </header>
-      <div id='question'></div>
-      <!--add form ch 8 -->
-      <form id="response">
-        <input name="answer" type="text">
-        <button type="submit">Submit Answer</button>
-      </form>
-      <div id='result'></div>
-      <div id='info'></div>
-      <!--add button ch 7 -->
-      <button id='start'>Click to Start</button>
-    </div>
-  </section>
-  <script src='main.js'></script>
-  <footer>
-    <p>
-      &copy; 2020 | Anita Woodford | Texas | <a href="https://www.byui.edu/online"></href> BYUI Online Learning</a><br>
-      Last Updated:
-      <script>
-        var date = document.lastModified;
-        document.write("Last Modified: " + date);
-      </script>
-    </p>
-
-  </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-  <script>
-    WebFont.load({
-      google: {
-        families: ['open Sans', 'Roboto']
-      }
-    });
-  </script>
-  <script src='js/date.js'></script>
-
-
+    <div id='question'></div>
+    <form id='response'>
+      <input name='answer' type='text'>
+      <button type='submit'>Submit Answer</button>
+    </form>
+    <div id='result'></div>
+    <div id='info'></div>
+    <button id='start'>Click to Start</button>
+  </div>
+</section>
+<script src='main.js'></script>
 </body>
-
 </html>

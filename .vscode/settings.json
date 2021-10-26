@@ -2,5 +2,10 @@
     "git.ignoreLimitWarning": true,
     "python.analysis.extraPaths": [
         "./cse210/week5/hide"
-    ]
+    ],
+    "python.testing.pytestArgs": [
+        "cse210"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
 }

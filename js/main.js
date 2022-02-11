@@ -21,11 +21,6 @@ const links = [{
     {
         label: "Week 5",
         url: "wdd330/week5/index.html"
-    },
-    {
-        label: "Week 6",
-        url: "wdd330/week6/index.html"
-
     }
 ]
 /**create for loop to go through array and create li and a tags */
@@ -38,6 +33,51 @@ for (let i = 0; i < links.length; i++) {
     const text = document.createTextNode(links[i].label);
 
     link.setAttribute("href", links[i].url);
+    link.appendChild(text);
+    newList.appendChild(link);
+    parent.appendChild(newList);
+}
+
+/** 1. select ol element
+ *  2. Create an array of links
+ *  3. Create li element and add an a tag with the label and url
+ */
+const linksa = [{
+        label: "Week 1",
+        url: "cs308/week1/index.html"
+    },
+    {
+        label: "Week 2",
+        url: "cs308/week2/index.html"
+    },
+    {
+        label: "Week 3",
+        url: "cs308/week3/index.html"
+    },
+    {
+        label: "Week 4",
+        url: "cs308/week4/index.html"
+    },
+    {
+        label: "Week 5",
+        url: "cs308/week5/index.html"
+    },
+    {
+        label: "Week 6",
+        url: "cs308/week/index.html"
+
+    }
+]
+/**create for loop to go through array and create li and a tags */
+
+var parent = document.getElementById("assignment")
+
+for (let i = 0; i < linksa.length; i++) {
+    const newList = document.createElement("li");
+    const link = document.createElement("a");
+    const text = document.createTextNode(linksa[i].label);
+
+    link.setAttribute("href", linksa[i].url);
     link.appendChild(text);
     newList.appendChild(link);
     parent.appendChild(newList);

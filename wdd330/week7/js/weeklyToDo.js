@@ -4,20 +4,20 @@
   */
  const links = [ /* creates array to go through*/
    {
-     label: "Study and Report", /* name of items to be listed*/
-     url: "report.html" /* url of the items */
+     label: "Notes", /* name of items to be listed*/
+     url: "notes.html" /* url of the items */
    },
    {
-     label: "Peer Review",
-     url: "peer.html"
+     label: "Team Assignment",
+     url: "teamwork.html"
    },
    {
-    label:"Discussion Board",
-    url:"discussion.html"
+    label:"Team Notes",
+    url:"teamNotes.html"
    },
    {
-     label: "Weekly Project",
-     url: "weeklyProject.html"
+     label: "Team Project",
+     url: "teamProject.html"
    },
    {
      label: "Team Zoom Meeting",
@@ -25,16 +25,16 @@
 
    },
    {
-     label:"Share",
-     url: "share.html"
+     label:"Ninja Quiz",
+     url: "quiz/index.html"
    },
    {
-     label:"Notes",
-     url:"weeklyNotes.html"
+     label:"Nija Quiz Notes",
+     url:"quizNotes.html"
    },
    {
-     label:"Misc",
-     url:"misc.html"
+     label:"Misc Work 1",
+     url:"search.html"
    }
 
   ]

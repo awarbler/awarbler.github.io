@@ -2,7 +2,9 @@
  *  2. Create an array of links
  *  3. Create li element and add an a tag with the label and url
  */
-const links = [{
+const links = [
+
+    {
         label: "Week 1",
         url: "wdd330/week1/index.html"
     },
@@ -42,7 +44,12 @@ for (let i = 0; i < links.length; i++) {
  *  2. Create an array of links
  *  3. Create li element and add an a tag with the label and url
  */
-const linksa = [{
+const linksa = [
+    {
+        label: "E-Portfolio",
+        url: "cs308/eportfolio/eportfolio.html"
+    },
+    {
         label: "Week 1",
         url: "cs308/week1/index.html"
     },

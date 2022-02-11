@@ -24,7 +24,7 @@ body {
 }
 /*---body links labelled in index.html as a ------*/
 body a {
-    color: #7fb9c2;
+    color: #012778;
 }
 
 /*---- flex keeps the header in the middle of the screen --------------*/
@@ -37,7 +37,7 @@ header
     padding: .5rem 2%;
     font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
     background: white;
-    color: #7fb9c2;
+    color: #012778;
    
     
 }
@@ -119,14 +119,14 @@ nav {
 /*---hange color when mouse passes by I can use .navigation a:hover
 or nav a:hover since I used a class I can use the class -----*/
 .navigation a:hover{
-    color: #7fb9c2;
+    color: #012778;
     text-decoration: underline;
     font-weight: 700;
 }
 /*---navigation active page or class .navigation li a ------*/
 nav li.active {
     /* I changed the color-nav*/
-    color: #7fb9c2;
+    color: #012778;
 
     text-decoration-line: underline;
     border-radius: 4px;
@@ -158,7 +158,7 @@ main {
 main h1,
 h2,h3,h4 {
    
-    color: #7fb9c2;
+    color: #012778;
     clear: both;
 }
 
@@ -168,7 +168,7 @@ main a{
 }
 
 main a:hover{
-    color: #7fb9c2;
+    color: #012778;
     text-decoration: underline;
     font-weight: 700;}
 
@@ -196,7 +196,7 @@ footer p {
 }
 
 footer a {
-    color: #7fb9c2;
+    color: #012778;
 }
 
 .clearfix:after {

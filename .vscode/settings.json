@@ -7,5 +7,10 @@
         "cse210"
     ],
     "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true
+    "python.testing.pytestEnabled": true,
+    "cSpell.words": [
+        "BYUI",
+        "currentdate",
+        "Woodford"
+    ]
 }
